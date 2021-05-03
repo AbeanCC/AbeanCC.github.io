@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
+    <meta name="keywords" content="AbeanCC,"> 
     <meta name="description" content="Syn_Flood攻击程序
 什么是SYN？
 SYN：同步序列编号（Synchronize Sequence Numbers）。是TCP/IP建立连接时使用的握手信号。在客户机和服务器之间建立正常的T,"> 
@@ -17,6 +17,8 @@ SYN：同步序列编号（Synchronize Sequence Numbers）。是TCP/IP建立连�
     <link rel="alternative" href="atom.xml" title="AbeanCC" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
     
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -114,8 +116,8 @@ SYN：同步序列编号（Synchronize Sequence Numbers）。是TCP/IP建立连�
         </div>
         
     <div id='gitalk-container' class="comment link"
-		data-enable='false'
-        data-ae='false'
+		data-enable='true'
+        data-ae='true'
         data-ci=''
         data-cs=''
         data-r=''
@@ -127,12 +129,18 @@ SYN：同步序列编号（Synchronize Sequence Numbers）。是TCP/IP建立连�
 
     </div>
     
+        <div class='side'>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Syn-Flood%E6%94%BB%E5%87%BB%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">Syn_Flood攻击程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSYN%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是SYN？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SYN-Flood-%E6%94%BB%E5%87%BB"><span class="toc-number">1.2.</span> <span class="toc-text">SYN Flood 攻击</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.1.</span> <span class="toc-text">头文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E7%9A%84IP%E5%9C%B0%E5%9D%80"><span class="toc-number">1.2.2.</span> <span class="toc-text">生成随机的IP地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Syn-Flood%E5%87%BD%E6%95%B0%E4%B8%BB%E4%BD%93%E9%83%A8%E5%88%86"><span class="toc-number">1.2.3.</span> <span class="toc-text">Syn_Flood函数主体部分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E5%87%BD%E6%95%B0%E9%83%A8%E5%88%86"><span class="toc-number">1.2.4.</span> <span class="toc-text">主函数部分</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">总结：</span></a></li></ol></li></ol>	
+        </div>
+    
 </div>
 
 
     </div>
 </div>
 </body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
