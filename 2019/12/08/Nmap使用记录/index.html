@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Nmap使用记录 | AbeanCC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Nmap使用记录 前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自己写呢?人类真是奇怪的生物~  进入正题. 输入Nmap --help即可获得帮助 好了,我说完了. 怎么可能嘛! 你会得到这么多 123456789101112131415161718192021222324252627282930313233">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nmap使用记录">
+<meta property="og:url" content="https://abeancc.github.io/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="AbeanCC">
+<meta property="og:description" content="Nmap使用记录 前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自己写呢?人类真是奇怪的生物~  进入正题. 输入Nmap --help即可获得帮助 好了,我说完了. 怎么可能嘛! 你会得到这么多 123456789101112131415161718192021222324252627282930313233">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-12-08T11:34:13.000Z">
+<meta property="article:modified_time" content="2020-01-14T13:55:18.396Z">
+<meta property="article:author" content="AbeanCC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="AbeanCC" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">AbeanCC</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://abeancc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Nmap使用记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2019-12-08T11:34:13.000Z" itemprop="datePublished">2019-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Nmap使用记录
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Nmap使用记录"><a href="#Nmap使用记录" class="headerlink" title="Nmap使用记录"></a>Nmap使用记录</h2><hr>
+<p><strong>前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自己写呢?人类真是奇怪的生物~</strong></p>
+<hr>
+<p>进入正题.</p>
+<p>输入<code>Nmap --help</code>即可获得帮助</p>
+<p><del>好了,我说完了.</del></p>
+<p>怎么可能嘛!</p>
+<p>你会得到这么多</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line">TARGET SPECIFICATION:</span><br><span class="line">  Can pass hostnames, IP addresses, networks, etc.</span><br><span class="line">  Ex: scanme.nmap.org, microsoft.com&#x2F;24, 192.168.0.1; 10.0.0-255.1-254</span><br><span class="line">  -iL &lt;inputfilename&gt;: Input from list of hosts&#x2F;networks</span><br><span class="line">  -iR &lt;num hosts&gt;: Choose random targets</span><br><span class="line">  --exclude &lt;host1[,host2][,host3],...&gt;: Exclude hosts&#x2F;networks</span><br><span class="line">  --excludefile &lt;exclude_file&gt;: Exclude list from file</span><br><span class="line">HOST DISCOVERY:</span><br><span class="line">  -sL: List Scan - simply list targets to scan</span><br><span class="line">  -sn: Ping Scan - disable port scan</span><br><span class="line">  -Pn: Treat all hosts as online -- skip host discovery</span><br><span class="line">  -PS&#x2F;PA&#x2F;PU&#x2F;PY[portlist]: TCP SYN&#x2F;ACK, UDP or SCTP discovery to given ports</span><br><span class="line">  -PE&#x2F;PP&#x2F;PM: ICMP echo, timestamp, and netmask request discovery probes</span><br><span class="line">  -PO[protocol list]: IP Protocol Ping</span><br><span class="line">  -n&#x2F;-R: Never do DNS resolution&#x2F;Always resolve [default: sometimes]</span><br><span class="line">  --dns-servers &lt;serv1[,serv2],...&gt;: Specify custom DNS servers</span><br><span class="line">  --system-dns: Use OS&#39;s DNS resolver</span><br><span class="line">  --traceroute: Trace hop path to each host</span><br><span class="line">SCAN TECHNIQUES:</span><br><span class="line">  -sS&#x2F;sT&#x2F;sA&#x2F;sW&#x2F;sM: TCP SYN&#x2F;Connect()&#x2F;ACK&#x2F;Window&#x2F;Maimon scans</span><br><span class="line">  -sU: UDP Scan</span><br><span class="line">  -sN&#x2F;sF&#x2F;sX: TCP Null, FIN, and Xmas scans</span><br><span class="line">  --scanflags &lt;flags&gt;: Customize TCP scan flags</span><br><span class="line">  -sI &lt;zombie host[:probeport]&gt;: Idle scan</span><br><span class="line">  -sY&#x2F;sZ: SCTP INIT&#x2F;COOKIE-ECHO scans</span><br><span class="line">  -sO: IP protocol scan</span><br><span class="line">  -b &lt;FTP relay host&gt;: FTP bounce scan</span><br><span class="line">PORT SPECIFICATION AND SCAN ORDER:</span><br><span class="line">  -p &lt;port ranges&gt;: Only scan specified ports</span><br><span class="line">    Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9</span><br><span class="line">  --exclude-ports &lt;port ranges&gt;: Exclude the specified ports from scanning</span><br><span class="line">  -F: Fast mode - Scan fewer ports than the default scan</span><br><span class="line">  -r: Scan ports consecutively - don&#39;t randomize</span><br><span class="line">  --top-ports &lt;number&gt;: Scan &lt;number&gt; most common ports</span><br><span class="line">  --port-ratio &lt;ratio&gt;: Scan ports more common than &lt;ratio&gt;</span><br><span class="line">SERVICE&#x2F;VERSION DETECTION:</span><br><span class="line">  -sV: Probe open ports to determine service&#x2F;version info</span><br><span class="line">  --version-intensity &lt;level&gt;: Set from 0 (light) to 9 (try all probes)</span><br><span class="line">  --version-light: Limit to most likely probes (intensity 2)</span><br><span class="line">  --version-all: Try every single probe (intensity 9)</span><br><span class="line">  --version-trace: Show detailed version scan activity (for debugging)</span><br><span class="line">SCRIPT SCAN:</span><br><span class="line">  -sC: equivalent to --script&#x3D;default</span><br><span class="line">  --script&#x3D;&lt;Lua scripts&gt;: &lt;Lua scripts&gt; is a comma separated list of</span><br><span class="line">           directories, script-files or script-categories</span><br><span class="line">  --script-args&#x3D;&lt;n1&#x3D;v1,[n2&#x3D;v2,...]&gt;: provide arguments to scripts</span><br><span class="line">  --script-args-file&#x3D;filename: provide NSE script args in a file</span><br><span class="line">  --script-trace: Show all data sent and received</span><br><span class="line">  --script-updatedb: Update the script database.</span><br><span class="line">  --script-help&#x3D;&lt;Lua scripts&gt;: Show help about scripts.</span><br><span class="line">           &lt;Lua scripts&gt; is a comma-separated list of script-files or</span><br><span class="line">           script-categories.</span><br><span class="line">OS DETECTION:</span><br><span class="line">  -O: Enable OS detection</span><br><span class="line">  --osscan-limit: Limit OS detection to promising targets</span><br><span class="line">  --osscan-guess: Guess OS more aggressively</span><br><span class="line">TIMING AND PERFORMANCE:</span><br><span class="line">  Options which take &lt;time&gt; are in seconds, or append &#39;ms&#39; (milliseconds),</span><br><span class="line">  &#39;s&#39; (seconds), &#39;m&#39; (minutes), or &#39;h&#39; (hours) to the value (e.g. 30m).</span><br><span class="line">  -T&lt;0-5&gt;: Set timing template (higher is faster)</span><br><span class="line">  --min-hostgroup&#x2F;max-hostgroup &lt;size&gt;: Parallel host scan group sizes</span><br><span class="line">  --min-parallelism&#x2F;max-parallelism &lt;numprobes&gt;: Probe parallelization</span><br><span class="line">  --min-rtt-timeout&#x2F;max-rtt-timeout&#x2F;initial-rtt-timeout &lt;time&gt;: Specifies</span><br><span class="line">      probe round trip time.</span><br><span class="line">  --max-retries &lt;tries&gt;: Caps number of port scan probe retransmissions.</span><br><span class="line">  --host-timeout &lt;time&gt;: Give up on target after this long</span><br><span class="line">  --scan-delay&#x2F;--max-scan-delay &lt;time&gt;: Adjust delay between probes</span><br><span class="line">  --min-rate &lt;number&gt;: Send packets no slower than &lt;number&gt; per second</span><br><span class="line">  --max-rate &lt;number&gt;: Send packets no faster than &lt;number&gt; per second</span><br><span class="line">FIREWALL&#x2F;IDS EVASION AND SPOOFING:</span><br><span class="line">  -f; --mtu &lt;val&gt;: fragment packets (optionally w&#x2F;given MTU)</span><br><span class="line">  -D &lt;decoy1,decoy2[,ME],...&gt;: Cloak a scan with decoys</span><br><span class="line">  -S &lt;IP_Address&gt;: Spoof source address</span><br><span class="line">  -e &lt;iface&gt;: Use specified interface</span><br><span class="line">  -g&#x2F;--source-port &lt;portnum&gt;: Use given port number</span><br><span class="line">  --proxies &lt;url1,[url2],...&gt;: Relay connections through HTTP&#x2F;SOCKS4 proxies</span><br><span class="line">  --data &lt;hex string&gt;: Append a custom payload to sent packets</span><br><span class="line">  --data-string &lt;string&gt;: Append a custom ASCII string to sent packets</span><br><span class="line">  --data-length &lt;num&gt;: Append random data to sent packets</span><br><span class="line">  --ip-options &lt;options&gt;: Send packets with specified ip options</span><br><span class="line">  --ttl &lt;val&gt;: Set IP time-to-live field</span><br><span class="line">  --spoof-mac &lt;mac address&#x2F;prefix&#x2F;vendor name&gt;: Spoof your MAC address</span><br><span class="line">  --badsum: Send packets with a bogus TCP&#x2F;UDP&#x2F;SCTP checksum</span><br><span class="line">OUTPUT:</span><br><span class="line">  -oN&#x2F;-oX&#x2F;-oS&#x2F;-oG &lt;file&gt;: Output scan in normal, XML, s|&lt;rIpt kIddi3,</span><br><span class="line">     and Grepable format, respectively, to the given filename.</span><br><span class="line">  -oA &lt;basename&gt;: Output in the three major formats at once</span><br><span class="line">  -v: Increase verbosity level (use -vv or more for greater effect)</span><br><span class="line">  -d: Increase debugging level (use -dd or more for greater effect)</span><br><span class="line">  --reason: Display the reason a port is in a particular state</span><br><span class="line">  --open: Only show open (or possibly open) ports</span><br><span class="line">  --packet-trace: Show all packets sent and received</span><br><span class="line">  --iflist: Print host interfaces and routes (for debugging)</span><br><span class="line">  --append-output: Append to rather than clobber specified output files</span><br><span class="line">  --resume &lt;filename&gt;: Resume an aborted scan</span><br><span class="line">  --stylesheet &lt;path&#x2F;URL&gt;: XSL stylesheet to transform XML output to HTML</span><br><span class="line">  --webxml: Reference stylesheet from Nmap.Org for more portable XML</span><br><span class="line">  --no-stylesheet: Prevent associating of XSL stylesheet w&#x2F;XML output</span><br><span class="line">MISC:</span><br><span class="line">  -6: Enable IPv6 scanning</span><br><span class="line">  -A: Enable OS detection, version detection, script scanning, and traceroute</span><br><span class="line">  --datadir &lt;dirname&gt;: Specify custom Nmap data file location</span><br><span class="line">  --send-eth&#x2F;--send-ip: Send using raw ethernet frames or IP packets</span><br><span class="line">  --privileged: Assume that the user is fully privileged</span><br><span class="line">  --unprivileged: Assume the user lacks raw socket privileges</span><br><span class="line">  -V: Print version number</span><br><span class="line">  -h: Print this help summary page.</span><br><span class="line">EXAMPLES:</span><br><span class="line">  nmap -v -A scanme.nmap.org</span><br><span class="line">  nmap -v -sn 192.168.0.0&#x2F;16 10.0.0.0&#x2F;8</span><br><span class="line">  nmap -v -iR 10000 -Pn -p 80</span><br><span class="line">SEE THE MAN PAGE (https:&#x2F;&#x2F;nmap.org&#x2F;book&#x2F;man.html) FOR MORE OPTIONS AND EXAMPLES</span><br></pre></td></tr></table></figure>
+
+
+
+<p>是不是特别多?<br><del>可这些都是基础用法:(</del></p>
+<p>那我来介绍一些我常用的指令吧.</p>
+<hr>
+<h3 id="nmap-a-b-c-d"><a href="#nmap-a-b-c-d" class="headerlink" title="nmap a.b.c.d"></a>nmap a.b.c.d</h3><p>基础一点的，最简单的就是:<br>nmap xxx.xxx.xxx.xxx</p>
+<p><strong>想不到吧!就是这么简单</strong></p>
+<ul>
+<li><p>但是,众所周知,在Windows防火墙里有这么一个设置选项:<br><strong>文件和打印机共享(回显请求 - ICMPv4-In)</strong><br>如果把这个禁用的话,理论上来说,在同一个网段里,你ping我是ping不通的,因为我并不会给你发送我的ICMP报文.</p>
+</li>
+<li><p>这样有什么好处?<br>Obviously, 要想知道好处,那我们得先了解网络扫描的基础.<br>怎么进行网络扫描?<br>最简单的也是最直接的,我们可以直接ping对方的主机.<br><strong>为什么能完成这项操作呢?</strong><br>答案很简单,由于是异常的IP数据报,那么对应的对方的层就是对方的网络层.<br>众所周知,网络层有一个非常著名的Internet控制报文协议(Internet Control Message Protocol).就是它的关系.<br>当你ping对方的主机的时候,对方就会给你发一个ICMP报文,来回应你的ping.<br>这就是探测存活主机的一种方法.</p>
+</li>
+<li><p>于是乎,关闭了这个功能,对方就不能直接ping到你了,也就对你主机的状态无从得知.</p>
+</li>
+</ul>
+<hr>
+<h3 id="Pn"><a href="#Pn" class="headerlink" title="-Pn"></a>-Pn</h3><p>上回书说到,我们可以关闭ICMP回显请求来做到简单的防御.但是nmap这个工具之所以如此受喜爱,也是有原因的.<br>有矛就有盾,一般来说,攻击技术都比防御技术更加先进.或者,换句话说,借用”白帽子讲Web安全”里面的一句话来说,<br>“同样是研究安全,白帽子和黑帽子在工作时的心态是完全不同的.”<br>“对于黑帽子来说,只要能找到系统的一个弱点,就可以达到入侵系统的目的;而对于白帽子来说,必须找到系统的所有弱点,不能有遗漏,才能保证系统不会出现问题.这种差异是由于工作环境与工作目标的不同而导致的.”<br>这揭示了两种群体工作的本质.<br><strong>回到我们的主题.当你的攻击目标不给你发送ICMP回显请求了,那这个时候我们该怎么办呢?</strong></p>
+<ul>
+<li>Obviously, 我们可以使用-Pn指令<br><code>nmap -Pn xxx.xxx.xxx.xxx</code><br>nmap对于-Pn的解释也很简单暴力,Treat all hosts as online – skip host discovery<br>就是认为所有的主机都是存活的.最简单的也是最直接的,我可以构造一个畸形的IP数据报.这样在同一个网段下,我可以向所有的主机发送这个报文,当然,由于这个IP数据报是畸形的,你肯定不会收到.因为按照网络的结构以及功能来说, 我在本层的工作就由我本层来完成,如果出错,那都是我本层的事,无关高层.于是在这个前提下,对方并不知道你对自己做了什么,但是你就可以探测到存活主机.</li>
+</ul>
+<hr>
+<h3 id="sS"><a href="#sS" class="headerlink" title="-sS"></a>-sS</h3><p>众所周知,-Pn是假定所有的主机都是存活的,但是带来的反作用就是,实在是太慢了.太慢太慢了.<br>有时候真的慢到很难接受.而且最奇怪的一点就是.有时候,你会扫描到一些奇怪的设备,但是这些设备可能没有在使用.<br>(比如说我曾经扫描到几台摄像机= =)</p>
+<p>于是,我们采用更快捷的方法.</p>
+<p><strong>既然网络层呆不下去了,我们就转战传输层吧</strong></p>
+<p>来到传输层,我们就要面对一个很神奇的东西,也是所有面试老哥最烦被问到的问题之一 -“三次握手和四次握手”</p>
+<ul>
+<li>三次握手:<br>说白了,最简单易懂的说,三次握手就是,让两台计算机认为,我俩已经建立连接了.<br>$$ 说起三次握手,就不得不提到两个东西:Syn(Synchronize)和Ack(Acknowledge),也就是同步序列号和确认序列号<br><em></em><br>First handshake:<br>  客户端发送syn(seq = j)包到服务器,并进入SENT_SEND状态,等待服务器确认;<br><em></em><br>Second handshake:<br>  服务端接收到客户端的syn包,需要确认客户端发来的syn包(ack = j + 1), 同时自己也发送一个syn包(seq = k),也就是syn + ack报文,此时服务器进入SYN_RECV状态<br><em></em><br>Third handshake:<br>  客户端接收到服务端的syn + ack,向服务器发送ack(ack = ｋ + 1),此包发送完毕,进入ESTABLISHED状态<br><em></em><br>是不是很简单,举一个形象化的例子,就是A给B发送一条消息,怎么知道发送到了呢?那就看B发送回来的消息是不是B的消息加上A上一轮发送的消息.<br>如果是,那么,根据逻辑推断,A知道A可以发送,A可以接收,B可以发送,B可以接收.A全知道了<br>但是于此同时,B呢?B只知道A可以发送,B可以发送,B可以接收,唯一不确定的是A可不可以接收.<br>所以此时A要再发送B上一轮的消息给B,这样B知道A可以接收.此时可以认为A和B之间的连接是建立的了.</li>
+</ul>
+<p>但是,细心的朋友可能已经知道了,如果,在第二次握手的时候,我不发送报文回服务端,作为客户端的我就已经知道了B的主机是存活的.(因为我已经知道了B是可以发送和接收的)<br>于是,我就探测到了B主机存活.<br>具体可以使用<code>nmap -sS xxx.xxx.xxx.xxx</code><br>这是使用Syn进行半连接来扫描的.<br>熟悉tcp报文结构的人都知道,不止syn可以,还有很多其他的也可以.<br>比如说FIN啊,UDP啊之类的,都可以.</p>
+<hr>
+<h3 id="T-A-O-v等"><a href="#T-A-O-v等" class="headerlink" title="-T, -A, -O, -v等"></a>-T, -A, -O, -v等</h3><p>重要的部分都说完了,现在来说一些细枝末节的吧.</p>
+<p>-T: 设置时间参数 0 1 2 3 4 5,越大越快,基本作用也就是慢速欺骗防火墙啊之类的.<br>-O: 探测目标的操作系统,原理就是不同的端口的开放情况<br>-A: 激烈扫描模式,基本上相当于-O + -v + 基本script的扫描,很实用<br>-v: 打印详细信息,意思就是把主机的情况都详细的说明一下</p>
+<p>个人喜欢<br><code>nmap -T4 -A -v xxx.xxx.xxx.xxx</code></p>
+<hr>
+<p>Over!</p>
+<p>P.S. 为什么不说-sP呢,因为我是真的不是很喜欢这个东西.老实说,-sP和-Pn没啥太大的差距,反正-Pn也可以混合使用,无所谓啦~</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://abeancc.github.io/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" data-id="cko8cmzp6000cic0r6kzv1g3w" data-title="Nmap使用记录" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          Ubuntu安装katoolin工具
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">2019.12.8蓝桥杯校赛writeup</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 AbeanCC<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

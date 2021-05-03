@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>20200418蓝桥杯模拟writeup | AbeanCC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教  问题描述　　由1对括号，可以组成一种合法括号序列：()。　　由2对括号，可以组成两种合法括号序列：()()、(())。　　由4对括号组成的合法括号序列一共有多少种？答案提交　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。  答案很简">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200418蓝桥杯模拟writeup">
+<meta property="og:url" content="https://abeancc.github.io/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/index.html">
+<meta property="og:site_name" content="AbeanCC">
+<meta property="og:description" content="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教  问题描述　　由1对括号，可以组成一种合法括号序列：()。　　由2对括号，可以组成两种合法括号序列：()()、(())。　　由4对括号组成的合法括号序列一共有多少种？答案提交　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。  答案很简">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-04-18T06:19:24.000Z">
+<meta property="article:modified_time" content="2020-04-18T07:10:49.984Z">
+<meta property="article:author" content="AbeanCC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="AbeanCC" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">AbeanCC</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://abeancc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-20200418蓝桥杯模拟writeup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/" class="article-date">
+  <time class="dt-published" datetime="2020-04-18T06:19:24.000Z" itemprop="datePublished">2020-04-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      20200418蓝桥杯模拟writeup
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"><a href="#今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教" class="headerlink" title="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"></a>今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教</h3><hr>
+<ol>
+<li>问题描述<br>　　由1对括号，可以组成一种合法括号序列：()。<br>　　由2对括号，可以组成两种合法括号序列：()()、(())。<br>　　由4对括号组成的合法括号序列一共有多少种？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>答案很简单，是14</p>
+<ol start="2">
+<li>问题描述<br>　　一个包含有2019个结点的无向连通图，最少包含多少条边？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>答案也很简单， 2018</p>
+<ol start="3">
+<li>问题描述<br>　　在计算机存储中，12.5MB是多少字节？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>这个只要算一下就好， 12.5 x 1024 B = 12800 B</p>
+<ol start="4">
+<li>问题描述<br>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>这个就是一个很简单的全排列问题。A77 = 5040</p>
+<ol start="5">
+<li>问题描述<br>　　给定三个整数 a, b, c，如果一个整数既不是 a 的整数倍也不是 b 的整数倍还不是 c 的整数倍，则这个数称为反倍数。<br>　　请问在 1 至 n 中有多少个反倍数。<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>　　第二行包含三个整数 a, b, c，相邻两个数之间用一个空格分隔。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>2 3 6<br>样例输出<br>10<br>样例说明<br>　　以下这些数满足要求：1, 5, 7, 11, 13, 17, 19, 23, 25, 29。<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 10000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000，1 &lt;= a &lt;= n，1 &lt;= b &lt;= n，1 &lt;= c &lt;= n。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">a &#x3D; eval(a)</span><br><span class="line">b &#x3D; eval(b)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line">count &#x3D; 0</span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    if i % a &#x3D;&#x3D; 0 or i % b &#x3D;&#x3D; 0 or i % c &#x3D;&#x3D; 0:</span><br><span class="line">        pass</span><br><span class="line">    else:</span><br><span class="line">        count +&#x3D; 1</span><br><span class="line">print(count)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>直接一个循环搞定</p>
+<ol start="6">
+<li>问题描述<br>　　给定一个单词，请使用凯撒密码将这个单词加密。<br>　　凯撒密码是一种替换加密的技术，单词中的所有字母都在字母表上向后偏移3位后被替换成密文。即a变为d，b变为e，…，w变为z，x变为a，y变为b，z变为c。<br>　　例如，lanqiao会变成odqtldr。<br>输入格式<br>　　输入一行，包含一个单词，单词中只包含小写英文字母。<br>输出格式<br>　　输出一行，表示加密后的密文。<br>样例输入<br>lanqiao<br>样例输出<br>odqtldr<br>评测用例规模与约定<br>　　对于所有评测用例，单词中的字母个数不超过100。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">string &#x3D; input()</span><br><span class="line">outstring &#x3D; &quot;&quot;</span><br><span class="line">for i in range(len(string)):</span><br><span class="line">    if ord(string[i]) + 3 &gt; 122:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3 - 122 + 96)</span><br><span class="line">    else:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3)</span><br><span class="line">print(outstring)</span><br></pre></td></tr></table></figure>
+
+<p>考烂掉的题目了..</p>
+<ol start="7">
+<li>问题描述<br>　　如果一个序列的奇数项都比前一项大，偶数项都比前一项小，则称为一个摆动序列。即 a[2i]&lt;a[2i-1], a[2i+1]&gt;a[2i]。<br>　　小明想知道，长度为 m，每个数都是 1 到 n 之间的正整数的摆动序列一共有多少个。<br>输入格式<br>　　输入一行包含两个整数 m，n。<br>输出格式<br>　　输出一个整数，表示答案。答案可能很大，请输出答案除以10000的余数。<br>样例输入<br>3 4<br>样例输出<br>14<br>样例说明<br>　　以下是符合要求的摆动序列：<br>　　2 1 2<br>　　2 1 3<br>　　2 1 4<br>　　3 1 2<br>　　3 1 3<br>　　3 1 4<br>　　3 2 3<br>　　3 2 4<br>　　4 1 2<br>　　4 1 3<br>　　4 1 4<br>　　4 2 3<br>　　4 2 4<br>　　4 3 4<br>评测用例规模与约定<br>　　对于 20% 的评测用例，1 &lt;= n, m &lt;= 5；<br>　　对于 50% 的评测用例，1 &lt;= n, m &lt;= 10；<br>　　对于 80% 的评测用例，1 &lt;= n, m &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n, m &lt;= 1000。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">m, n &#x3D; input().split(&quot; &quot;)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">dp &#x3D; [[0 for i in range(1004)] for i in range(1004)]</span><br><span class="line"></span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    dp[1][i] &#x3D; n - i + 1</span><br><span class="line"></span><br><span class="line">for i in range(2, m+1):</span><br><span class="line">    if i % 2 &#x3D;&#x3D; 1:</span><br><span class="line">        for j in range(n, 0, -1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j-1] + dp[i][j+1]) % 10000</span><br><span class="line">    else:</span><br><span class="line">        for j in range(1, n+1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j+1] + dp[i][j-1]) % 10000</span><br><span class="line"></span><br><span class="line">if m % 2 &#x3D;&#x3D; 1:</span><br><span class="line">    print(dp[m][1])</span><br><span class="line">else:</span><br><span class="line">    print(dp[m][n])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这题也比较简单,动态规划.我的思路是根据奇偶的不同输出不同的.</p>
+<ol start="8">
+<li>问题描述<br>　　对于一个 n 行 m 列的表格，我们可以使用螺旋的方式给表格依次填上正整数，我们称填好的表格为一个螺旋矩阵。<br>　　例如，一个 4 行 5 列的螺旋矩阵如下：<br>　　1 2 3 4 5<br>　　14 15 16 17 6<br>　　13 20 19 18 7<br>　　12 11 10 9 8<br>输入格式<br>　　输入的第一行包含两个整数 n, m，分别表示螺旋矩阵的行数和列数。<br>　　第二行包含两个整数 r, c，表示要求的行号和列号。<br>输出格式<br>　　输出一个整数，表示螺旋矩阵中第 r 行第 c 列的元素的值。<br>样例输入<br>4 5<br>2 2<br>样例输出<br>15<br>评测用例规模与约定<br>　　对于 30% 的评测用例，2 &lt;= n, m &lt;= 20。<br>　　对于 70% 的评测用例，2 &lt;= n, m &lt;= 100。<br>　　对于所有评测用例，2 &lt;= n, m &lt;= 1000，1 &lt;= r &lt;= n，1 &lt;= c &lt;= m。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">n, m &#x3D; input().split(&quot; &quot;)</span><br><span class="line">r, c &#x3D; input().split()</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">r &#x3D; eval(r)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line"></span><br><span class="line">array &#x3D; [0 for i in range(m * n)]</span><br><span class="line">statue &#x3D; [0 for i in range(m * n)]</span><br><span class="line">toward &#x3D; &quot;right&quot;</span><br><span class="line">num &#x3D; 1</span><br><span class="line">i &#x3D; 0</span><br><span class="line">j &#x3D; 0</span><br><span class="line"># i*m+j</span><br><span class="line">while True:</span><br><span class="line">    if toward &#x3D;&#x3D; &quot;up&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i - 1 &lt; 0 or statue[(i - 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;right&quot;</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;down&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i + 1 &gt; n - 1 or statue[(i + 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;left&quot;</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;left&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j - 1 &lt; 0 or statue[i * m + j - 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;up&quot;</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;right&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j + 1 &gt; m - 1 or statue[i * m + j + 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;down&quot;</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    if num &#x3D;&#x3D; m * n + 1:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">print(array[(r - 1) * m + (c - 1)])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这就是最基础的python写螺旋数组…<br>由于我懒得用二维数组这么复杂的东西,直接一维的列表,根据行列关系换算成一维的位置,然后根据状态填写数字.填写过的是-999.主要需要注意的是越界问题.</p>
+<ol start="9">
+<li>问题描述<br>　　2015年，全中国实现了户户通电。作为一名电力建设者，小明正在帮助一带一路上的国家通电。<br>　　这一次，小明要帮助 n 个村庄通电，其中 1 号村庄正好可以建立一个发电站，所发的电足够所有村庄使用。<br>　　现在，这 n 个村庄之间都没有电线相连，小明主要要做的是架设电线连接这些村庄，使得所有村庄都直接或间接的与发电站相通。<br>　　小明测量了所有村庄的位置（坐标）和高度，如果要连接两个村庄，小明需要花费两个村庄之间的坐标距离加上高度差的平方，形式化描述为坐标为 (x_1, y_1) 高度为 h_1 的村庄与坐标为 (x_2, y_2) 高度为 h_2 的村庄之间连接的费用为<br>　　sqrt((x_1-x_2)<em>(x_1-x_2)+(y_1-y_2)</em>(y_1-y_2))+(h_1-h_2)*(h_1-h_2)。<br>　　在上式中 sqrt 表示取括号内的平方根。请注意括号的位置，高度的计算方式与横纵坐标的计算方式不同。<br>　　由于经费有限，请帮助小明计算他至少要花费多少费用才能使这 n 个村庄都通电。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示村庄的数量。<br>　　接下来 n 行，每个三个整数 x, y, h，分别表示一个村庄的横、纵坐标和高度，其中第一个村庄可以建立发电站。<br>输出格式<br>　　输出一行，包含一个实数，四舍五入保留 2 位小数，表示答案。<br>样例输入<br>4<br>1 1 3<br>9 9 7<br>8 8 6<br>4 5 4<br>样例输出</li>
+<li>41<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000，0 &lt;= x, y, h &lt;= 10000。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">from math import sqrt</span><br><span class="line">from decimal import Decimal</span><br><span class="line"></span><br><span class="line">def cash(l1, l2):</span><br><span class="line">    return sqrt((l1[0] - l2[0])**2 + (l1[1] - l2[1])**2) + (l1[2] - l2[2])**2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n &#x3D; eval(input())</span><br><span class="line">countryside &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    countryside.append([eval(a), eval(b), eval(c)])</span><br><span class="line"></span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">money &#x3D; 0</span><br><span class="line"></span><br><span class="line">temp &#x3D; candidate_node.pop()</span><br><span class="line">selected_node.append(temp)</span><br><span class="line">while True:</span><br><span class="line">    if candidate_node &#x3D;&#x3D; []:</span><br><span class="line">        break</span><br><span class="line">    # prim</span><br><span class="line">    min_index &#x3D; 100000</span><br><span class="line">    min_cash &#x3D; 100000</span><br><span class="line">    for i in selected_node:</span><br><span class="line">        for j in candidate_node:</span><br><span class="line">            temp_cash &#x3D; cash(countryside[i], countryside[j])</span><br><span class="line">            if temp_cash &lt; min_cash:</span><br><span class="line">                min_cash &#x3D; temp_cash</span><br><span class="line">                min_index &#x3D; j</span><br><span class="line">    selected_node.append(min_index)</span><br><span class="line">    candidate_node.remove(min_index)</span><br><span class="line">    money +&#x3D; min_cash</span><br><span class="line"></span><br><span class="line">money &#x3D; Decimal(str(money)).quantize(Decimal(&#39;0.00&#39;))</span><br><span class="line">print(money)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>老生常谈的一个问题了.肉眼一看就知道的最小生成树的题目.这次使用的是prim算法.<br>在写这个题目的时候看错了钱的计算公式导致浪费了不少时间,这是不应该的.<br>而且对于Python而言,四舍五入最好别用round()函数,因为它拥有不确定性,而应该采用科学的Decimal库.这个是自带的库.</p>
+<ol start="10">
+<li>问题描述<br>　　小明和朋友们一起去郊外植树，他们带了一些在自己实验室精心研究出的小树苗。<br>　　小明和朋友们一共有 n 个人，他们经过精心挑选，在一块空地上每个人挑选了一个适合植树的位置，总共 n 个。他们准备把自己带的树苗都植下去。<br>　　然而，他们遇到了一个困难：有的树苗比较大，而有的位置挨太近，导致两棵树植下去后会撞在一起。<br>　　他们将树看成一个圆，圆心在他们找的位置上。如果两棵树对应的圆相交，这两棵树就不适合同时植下（相切不受影响），称为两棵树冲突。<br>　　小明和朋友们决定先合计合计，只将其中的一部分树植下去，保证没有互相冲突的树。他们同时希望这些树所能覆盖的面积和（圆面积和）最大。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示人数，即准备植树的位置数。<br>　　接下来 n 行，每行三个整数 x, y, r，表示一棵树在空地上的横、纵坐标和半径。<br>输出格式<br>　　输出一行包含一个整数，表示在不冲突下可以植树的面积和。由于每棵树的面积都是圆周率的整数倍，请输出答案除以圆周率后的值（应当是一个整数）。<br>样例输入<br>6<br>1 1 2<br>1 4 2<br>1 7 2<br>4 1 2<br>4 4 2<br>4 7 2<br>样例输出<br>12<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 20；<br>　　对于所有评测用例，1 &lt;= n &lt;= 30，0 &lt;= x, y &lt;= 1000，1 &lt;= r &lt;= 1000。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">tree &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    x, y, r &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    tree.append([eval(x), eval(y), eval(r)])</span><br><span class="line"></span><br><span class="line">def cal(l1, l2):</span><br><span class="line">    dis &#x3D; (l1[0]-l2[0])**2 + (l1[1]-l2[1])**2</span><br><span class="line">    if dis &lt; (l1[2] + l2[2])**2:</span><br><span class="line">        return False</span><br><span class="line">    else:</span><br><span class="line">        return True</span><br><span class="line"></span><br><span class="line">def judge(l1, l2):</span><br><span class="line">    for i in l1:</span><br><span class="line">        temp &#x3D; cal(tree[i], l2)</span><br><span class="line">        if temp:</span><br><span class="line">            continue</span><br><span class="line">        else:</span><br><span class="line">            return False</span><br><span class="line">    return True</span><br><span class="line"></span><br><span class="line">def cal_area(l1, l2):</span><br><span class="line">    ret &#x3D; 0</span><br><span class="line">    for i in l1:</span><br><span class="line">        ret +&#x3D; l2[i][2]**2</span><br><span class="line">    return ret</span><br><span class="line"></span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">max_area &#x3D; 0</span><br><span class="line">for i in range(n):</span><br><span class="line">    selected_node.append(i)</span><br><span class="line">    candidate_node.remove(i)</span><br><span class="line">    for j in candidate_node:</span><br><span class="line">        if judge(selected_node, tree[j]):</span><br><span class="line">            selected_node.append(j)</span><br><span class="line">            candidate_node.remove(j)</span><br><span class="line">    temp &#x3D; cal_area(selected_node, tree)</span><br><span class="line">    if temp &gt; max_area:</span><br><span class="line">        max_area &#x3D; temp</span><br><span class="line">    selected_node &#x3D; []</span><br><span class="line">    candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line"></span><br><span class="line">print(max_area)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这是我的解题思路,我自己感觉比较的笨,时间复杂度也就比较高.本来的思路是dfs.后来阴差阳错的写成了这样的…..写都写了就这么写吧…<br>如果这一题有什么更好的思路也欢迎来交流交流哇!</p>
+<hr>
+<p>By. AbeanCC<br>QQ. 527430509<br>Thanks</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://abeancc.github.io/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/" data-id="cko8cmznn0000ic0r58zj6q54" data-title="20200418蓝桥杯模拟writeup" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">collections的使用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 AbeanCC<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

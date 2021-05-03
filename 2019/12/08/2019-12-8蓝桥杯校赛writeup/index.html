@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>2019.12.8蓝桥杯校赛writeup | AbeanCC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="一次蓝桥杯的writeup 说实话和去年的蓝桥杯校赛比起来，难度简单许多，很多经典数据结构都没有考那废话不多说，直接进入正题吧   问题描述　　不超过19000的正整数中，与19000互质的数的个数是多少？答案提交　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。  Solve: 这是一道填空题,比较简单.说白了就是欧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2019.12.8蓝桥杯校赛writeup">
+<meta property="og:url" content="https://abeancc.github.io/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/index.html">
+<meta property="og:site_name" content="AbeanCC">
+<meta property="og:description" content="一次蓝桥杯的writeup 说实话和去年的蓝桥杯校赛比起来，难度简单许多，很多经典数据结构都没有考那废话不多说，直接进入正题吧   问题描述　　不超过19000的正整数中，与19000互质的数的个数是多少？答案提交　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。  Solve: 这是一道填空题,比较简单.说白了就是欧">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-12-08T08:07:13.000Z">
+<meta property="article:modified_time" content="2019-12-13T10:31:08.963Z">
+<meta property="article:author" content="AbeanCC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="AbeanCC" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">AbeanCC</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://abeancc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2019-12-8蓝桥杯校赛writeup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" class="article-date">
+  <time class="dt-published" datetime="2019-12-08T08:07:13.000Z" itemprop="datePublished">2019-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      2019.12.8蓝桥杯校赛writeup
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="一次蓝桥杯的writeup"><a href="#一次蓝桥杯的writeup" class="headerlink" title="一次蓝桥杯的writeup"></a>一次蓝桥杯的writeup</h3><hr>
+<p><strong>说实话和去年的蓝桥杯校赛比起来，难度简单许多，</strong><br><strong>很多经典数据结构都没有考</strong><br><strong>那废话不多说，直接进入正题吧</strong></p>
+<hr>
+<ol>
+<li>问题描述<br>　　不超过19000的正整数中，与19000互质的数的个数是多少？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p><strong>Solve: 这是一道填空题,比较简单.说白了就是欧拉筛的用法,没什么好说的,代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int euler(int n)</span><br><span class="line">&#123;</span><br><span class="line">    int  res &#x3D; n;</span><br><span class="line">    for(int i &#x3D; 2; i * i &lt;&#x3D; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(n % i &#x3D;&#x3D; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            res &#x3D; res &#x2F; i * (i - 1);</span><br><span class="line">            while(n % i &#x3D;&#x3D; 0)&#123;</span><br><span class="line">                n &#x2F;&#x3D; i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if(n &gt; 1)</span><br><span class="line">    &#123;</span><br><span class="line">        res &#x3D; res &#x2F; n * (n - 1);</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    printf(&quot;%d&quot;, euler(n));</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果为7200</p>
+<ol start="2">
+<li>问题描述<br>　　请问十六进制数1949对应的十进制数是多少？请特别注意给定的是十六进制，求的是十进制。<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p><strong>Solve: 进制转换题,一道送分题,非常的简单,python一行代码搞定,如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(int(&#39;1949&#39;, 16))</span><br></pre></td></tr></table></figure>
+<p>结果为6473</p>
+<ol start="3">
+<li>问题描述<br>　　一棵包含有2019个结点的树，最多包含多少个叶结点？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p><strong>Solve: …..这个题目不会的,建议重新看一遍数据结构…….</strong></p>
+<p>结果为2018</p>
+<ol start="4">
+<li>问题描述<br>　　由1对括号，可以组成一种合法括号序列：()。<br>　　由2对括号，可以组成两种合法括号序列：()()、(())。<br>　　由4对括号组成的合法括号序列一共有多少种？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p><strong>Solve: 乍一看是一道递归,但是比赛的时候懒得写了,故直接手算,解决思路如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(((())))</span><br><span class="line">((()()))</span><br><span class="line">((())())</span><br><span class="line">((()))()</span><br><span class="line">(()(()))</span><br><span class="line">(()()())</span><br><span class="line">(()())()</span><br><span class="line">(())(())</span><br><span class="line">(())()()</span><br><span class="line">()((()))</span><br><span class="line">()(()())</span><br><span class="line">()(())()</span><br><span class="line">()()(())</span><br><span class="line">()()()()</span><br></pre></td></tr></table></figure>
+<p>结果为14</p>
+<ol start="5">
+<li>问题描述<br>　　小明非常不喜欢数字 2，包括那些数位上包含数字 2 的数。如果一个数的数位不包含数字 2，小明将它称为洁净数。<br>　　请问在整数 1 至 n 中，洁净数有多少个？<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>样例输出<br>18<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 10000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000。</li>
+</ol>
+<p><strong>Solve: 由于我选的是C/C++,所以编程题都是用C写的.这题没什么难点,故直接暴力解得(遇事不决走暴力~),代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    int count &#x3D; 0;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    for(int i &#x3D; 1;i &lt;&#x3D; n; i++)&#123;</span><br><span class="line">        int b &#x3D; i;</span><br><span class="line">        while(1)&#123;</span><br><span class="line">            if(b &#x3D;&#x3D; 0)</span><br><span class="line">                break;</span><br><span class="line">            if(b % 10 &#x3D;&#x3D; 2)&#123;</span><br><span class="line">                count +&#x3D; 1;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            b &#x3D; b &#x2F; 10;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    count &#x3D; n - count;</span><br><span class="line">    printf(&quot;%d&quot;, count);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>问题描述<br>　　给定一个单词，请使用凯撒密码将这个单词加密。<br>　　凯撒密码是一种替换加密的技术，单词中的所有字母都在字母表上向后偏移3位后被替换成密文。即a变为d，b变为e，…，w变为z，x变为a，y变为b，z变为c。<br>　　例如，lanqiao会变成odqtldr。<br>输入格式<br>　　输入一行，包含一个单词，单词中只包含小写英文字母。<br>输出格式<br>　　输出一行，表示加密后的密文。<br>样例输入<br>lanqiao<br>样例输出<br>odqtldr<br>评测用例规模与约定<br>　　对于所有评测用例，单词中的字母个数不超过100。</li>
+</ol>
+<p><strong>Solve: …..又是一道送分题,凯撒密码都不知道写了多少次了…..代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    char passwd[100];</span><br><span class="line">    int i,j,k,t,move;</span><br><span class="line">    gets(passwd);</span><br><span class="line">    move &#x3D; 3;</span><br><span class="line">    for(i&#x3D;0; i&lt;strlen(passwd); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(passwd[i] &gt;&#x3D; &#39;A&#39; &amp;&amp; passwd[i] &lt;&#x3D; &#39;Z&#39;)</span><br><span class="line">        &#123;</span><br><span class="line">            passwd[i] &#x3D; ((passwd[i]-&#39;A&#39;)+move)%26+&#39;A&#39;;</span><br><span class="line">        &#125;</span><br><span class="line">        else if(passwd[i] &gt;&#x3D; &#39;a&#39; &amp;&amp; passwd[i] &lt;&#x3D; &#39;z&#39;)</span><br><span class="line">        &#123;</span><br><span class="line">            passwd[i] &#x3D; ((passwd[i] - &#39;a&#39;) + move) % 26 + &#39;a&#39;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%s&quot;, passwd);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>问题描述<br>　　给定正整数 n，请问在整数 1 至 n 中，数字中没有数位相同的数有多少个？<br>　　例如，当 n=30 时，除开 11 和 22 以外，其他的数都没有数位相同，因此答案为 28。<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>样例输出<br>28<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 1000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000。</li>
+</ol>
+<p><strong>Solve: 这题….没什么好说的,很基本的一道算法题.要注意:只要有位数相同,就是数位相同,代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">int getlen(int a)</span><br><span class="line">&#123;</span><br><span class="line">    int count &#x3D; 0;</span><br><span class="line">    while (1)</span><br><span class="line">    &#123;</span><br><span class="line">        a &#x3D; a &#x2F; 10;</span><br><span class="line">        count++;</span><br><span class="line">        if(a &#x3D;&#x3D; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int i, j, n, count, signal, semaphore, mode, sema;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    count &#x3D; n;</span><br><span class="line">    for(i &#x3D; 1; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(i &#x2F; 10 &#x3D;&#x3D; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            signal &#x3D; i;</span><br><span class="line">            semaphore &#x3D; signal % 10;</span><br><span class="line">            signal &#x3D; signal &#x2F; 10;</span><br><span class="line">            for (j &#x3D; 1; j &lt; getlen(i); j++)</span><br><span class="line">            &#123;</span><br><span class="line">                if(signal &#x3D;&#x3D; semaphore)</span><br><span class="line">                &#123;</span><br><span class="line">                    count--;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">                else</span><br><span class="line">                &#123;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                signal &#x3D; signal &#x2F; 10;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d&quot;, count);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>P.S. 这道题我写的比较的复杂,主要是刚考完操作系统,对semaphore,signal有着独特的情怀=_=,原谅我=w=</p>
+<ol start="8">
+<li>问题描述<br>　　小明开了一家花店，这天，有个客户定了非常多的花，按客户的需要，这些花要排成 n 行 m 列。<br>　　小明要将这些花运送到客户那，然而由于花太多，需要分两辆车才能装下。<br>　　小明怕自己弄错花的顺序，因此在分车的时候，他准备将前面一些列（注意不是行）的花放在第一辆车上，将其实的花放在第二辆车上。<br>　　已知每盆花的重量，要使第一辆车和第二辆车尽可能总重量一致，请帮助小明分装这些花，请告诉小明两辆车的重量最小差多少。<br>输入格式<br>　　输入的第一行包含两个整数 n, m，分别表示行数和列数。<br>　　接下来 n 行，每行 m 个正整数，分别表示每盆花的重量。<br>输出格式<br>　　输出一个整数，表示总重量最接近时两车的重量之差（的绝对值）。<br>样例输入<br>3 4<br>1 2 3 9<br>5 6 7 8<br>2 3 4 9<br>样例输出<br>7<br>样例说明<br>　　将前 3 列放一辆车，后 1 列放一辆车，第一辆比第二辆重 7 。<br>评测用例规模与约定<br>　　对于 30% 的评测用例，2 &lt;= n, m &lt;= 20。<br>　　对于 70% 的评测用例，2 &lt;= n, m &lt;= 100。<br>　　对于所有评测用例，2 &lt;= n, m &lt;= 1000，每盆花的重量不超过 1000。</li>
+</ol>
+<p><strong>Solve: 终于来了一道比较有兴趣的了,说白了就是先算出每一列的重量和,然后排序,再循环累加比较,具体代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int m, n;</span><br><span class="line">    int top &#x3D; 0, flo &#x3D; 0;</span><br><span class="line">    int i, j;</span><br><span class="line">    int weight[m];</span><br><span class="line">    int con &#x3D; 0;</span><br><span class="line">    int min &#x3D; 9999;</span><br><span class="line">    scanf(&quot;%d %d&quot;, &amp;n, &amp;m);</span><br><span class="line">    int a[n][m];</span><br><span class="line">    for(i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d&quot;, &amp;a[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; n; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            con +&#x3D; a[j][i];</span><br><span class="line">        &#125;</span><br><span class="line">        weight[i] &#x3D; con;</span><br><span class="line">        con &#x3D; 0;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(weight[i] &lt; weight[j])</span><br><span class="line">            &#123;</span><br><span class="line">                weight[i] &#x3D; weight[i] + weight[j];</span><br><span class="line">                weight[j] &#x3D; weight[i] - weight[j];</span><br><span class="line">                weight[i] &#x3D; weight[i] - weight[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    top &#x3D; 0;</span><br><span class="line">    flo &#x3D; 0;</span><br><span class="line">    for(i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; i; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            top +&#x3D; weight[j];</span><br><span class="line">        &#125;</span><br><span class="line">        for(j; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            flo +&#x3D; weight[j];</span><br><span class="line">        &#125;</span><br><span class="line">        if(min &gt; abs(top - flo))</span><br><span class="line">        &#123;</span><br><span class="line">            min &#x3D; abs(top - flo);</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        top &#x3D; 0;</span><br><span class="line">        flo &#x3D; 0;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d&quot;, min);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li>问题描述<br>　　小明用积木搭了一个城堡。<br>　　为了方便，小明在搭的时候用的是一样大小的正方体积本，搭在了一个 n 行 m 列的方格图上，每个积木正好占据方格图的一个小方格。<br>　　当然，小明的城堡并不是平面的，而是立体的。小明可以将积木垒在别的积木上面。当一个方格上的积木垒得比较高时，就是一个高塔，当一个方格上没有积木时，就是一块平地。<br>　　小明的城堡可以用每个方格上垒的积木层数来表示。例如，下面就表示一个城堡。<br>　　9 3 3 1<br>　　3 3 3 0<br>　　0 0 0 0<br>　　这个城堡南面和东面都有空地，西北面有一个大房子，在西北角还有一个高塔，东北角有一个车库。<br>　　现在，格格巫要来破坏小明的城堡，他施了魔法水淹小明的城堡。<br>　　如果水的高度为1，则紧贴地面的那些积木要被水淹，在上面的例子中，有7块积木要被水淹。<br>　　如果水的高度为2，则更多积木要被水淹，在上面的例子中，有13块积木要被水淹。<br>　　给定小明的城堡图，请问，水的高度依次为1, 2, 3, …., H 时，有多少块积木要被水淹。<br>输入格式<br>　　输入的第一行包含两个整数 n, m。<br>　　接下来 n 行，每行 m 个整数，表示小明的城堡中每个位置积木的层数。<br>　　接下来包含一个整数 H，表示水高度的上限。<br>输出格式<br>　　输出 H 行，每行一个整数。第 i 的整数表示水的高度为 i 时被水淹的积木数量。<br>样例输入<br>3 4<br>9 3 3 1<br>3 3 3 0<br>0 0 0 0<br>10<br>样例输出<br>7<br>13<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>25<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n, m &lt;= 100，1 &lt;= H &lt;= 100，积木层数不超过100；<br>　　对于 70% 的评测用例，1 &lt;= n, m &lt;= 1000，1 &lt;= H &lt;= 1000，积木层数不超过1000；<br>　　对于所有评测用例，1 &lt;= n, m &lt;= 1000，1 &lt;= H &lt;= 100000，积木层数不超过1000000000。</li>
+</ol>
+<p><strong>Solve: 这个问题也是比较简单的题目了,基本思路和上一题差不多,不过多赘述了,代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int m, n;</span><br><span class="line">    int i, j;</span><br><span class="line">    int h;</span><br><span class="line">    int count;</span><br><span class="line">    scanf(&quot;%d %d&quot;, &amp;n, &amp;m);</span><br><span class="line">    int a[n][m];</span><br><span class="line">    int height[m * n];</span><br><span class="line">    int len &#x3D; 0;</span><br><span class="line">    for(i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d&quot;, &amp;a[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(a[i][j] !&#x3D; 0)</span><br><span class="line">            &#123;</span><br><span class="line">                height[len] &#x3D; a[i][j];</span><br><span class="line">                len++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;h);</span><br><span class="line">    for(i &#x3D; 1; i &lt; h + 1; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        count &#x3D; 0;</span><br><span class="line">        for(j &#x3D; 0; j &lt; len; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if (height[j] &gt;&#x3D; i)</span><br><span class="line">            &#123;</span><br><span class="line">                count +&#x3D; i;</span><br><span class="line">            &#125;</span><br><span class="line">            else if(height[j] &lt; i)</span><br><span class="line">            &#123;</span><br><span class="line">                count +&#x3D; height[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;%d&quot;, count);</span><br><span class="line">        if(i !&#x3D; h)</span><br><span class="line">        &#123;</span><br><span class="line">            printf(&quot;\n&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>问题描述<br>　　2015年，全中国实现了户户通电。作为一名电力建设者，小明正在帮助一带一路上的国家通电。<br>　　这一次，小明要帮助 n 个村庄通电，其中 1 号村庄正好可以建立一个发电站，所发的电足够所有村庄使用。<br>　　现在，这 n 个村庄之间都没有电线相连，小明主要要做的是架设电线连接这些村庄，使得所有村庄都直接或间接的与发电站相通。<br>　　小明测量了所有村庄的位置（坐标）和高度，如果要连接两个村庄，小明需要花费两个村庄之间的坐标距离加上高度差的平方，形式化描述为坐标为 (x_1, y_1) 高度为 h_1 的村庄与坐标为 (x_2, y_2) 高度为 h_2 的村庄之间连接的费用为<br>　　sqrt((x_1-x_2)<em>(x_1-x_2)+(y_1-y_2)</em>(y_1-y_2))+(h_1-h_2)*(h_1-h_2)。<br>　　在上式中 sqrt 表示取括号内的平方根。请注意括号的位置，高度的计算方式与横纵坐标的计算方式不同。<br>　　由于经费有限，请帮助小明计算他至少要花费多少费用才能使这 n 个村庄都通电。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示村庄的数量。<br>　　接下来 n 行，每个三个整数 x, y, h，分别表示一个村庄的横、纵坐标和高度，其中第一个村庄可以建立发电站。<br>输出格式<br>　　输出一行，包含一个实数，四舍五入保留 2 位小数，表示答案。<br>样例输入<br>4<br>1 1 3<br>9 9 7<br>8 8 6<br>4 5 4<br>样例输出</li>
+<li>41<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000，0 &lt;= x, y, h &lt;= 10000。</li>
+</ol>
+<p><strong>Solve: 本题是本次比赛里最难的一题,基本思路非常简单,但是考验写程序的人是否拥有基本的数据结构的概念,以及对图,prim算法,Kruskal算法的理解.题目大意就是,每个村庄有三个属性,(x, y, h)基本就是坐标轴嘛,然后每个结点间都要直接或间接的和1号节点连接,求怎么样花费最小</strong><br><strong>这个题一眼看过去,就知道是图论的最小生成树问题,自然而然的就想到了prim算法和Kruskal算法,代码如下:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><em>P.S. 写这题的时候,旁边有一个小老弟问我怎么做,我就直接简述了我的想法(还特意问了一下学过数据结构吗,他点了点头.)结果到最后的时候跟我说,”克鲁斯卡尔算法是啥”.真实给我整笑了hhhh</em></p>
+<hr>
+<p>总结一下吧,其实本来难度上并不是很高,可能原因是为了让所有人都适应这个比赛,不过难度确实应该再提高一点比较好.不过这次比赛也有些遗憾,自己的准备不充分也是一部分原因(没有复习结构体导致Kurskal算法纯数组实现,非常的麻烦而且看的头皮发麻),反思一下,为下次做准备.</p>
+<hr>
+<p>以上就是我对本次蓝桥杯的所有writeup<br>有什么写错的地方欢迎指出~<br>QQ:527430509</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://abeancc.github.io/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" data-id="cko8cmzoa0001ic0r1t6v2f58" data-title="2019.12.8蓝桥杯校赛writeup" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          Nmap使用记录
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/02/%E7%94%9F%E4%BA%A7%E8%80%85-%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">生产者-消费者问题</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 AbeanCC<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

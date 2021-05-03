@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>BlcokChain[1]--SimpleBlockChian | AbeanCC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="记录一下简单的BlockChain的实现Language: python  简介BlockChain,说这个东西大家都会说,但是其中大有讲究.今天我们就稍微的实现一下基本的框架,包括Block的基本结构,Chain的基本结构,以及一些基本的方法.  Blockblock,一个块,这个快能存什么呢? 12345Block&amp;#123;    data;    Hash;    PreviousHash">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BlcokChain[1]--SimpleBlockChian">
+<meta property="og:url" content="https://abeancc.github.io/2020/01/16/BlcokChain-1-SimpleBlockChian/index.html">
+<meta property="og:site_name" content="AbeanCC">
+<meta property="og:description" content="记录一下简单的BlockChain的实现Language: python  简介BlockChain,说这个东西大家都会说,但是其中大有讲究.今天我们就稍微的实现一下基本的框架,包括Block的基本结构,Chain的基本结构,以及一些基本的方法.  Blockblock,一个块,这个快能存什么呢? 12345Block&amp;#123;    data;    Hash;    PreviousHash">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-01-16T14:40:10.000Z">
+<meta property="article:modified_time" content="2020-01-16T14:56:20.224Z">
+<meta property="article:author" content="AbeanCC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="AbeanCC" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">AbeanCC</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://abeancc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-BlcokChain-1-SimpleBlockChian" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/" class="article-date">
+  <time class="dt-published" datetime="2020-01-16T14:40:10.000Z" itemprop="datePublished">2020-01-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      BlcokChain[1]--SimpleBlockChian
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="记录一下简单的BlockChain的实现"><a href="#记录一下简单的BlockChain的实现" class="headerlink" title="记录一下简单的BlockChain的实现"></a>记录一下简单的BlockChain的实现</h2><p>Language: python</p>
+<hr>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>BlockChain,说这个东西大家都会说,但是其中大有讲究.<br>今天我们就稍微的实现一下基本的框架,包括Block的基本结构,Chain的基本结构,以及一些基本的方法.</p>
+<hr>
+<h3 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h3><p>block,一个块,这个快能存什么呢?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Block&#123;</span><br><span class="line">    data;</span><br><span class="line">    Hash;</span><br><span class="line">    PreviousHash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中,data表示的就是这个块里存储的数据<br>PreviousHash存储的是前一个块的Hash<br>而这个Hash呢,是计算得到的.<br>今天的简易版区块链,不包含pow机制,不包含动态难度,就只是简单的实现,于是我使用的是PreviousHash和data的拼接的Hash来表示</p>
+<p>(实际中需要加上难度指数,这样再加上刷新时间,就可以有效的防范攻击.其实本质上来说,是让对手没有那么足够的算力,来支持自己修改区块)</p>
+<p>实现起来也很容易:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Block:</span><br><span class="line">    def __init__(self, data, previousHash):</span><br><span class="line">        self.data &#x3D; data</span><br><span class="line">        self.previousHash &#x3D; previousHash</span><br><span class="line">        self.ownhash &#x3D; self.ComputeHash()</span><br><span class="line"></span><br><span class="line">    def ComputeHash(self):</span><br><span class="line">        &#39;&#39;&#39;计算Hash值&#39;&#39;&#39;</span><br><span class="line">        sha256 &#x3D; hashlib.sha256()</span><br><span class="line">        sha256.update((str(self.data) + self.previousHash).encode(&quot;utf-8&quot;))</span><br><span class="line">        return sha256.hexdigest()</span><br><span class="line"></span><br><span class="line">    def StandardOutput(self):</span><br><span class="line">        &#39;&#39;&#39;标准化输出&#39;&#39;&#39;</span><br><span class="line">        print(&quot;Block:\n\t\tData: &#123;&#125;\n\t\tOwnHash: &#123;&#125;\n\t\tPreviousHash: &#123;&#125;&quot;.format(self.data, self.ownhash, self.previousHash), end&#x3D;&quot;\n&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这就是一个简单的Block类</p>
+<hr>
+<h3 id="Chain"><a href="#Chain" class="headerlink" title="Chain"></a>Chain</h3><p>这个链也很简单,就是把所有的Block串起来,利用Hash进行索引的一个特殊的链表<br>当然要实现它的纠错能力.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">class Chain:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.chainlist &#x3D; [self.GenesisBlock()]</span><br><span class="line"></span><br><span class="line">    def GenesisBlock(self):</span><br><span class="line">        &#39;&#39;&#39;创建祖先区块&#39;&#39;&#39;</span><br><span class="line">        return Block(&quot;Genesis&quot;, &quot;&quot;)</span><br><span class="line"></span><br><span class="line">    def InsertNewBlock(self, data):</span><br><span class="line">        &#39;&#39;&#39;插入新的区块&#39;&#39;&#39;</span><br><span class="line">        newblock &#x3D; Block(data, self.chainlist[-1].ownhash)</span><br><span class="line">        self.chainlist.append(newblock)</span><br><span class="line"></span><br><span class="line">    def StandardOutput(self):</span><br><span class="line">        &#39;&#39;&#39;标准化输出&#39;&#39;&#39;</span><br><span class="line">        print(&quot;Chain:\n&quot;, end&#x3D;&quot;&quot;)</span><br><span class="line">        for i in range(0, len(self.chainlist)):</span><br><span class="line">            print(&quot;&quot;,end&#x3D;&quot;\t&quot;)</span><br><span class="line">            self.chainlist[i].StandardOutput()</span><br><span class="line"></span><br><span class="line">    def ValidateChain(self):</span><br><span class="line">        &#39;&#39;&#39;验证区块链是否合法&#39;&#39;&#39;</span><br><span class="line">        for i in range(1, len(self.chainlist)):</span><br><span class="line">            if self.chainlist[i].ownhash &#x3D;&#x3D; self.chainlist[i].ComputeHash():</span><br><span class="line">                if self.chainlist[i].previousHash !&#x3D; self.chainlist[i-1].ownhash:</span><br><span class="line">                    print(&quot;前后区块链断裂&quot;)</span><br><span class="line">                    return False</span><br><span class="line">                else:</span><br><span class="line">                    continue</span><br><span class="line">            else:</span><br><span class="line">                print(&quot;数据被篡改&quot;)</span><br><span class="line">                return False</span><br><span class="line">        return True</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="主函数部分"><a href="#主函数部分" class="headerlink" title="主函数部分"></a>主函数部分</h3><p>就可以发挥自己的想象力啦,想加什么就加什么,非常的方便.</p>
+<p>比如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if __name__ &#x3D;&#x3D; &quot;__main__&quot;:</span><br><span class="line">    chain &#x3D; Chain()</span><br><span class="line">    chain.InsertNewBlock(&quot;我有十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有二十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有三十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有四十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有五十块钱&quot;)</span><br><span class="line">    chain.StandardOutput()</span><br><span class="line">    print(chain.ValidateChain())</span><br></pre></td></tr></table></figure>
+
+<p>然后输出结果就是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Chain:</span><br><span class="line">        Block:</span><br><span class="line">                Data: Genesis</span><br><span class="line">                OwnHash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5</span><br><span class="line">                PreviousHash: </span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有十块钱</span><br><span class="line">                OwnHash: e955d6b2656633c5855cfd08c9f96f4d6cf1233115c6b28ef2e8acb0ea0be9e0</span><br><span class="line">                PreviousHash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有二十块钱</span><br><span class="line">                OwnHash: 444d95fe961da65f4ab2990380c390c1558b7d0d516848dd332e9b7d62c632d0</span><br><span class="line">                PreviousHash: e955d6b2656633c5855cfd08c9f96f4d6cf1233115c6b28ef2e8acb0ea0be9e0</span><br><span class="line">        Block:</span><br><span class="line">                OwnHash: c616e399a667b3a3f7c110b48e433846b6fd7f3fe703820b2a59ed61d2cc99ed</span><br><span class="line">                PreviousHash: 444d95fe961da65f4ab2990380c390c1558b7d0d516848dd332e9b7d62c632d0</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有四十块钱</span><br><span class="line">                OwnHash: 2619942d5689a95bfc899d503d702db784b14834d34ea5000c3c1625a89558e7</span><br><span class="line">                PreviousHash: c616e399a667b3a3f7c110b48e433846b6fd7f3fe703820b2a59ed61d2cc99ed</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有五十块钱</span><br><span class="line">                OwnHash: 5b931c9e6e7da60d5a74203264ed49fd5111e064df80acf642fb6220ebf9d642</span><br><span class="line">                PreviousHash: 2619942d5689a95bfc899d503d702db784b14834d34ea5000c3c1625a89558e7</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<p>这也就预示着,这个简单的区块链就完成啦.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://abeancc.github.io/2020/01/16/BlcokChain-1-SimpleBlockChian/" data-id="cko8cmzoh0002ic0r6o6o7jrs" data-title="BlcokChain[1]--SimpleBlockChian" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          collections的使用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Python数据转换二进制</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 AbeanCC<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

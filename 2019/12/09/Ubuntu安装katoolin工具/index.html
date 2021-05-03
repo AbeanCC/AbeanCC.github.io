@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Ubuntu安装katoolin工具 | AbeanCC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Ubuntu安装katoolin安装kali工具集 前言：由于同学推荐，我第一次了解到了 Windows Subsystem of Linux，原了我一直想寻找一款在Windows上运行的bash(除了git bash) 于是突发奇想,打算装一个katoolin玩玩(是自己处理不好了),于是就有了这个记录  第一步: 那必然是整WSL啦 (WSL:我死了) 首先要做的是,打开控制面板的程序和功能中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu安装katoolin工具">
+<meta property="og:url" content="https://abeancc.github.io/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:site_name" content="AbeanCC">
+<meta property="og:description" content="Ubuntu安装katoolin安装kali工具集 前言：由于同学推荐，我第一次了解到了 Windows Subsystem of Linux，原了我一直想寻找一款在Windows上运行的bash(除了git bash) 于是突发奇想,打算装一个katoolin玩玩(是自己处理不好了),于是就有了这个记录  第一步: 那必然是整WSL啦 (WSL:我死了) 首先要做的是,打开控制面板的程序和功能中">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-12-09T04:05:41.000Z">
+<meta property="article:modified_time" content="2019-12-09T07:20:28.911Z">
+<meta property="article:author" content="AbeanCC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="AbeanCC" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">AbeanCC</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://abeancc.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Ubuntu安装katoolin工具" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" class="article-date">
+  <time class="dt-published" datetime="2019-12-09T04:05:41.000Z" itemprop="datePublished">2019-12-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Ubuntu安装katoolin工具
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="Ubuntu安装katoolin安装kali工具集"><a href="#Ubuntu安装katoolin安装kali工具集" class="headerlink" title="Ubuntu安装katoolin安装kali工具集"></a>Ubuntu安装katoolin安装kali工具集</h3><hr>
+<p><strong>前言：由于同学推荐，我第一次了解到了 Windows Subsystem of Linux，原了我一直想寻找一款在Windows上运行的bash(除了git bash)</strong></p>
+<p><strong>于是突发奇想,打算装一个katoolin玩玩(<del>是自己处理不好了</del>),于是就有了这个记录</strong></p>
+<hr>
+<p>第一步: 那必然是整WSL啦 (<del>WSL:我死了</del>)</p>
+<p>首先要做的是,打开控制面板的程序和功能中的基于Windows的Linux子系统.</p>
+<p><del>然后重启啊啥的</del></p>
+<p>win + r ,输入 bash</p>
+<p>看到一个一闪而过的命令行,大概明白了,没装Linux系统.</p>
+<p>于是,开始安装咯~</p>
+<hr>
+<p>第二步: 良心的Windows自带的商店里自带了Linux,直接搜索框搜索Linux就好啦~</p>
+<p>然后选择你要下载的Linux</p>
+<p>然后下载完打开,启动,输入用户名,输入密码,完事了.</p>
+<p><del>(P.S. 害,第一次的时候用户名第一个字母用了大写,导致一直没过,害我想了半天,那个时候感觉自己无比的弱智…..)</del></p>
+<p><strong>NOTICE: 本着原则,我先下载了Kali Linux,但是发现里面啥都没有,只是一个空的系统,非常失望,打算祭出祖传的<code>apt-get update</code>发现我不是root用户!!!!!!!!!</strong></p>
+<hr>
+<p>第三步: 更换自己的身份</p>
+<p>本着方便的原则,我觉得更改自己的<strong>身份</strong>,咱好歹也是<strong>Administrator</strong>啊.</p>
+<p>打开祖传的<strong>cmd</strong>(我用的是Anaconda Powershell Prompt),输入命令:<br><code>kali config --default-user root</code><br>重新打开bash,就发现自己是root了<br>然后输入<code>passwd</code>,就可以修改root密码啦<br><strong>484炒鸡简单!</strong></p>
+<hr>
+<p>第四步: 梦想的破灭</p>
+<p>既然都更换身份了,那<strong>新官上任也有三把火啊</strong>,于是熟练的打起了<code>apt-get update</code>,然后发现</p>
+<p><strong><font size = 5>啊!!!! 报错啦!!!</font></strong></p>
+<p>十分的苦恼,原来自己当了个空官,</p>
+<p><strong><font size = 5>害! 此处不留爷, 自有留爷处, 走了!</font></strong></p>
+<p>(P.S. 主要是大家都遇到了这个问题, 百度上也没有人解释, 当然主要还是我懒,没有去好好的观看kali的文档,不过当时想到的是别的解决办法就是了)</p>
+<hr>
+<p>第五步: 开启新的征程</p>
+<p>看着自己的国家支离破碎,心里说不出什么滋味.在远行的途中,发现了一个新的国家,叫做Ubuntu.在自己的国家中也听过它的故事,既然自己的国家破碎了,那就去它那里过一过吧.</p>
+<p>于是我熟练的又走了1到3步骤,唯一不同的是,国家变了,这个名字,可不能再叫原来的名字了,于是修改如下:<br><code>Ubuntu config --default-user root</code></p>
+<hr>
+<p>第六步: 一些突发情况</p>
+<p>凭着自己的本能, 你输入了如下话语:<br><code>leafpad /etc/apt/source.list</code><br>深思熟虑了一下,我这是在Windows下,哪来的leafpad呢,<br>于是修改话语:<br><code>notepad /etc/apt/source.list</code><br>打开了那个让你熟悉的东西,输入了kali的源,然后配置好了密钥<br>(这一块如果不会的话,<del>可以自行百度</del>,如果要说的话就太长了,牵涉到kali的很多东西)</p>
+<p>熟悉的输入<code>apt-get update</code><br>发现还是报错了.可能是我操作不当,或者对某些东西的了解还不够透彻,查阅了资料,翻看了不少东西,发现了katoolin.</p>
+<hr>
+<p>第七步: 不能在一棵树上吊死</p>
+<p>有了这个玩意,兴奋不已,这不是就很舒服嘛!美滋滋.<br>于是,输入了如下命令:<br><del>First, AbeanCC should pass the CET6.</del><br>First: you should install those thing you need.<br>(source.list I return to old-original version(QAQ))</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
+<p>I’m very surprise that Ubuntu has already install newest version git!!!!</p>
+<p>Then: you are supposed to install python2.7<br>As we know, the katoolin need python2.7 environment.<br>So….Let’s do this!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install python2.7</span><br></pre></td></tr></table></figure>
+<p>Check your python is successfully installed, you can input that commend<br>If you are very confidence, you can skip this step!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2.7 --version</span><br></pre></td></tr></table></figure>
+
+<p>Oh my god!<br>They turn to face each other<br>It was just happened to <del>dance</del><br>That these two programs would meet that day and do their favourite dance<br><del><font size = 4><strong>WOW you can really dance!</strong></font></del><br><del><font size = 4><strong>WOW you can really dance!</strong></font></del></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;LionSec&#x2F;katoolin.git &amp;&amp; cp katoolin&#x2F;katoolin.py &#x2F;usr&#x2F;bin&#x2F;katoolin</span><br></pre></td></tr></table></figure>
+<p>Clone from git repository.<br>And copy the python script into catalog which called /usr/bin/</p>
+<p>Finish this job, bind the limits of execution authority to python script.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -x &#x2F;usr&#x2F;bin&#x2F;katoolin</span><br></pre></td></tr></table></figure>
+
+<p>Finally, you just need <code>python2.7 katoolin/katoolin.py</code>.<br>then you can see this view….</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> $$\   $$\             $$\                         $$\ $$\</span><br><span class="line"> $$ | $$  |            $$ |                        $$ |\__|</span><br><span class="line"> $$ |$$  &#x2F;  $$$$$$\  $$$$$$\    $$$$$$\   $$$$$$\  $$ |$$\ $$$$$$$\</span><br><span class="line"> $$$$$  &#x2F;   \____$$\ \_$$  _|  $$  __$$\ $$  __$$\ $$ |$$ |$$  __$$\</span><br><span class="line"> $$  $$&lt;    $$$$$$$ |  Kali linux tools installer |$$ |$$ |$$ |  $$ |</span><br><span class="line"> $$ |\$$\  $$  __$$ |  $$ |$$\ $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ |</span><br><span class="line"> $$ | \$$\ \$$$$$$$ |  \$$$$  |\$$$$$$  |\$$$$$$  |$$ |$$ |$$ |  $$ |</span><br><span class="line"> \__|  \__| \_______|   \____&#x2F;  \______&#x2F;  \______&#x2F; \__|\__|\__|  \__| V2.0</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> + -- -- +&#x3D;[ Author: LionSec | Homepage: www.neodrix.com</span><br><span class="line"> + -- -- +&#x3D;[ 331 Tools</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[W] Before updating your system , please remove all Kali-linux repositories to avoid any kind of problem .</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1) Add Kali repositories &amp; Update</span><br><span class="line">2) View Categories</span><br><span class="line">3) Install classicmenu indicator</span><br><span class="line">4) Install Kali menu</span><br><span class="line">5) Help</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">kat &gt;</span><br></pre></td></tr></table></figure>
+
+<p>If this appear in your screen.<br>You make it, bro!!!!!!<br>Congratulations!!!</p>
+<hr>
+<p>第八步: 我的一个朋友好了(I am fine)</p>
+<p>都装好了还不快用?? 在这傻愣着干嘛!!</p>
+<p>END.</p>
+<hr>
+<p>以上就是我的一次记录,欢迎大家指出问题或者解决我提出的问题,Thanks!<br>(啥, 你问我为啥最后要用英文??? 那必然是快考六级了, 提前练练啊<del>)<br>QQ: 527430509<br>欢迎大家喔</del></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://abeancc.github.io/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" data-id="cko8cmzon0005ic0r6kx5ahn4" data-title="Ubuntu安装katoolin工具" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          三种网络状态
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Nmap使用记录</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 AbeanCC<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
