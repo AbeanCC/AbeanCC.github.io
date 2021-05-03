@@ -1,939 +1,321 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="CHS" class="loading">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>AbeanCC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="AbeanCC">
-<meta property="og:url" content="https://abeancc.github.io/index.html">
-<meta property="og:site_name" content="AbeanCC">
-<meta property="og:locale">
-<meta property="article:author" content="AbeanCC">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="AbeanCC" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AbeanCC</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+    <meta name="author" content="AbeanCC"> 
+    <link rel="alternative" href="atom.xml" title="AbeanCC" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    
+<link rel="stylesheet" href="/css/diaspora.css">
 
-  
 <meta name="generator" content="Hexo 5.4.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">AbeanCC</a>
-      </h1>
-      
+<body class="loading">
+    <span id="config-title" style="display:none">AbeanCC</span>
+    <div id="loader"></div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/about/" title="关于" target="_blank" rel="noopener">关于</a>
+        </li>
+        
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		<span class="typed" id="hitokoto" data-st="true"></span>
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+		<a href="#" class="iconfont icon-null"></a>
+		
+            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+        
+            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+        
+            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+        
+		<a href="#" class="iconfont icon-null"></a>
+	</p>
+	
+    <p id="copyright">
+        &copy; 2021 AbeanCC.
+        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
+		
+		<span> | </span><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备xxxxxxx号</a>
+		
+    </p>
+</div>
+
+<div id="container">
+    
+<div id="screen">
+    <div id="mark">
+        <div class="layer" data-depth="0.4">
+            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://abeancc.github.io"></form>
-      </div>
+    <div id="vibrant">
+        <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
+            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+        </svg>
+        <div></div>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-20200418蓝桥杯模拟writeup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/" class="article-date">
-  <time class="dt-published" datetime="2020-04-18T06:19:24.000Z" itemprop="datePublished">2020-04-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"><a href="#今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教" class="headerlink" title="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"></a>今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教</h3><hr>
-<ol>
-<li>问题描述<br>　　由1对括号，可以组成一种合法括号序列：()。<br>　　由2对括号，可以组成两种合法括号序列：()()、(())。<br>　　由4对括号组成的合法括号序列一共有多少种？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>答案很简单，是14</p>
-<ol start="2">
-<li>问题描述<br>　　一个包含有2019个结点的无向连通图，最少包含多少条边？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>答案也很简单， 2018</p>
-<ol start="3">
-<li>问题描述<br>　　在计算机存储中，12.5MB是多少字节？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>这个只要算一下就好， 12.5 x 1024 B = 12800 B</p>
-<ol start="4">
-<li>问题描述<br>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>这个就是一个很简单的全排列问题。A77 = 5040</p>
-<ol start="5">
-<li>问题描述<br>　　给定三个整数 a, b, c，如果一个整数既不是 a 的整数倍也不是 b 的整数倍还不是 c 的整数倍，则这个数称为反倍数。<br>　　请问在 1 至 n 中有多少个反倍数。<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>　　第二行包含三个整数 a, b, c，相邻两个数之间用一个空格分隔。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>2 3 6<br>样例输出<br>10<br>样例说明<br>　　以下这些数满足要求：1, 5, 7, 11, 13, 17, 19, 23, 25, 29。<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 10000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000，1 &lt;= a &lt;= n，1 &lt;= b &lt;= n，1 &lt;= c &lt;= n。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">a &#x3D; eval(a)</span><br><span class="line">b &#x3D; eval(b)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line">count &#x3D; 0</span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    if i % a &#x3D;&#x3D; 0 or i % b &#x3D;&#x3D; 0 or i % c &#x3D;&#x3D; 0:</span><br><span class="line">        pass</span><br><span class="line">    else:</span><br><span class="line">        count +&#x3D; 1</span><br><span class="line">print(count)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>直接一个循环搞定</p>
-<ol start="6">
-<li>问题描述<br>　　给定一个单词，请使用凯撒密码将这个单词加密。<br>　　凯撒密码是一种替换加密的技术，单词中的所有字母都在字母表上向后偏移3位后被替换成密文。即a变为d，b变为e，…，w变为z，x变为a，y变为b，z变为c。<br>　　例如，lanqiao会变成odqtldr。<br>输入格式<br>　　输入一行，包含一个单词，单词中只包含小写英文字母。<br>输出格式<br>　　输出一行，表示加密后的密文。<br>样例输入<br>lanqiao<br>样例输出<br>odqtldr<br>评测用例规模与约定<br>　　对于所有评测用例，单词中的字母个数不超过100。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">string &#x3D; input()</span><br><span class="line">outstring &#x3D; &quot;&quot;</span><br><span class="line">for i in range(len(string)):</span><br><span class="line">    if ord(string[i]) + 3 &gt; 122:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3 - 122 + 96)</span><br><span class="line">    else:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3)</span><br><span class="line">print(outstring)</span><br></pre></td></tr></table></figure>
-
-<p>考烂掉的题目了..</p>
-<ol start="7">
-<li>问题描述<br>　　如果一个序列的奇数项都比前一项大，偶数项都比前一项小，则称为一个摆动序列。即 a[2i]&lt;a[2i-1], a[2i+1]&gt;a[2i]。<br>　　小明想知道，长度为 m，每个数都是 1 到 n 之间的正整数的摆动序列一共有多少个。<br>输入格式<br>　　输入一行包含两个整数 m，n。<br>输出格式<br>　　输出一个整数，表示答案。答案可能很大，请输出答案除以10000的余数。<br>样例输入<br>3 4<br>样例输出<br>14<br>样例说明<br>　　以下是符合要求的摆动序列：<br>　　2 1 2<br>　　2 1 3<br>　　2 1 4<br>　　3 1 2<br>　　3 1 3<br>　　3 1 4<br>　　3 2 3<br>　　3 2 4<br>　　4 1 2<br>　　4 1 3<br>　　4 1 4<br>　　4 2 3<br>　　4 2 4<br>　　4 3 4<br>评测用例规模与约定<br>　　对于 20% 的评测用例，1 &lt;= n, m &lt;= 5；<br>　　对于 50% 的评测用例，1 &lt;= n, m &lt;= 10；<br>　　对于 80% 的评测用例，1 &lt;= n, m &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n, m &lt;= 1000。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">m, n &#x3D; input().split(&quot; &quot;)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">dp &#x3D; [[0 for i in range(1004)] for i in range(1004)]</span><br><span class="line"></span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    dp[1][i] &#x3D; n - i + 1</span><br><span class="line"></span><br><span class="line">for i in range(2, m+1):</span><br><span class="line">    if i % 2 &#x3D;&#x3D; 1:</span><br><span class="line">        for j in range(n, 0, -1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j-1] + dp[i][j+1]) % 10000</span><br><span class="line">    else:</span><br><span class="line">        for j in range(1, n+1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j+1] + dp[i][j-1]) % 10000</span><br><span class="line"></span><br><span class="line">if m % 2 &#x3D;&#x3D; 1:</span><br><span class="line">    print(dp[m][1])</span><br><span class="line">else:</span><br><span class="line">    print(dp[m][n])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这题也比较简单,动态规划.我的思路是根据奇偶的不同输出不同的.</p>
-<ol start="8">
-<li>问题描述<br>　　对于一个 n 行 m 列的表格，我们可以使用螺旋的方式给表格依次填上正整数，我们称填好的表格为一个螺旋矩阵。<br>　　例如，一个 4 行 5 列的螺旋矩阵如下：<br>　　1 2 3 4 5<br>　　14 15 16 17 6<br>　　13 20 19 18 7<br>　　12 11 10 9 8<br>输入格式<br>　　输入的第一行包含两个整数 n, m，分别表示螺旋矩阵的行数和列数。<br>　　第二行包含两个整数 r, c，表示要求的行号和列号。<br>输出格式<br>　　输出一个整数，表示螺旋矩阵中第 r 行第 c 列的元素的值。<br>样例输入<br>4 5<br>2 2<br>样例输出<br>15<br>评测用例规模与约定<br>　　对于 30% 的评测用例，2 &lt;= n, m &lt;= 20。<br>　　对于 70% 的评测用例，2 &lt;= n, m &lt;= 100。<br>　　对于所有评测用例，2 &lt;= n, m &lt;= 1000，1 &lt;= r &lt;= n，1 &lt;= c &lt;= m。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">n, m &#x3D; input().split(&quot; &quot;)</span><br><span class="line">r, c &#x3D; input().split()</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">r &#x3D; eval(r)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line"></span><br><span class="line">array &#x3D; [0 for i in range(m * n)]</span><br><span class="line">statue &#x3D; [0 for i in range(m * n)]</span><br><span class="line">toward &#x3D; &quot;right&quot;</span><br><span class="line">num &#x3D; 1</span><br><span class="line">i &#x3D; 0</span><br><span class="line">j &#x3D; 0</span><br><span class="line"># i*m+j</span><br><span class="line">while True:</span><br><span class="line">    if toward &#x3D;&#x3D; &quot;up&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i - 1 &lt; 0 or statue[(i - 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;right&quot;</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;down&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i + 1 &gt; n - 1 or statue[(i + 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;left&quot;</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;left&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j - 1 &lt; 0 or statue[i * m + j - 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;up&quot;</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;right&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j + 1 &gt; m - 1 or statue[i * m + j + 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;down&quot;</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    if num &#x3D;&#x3D; m * n + 1:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">print(array[(r - 1) * m + (c - 1)])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这就是最基础的python写螺旋数组…<br>由于我懒得用二维数组这么复杂的东西,直接一维的列表,根据行列关系换算成一维的位置,然后根据状态填写数字.填写过的是-999.主要需要注意的是越界问题.</p>
-<ol start="9">
-<li>问题描述<br>　　2015年，全中国实现了户户通电。作为一名电力建设者，小明正在帮助一带一路上的国家通电。<br>　　这一次，小明要帮助 n 个村庄通电，其中 1 号村庄正好可以建立一个发电站，所发的电足够所有村庄使用。<br>　　现在，这 n 个村庄之间都没有电线相连，小明主要要做的是架设电线连接这些村庄，使得所有村庄都直接或间接的与发电站相通。<br>　　小明测量了所有村庄的位置（坐标）和高度，如果要连接两个村庄，小明需要花费两个村庄之间的坐标距离加上高度差的平方，形式化描述为坐标为 (x_1, y_1) 高度为 h_1 的村庄与坐标为 (x_2, y_2) 高度为 h_2 的村庄之间连接的费用为<br>　　sqrt((x_1-x_2)<em>(x_1-x_2)+(y_1-y_2)</em>(y_1-y_2))+(h_1-h_2)*(h_1-h_2)。<br>　　在上式中 sqrt 表示取括号内的平方根。请注意括号的位置，高度的计算方式与横纵坐标的计算方式不同。<br>　　由于经费有限，请帮助小明计算他至少要花费多少费用才能使这 n 个村庄都通电。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示村庄的数量。<br>　　接下来 n 行，每个三个整数 x, y, h，分别表示一个村庄的横、纵坐标和高度，其中第一个村庄可以建立发电站。<br>输出格式<br>　　输出一行，包含一个实数，四舍五入保留 2 位小数，表示答案。<br>样例输入<br>4<br>1 1 3<br>9 9 7<br>8 8 6<br>4 5 4<br>样例输出</li>
-<li>41<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000，0 &lt;= x, y, h &lt;= 10000。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">from math import sqrt</span><br><span class="line">from decimal import Decimal</span><br><span class="line"></span><br><span class="line">def cash(l1, l2):</span><br><span class="line">    return sqrt((l1[0] - l2[0])**2 + (l1[1] - l2[1])**2) + (l1[2] - l2[2])**2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n &#x3D; eval(input())</span><br><span class="line">countryside &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    countryside.append([eval(a), eval(b), eval(c)])</span><br><span class="line"></span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">money &#x3D; 0</span><br><span class="line"></span><br><span class="line">temp &#x3D; candidate_node.pop()</span><br><span class="line">selected_node.append(temp)</span><br><span class="line">while True:</span><br><span class="line">    if candidate_node &#x3D;&#x3D; []:</span><br><span class="line">        break</span><br><span class="line">    # prim</span><br><span class="line">    min_index &#x3D; 100000</span><br><span class="line">    min_cash &#x3D; 100000</span><br><span class="line">    for i in selected_node:</span><br><span class="line">        for j in candidate_node:</span><br><span class="line">            temp_cash &#x3D; cash(countryside[i], countryside[j])</span><br><span class="line">            if temp_cash &lt; min_cash:</span><br><span class="line">                min_cash &#x3D; temp_cash</span><br><span class="line">                min_index &#x3D; j</span><br><span class="line">    selected_node.append(min_index)</span><br><span class="line">    candidate_node.remove(min_index)</span><br><span class="line">    money +&#x3D; min_cash</span><br><span class="line"></span><br><span class="line">money &#x3D; Decimal(str(money)).quantize(Decimal(&#39;0.00&#39;))</span><br><span class="line">print(money)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>老生常谈的一个问题了.肉眼一看就知道的最小生成树的题目.这次使用的是prim算法.<br>在写这个题目的时候看错了钱的计算公式导致浪费了不少时间,这是不应该的.<br>而且对于Python而言,四舍五入最好别用round()函数,因为它拥有不确定性,而应该采用科学的Decimal库.这个是自带的库.</p>
-<ol start="10">
-<li>问题描述<br>　　小明和朋友们一起去郊外植树，他们带了一些在自己实验室精心研究出的小树苗。<br>　　小明和朋友们一共有 n 个人，他们经过精心挑选，在一块空地上每个人挑选了一个适合植树的位置，总共 n 个。他们准备把自己带的树苗都植下去。<br>　　然而，他们遇到了一个困难：有的树苗比较大，而有的位置挨太近，导致两棵树植下去后会撞在一起。<br>　　他们将树看成一个圆，圆心在他们找的位置上。如果两棵树对应的圆相交，这两棵树就不适合同时植下（相切不受影响），称为两棵树冲突。<br>　　小明和朋友们决定先合计合计，只将其中的一部分树植下去，保证没有互相冲突的树。他们同时希望这些树所能覆盖的面积和（圆面积和）最大。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示人数，即准备植树的位置数。<br>　　接下来 n 行，每行三个整数 x, y, r，表示一棵树在空地上的横、纵坐标和半径。<br>输出格式<br>　　输出一行包含一个整数，表示在不冲突下可以植树的面积和。由于每棵树的面积都是圆周率的整数倍，请输出答案除以圆周率后的值（应当是一个整数）。<br>样例输入<br>6<br>1 1 2<br>1 4 2<br>1 7 2<br>4 1 2<br>4 4 2<br>4 7 2<br>样例输出<br>12<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 20；<br>　　对于所有评测用例，1 &lt;= n &lt;= 30，0 &lt;= x, y &lt;= 1000，1 &lt;= r &lt;= 1000。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">tree &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    x, y, r &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    tree.append([eval(x), eval(y), eval(r)])</span><br><span class="line"></span><br><span class="line">def cal(l1, l2):</span><br><span class="line">    dis &#x3D; (l1[0]-l2[0])**2 + (l1[1]-l2[1])**2</span><br><span class="line">    if dis &lt; (l1[2] + l2[2])**2:</span><br><span class="line">        return False</span><br><span class="line">    else:</span><br><span class="line">        return True</span><br><span class="line"></span><br><span class="line">def judge(l1, l2):</span><br><span class="line">    for i in l1:</span><br><span class="line">        temp &#x3D; cal(tree[i], l2)</span><br><span class="line">        if temp:</span><br><span class="line">            continue</span><br><span class="line">        else:</span><br><span class="line">            return False</span><br><span class="line">    return True</span><br><span class="line"></span><br><span class="line">def cal_area(l1, l2):</span><br><span class="line">    ret &#x3D; 0</span><br><span class="line">    for i in l1:</span><br><span class="line">        ret +&#x3D; l2[i][2]**2</span><br><span class="line">    return ret</span><br><span class="line"></span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">max_area &#x3D; 0</span><br><span class="line">for i in range(n):</span><br><span class="line">    selected_node.append(i)</span><br><span class="line">    candidate_node.remove(i)</span><br><span class="line">    for j in candidate_node:</span><br><span class="line">        if judge(selected_node, tree[j]):</span><br><span class="line">            selected_node.append(j)</span><br><span class="line">            candidate_node.remove(j)</span><br><span class="line">    temp &#x3D; cal_area(selected_node, tree)</span><br><span class="line">    if temp &gt; max_area:</span><br><span class="line">        max_area &#x3D; temp</span><br><span class="line">    selected_node &#x3D; []</span><br><span class="line">    candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line"></span><br><span class="line">print(max_area)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这是我的解题思路,我自己感觉比较的笨,时间复杂度也就比较高.本来的思路是dfs.后来阴差阳错的写成了这样的…..写都写了就这么写吧…<br>如果这一题有什么更好的思路也欢迎来交流交流哇!</p>
-<hr>
-<p>By. AbeanCC<br>QQ. 527430509<br>Thanks</p>
-
-      
+    <div id="header">
+        <div>
+            <a class="image-logo" href="/"></a>
+			
+            <div class="iconfont icon-menu switchmenu"></div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/" data-id="cko8cmznn0000ic0r58zj6q54" data-title="20200418蓝桥杯模拟writeup" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="python-collections的使用" class="h-entry article article-type-python" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
-  <time class="dt-published" datetime="2020-02-10T15:43:01.000Z" itemprop="datePublished">2020-02-10</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
-    </h1>
-  
+    <div id="post0">
+        <p>四月 18, 2020</p>
+        <h2><a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/" title="20200418蓝桥杯模拟writeup" class="posttitle">20200418蓝桥杯模拟writeup</a></h2>
+        <p class="summary">今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h3><p>首先,我得介绍一下这个是个什么东西.<br>collections是Python的一个内建的一个集合模块,提供了许多有用的集合类</p>
-<p>这里介绍一些我喜欢用的几个.</p>
-<hr>
-<h3 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h3><p>由常识可知,在Python中,<code>tuple</code>可以表示不变集合.<br>举个例子,我需要表示一个坐标,那么我们可以<br><code>&gt; p = (1, 2)</code><br>但是看到这个(1, 2),又有谁会知道,这个<code>tuple</code>是表示一个坐标的呢?<br>但是单独的定义一个类又太麻烦,所以这个时候我们就可以利用namedtuple</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">namedtuple(typename: str, field_names: Union[str, Iterable[str]], *, verbose: bool&#x3D;..., rename: bool&#x3D;..., module: Optional[str]&#x3D;...) -&gt; Type[tuple]</span><br></pre></td></tr></table></figure>
-<p>这个是namedtuple后面的参数列表<br>Exp.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from collections import namedtuple</span><br><span class="line"></span><br><span class="line">point &#x3D; namedtuple(&quot;point&quot;, [&quot;x&quot;, &quot;y&quot;])</span><br><span class="line">p &#x3D; point(1, 2)</span><br><span class="line">print(p.x, p.y)</span><br></pre></td></tr></table></figure>
-<p>此时会输出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
-<p>其中,我们需要知道的是,namedtuple是tuple的一个子类.<br>就是说,此时的p不仅是tuple,也是namedtuple</p>
-<p>但是肯定有人会问,这样有什么好处?<br>好处那肯定是有的,它可以规定一个固定的输入格式.<br>所以我们可以定义一个数据类型,它既可以使用tuple的不可变的特性,又可以根据属性来引用.方便</p>
-<hr>
-<h3 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h3><p>Python中自带的数据结构中,有一种叫做<code>list</code>.<br>list这个东西好啊,但是它存在几个非常重要的缺点.<br>由于<code>list</code>是一种线性存储的结构,这就导致其根据索引找元素的时候会非常快,但是在插入和删除元素的时候就会很慢.当数据量大的时候,效率会很低.<br>为了解决这个问题,我们引入<code>deque</code>,双向队列.<br>它适合用作队列和栈.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from collections import deque</span><br><span class="line"></span><br><span class="line">q &#x3D; deque([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;])</span><br><span class="line">q.append(&quot;x&quot;)</span><br><span class="line">q.appendleft(&quot;y&quot;)</span><br></pre></td></tr></table></figure>
-<p>此时的输出是<br><code>[&#39;y&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;x&#39;]</code><br>不仅有<code>append</code>和<code>appendleft</code>,相同的肯定还有<code>pop</code>和<code>popleft</code><br>使用起来肯定很舒服</p>
-<hr>
-<h3 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h3><p>Python中自带的一个数据结构叫<code>dict</code>字典,其构成是键值对.<br>但是再用<code>dict</code>做迭代的时候,我们没法确定<code>key</code>的顺序.<br>但是使用<code>OrderedDict</code>时,就可以使之排序.<br>具体的不多说,直接看例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">from collections import OrderedDict</span><br><span class="line"></span><br><span class="line">dict &#x3D; &#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;</span><br><span class="line">print(dict)</span><br><span class="line">&gt;&gt;&gt; &#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;</span><br><span class="line"></span><br><span class="line">orderdict &#x3D; OrderedDict(&#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;)</span><br><span class="line">print(orderdict)</span><br><span class="line">&gt;&gt;&gt; &#123;&quot;a&quot;:1, &quot;b&quot;:4, &quot;c&quot;:3&#125;</span><br></pre></td></tr></table></figure>
-<p>由此可见,我们是根据<code>Key</code>排序的.这点很重要</p>
-<ul>
-<li>Notice<br><code>OrderedDict</code>的<code>Key</code>的插入会按照插入的顺序排列,而不是key本身<br>Exp<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from collections import OrderedDict</span><br><span class="line"></span><br><span class="line">d &#x3D; OrderedDict()</span><br><span class="line">d[&quot;z&quot;] &#x3D; 1</span><br><span class="line">d[&quot;y&quot;] &#x3D; 2</span><br><span class="line">d[&quot;x&quot;] &#x3D; 3</span><br><span class="line">print(d)</span><br><span class="line">&gt;&gt;&gt; OrderedDict([(&#39;z&#39;, 1), (&#39;y&#39;, 2), (&#39;x&#39;, 3)])</span><br></pre></td></tr></table></figure>
-于是我们可以开动脑筋,做一个非常简单的扩展,我们可以做一个FIFO的dict结构.当超过限制时,删除最早的key.</li>
-</ul>
-<hr>
-<h3 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h3><p>这个是我觉得最好用的东西,没有之一.<br>字面意思,这就是一个计数器.计数器肯定是用来计数的.<br>直接看一个例子吧!<br>Exp</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from collections import Counter</span><br><span class="line"></span><br><span class="line">a &#x3D; &quot;kashfkehgkashfdkjsewhtrkljsdhfkjsdfhksjd&quot;</span><br><span class="line">a_c &#x3D; Counter(a)</span><br><span class="line">print(a_c)</span><br><span class="line">&gt;&gt;&gt; Counter(&#123;&#39;k&#39;: 7, &#39;s&#39;: 6, &#39;h&#39;: 6, &#39;f&#39;: 4, &#39;d&#39;: 4, &#39;j&#39;: 4, &#39;a&#39;: 2, &#39;e&#39;: 2, &#39;g&#39;: 1, &#39;w&#39;: 1, &#39;t&#39;: 1, &#39;r&#39;: 1, &#39;l&#39;: 1&#125;)</span><br></pre></td></tr></table></figure>
-<p>可以看出来,返回的是一个字典,里面有这个字符串所有字母存在的个数.</p>
-<p>这个可以给大家举一个例题:</p>
-<hr>
-<p>你正在和你的朋友玩 猜数字（Bulls and Cows）游戏：你写下一个数字让你的朋友猜。每次他猜测后<br>，你给他一个提示，告诉他有多少位数字和确切位置都猜对了（称为“Bulls”, 公牛），<br>有多少位数字猜对了但是位置不对（称为“Cows”, 奶牛）。你的朋友将会根据提示继续猜，直到猜出秘密数字。</p>
-<p>请写出一个根据秘密数字和朋友的猜测数返回提示的函数，用 A 表示公牛，用 B 表示奶牛。</p>
-<p>请注意秘密数字和朋友的猜测数都可能含有重复数字。</p>
-<p>示例 1:</p>
-<p>输入: secret = “1807”, guess = “7810”</p>
-<p>输出: “1A3B”</p>
-<p>解释: 1 公牛和 3 奶牛。公牛是 8，奶牛是 0, 1 和 7。<br>示例 2:</p>
-<p>输入: secret = “1123”, guess = “0111”</p>
-<p>输出: “1A1B”</p>
-<p>解释: 朋友猜测数中的第一个 1 是公牛，第二个或第三个 1 可被视为奶牛。<br>说明: 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。</p>
-<p>来源：力扣（LeetCode）<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/bulls-and-cows">题目链接: https://leetcode-cn.com/problems/bulls-and-cows</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def getHint(self, secret: str, guess: str) -&gt; str:</span><br><span class="line">        from collections import Counter</span><br><span class="line">        secret_c &#x3D; Counter(secret)</span><br><span class="line">        guess_c &#x3D; Counter(guess)</span><br><span class="line">        count_A &#x3D; sum((i &#x3D;&#x3D; j for i, j in zip(secret, guess)))</span><br><span class="line">        count_B &#x3D; sum((secret_c &amp; guess_c).values()) - count_A</span><br><span class="line">        return &quot;&#123;&#125;A&#123;&#125;B&quot;.format(count_A, count_B)</span><br></pre></td></tr></table></figure>
-
-<hr>
-
-      
+问题描述　　由1对括号，可以...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/" data-id="cko8cmzp1000aic0rayrt9aha" data-title="collections的使用" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-BlcokChain-1-SimpleBlockChian" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/" class="article-date">
-  <time class="dt-published" datetime="2020-01-16T14:40:10.000Z" itemprop="datePublished">2020-01-16</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+</div>
+
+    <div id="primary">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="记录一下简单的BlockChain的实现"><a href="#记录一下简单的BlockChain的实现" class="headerlink" title="记录一下简单的BlockChain的实现"></a>记录一下简单的BlockChain的实现</h2><p>Language: python</p>
-<hr>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>BlockChain,说这个东西大家都会说,但是其中大有讲究.<br>今天我们就稍微的实现一下基本的框架,包括Block的基本结构,Chain的基本结构,以及一些基本的方法.</p>
-<hr>
-<h3 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h3><p>block,一个块,这个快能存什么呢?</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Block&#123;</span><br><span class="line">    data;</span><br><span class="line">    Hash;</span><br><span class="line">    PreviousHash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其中,data表示的就是这个块里存储的数据<br>PreviousHash存储的是前一个块的Hash<br>而这个Hash呢,是计算得到的.<br>今天的简易版区块链,不包含pow机制,不包含动态难度,就只是简单的实现,于是我使用的是PreviousHash和data的拼接的Hash来表示</p>
-<p>(实际中需要加上难度指数,这样再加上刷新时间,就可以有效的防范攻击.其实本质上来说,是让对手没有那么足够的算力,来支持自己修改区块)</p>
-<p>实现起来也很容易:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Block:</span><br><span class="line">    def __init__(self, data, previousHash):</span><br><span class="line">        self.data &#x3D; data</span><br><span class="line">        self.previousHash &#x3D; previousHash</span><br><span class="line">        self.ownhash &#x3D; self.ComputeHash()</span><br><span class="line"></span><br><span class="line">    def ComputeHash(self):</span><br><span class="line">        &#39;&#39;&#39;计算Hash值&#39;&#39;&#39;</span><br><span class="line">        sha256 &#x3D; hashlib.sha256()</span><br><span class="line">        sha256.update((str(self.data) + self.previousHash).encode(&quot;utf-8&quot;))</span><br><span class="line">        return sha256.hexdigest()</span><br><span class="line"></span><br><span class="line">    def StandardOutput(self):</span><br><span class="line">        &#39;&#39;&#39;标准化输出&#39;&#39;&#39;</span><br><span class="line">        print(&quot;Block:\n\t\tData: &#123;&#125;\n\t\tOwnHash: &#123;&#125;\n\t\tPreviousHash: &#123;&#125;&quot;.format(self.data, self.ownhash, self.previousHash), end&#x3D;&quot;\n&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这就是一个简单的Block类</p>
-<hr>
-<h3 id="Chain"><a href="#Chain" class="headerlink" title="Chain"></a>Chain</h3><p>这个链也很简单,就是把所有的Block串起来,利用Hash进行索引的一个特殊的链表<br>当然要实现它的纠错能力.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">class Chain:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.chainlist &#x3D; [self.GenesisBlock()]</span><br><span class="line"></span><br><span class="line">    def GenesisBlock(self):</span><br><span class="line">        &#39;&#39;&#39;创建祖先区块&#39;&#39;&#39;</span><br><span class="line">        return Block(&quot;Genesis&quot;, &quot;&quot;)</span><br><span class="line"></span><br><span class="line">    def InsertNewBlock(self, data):</span><br><span class="line">        &#39;&#39;&#39;插入新的区块&#39;&#39;&#39;</span><br><span class="line">        newblock &#x3D; Block(data, self.chainlist[-1].ownhash)</span><br><span class="line">        self.chainlist.append(newblock)</span><br><span class="line"></span><br><span class="line">    def StandardOutput(self):</span><br><span class="line">        &#39;&#39;&#39;标准化输出&#39;&#39;&#39;</span><br><span class="line">        print(&quot;Chain:\n&quot;, end&#x3D;&quot;&quot;)</span><br><span class="line">        for i in range(0, len(self.chainlist)):</span><br><span class="line">            print(&quot;&quot;,end&#x3D;&quot;\t&quot;)</span><br><span class="line">            self.chainlist[i].StandardOutput()</span><br><span class="line"></span><br><span class="line">    def ValidateChain(self):</span><br><span class="line">        &#39;&#39;&#39;验证区块链是否合法&#39;&#39;&#39;</span><br><span class="line">        for i in range(1, len(self.chainlist)):</span><br><span class="line">            if self.chainlist[i].ownhash &#x3D;&#x3D; self.chainlist[i].ComputeHash():</span><br><span class="line">                if self.chainlist[i].previousHash !&#x3D; self.chainlist[i-1].ownhash:</span><br><span class="line">                    print(&quot;前后区块链断裂&quot;)</span><br><span class="line">                    return False</span><br><span class="line">                else:</span><br><span class="line">                    continue</span><br><span class="line">            else:</span><br><span class="line">                print(&quot;数据被篡改&quot;)</span><br><span class="line">                return False</span><br><span class="line">        return True</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="主函数部分"><a href="#主函数部分" class="headerlink" title="主函数部分"></a>主函数部分</h3><p>就可以发挥自己的想象力啦,想加什么就加什么,非常的方便.</p>
-<p>比如:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if __name__ &#x3D;&#x3D; &quot;__main__&quot;:</span><br><span class="line">    chain &#x3D; Chain()</span><br><span class="line">    chain.InsertNewBlock(&quot;我有十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有二十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有三十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有四十块钱&quot;)</span><br><span class="line">    chain.InsertNewBlock(&quot;我有五十块钱&quot;)</span><br><span class="line">    chain.StandardOutput()</span><br><span class="line">    print(chain.ValidateChain())</span><br></pre></td></tr></table></figure>
-
-<p>然后输出结果就是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Chain:</span><br><span class="line">        Block:</span><br><span class="line">                Data: Genesis</span><br><span class="line">                OwnHash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5</span><br><span class="line">                PreviousHash: </span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有十块钱</span><br><span class="line">                OwnHash: e955d6b2656633c5855cfd08c9f96f4d6cf1233115c6b28ef2e8acb0ea0be9e0</span><br><span class="line">                PreviousHash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有二十块钱</span><br><span class="line">                OwnHash: 444d95fe961da65f4ab2990380c390c1558b7d0d516848dd332e9b7d62c632d0</span><br><span class="line">                PreviousHash: e955d6b2656633c5855cfd08c9f96f4d6cf1233115c6b28ef2e8acb0ea0be9e0</span><br><span class="line">        Block:</span><br><span class="line">                OwnHash: c616e399a667b3a3f7c110b48e433846b6fd7f3fe703820b2a59ed61d2cc99ed</span><br><span class="line">                PreviousHash: 444d95fe961da65f4ab2990380c390c1558b7d0d516848dd332e9b7d62c632d0</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有四十块钱</span><br><span class="line">                OwnHash: 2619942d5689a95bfc899d503d702db784b14834d34ea5000c3c1625a89558e7</span><br><span class="line">                PreviousHash: c616e399a667b3a3f7c110b48e433846b6fd7f3fe703820b2a59ed61d2cc99ed</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有五十块钱</span><br><span class="line">                OwnHash: 5b931c9e6e7da60d5a74203264ed49fd5111e064df80acf642fb6220ebf9d642</span><br><span class="line">                PreviousHash: 2619942d5689a95bfc899d503d702db784b14834d34ea5000c3c1625a89558e7</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
-<p>这也就预示着,这个简单的区块链就完成啦.</p>
-
-      
+<div class="post">
+    <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/" title="collections的使用">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>二月 10, 2020</p>
+        <h3><a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/" title="collections的使用" class="posttitle">collections的使用</a></h3>
+        <p>Introduction:首先,我得介绍一下这个是个什么东西.collections是Python的一个内建的一个集合模块,提供了许多有用的集合类
+这里介...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2020/01/16/BlcokChain-1-SimpleBlockChian/" data-id="cko8cmzoh0002ic0r6o6o7jrs" data-title="BlcokChain[1]--SimpleBlockChian" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
+<div class="post">
+    <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/" title="BlcokChain[1]--SimpleBlockChian">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>一月 16, 2020</p>
+        <h3><a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/" title="BlcokChain[1]--SimpleBlockChian" class="posttitle">BlcokChain[1]--SimpleBlockChian</a></h3>
+        <p>记录一下简单的BlockChain的实现Language: python
 
-  
-    <article id="post-Python数据转换二进制" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/" class="article-date">
-  <time class="dt-published" datetime="2019-12-11T03:28:27.000Z" itemprop="datePublished">2019-12-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Python把数据转换为二进制"><a href="#Python把数据转换为二进制" class="headerlink" title="Python把数据转换为二进制"></a>Python把数据转换为二进制</h2><hr>
-<p>其实说起来,Python说到底还是快捷,方便,看着赏心悦目(对自己).<br>但是如果我放出以下的两个函数,就不是太友好了…</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def encode(s):</span><br><span class="line">    return &#39;&#39;.join([bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s])</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def decode(s):</span><br><span class="line">    return &#39;&#39;.join([chr(i) for i in [int(b, 2) for b in s.split(&#39; &#39;)]])</span><br></pre></td></tr></table></figure>
-
-<p>说实话,换做是我,假设是看别人的代码,看到这么一行,我的心态也会直接爆炸.<br>万一这个老哥后面在备注一句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># MAGIC, DON&#39;T TOUCH!</span><br></pre></td></tr></table></figure>
-<p>估计心态就直接爆炸.<br>那么,我就来分开说说这个的原理吧= =<br>(推导式真的是一个自己用着很爽,别人看着也很爽的东西= =)</p>
-<hr>
-<h3 id="Encode"><a href="#Encode" class="headerlink" title="Encode"></a>Encode</h3><p>有一说一,其实原理都很简单.<br>首先介绍一下四个方法:<br>.join()<br>这个得好好说一说,我们暂时把这个方法写成<br>a.join(b)<br>此时a是一个字符,或者是一个字符串,b是一个序列(字符串,列表,元组)<br>规则就是将a插入到b的每一个元素中间.</p>
-<p>.replace()<br>简而言之,替换</p>
-<p>bin()<br>将int型的数据转换为二进制形式,但是格式是(0b111100),此时,输出的格式是”str”</p>
-<p>ord()<br>输出字符的ASCII值</p>
-<p>在了解了这些基本用法以后,就可以翻译上面那个函数了.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return &#39;&#39;.join([bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s])</span><br></pre></td></tr></table></figure>
-<p>return不看, ‘’.join()最后看,那么我们目的很明确了,就是翻译后面的推导式.<code>[bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s]</code><br>这个s是函数输入进来的字符串s.<br>大概意思就是说,<br>c = s[i]<br>把c变成ASCII码,再把这个ASCII码中的0b给扬了,然后保存到这个列表里.<br>最后再把这个列变拼接起来,成为一个字符串.<br>是不是超级简单?<br>那我们就顺势再看看Decode吧!</p>
-<hr>
-<h3 id="Decode"><a href="#Decode" class="headerlink" title="Decode"></a>Decode</h3><p><code>&#39;&#39;.join([chr(i) for i in [int(b, 2) for b in s.split(&#39; &#39;)]])</code><br>了解了第一个,这个就更加简单了啊.<br>主要还是说一下int(b, 2),简单来说,就是强制类型转换为int,并且b是二进制,转换为10进制的数.<br>然后就逐个翻译就好啦.<br>怎么编码,就怎么解码.就完成了进制转换啊!</p>
-<hr>
-<p>P.S. 为什么会想到写这个呢? 因为再写RC4算法的时候,突然想到了,就心血来潮的给写了.然后后来自己看着都烦,于是正好借着机会给自己疏通疏通.<br>(真就是写推导式的坏处啊,还不写备注= =)</p>
-
-      
+简介BlockChain,说这个东西大家都会说,但是其中大有讲究.今天我们就稍...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/" data-id="cko8cmzp4000bic0rh8rlcqmx" data-title="Python数据转换二进制" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-    <article id="post-三种网络状态" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/" class="article-date">
-  <time class="dt-published" datetime="2019-12-09T12:08:35.000Z" itemprop="datePublished">2019-12-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="三种网络状态-NAT-Bridge-Host-Only"><a href="#三种网络状态-NAT-Bridge-Host-Only" class="headerlink" title="三种网络状态 NAT, Bridge, Host-Only"></a>三种网络状态 NAT, Bridge, Host-Only</h2><hr>
-<p>由于发生了一些让人非常不耐烦的事情, 导致我几乎崩溃, 于是便有了这个, 用来让自己充分理解一下这三种状态(<del>为什么不问问神奇的海螺?</del>)</p>
-<p>用过Vmware workstation的人都知道,一直有三个很神奇的东西,叫做VMnet0, VMnet1, VMnet8. 他们分别对应Bridge模式, NAT模式, Host-Only模式.</p>
-<hr>
-<p><strong><font size = 5>NAT</font></strong><br>Network Address Translation.<br>网络地址转换</p>
-<p>其基本的工作原理就是, 通过NAT, 让虚拟机通过宿主机所在的网络来访问公网.<br>用过的人都知道, 虚拟机和主机虽然都用的是同一张网卡(物理), 但是虚拟机和宿主机不在同一个网络里. 原因是虚拟机的网卡, 是VMware提供的一个虚拟网卡.<br>这块网卡的名字叫做 Vmware Network Adapter VMnet1.</p>
-<hr>
-<p><strong><font size = 5>Bridge</font></strong><br>也就是众所周知的桥接</p>
-<p>既然知道是桥接, 那就很简单了, 那必然是两块网卡之间建立网桥然后连接.于此同时, 那自然而然的就想到了一个问题, 那这样, 岂不是我的虚拟机和我的宿主机在同一个网络内了?<br>答案那必然是肯定的.<br>因为桥接模式本质上是一块名叫VMnet0的虚拟网卡和你的物理网卡桥接的.你的物理网卡和这个虚拟网卡是等价的.</p>
-<p><em><strong>NOTICE: 下面是本人的亲身经历</strong></em><br><strong>首先, 你桥接的那块网卡的属性里,有一个叫做VMware bridge Protocol的东西,请务必把他打开.其次, 如果你装了Docker的话,那就要当心了,因为桥接模式的自动分配可能会桥接到Docker的Host-Only的网卡上导致桥接后连不上网.最后,复制物理网络连接状态,可以不开.</strong><br><del>由于各种各样的问题,注册表也看了,协议也安装了,vmware也重装了,就差重装系统了,结果突然整明白了.</del></p>
-<p>既然都说到这了,想必也要说说NAT和Bridge的区别了吧.</p>
-<ol>
-<li>首先可以肯定的是,他俩肯定都能上外网.(不然也没人用啊)</li>
-<li>由于NAT的网络在VMware提供的一个虚拟网络里,所以局域网其他主机是无法访问虚拟机的,而宿主机可以访问虚拟机,虚拟机可以访问局域网的所有主机,因为真实的局域网相对于NAT的虚拟网络,就是NAT的虚拟网络的外网.(是不是很拗口?究其原因,主要是NAT模式下,举个不太好的例子就是,你的宿主机相当于一个路由器,而你的虚拟机相当于连接在了这个路由器上的机器一样,属于一个内部的局域网,但是和外网之间的联系都交给这个做路由器的宿主机完成.所以这才是造成了局域网主机无法连接虚拟机, 而虚拟机可以连接其他主机.)</li>
-<li>桥接模式就不存在这个问题.因为桥接模式相当于是把虚拟机作为一台独立的主机来使用,所以可以正常的使用.</li>
-</ol>
-<hr>
-<p><strong><font size = 5>Host-Only</font></strong><br>仅主机模式</p>
-<p>这个就特别简单了.说白了就是….自闭模式.<br>只与宿主机相连, 而不与宿主机以外的任何主机连接.(包括Internet)<br>它和NAT很像,但又不完全是.他有一块属于自己的虚拟网卡<br>Vmware Network Adapter VMnet8</p>
-<p>可以说,它的安全性很高.毕竟与外界隔离.</p>
-<hr>
-<p>以上就是我对这三种网络状态的理解了.<br>有什么不对的不妥当的理解错误的欢迎指出~<br>QQ: 527430509</p>
-
-      
+<div class="post">
+    <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/" title="Python数据转换二进制">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 11, 2019</p>
+        <h3><a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/" title="Python数据转换二进制" class="posttitle">Python数据转换二进制</a></h3>
+        <p>Python把数据转换为二进制
+其实说起来,Python说到底还是快捷,方便,看着赏心悦目(对自己).但是如果我放出以下的两个函数,就不是太友好了…
+12...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/" data-id="cko8cmzos0007ic0r9hqtek7m" data-title="三种网络状态" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-    <article id="post-Ubuntu安装katoolin工具" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" class="article-date">
-  <time class="dt-published" datetime="2019-12-09T04:05:41.000Z" itemprop="datePublished">2019-12-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/">Ubuntu安装katoolin工具</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="Ubuntu安装katoolin安装kali工具集"><a href="#Ubuntu安装katoolin安装kali工具集" class="headerlink" title="Ubuntu安装katoolin安装kali工具集"></a>Ubuntu安装katoolin安装kali工具集</h3><hr>
-<p><strong>前言：由于同学推荐，我第一次了解到了 Windows Subsystem of Linux，原了我一直想寻找一款在Windows上运行的bash(除了git bash)</strong></p>
-<p><strong>于是突发奇想,打算装一个katoolin玩玩(<del>是自己处理不好了</del>),于是就有了这个记录</strong></p>
-<hr>
-<p>第一步: 那必然是整WSL啦 (<del>WSL:我死了</del>)</p>
-<p>首先要做的是,打开控制面板的程序和功能中的基于Windows的Linux子系统.</p>
-<p><del>然后重启啊啥的</del></p>
-<p>win + r ,输入 bash</p>
-<p>看到一个一闪而过的命令行,大概明白了,没装Linux系统.</p>
-<p>于是,开始安装咯~</p>
-<hr>
-<p>第二步: 良心的Windows自带的商店里自带了Linux,直接搜索框搜索Linux就好啦~</p>
-<p>然后选择你要下载的Linux</p>
-<p>然后下载完打开,启动,输入用户名,输入密码,完事了.</p>
-<p><del>(P.S. 害,第一次的时候用户名第一个字母用了大写,导致一直没过,害我想了半天,那个时候感觉自己无比的弱智…..)</del></p>
-<p><strong>NOTICE: 本着原则,我先下载了Kali Linux,但是发现里面啥都没有,只是一个空的系统,非常失望,打算祭出祖传的<code>apt-get update</code>发现我不是root用户!!!!!!!!!</strong></p>
-<hr>
-<p>第三步: 更换自己的身份</p>
-<p>本着方便的原则,我觉得更改自己的<strong>身份</strong>,咱好歹也是<strong>Administrator</strong>啊.</p>
-<p>打开祖传的<strong>cmd</strong>(我用的是Anaconda Powershell Prompt),输入命令:<br><code>kali config --default-user root</code><br>重新打开bash,就发现自己是root了<br>然后输入<code>passwd</code>,就可以修改root密码啦<br><strong>484炒鸡简单!</strong></p>
-<hr>
-<p>第四步: 梦想的破灭</p>
-<p>既然都更换身份了,那<strong>新官上任也有三把火啊</strong>,于是熟练的打起了<code>apt-get update</code>,然后发现</p>
-<p><strong><font size = 5>啊!!!! 报错啦!!!</font></strong></p>
-<p>十分的苦恼,原来自己当了个空官,</p>
-<p><strong><font size = 5>害! 此处不留爷, 自有留爷处, 走了!</font></strong></p>
-<p>(P.S. 主要是大家都遇到了这个问题, 百度上也没有人解释, 当然主要还是我懒,没有去好好的观看kali的文档,不过当时想到的是别的解决办法就是了)</p>
-<hr>
-<p>第五步: 开启新的征程</p>
-<p>看着自己的国家支离破碎,心里说不出什么滋味.在远行的途中,发现了一个新的国家,叫做Ubuntu.在自己的国家中也听过它的故事,既然自己的国家破碎了,那就去它那里过一过吧.</p>
-<p>于是我熟练的又走了1到3步骤,唯一不同的是,国家变了,这个名字,可不能再叫原来的名字了,于是修改如下:<br><code>Ubuntu config --default-user root</code></p>
-<hr>
-<p>第六步: 一些突发情况</p>
-<p>凭着自己的本能, 你输入了如下话语:<br><code>leafpad /etc/apt/source.list</code><br>深思熟虑了一下,我这是在Windows下,哪来的leafpad呢,<br>于是修改话语:<br><code>notepad /etc/apt/source.list</code><br>打开了那个让你熟悉的东西,输入了kali的源,然后配置好了密钥<br>(这一块如果不会的话,<del>可以自行百度</del>,如果要说的话就太长了,牵涉到kali的很多东西)</p>
-<p>熟悉的输入<code>apt-get update</code><br>发现还是报错了.可能是我操作不当,或者对某些东西的了解还不够透彻,查阅了资料,翻看了不少东西,发现了katoolin.</p>
-<hr>
-<p>第七步: 不能在一棵树上吊死</p>
-<p>有了这个玩意,兴奋不已,这不是就很舒服嘛!美滋滋.<br>于是,输入了如下命令:<br><del>First, AbeanCC should pass the CET6.</del><br>First: you should install those thing you need.<br>(source.list I return to old-original version(QAQ))</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
-<p>I’m very surprise that Ubuntu has already install newest version git!!!!</p>
-<p>Then: you are supposed to install python2.7<br>As we know, the katoolin need python2.7 environment.<br>So….Let’s do this!</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install python2.7</span><br></pre></td></tr></table></figure>
-<p>Check your python is successfully installed, you can input that commend<br>If you are very confidence, you can skip this step!</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2.7 --version</span><br></pre></td></tr></table></figure>
-
-<p>Oh my god!<br>They turn to face each other<br>It was just happened to <del>dance</del><br>That these two programs would meet that day and do their favourite dance<br><del><font size = 4><strong>WOW you can really dance!</strong></font></del><br><del><font size = 4><strong>WOW you can really dance!</strong></font></del></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;LionSec&#x2F;katoolin.git &amp;&amp; cp katoolin&#x2F;katoolin.py &#x2F;usr&#x2F;bin&#x2F;katoolin</span><br></pre></td></tr></table></figure>
-<p>Clone from git repository.<br>And copy the python script into catalog which called /usr/bin/</p>
-<p>Finish this job, bind the limits of execution authority to python script.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -x &#x2F;usr&#x2F;bin&#x2F;katoolin</span><br></pre></td></tr></table></figure>
-
-<p>Finally, you just need <code>python2.7 katoolin/katoolin.py</code>.<br>then you can see this view….</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> $$\   $$\             $$\                         $$\ $$\</span><br><span class="line"> $$ | $$  |            $$ |                        $$ |\__|</span><br><span class="line"> $$ |$$  &#x2F;  $$$$$$\  $$$$$$\    $$$$$$\   $$$$$$\  $$ |$$\ $$$$$$$\</span><br><span class="line"> $$$$$  &#x2F;   \____$$\ \_$$  _|  $$  __$$\ $$  __$$\ $$ |$$ |$$  __$$\</span><br><span class="line"> $$  $$&lt;    $$$$$$$ |  Kali linux tools installer |$$ |$$ |$$ |  $$ |</span><br><span class="line"> $$ |\$$\  $$  __$$ |  $$ |$$\ $$ |  $$ |$$ |  $$ |$$ |$$ |$$ |  $$ |</span><br><span class="line"> $$ | \$$\ \$$$$$$$ |  \$$$$  |\$$$$$$  |\$$$$$$  |$$ |$$ |$$ |  $$ |</span><br><span class="line"> \__|  \__| \_______|   \____&#x2F;  \______&#x2F;  \______&#x2F; \__|\__|\__|  \__| V2.0</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> + -- -- +&#x3D;[ Author: LionSec | Homepage: www.neodrix.com</span><br><span class="line"> + -- -- +&#x3D;[ 331 Tools</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[W] Before updating your system , please remove all Kali-linux repositories to avoid any kind of problem .</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1) Add Kali repositories &amp; Update</span><br><span class="line">2) View Categories</span><br><span class="line">3) Install classicmenu indicator</span><br><span class="line">4) Install Kali menu</span><br><span class="line">5) Help</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">kat &gt;</span><br></pre></td></tr></table></figure>
-
-<p>If this appear in your screen.<br>You make it, bro!!!!!!<br>Congratulations!!!</p>
-<hr>
-<p>第八步: 我的一个朋友好了(I am fine)</p>
-<p>都装好了还不快用?? 在这傻愣着干嘛!!</p>
-<p>END.</p>
-<hr>
-<p>以上就是我的一次记录,欢迎大家指出问题或者解决我提出的问题,Thanks!<br>(啥, 你问我为啥最后要用英文??? 那必然是快考六级了, 提前练练啊<del>)<br>QQ: 527430509<br>欢迎大家喔</del></p>
-
-      
+<div class="post">
+    <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/" title="三种网络状态">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 09, 2019</p>
+        <h3><a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/" title="三种网络状态" class="posttitle">三种网络状态</a></h3>
+        <p>三种网络状态 NAT, Bridge, Host-Only
+由于发生了一些让人非常不耐烦的事情, 导致我几乎崩溃, 于是便有了这个, 用来让自己充分理解一...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" data-id="cko8cmzon0005ic0r6kx5ahn4" data-title="Ubuntu安装katoolin工具" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-    <article id="post-Nmap使用记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="article-date">
-  <time class="dt-published" datetime="2019-12-08T11:34:13.000Z" itemprop="datePublished">2019-12-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">Nmap使用记录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Nmap使用记录"><a href="#Nmap使用记录" class="headerlink" title="Nmap使用记录"></a>Nmap使用记录</h2><hr>
-<p><strong>前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自己写呢?人类真是奇怪的生物~</strong></p>
-<hr>
-<p>进入正题.</p>
-<p>输入<code>Nmap --help</code>即可获得帮助</p>
-<p><del>好了,我说完了.</del></p>
-<p>怎么可能嘛!</p>
-<p>你会得到这么多</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line">TARGET SPECIFICATION:</span><br><span class="line">  Can pass hostnames, IP addresses, networks, etc.</span><br><span class="line">  Ex: scanme.nmap.org, microsoft.com&#x2F;24, 192.168.0.1; 10.0.0-255.1-254</span><br><span class="line">  -iL &lt;inputfilename&gt;: Input from list of hosts&#x2F;networks</span><br><span class="line">  -iR &lt;num hosts&gt;: Choose random targets</span><br><span class="line">  --exclude &lt;host1[,host2][,host3],...&gt;: Exclude hosts&#x2F;networks</span><br><span class="line">  --excludefile &lt;exclude_file&gt;: Exclude list from file</span><br><span class="line">HOST DISCOVERY:</span><br><span class="line">  -sL: List Scan - simply list targets to scan</span><br><span class="line">  -sn: Ping Scan - disable port scan</span><br><span class="line">  -Pn: Treat all hosts as online -- skip host discovery</span><br><span class="line">  -PS&#x2F;PA&#x2F;PU&#x2F;PY[portlist]: TCP SYN&#x2F;ACK, UDP or SCTP discovery to given ports</span><br><span class="line">  -PE&#x2F;PP&#x2F;PM: ICMP echo, timestamp, and netmask request discovery probes</span><br><span class="line">  -PO[protocol list]: IP Protocol Ping</span><br><span class="line">  -n&#x2F;-R: Never do DNS resolution&#x2F;Always resolve [default: sometimes]</span><br><span class="line">  --dns-servers &lt;serv1[,serv2],...&gt;: Specify custom DNS servers</span><br><span class="line">  --system-dns: Use OS&#39;s DNS resolver</span><br><span class="line">  --traceroute: Trace hop path to each host</span><br><span class="line">SCAN TECHNIQUES:</span><br><span class="line">  -sS&#x2F;sT&#x2F;sA&#x2F;sW&#x2F;sM: TCP SYN&#x2F;Connect()&#x2F;ACK&#x2F;Window&#x2F;Maimon scans</span><br><span class="line">  -sU: UDP Scan</span><br><span class="line">  -sN&#x2F;sF&#x2F;sX: TCP Null, FIN, and Xmas scans</span><br><span class="line">  --scanflags &lt;flags&gt;: Customize TCP scan flags</span><br><span class="line">  -sI &lt;zombie host[:probeport]&gt;: Idle scan</span><br><span class="line">  -sY&#x2F;sZ: SCTP INIT&#x2F;COOKIE-ECHO scans</span><br><span class="line">  -sO: IP protocol scan</span><br><span class="line">  -b &lt;FTP relay host&gt;: FTP bounce scan</span><br><span class="line">PORT SPECIFICATION AND SCAN ORDER:</span><br><span class="line">  -p &lt;port ranges&gt;: Only scan specified ports</span><br><span class="line">    Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9</span><br><span class="line">  --exclude-ports &lt;port ranges&gt;: Exclude the specified ports from scanning</span><br><span class="line">  -F: Fast mode - Scan fewer ports than the default scan</span><br><span class="line">  -r: Scan ports consecutively - don&#39;t randomize</span><br><span class="line">  --top-ports &lt;number&gt;: Scan &lt;number&gt; most common ports</span><br><span class="line">  --port-ratio &lt;ratio&gt;: Scan ports more common than &lt;ratio&gt;</span><br><span class="line">SERVICE&#x2F;VERSION DETECTION:</span><br><span class="line">  -sV: Probe open ports to determine service&#x2F;version info</span><br><span class="line">  --version-intensity &lt;level&gt;: Set from 0 (light) to 9 (try all probes)</span><br><span class="line">  --version-light: Limit to most likely probes (intensity 2)</span><br><span class="line">  --version-all: Try every single probe (intensity 9)</span><br><span class="line">  --version-trace: Show detailed version scan activity (for debugging)</span><br><span class="line">SCRIPT SCAN:</span><br><span class="line">  -sC: equivalent to --script&#x3D;default</span><br><span class="line">  --script&#x3D;&lt;Lua scripts&gt;: &lt;Lua scripts&gt; is a comma separated list of</span><br><span class="line">           directories, script-files or script-categories</span><br><span class="line">  --script-args&#x3D;&lt;n1&#x3D;v1,[n2&#x3D;v2,...]&gt;: provide arguments to scripts</span><br><span class="line">  --script-args-file&#x3D;filename: provide NSE script args in a file</span><br><span class="line">  --script-trace: Show all data sent and received</span><br><span class="line">  --script-updatedb: Update the script database.</span><br><span class="line">  --script-help&#x3D;&lt;Lua scripts&gt;: Show help about scripts.</span><br><span class="line">           &lt;Lua scripts&gt; is a comma-separated list of script-files or</span><br><span class="line">           script-categories.</span><br><span class="line">OS DETECTION:</span><br><span class="line">  -O: Enable OS detection</span><br><span class="line">  --osscan-limit: Limit OS detection to promising targets</span><br><span class="line">  --osscan-guess: Guess OS more aggressively</span><br><span class="line">TIMING AND PERFORMANCE:</span><br><span class="line">  Options which take &lt;time&gt; are in seconds, or append &#39;ms&#39; (milliseconds),</span><br><span class="line">  &#39;s&#39; (seconds), &#39;m&#39; (minutes), or &#39;h&#39; (hours) to the value (e.g. 30m).</span><br><span class="line">  -T&lt;0-5&gt;: Set timing template (higher is faster)</span><br><span class="line">  --min-hostgroup&#x2F;max-hostgroup &lt;size&gt;: Parallel host scan group sizes</span><br><span class="line">  --min-parallelism&#x2F;max-parallelism &lt;numprobes&gt;: Probe parallelization</span><br><span class="line">  --min-rtt-timeout&#x2F;max-rtt-timeout&#x2F;initial-rtt-timeout &lt;time&gt;: Specifies</span><br><span class="line">      probe round trip time.</span><br><span class="line">  --max-retries &lt;tries&gt;: Caps number of port scan probe retransmissions.</span><br><span class="line">  --host-timeout &lt;time&gt;: Give up on target after this long</span><br><span class="line">  --scan-delay&#x2F;--max-scan-delay &lt;time&gt;: Adjust delay between probes</span><br><span class="line">  --min-rate &lt;number&gt;: Send packets no slower than &lt;number&gt; per second</span><br><span class="line">  --max-rate &lt;number&gt;: Send packets no faster than &lt;number&gt; per second</span><br><span class="line">FIREWALL&#x2F;IDS EVASION AND SPOOFING:</span><br><span class="line">  -f; --mtu &lt;val&gt;: fragment packets (optionally w&#x2F;given MTU)</span><br><span class="line">  -D &lt;decoy1,decoy2[,ME],...&gt;: Cloak a scan with decoys</span><br><span class="line">  -S &lt;IP_Address&gt;: Spoof source address</span><br><span class="line">  -e &lt;iface&gt;: Use specified interface</span><br><span class="line">  -g&#x2F;--source-port &lt;portnum&gt;: Use given port number</span><br><span class="line">  --proxies &lt;url1,[url2],...&gt;: Relay connections through HTTP&#x2F;SOCKS4 proxies</span><br><span class="line">  --data &lt;hex string&gt;: Append a custom payload to sent packets</span><br><span class="line">  --data-string &lt;string&gt;: Append a custom ASCII string to sent packets</span><br><span class="line">  --data-length &lt;num&gt;: Append random data to sent packets</span><br><span class="line">  --ip-options &lt;options&gt;: Send packets with specified ip options</span><br><span class="line">  --ttl &lt;val&gt;: Set IP time-to-live field</span><br><span class="line">  --spoof-mac &lt;mac address&#x2F;prefix&#x2F;vendor name&gt;: Spoof your MAC address</span><br><span class="line">  --badsum: Send packets with a bogus TCP&#x2F;UDP&#x2F;SCTP checksum</span><br><span class="line">OUTPUT:</span><br><span class="line">  -oN&#x2F;-oX&#x2F;-oS&#x2F;-oG &lt;file&gt;: Output scan in normal, XML, s|&lt;rIpt kIddi3,</span><br><span class="line">     and Grepable format, respectively, to the given filename.</span><br><span class="line">  -oA &lt;basename&gt;: Output in the three major formats at once</span><br><span class="line">  -v: Increase verbosity level (use -vv or more for greater effect)</span><br><span class="line">  -d: Increase debugging level (use -dd or more for greater effect)</span><br><span class="line">  --reason: Display the reason a port is in a particular state</span><br><span class="line">  --open: Only show open (or possibly open) ports</span><br><span class="line">  --packet-trace: Show all packets sent and received</span><br><span class="line">  --iflist: Print host interfaces and routes (for debugging)</span><br><span class="line">  --append-output: Append to rather than clobber specified output files</span><br><span class="line">  --resume &lt;filename&gt;: Resume an aborted scan</span><br><span class="line">  --stylesheet &lt;path&#x2F;URL&gt;: XSL stylesheet to transform XML output to HTML</span><br><span class="line">  --webxml: Reference stylesheet from Nmap.Org for more portable XML</span><br><span class="line">  --no-stylesheet: Prevent associating of XSL stylesheet w&#x2F;XML output</span><br><span class="line">MISC:</span><br><span class="line">  -6: Enable IPv6 scanning</span><br><span class="line">  -A: Enable OS detection, version detection, script scanning, and traceroute</span><br><span class="line">  --datadir &lt;dirname&gt;: Specify custom Nmap data file location</span><br><span class="line">  --send-eth&#x2F;--send-ip: Send using raw ethernet frames or IP packets</span><br><span class="line">  --privileged: Assume that the user is fully privileged</span><br><span class="line">  --unprivileged: Assume the user lacks raw socket privileges</span><br><span class="line">  -V: Print version number</span><br><span class="line">  -h: Print this help summary page.</span><br><span class="line">EXAMPLES:</span><br><span class="line">  nmap -v -A scanme.nmap.org</span><br><span class="line">  nmap -v -sn 192.168.0.0&#x2F;16 10.0.0.0&#x2F;8</span><br><span class="line">  nmap -v -iR 10000 -Pn -p 80</span><br><span class="line">SEE THE MAN PAGE (https:&#x2F;&#x2F;nmap.org&#x2F;book&#x2F;man.html) FOR MORE OPTIONS AND EXAMPLES</span><br></pre></td></tr></table></figure>
-
-
-
-<p>是不是特别多?<br><del>可这些都是基础用法:(</del></p>
-<p>那我来介绍一些我常用的指令吧.</p>
-<hr>
-<h3 id="nmap-a-b-c-d"><a href="#nmap-a-b-c-d" class="headerlink" title="nmap a.b.c.d"></a>nmap a.b.c.d</h3><p>基础一点的，最简单的就是:<br>nmap xxx.xxx.xxx.xxx</p>
-<p><strong>想不到吧!就是这么简单</strong></p>
-<ul>
-<li><p>但是,众所周知,在Windows防火墙里有这么一个设置选项:<br><strong>文件和打印机共享(回显请求 - ICMPv4-In)</strong><br>如果把这个禁用的话,理论上来说,在同一个网段里,你ping我是ping不通的,因为我并不会给你发送我的ICMP报文.</p>
-</li>
-<li><p>这样有什么好处?<br>Obviously, 要想知道好处,那我们得先了解网络扫描的基础.<br>怎么进行网络扫描?<br>最简单的也是最直接的,我们可以直接ping对方的主机.<br><strong>为什么能完成这项操作呢?</strong><br>答案很简单,由于是异常的IP数据报,那么对应的对方的层就是对方的网络层.<br>众所周知,网络层有一个非常著名的Internet控制报文协议(Internet Control Message Protocol).就是它的关系.<br>当你ping对方的主机的时候,对方就会给你发一个ICMP报文,来回应你的ping.<br>这就是探测存活主机的一种方法.</p>
-</li>
-<li><p>于是乎,关闭了这个功能,对方就不能直接ping到你了,也就对你主机的状态无从得知.</p>
-</li>
-</ul>
-<hr>
-<h3 id="Pn"><a href="#Pn" class="headerlink" title="-Pn"></a>-Pn</h3><p>上回书说到,我们可以关闭ICMP回显请求来做到简单的防御.但是nmap这个工具之所以如此受喜爱,也是有原因的.<br>有矛就有盾,一般来说,攻击技术都比防御技术更加先进.或者,换句话说,借用”白帽子讲Web安全”里面的一句话来说,<br>“同样是研究安全,白帽子和黑帽子在工作时的心态是完全不同的.”<br>“对于黑帽子来说,只要能找到系统的一个弱点,就可以达到入侵系统的目的;而对于白帽子来说,必须找到系统的所有弱点,不能有遗漏,才能保证系统不会出现问题.这种差异是由于工作环境与工作目标的不同而导致的.”<br>这揭示了两种群体工作的本质.<br><strong>回到我们的主题.当你的攻击目标不给你发送ICMP回显请求了,那这个时候我们该怎么办呢?</strong></p>
-<ul>
-<li>Obviously, 我们可以使用-Pn指令<br><code>nmap -Pn xxx.xxx.xxx.xxx</code><br>nmap对于-Pn的解释也很简单暴力,Treat all hosts as online – skip host discovery<br>就是认为所有的主机都是存活的.最简单的也是最直接的,我可以构造一个畸形的IP数据报.这样在同一个网段下,我可以向所有的主机发送这个报文,当然,由于这个IP数据报是畸形的,你肯定不会收到.因为按照网络的结构以及功能来说, 我在本层的工作就由我本层来完成,如果出错,那都是我本层的事,无关高层.于是在这个前提下,对方并不知道你对自己做了什么,但是你就可以探测到存活主机.</li>
-</ul>
-<hr>
-<h3 id="sS"><a href="#sS" class="headerlink" title="-sS"></a>-sS</h3><p>众所周知,-Pn是假定所有的主机都是存活的,但是带来的反作用就是,实在是太慢了.太慢太慢了.<br>有时候真的慢到很难接受.而且最奇怪的一点就是.有时候,你会扫描到一些奇怪的设备,但是这些设备可能没有在使用.<br>(比如说我曾经扫描到几台摄像机= =)</p>
-<p>于是,我们采用更快捷的方法.</p>
-<p><strong>既然网络层呆不下去了,我们就转战传输层吧</strong></p>
-<p>来到传输层,我们就要面对一个很神奇的东西,也是所有面试老哥最烦被问到的问题之一 -“三次握手和四次握手”</p>
-<ul>
-<li>三次握手:<br>说白了,最简单易懂的说,三次握手就是,让两台计算机认为,我俩已经建立连接了.<br>$$ 说起三次握手,就不得不提到两个东西:Syn(Synchronize)和Ack(Acknowledge),也就是同步序列号和确认序列号<br><em></em><br>First handshake:<br>  客户端发送syn(seq = j)包到服务器,并进入SENT_SEND状态,等待服务器确认;<br><em></em><br>Second handshake:<br>  服务端接收到客户端的syn包,需要确认客户端发来的syn包(ack = j + 1), 同时自己也发送一个syn包(seq = k),也就是syn + ack报文,此时服务器进入SYN_RECV状态<br><em></em><br>Third handshake:<br>  客户端接收到服务端的syn + ack,向服务器发送ack(ack = ｋ + 1),此包发送完毕,进入ESTABLISHED状态<br><em></em><br>是不是很简单,举一个形象化的例子,就是A给B发送一条消息,怎么知道发送到了呢?那就看B发送回来的消息是不是B的消息加上A上一轮发送的消息.<br>如果是,那么,根据逻辑推断,A知道A可以发送,A可以接收,B可以发送,B可以接收.A全知道了<br>但是于此同时,B呢?B只知道A可以发送,B可以发送,B可以接收,唯一不确定的是A可不可以接收.<br>所以此时A要再发送B上一轮的消息给B,这样B知道A可以接收.此时可以认为A和B之间的连接是建立的了.</li>
-</ul>
-<p>但是,细心的朋友可能已经知道了,如果,在第二次握手的时候,我不发送报文回服务端,作为客户端的我就已经知道了B的主机是存活的.(因为我已经知道了B是可以发送和接收的)<br>于是,我就探测到了B主机存活.<br>具体可以使用<code>nmap -sS xxx.xxx.xxx.xxx</code><br>这是使用Syn进行半连接来扫描的.<br>熟悉tcp报文结构的人都知道,不止syn可以,还有很多其他的也可以.<br>比如说FIN啊,UDP啊之类的,都可以.</p>
-<hr>
-<h3 id="T-A-O-v等"><a href="#T-A-O-v等" class="headerlink" title="-T, -A, -O, -v等"></a>-T, -A, -O, -v等</h3><p>重要的部分都说完了,现在来说一些细枝末节的吧.</p>
-<p>-T: 设置时间参数 0 1 2 3 4 5,越大越快,基本作用也就是慢速欺骗防火墙啊之类的.<br>-O: 探测目标的操作系统,原理就是不同的端口的开放情况<br>-A: 激烈扫描模式,基本上相当于-O + -v + 基本script的扫描,很实用<br>-v: 打印详细信息,意思就是把主机的情况都详细的说明一下</p>
-<p>个人喜欢<br><code>nmap -T4 -A -v xxx.xxx.xxx.xxx</code></p>
-<hr>
-<p>Over!</p>
-<p>P.S. 为什么不说-sP呢,因为我是真的不是很喜欢这个东西.老实说,-sP和-Pn没啥太大的差距,反正-Pn也可以混合使用,无所谓啦~</p>
-
-      
+<div class="post">
+    <a href="/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" title="Ubuntu安装katoolin工具">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 09, 2019</p>
+        <h3><a href="/2019/12/09/Ubuntu%E5%AE%89%E8%A3%85katoolin%E5%B7%A5%E5%85%B7/" title="Ubuntu安装katoolin工具" class="posttitle">Ubuntu安装katoolin工具</a></h3>
+        <p>Ubuntu安装katoolin安装kali工具集
+前言：由于同学推荐，我第一次了解到了 Windows Subsystem of Linux，原了我一直...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" data-id="cko8cmzp6000cic0r6kzv1g3w" data-title="Nmap使用记录" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-    <article id="post-2019-12-8蓝桥杯校赛writeup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" class="article-date">
-  <time class="dt-published" datetime="2019-12-08T08:07:13.000Z" itemprop="datePublished">2019-12-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/">2019.12.8蓝桥杯校赛writeup</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="一次蓝桥杯的writeup"><a href="#一次蓝桥杯的writeup" class="headerlink" title="一次蓝桥杯的writeup"></a>一次蓝桥杯的writeup</h3><hr>
-<p><strong>说实话和去年的蓝桥杯校赛比起来，难度简单许多，</strong><br><strong>很多经典数据结构都没有考</strong><br><strong>那废话不多说，直接进入正题吧</strong></p>
-<hr>
-<ol>
-<li>问题描述<br>　　不超过19000的正整数中，与19000互质的数的个数是多少？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p><strong>Solve: 这是一道填空题,比较简单.说白了就是欧拉筛的用法,没什么好说的,代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int euler(int n)</span><br><span class="line">&#123;</span><br><span class="line">    int  res &#x3D; n;</span><br><span class="line">    for(int i &#x3D; 2; i * i &lt;&#x3D; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(n % i &#x3D;&#x3D; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            res &#x3D; res &#x2F; i * (i - 1);</span><br><span class="line">            while(n % i &#x3D;&#x3D; 0)&#123;</span><br><span class="line">                n &#x2F;&#x3D; i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if(n &gt; 1)</span><br><span class="line">    &#123;</span><br><span class="line">        res &#x3D; res &#x2F; n * (n - 1);</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    printf(&quot;%d&quot;, euler(n));</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>结果为7200</p>
-<ol start="2">
-<li>问题描述<br>　　请问十六进制数1949对应的十进制数是多少？请特别注意给定的是十六进制，求的是十进制。<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p><strong>Solve: 进制转换题,一道送分题,非常的简单,python一行代码搞定,如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(int(&#39;1949&#39;, 16))</span><br></pre></td></tr></table></figure>
-<p>结果为6473</p>
-<ol start="3">
-<li>问题描述<br>　　一棵包含有2019个结点的树，最多包含多少个叶结点？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p><strong>Solve: …..这个题目不会的,建议重新看一遍数据结构…….</strong></p>
-<p>结果为2018</p>
-<ol start="4">
-<li>问题描述<br>　　由1对括号，可以组成一种合法括号序列：()。<br>　　由2对括号，可以组成两种合法括号序列：()()、(())。<br>　　由4对括号组成的合法括号序列一共有多少种？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p><strong>Solve: 乍一看是一道递归,但是比赛的时候懒得写了,故直接手算,解决思路如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(((())))</span><br><span class="line">((()()))</span><br><span class="line">((())())</span><br><span class="line">((()))()</span><br><span class="line">(()(()))</span><br><span class="line">(()()())</span><br><span class="line">(()())()</span><br><span class="line">(())(())</span><br><span class="line">(())()()</span><br><span class="line">()((()))</span><br><span class="line">()(()())</span><br><span class="line">()(())()</span><br><span class="line">()()(())</span><br><span class="line">()()()()</span><br></pre></td></tr></table></figure>
-<p>结果为14</p>
-<ol start="5">
-<li>问题描述<br>　　小明非常不喜欢数字 2，包括那些数位上包含数字 2 的数。如果一个数的数位不包含数字 2，小明将它称为洁净数。<br>　　请问在整数 1 至 n 中，洁净数有多少个？<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>样例输出<br>18<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 10000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000。</li>
-</ol>
-<p><strong>Solve: 由于我选的是C/C++,所以编程题都是用C写的.这题没什么难点,故直接暴力解得(遇事不决走暴力~),代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    int count &#x3D; 0;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    for(int i &#x3D; 1;i &lt;&#x3D; n; i++)&#123;</span><br><span class="line">        int b &#x3D; i;</span><br><span class="line">        while(1)&#123;</span><br><span class="line">            if(b &#x3D;&#x3D; 0)</span><br><span class="line">                break;</span><br><span class="line">            if(b % 10 &#x3D;&#x3D; 2)&#123;</span><br><span class="line">                count +&#x3D; 1;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            b &#x3D; b &#x2F; 10;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    count &#x3D; n - count;</span><br><span class="line">    printf(&quot;%d&quot;, count);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="6">
-<li>问题描述<br>　　给定一个单词，请使用凯撒密码将这个单词加密。<br>　　凯撒密码是一种替换加密的技术，单词中的所有字母都在字母表上向后偏移3位后被替换成密文。即a变为d，b变为e，…，w变为z，x变为a，y变为b，z变为c。<br>　　例如，lanqiao会变成odqtldr。<br>输入格式<br>　　输入一行，包含一个单词，单词中只包含小写英文字母。<br>输出格式<br>　　输出一行，表示加密后的密文。<br>样例输入<br>lanqiao<br>样例输出<br>odqtldr<br>评测用例规模与约定<br>　　对于所有评测用例，单词中的字母个数不超过100。</li>
-</ol>
-<p><strong>Solve: …..又是一道送分题,凯撒密码都不知道写了多少次了…..代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    char passwd[100];</span><br><span class="line">    int i,j,k,t,move;</span><br><span class="line">    gets(passwd);</span><br><span class="line">    move &#x3D; 3;</span><br><span class="line">    for(i&#x3D;0; i&lt;strlen(passwd); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(passwd[i] &gt;&#x3D; &#39;A&#39; &amp;&amp; passwd[i] &lt;&#x3D; &#39;Z&#39;)</span><br><span class="line">        &#123;</span><br><span class="line">            passwd[i] &#x3D; ((passwd[i]-&#39;A&#39;)+move)%26+&#39;A&#39;;</span><br><span class="line">        &#125;</span><br><span class="line">        else if(passwd[i] &gt;&#x3D; &#39;a&#39; &amp;&amp; passwd[i] &lt;&#x3D; &#39;z&#39;)</span><br><span class="line">        &#123;</span><br><span class="line">            passwd[i] &#x3D; ((passwd[i] - &#39;a&#39;) + move) % 26 + &#39;a&#39;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%s&quot;, passwd);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="7">
-<li>问题描述<br>　　给定正整数 n，请问在整数 1 至 n 中，数字中没有数位相同的数有多少个？<br>　　例如，当 n=30 时，除开 11 和 22 以外，其他的数都没有数位相同，因此答案为 28。<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>样例输出<br>28<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 1000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000。</li>
-</ol>
-<p><strong>Solve: 这题….没什么好说的,很基本的一道算法题.要注意:只要有位数相同,就是数位相同,代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">int getlen(int a)</span><br><span class="line">&#123;</span><br><span class="line">    int count &#x3D; 0;</span><br><span class="line">    while (1)</span><br><span class="line">    &#123;</span><br><span class="line">        a &#x3D; a &#x2F; 10;</span><br><span class="line">        count++;</span><br><span class="line">        if(a &#x3D;&#x3D; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int i, j, n, count, signal, semaphore, mode, sema;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">    count &#x3D; n;</span><br><span class="line">    for(i &#x3D; 1; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(i &#x2F; 10 &#x3D;&#x3D; 0)</span><br><span class="line">        &#123;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            signal &#x3D; i;</span><br><span class="line">            semaphore &#x3D; signal % 10;</span><br><span class="line">            signal &#x3D; signal &#x2F; 10;</span><br><span class="line">            for (j &#x3D; 1; j &lt; getlen(i); j++)</span><br><span class="line">            &#123;</span><br><span class="line">                if(signal &#x3D;&#x3D; semaphore)</span><br><span class="line">                &#123;</span><br><span class="line">                    count--;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">                else</span><br><span class="line">                &#123;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                signal &#x3D; signal &#x2F; 10;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d&quot;, count);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>P.S. 这道题我写的比较的复杂,主要是刚考完操作系统,对semaphore,signal有着独特的情怀=_=,原谅我=w=</p>
-<ol start="8">
-<li>问题描述<br>　　小明开了一家花店，这天，有个客户定了非常多的花，按客户的需要，这些花要排成 n 行 m 列。<br>　　小明要将这些花运送到客户那，然而由于花太多，需要分两辆车才能装下。<br>　　小明怕自己弄错花的顺序，因此在分车的时候，他准备将前面一些列（注意不是行）的花放在第一辆车上，将其实的花放在第二辆车上。<br>　　已知每盆花的重量，要使第一辆车和第二辆车尽可能总重量一致，请帮助小明分装这些花，请告诉小明两辆车的重量最小差多少。<br>输入格式<br>　　输入的第一行包含两个整数 n, m，分别表示行数和列数。<br>　　接下来 n 行，每行 m 个正整数，分别表示每盆花的重量。<br>输出格式<br>　　输出一个整数，表示总重量最接近时两车的重量之差（的绝对值）。<br>样例输入<br>3 4<br>1 2 3 9<br>5 6 7 8<br>2 3 4 9<br>样例输出<br>7<br>样例说明<br>　　将前 3 列放一辆车，后 1 列放一辆车，第一辆比第二辆重 7 。<br>评测用例规模与约定<br>　　对于 30% 的评测用例，2 &lt;= n, m &lt;= 20。<br>　　对于 70% 的评测用例，2 &lt;= n, m &lt;= 100。<br>　　对于所有评测用例，2 &lt;= n, m &lt;= 1000，每盆花的重量不超过 1000。</li>
-</ol>
-<p><strong>Solve: 终于来了一道比较有兴趣的了,说白了就是先算出每一列的重量和,然后排序,再循环累加比较,具体代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int m, n;</span><br><span class="line">    int top &#x3D; 0, flo &#x3D; 0;</span><br><span class="line">    int i, j;</span><br><span class="line">    int weight[m];</span><br><span class="line">    int con &#x3D; 0;</span><br><span class="line">    int min &#x3D; 9999;</span><br><span class="line">    scanf(&quot;%d %d&quot;, &amp;n, &amp;m);</span><br><span class="line">    int a[n][m];</span><br><span class="line">    for(i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d&quot;, &amp;a[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; n; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            con +&#x3D; a[j][i];</span><br><span class="line">        &#125;</span><br><span class="line">        weight[i] &#x3D; con;</span><br><span class="line">        con &#x3D; 0;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(weight[i] &lt; weight[j])</span><br><span class="line">            &#123;</span><br><span class="line">                weight[i] &#x3D; weight[i] + weight[j];</span><br><span class="line">                weight[j] &#x3D; weight[i] - weight[j];</span><br><span class="line">                weight[i] &#x3D; weight[i] - weight[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    top &#x3D; 0;</span><br><span class="line">    flo &#x3D; 0;</span><br><span class="line">    for(i &#x3D; 0; i &lt; m; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; i; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            top +&#x3D; weight[j];</span><br><span class="line">        &#125;</span><br><span class="line">        for(j; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            flo +&#x3D; weight[j];</span><br><span class="line">        &#125;</span><br><span class="line">        if(min &gt; abs(top - flo))</span><br><span class="line">        &#123;</span><br><span class="line">            min &#x3D; abs(top - flo);</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        top &#x3D; 0;</span><br><span class="line">        flo &#x3D; 0;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d&quot;, min);</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="9">
-<li>问题描述<br>　　小明用积木搭了一个城堡。<br>　　为了方便，小明在搭的时候用的是一样大小的正方体积本，搭在了一个 n 行 m 列的方格图上，每个积木正好占据方格图的一个小方格。<br>　　当然，小明的城堡并不是平面的，而是立体的。小明可以将积木垒在别的积木上面。当一个方格上的积木垒得比较高时，就是一个高塔，当一个方格上没有积木时，就是一块平地。<br>　　小明的城堡可以用每个方格上垒的积木层数来表示。例如，下面就表示一个城堡。<br>　　9 3 3 1<br>　　3 3 3 0<br>　　0 0 0 0<br>　　这个城堡南面和东面都有空地，西北面有一个大房子，在西北角还有一个高塔，东北角有一个车库。<br>　　现在，格格巫要来破坏小明的城堡，他施了魔法水淹小明的城堡。<br>　　如果水的高度为1，则紧贴地面的那些积木要被水淹，在上面的例子中，有7块积木要被水淹。<br>　　如果水的高度为2，则更多积木要被水淹，在上面的例子中，有13块积木要被水淹。<br>　　给定小明的城堡图，请问，水的高度依次为1, 2, 3, …., H 时，有多少块积木要被水淹。<br>输入格式<br>　　输入的第一行包含两个整数 n, m。<br>　　接下来 n 行，每行 m 个整数，表示小明的城堡中每个位置积木的层数。<br>　　接下来包含一个整数 H，表示水高度的上限。<br>输出格式<br>　　输出 H 行，每行一个整数。第 i 的整数表示水的高度为 i 时被水淹的积木数量。<br>样例输入<br>3 4<br>9 3 3 1<br>3 3 3 0<br>0 0 0 0<br>10<br>样例输出<br>7<br>13<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>25<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n, m &lt;= 100，1 &lt;= H &lt;= 100，积木层数不超过100；<br>　　对于 70% 的评测用例，1 &lt;= n, m &lt;= 1000，1 &lt;= H &lt;= 1000，积木层数不超过1000；<br>　　对于所有评测用例，1 &lt;= n, m &lt;= 1000，1 &lt;= H &lt;= 100000，积木层数不超过1000000000。</li>
-</ol>
-<p><strong>Solve: 这个问题也是比较简单的题目了,基本思路和上一题差不多,不过多赘述了,代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">int main(int argc, char** argv)</span><br><span class="line">&#123;</span><br><span class="line">    int m, n;</span><br><span class="line">    int i, j;</span><br><span class="line">    int h;</span><br><span class="line">    int count;</span><br><span class="line">    scanf(&quot;%d %d&quot;, &amp;n, &amp;m);</span><br><span class="line">    int a[n][m];</span><br><span class="line">    int height[m * n];</span><br><span class="line">    int len &#x3D; 0;</span><br><span class="line">    for(i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d&quot;, &amp;a[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i &#x3D; 0; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j &#x3D; 0; j &lt; m; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(a[i][j] !&#x3D; 0)</span><br><span class="line">            &#123;</span><br><span class="line">                height[len] &#x3D; a[i][j];</span><br><span class="line">                len++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    scanf(&quot;%d&quot;, &amp;h);</span><br><span class="line">    for(i &#x3D; 1; i &lt; h + 1; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        count &#x3D; 0;</span><br><span class="line">        for(j &#x3D; 0; j &lt; len; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if (height[j] &gt;&#x3D; i)</span><br><span class="line">            &#123;</span><br><span class="line">                count +&#x3D; i;</span><br><span class="line">            &#125;</span><br><span class="line">            else if(height[j] &lt; i)</span><br><span class="line">            &#123;</span><br><span class="line">                count +&#x3D; height[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;%d&quot;, count);</span><br><span class="line">        if(i !&#x3D; h)</span><br><span class="line">        &#123;</span><br><span class="line">            printf(&quot;\n&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    getchar();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="10">
-<li>问题描述<br>　　2015年，全中国实现了户户通电。作为一名电力建设者，小明正在帮助一带一路上的国家通电。<br>　　这一次，小明要帮助 n 个村庄通电，其中 1 号村庄正好可以建立一个发电站，所发的电足够所有村庄使用。<br>　　现在，这 n 个村庄之间都没有电线相连，小明主要要做的是架设电线连接这些村庄，使得所有村庄都直接或间接的与发电站相通。<br>　　小明测量了所有村庄的位置（坐标）和高度，如果要连接两个村庄，小明需要花费两个村庄之间的坐标距离加上高度差的平方，形式化描述为坐标为 (x_1, y_1) 高度为 h_1 的村庄与坐标为 (x_2, y_2) 高度为 h_2 的村庄之间连接的费用为<br>　　sqrt((x_1-x_2)<em>(x_1-x_2)+(y_1-y_2)</em>(y_1-y_2))+(h_1-h_2)*(h_1-h_2)。<br>　　在上式中 sqrt 表示取括号内的平方根。请注意括号的位置，高度的计算方式与横纵坐标的计算方式不同。<br>　　由于经费有限，请帮助小明计算他至少要花费多少费用才能使这 n 个村庄都通电。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示村庄的数量。<br>　　接下来 n 行，每个三个整数 x, y, h，分别表示一个村庄的横、纵坐标和高度，其中第一个村庄可以建立发电站。<br>输出格式<br>　　输出一行，包含一个实数，四舍五入保留 2 位小数，表示答案。<br>样例输入<br>4<br>1 1 3<br>9 9 7<br>8 8 6<br>4 5 4<br>样例输出</li>
-<li>41<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000，0 &lt;= x, y, h &lt;= 10000。</li>
-</ol>
-<p><strong>Solve: 本题是本次比赛里最难的一题,基本思路非常简单,但是考验写程序的人是否拥有基本的数据结构的概念,以及对图,prim算法,Kruskal算法的理解.题目大意就是,每个村庄有三个属性,(x, y, h)基本就是坐标轴嘛,然后每个结点间都要直接或间接的和1号节点连接,求怎么样花费最小</strong><br><strong>这个题一眼看过去,就知道是图论的最小生成树问题,自然而然的就想到了prim算法和Kruskal算法,代码如下:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><em>P.S. 写这题的时候,旁边有一个小老弟问我怎么做,我就直接简述了我的想法(还特意问了一下学过数据结构吗,他点了点头.)结果到最后的时候跟我说,”克鲁斯卡尔算法是啥”.真实给我整笑了hhhh</em></p>
-<hr>
-<p>总结一下吧,其实本来难度上并不是很高,可能原因是为了让所有人都适应这个比赛,不过难度确实应该再提高一点比较好.不过这次比赛也有些遗憾,自己的准备不充分也是一部分原因(没有复习结构体导致Kurskal算法纯数组实现,非常的麻烦而且看的头皮发麻),反思一下,为下次做准备.</p>
-<hr>
-<p>以上就是我对本次蓝桥杯的所有writeup<br>有什么写错的地方欢迎指出~<br>QQ:527430509</p>
-
-      
+<div class="post">
+    <a href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" title="Nmap使用记录">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 08, 2019</p>
+        <h3><a href="/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" title="Nmap使用记录" class="posttitle">Nmap使用记录</a></h3>
+        <p>Nmap使用记录
+前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" data-id="cko8cmzoa0001ic0r1t6v2f58" data-title="2019.12.8蓝桥杯校赛writeup" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
+<div class="post">
+    <a href="/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" title="2019.12.8蓝桥杯校赛writeup">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 08, 2019</p>
+        <h3><a href="/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/" title="2019.12.8蓝桥杯校赛writeup" class="posttitle">2019.12.8蓝桥杯校赛writeup</a></h3>
+        <p>一次蓝桥杯的writeup
+说实话和去年的蓝桥杯校赛比起来，难度简单许多，很多经典数据结构都没有考那废话不多说，直接进入正题吧
 
-  
-    <article id="post-生产者-消费者问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/02/%E7%94%9F%E4%BA%A7%E8%80%85-%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98/" class="article-date">
-  <time class="dt-published" datetime="2019-12-02T14:17:29.000Z" itemprop="datePublished">2019-12-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/02/%E7%94%9F%E4%BA%A7%E8%80%85-%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98/">生产者-消费者问题</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="进程调度笔记-1"><a href="#进程调度笔记-1" class="headerlink" title="进程调度笔记(1)"></a>进程调度笔记(1)</h3><hr>
-<p><strong>首先我们要知道什么是信号量</strong><br>信号量(Semaphore),是在多线程环境下使用的一种设施,是可以用来保证两个或多个关键代码段不被并发调用.<br>在进入一个关键代码段之前,线程必须获取一个信号量；一旦该关键代码段完成了,那么该线程必须释放信号量.<br>其它想进入该关键代码段的线程必须等待直到第一个线程释放信号量.</p>
-<p><strong>其次我们要知道什么是生产者-消费者问题</strong></p>
-<p>现在,我们有一个固定大小的缓冲区,有两个线程,一个是从这个缓冲区中读取数据(消费者),一个是从这个缓冲区中写入数据(生产者)<br>于是便产生了问题:生产者不能一直写数据,因为缓冲区的大小是有限的;同理,消费者也不能一直读数据,因为缓冲区会空</p>
-<p><code>于是引入两个操作P V</code><br>这两个操作是原子操作(意思就是运行时不会被中断)</p>
-<p>P操作:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">P(S)</span><br><span class="line">&#123;</span><br><span class="line">    while(S &lt;&#x3D; 0);</span><br><span class="line">    S--;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>V操作:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">V(S)</span><br><span class="line">&#123;</span><br><span class="line">    S++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>知道了这些,让我们回到问题</strong></p>
-<p>于是我们有了如下代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">semaphore mutex &#x3D; 1; &#x2F;&#x2F;互斥</span><br><span class="line">semaphore empty &#x3D; n;</span><br><span class="line">semaphore full &#x3D; 0;</span><br><span class="line">&#x2F;&#x2F; 定义全局变量</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Produce()</span><br><span class="line">&#123;</span><br><span class="line">    while(true)</span><br><span class="line">    &#123;</span><br><span class="line">        P(empty);</span><br><span class="line">        product(); &#x2F;&#x2F;生产1</span><br><span class="line">        V(full);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Consume()</span><br><span class="line">&#123;</span><br><span class="line">    while(true)</span><br><span class="line">    &#123;</span><br><span class="line">        P(full);</span><br><span class="line">        consume(); &#x2F;&#x2F;消费1</span><br><span class="line">        V(empty);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其实到这里,程序就写完了,但是有一个问题,假如我生产时,CPU突然跑过去给消费者了,然后再回来时,就有两个生产者进程了.为了解决这个问题,我们引入了互斥信号量<code>mutex</code></p>
-<p><strong>于是更改代码</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Produce()</span><br><span class="line">&#123;</span><br><span class="line">    while(true)</span><br><span class="line">    &#123;</span><br><span class="line">        P(mutex);</span><br><span class="line">        P(empty);</span><br><span class="line">        product(); &#x2F;&#x2F;生产1</span><br><span class="line">        V(full);</span><br><span class="line">        V(mutex);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Consume()</span><br><span class="line">&#123;</span><br><span class="line">    while(true)</span><br><span class="line">    &#123;</span><br><span class="line">        P(full);</span><br><span class="line">        P(mutex);</span><br><span class="line">        consume(); &#x2F;&#x2F;消费1</span><br><span class="line">        V(empty);</span><br><span class="line">        V(mutex);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>此时问题已经解决完了.但是,P(empty)和P(mutex)可以交换位置吗?<br><strong>答案显然是不行</strong></p>
-<p>因为,当你的empty为0的时候(极端情况),你生产者拿到了mutex的信号量,但是没拿到empty的信号量,于是进程阻塞.</p>
-<hr>
-<p>以上就是我对生产者-消费者模型的总结,有什么理解错误的地方还希望大家指出啊!<br>QQ:527430509</p>
-
-      
+问题描述　　不超过19...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/02/%E7%94%9F%E4%BA%A7%E8%80%85-%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98/" data-id="cko8cmzou0008ic0r4r8pftgm" data-title="生产者-消费者问题" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-    <article id="post-一次有趣的对话" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/12/01/%E4%B8%80%E6%AC%A1%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AF%B9%E8%AF%9D/" class="article-date">
-  <time class="dt-published" datetime="2019-12-01T15:59:16.000Z" itemprop="datePublished">2019-12-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/12/01/%E4%B8%80%E6%AC%A1%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AF%B9%E8%AF%9D/">一次有趣的对话</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>日常chuiniubility~</p>
-<hr>
-<p><strong>生活中本来就不缺少乐趣，关键是怎么get到点</strong></p>
-<p><del><strong>接下来我要说的事，你们千万不要害怕</strong></del><br><del><strong>我们是警察，我们不会怕怕</strong></del></p>
-<p><strong>咳咳言归正传，我们开始吧</strong></p>
-<hr>
-<p>AbeanCC: 算法这个东西，有时候就是看上去特别简单，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;于是就觉得自己特别的勇(<del>杰哥不要啊</del>)<br>AbeanCC: 结果自己一上手去写，就感觉不是那样了。</p>
-<p>CRJ: 就跟我写LR(0)的时候一样</p>
-<p>AbeanCC: 一开始，你自信满满，只是测试了几行代码，编译器迁就着你。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在你感叹自己写了这么多行代码的时候，编译器拒绝了你。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你哭哭啼啼的询问着为什么，得到的确实一声声冰冷的ERROR。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你苦苦地哀求着编译器，祈求着它给你一丝生机，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可他却一把把你按在桌子上，说到:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“今天也要满足我喔？”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你一边摇头拒绝，一边却又半推半就的倒在他的提示里<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“啊！好快！好爽！”你一边看着编译器给你的修改提示，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一边修改着残缺不全的代码<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“真是个色情的家伙呢”，编译器说到<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……省略1w字小H文</p>
-<p>CRJ: 人 X 编译器，那怕是只能通过接口交配了<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后生出了一个小的人工智能！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以自己编写自己想要的代码</p>
-<p>AbeanCC: 这是碳基智能和硅基智能之间的爱恨情仇</p>
-<p>CRJ: 史称，赛博坦事件(?)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原来幻视和奥创就是你创造的！</p>
-<p>AbeanCC: 在经历了这么多年的风风雨雨，回首往事，其实自己需要的，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只是那个，陪伴自己很久很久的贾维斯</p>
-<hr>
-<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真是服了自己，居然这么具有想象力。其实生活中不缺少乐趣，只是你需要拥有一双发现乐趣的眼睛罢了。可能只有两个思维足够跳跃的人，才能想到如上的对话吧。</p>
-
-      
+<div class="post">
+    <a href="/2019/12/02/%E7%94%9F%E4%BA%A7%E8%80%85-%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98/" title="生产者-消费者问题">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 02, 2019</p>
+        <h3><a href="/2019/12/02/%E7%94%9F%E4%BA%A7%E8%80%85-%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98/" title="生产者-消费者问题" class="posttitle">生产者-消费者问题</a></h3>
+        <p>进程调度笔记(1)
+首先我们要知道什么是信号量信号量(Semaphore),是在多线程环境下使用的一种设施,是可以用来保证两个或多个关键代码段不被并发调用...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://abeancc.github.io/2019/12/01/%E4%B8%80%E6%AC%A1%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AF%B9%E8%AF%9D/" data-id="cko8cmzop0006ic0r6k66gek6" data-title="一次有趣的对话" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
+<div class="post">
+    <a href="/2019/12/01/%E4%B8%80%E6%AC%A1%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AF%B9%E8%AF%9D/" title="一次有趣的对话">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 01, 2019</p>
+        <h3><a href="/2019/12/01/%E4%B8%80%E6%AC%A1%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AF%B9%E8%AF%9D/" title="一次有趣的对话" class="posttitle">一次有趣的对话</a></h3>
+        <p>日常chuiniubility~
 
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">weiter &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+生活中本来就不缺少乐趣，关键是怎么get到点
+接下来我要说的事，你们千万不要害怕我们是警察，我们不会怕怕
+咳咳言归正传...</p>
     </div>
-  </div>
+</div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/">20200418蓝桥杯模拟writeup</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/">collections的使用</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/16/BlcokChain-1-SimpleBlockChian/">BlcokChain[1]--SimpleBlockChian</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/">Python数据转换二进制</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/09/%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/">三种网络状态</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 AbeanCC<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <div id="pager"><a href="/page/2/" class="more">加载更多</a></div>
+    
+</div>
+<div id="preview"></div>
 
 
 
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 </html>
