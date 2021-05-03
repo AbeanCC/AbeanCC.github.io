@@ -59,6 +59,12 @@
 <hr>
 <p>By. AbeanCC<br>QQ. 527430509<br>Thanks</p>
 ]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>2019.12.8蓝桥杯校赛writeup</title>
@@ -132,6 +138,12 @@
 <hr>
 <p>以上就是我对本次蓝桥杯的所有writeup<br>有什么写错的地方欢迎指出~<br>QQ:527430509</p>
 ]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>BlcokChain[1]--SimpleBlockChian</title>
@@ -161,6 +173,12 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Chain:</span><br><span class="line">        Block:</span><br><span class="line">                Data: Genesis</span><br><span class="line">                OwnHash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5</span><br><span class="line">                PreviousHash: </span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有十块钱</span><br><span class="line">                OwnHash: e955d6b2656633c5855cfd08c9f96f4d6cf1233115c6b28ef2e8acb0ea0be9e0</span><br><span class="line">                PreviousHash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有二十块钱</span><br><span class="line">                OwnHash: 444d95fe961da65f4ab2990380c390c1558b7d0d516848dd332e9b7d62c632d0</span><br><span class="line">                PreviousHash: e955d6b2656633c5855cfd08c9f96f4d6cf1233115c6b28ef2e8acb0ea0be9e0</span><br><span class="line">        Block:</span><br><span class="line">                OwnHash: c616e399a667b3a3f7c110b48e433846b6fd7f3fe703820b2a59ed61d2cc99ed</span><br><span class="line">                PreviousHash: 444d95fe961da65f4ab2990380c390c1558b7d0d516848dd332e9b7d62c632d0</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有四十块钱</span><br><span class="line">                OwnHash: 2619942d5689a95bfc899d503d702db784b14834d34ea5000c3c1625a89558e7</span><br><span class="line">                PreviousHash: c616e399a667b3a3f7c110b48e433846b6fd7f3fe703820b2a59ed61d2cc99ed</span><br><span class="line">        Block:</span><br><span class="line">                Data: 我有五十块钱</span><br><span class="line">                OwnHash: 5b931c9e6e7da60d5a74203264ed49fd5111e064df80acf642fb6220ebf9d642</span><br><span class="line">                PreviousHash: 2619942d5689a95bfc899d503d702db784b14834d34ea5000c3c1625a89558e7</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
 <p>这也就预示着,这个简单的区块链就完成啦.</p>
 ]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>区块链</tag>
+      </tags>
   </entry>
   <entry>
     <title>MarkDown的使用记录</title>
@@ -247,6 +265,12 @@
 </ul>
 <h2 id="当然还有-amp-nbsp-它表示一个空格。"><a href="#当然还有-amp-nbsp-它表示一个空格。" class="headerlink" title="当然还有&amp;nbsp;它表示一个空格。"></a>当然还有<code>&amp;nbsp;</code>它表示一个空格。</h2><p><strong>以上就是我对MarkDown的基础用法的总结啦，至于更高级的用法，还需要靠日后的多家摸索才行呀！</strong></p>
 ]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
   </entry>
   <entry>
     <title>Syn_Flood</title>
@@ -293,6 +317,12 @@
 <li><strong>怎么说呢，主要还是scapy过于强大，导致原本过于复杂的任务变得非常的轻松。总的来说还是有一些缺憾吧，比如没有加入多线程，没有考虑到相同的mac地址之类的，总之下一次在继续完善吧~</strong></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>SYN攻击</tag>
+      </tags>
   </entry>
   <entry>
     <title>Ubuntu安装katoolin工具</title>
@@ -359,6 +389,12 @@
 <hr>
 <p>以上就是我的一次记录,欢迎大家指出问题或者解决我提出的问题,Thanks!<br>(啥, 你问我为啥最后要用英文??? 那必然是快考六级了, 提前练练啊<del>)<br>QQ: 527430509<br>欢迎大家喔</del></p>
 ]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+      </tags>
   </entry>
   <entry>
     <title>一次有趣的对话</title>
@@ -379,6 +415,12 @@
 <hr>
 <h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真是服了自己，居然这么具有想象力。其实生活中不缺少乐趣，只是你需要拥有一双发现乐趣的眼睛罢了。可能只有两个思维足够跳跃的人，才能想到如上的对话吧。</p>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
+      </tags>
   </entry>
   <entry>
     <title>三种网络状态</title>
@@ -406,6 +448,12 @@
 <hr>
 <p>以上就是我对这三种网络状态的理解了.<br>有什么不对的不妥当的理解错误的欢迎指出~<br>QQ: 527430509</p>
 ]]></content>
+      <categories>
+        <category>基础知识</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+      </tags>
   </entry>
   <entry>
     <title>生产者-消费者问题</title>
@@ -439,6 +487,12 @@
 <hr>
 <p>以上就是我对生产者-消费者模型的总结,有什么理解错误的地方还希望大家指出啊!<br>QQ:527430509</p>
 ]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>记录一些心得</title>
@@ -491,6 +545,12 @@
 <hr>
 <p><strong>以上就是搭建一个简易的博客的全部啦</strong><br><strong>后期可以对自己的博客进行美化，比如更换主题啊之类的</strong></p>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
+      </tags>
   </entry>
   <entry>
     <title>collections的使用</title>
@@ -539,6 +599,12 @@
 
 <hr>
 ]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>库介绍</tag>
+      </tags>
   </entry>
   <entry>
     <title>Python数据转换二进制</title>
@@ -564,6 +630,12 @@
 <hr>
 <p>P.S. 为什么会想到写这个呢? 因为再写RC4算法的时候,突然想到了,就心血来潮的给写了.然后后来自己看着都烦,于是正好借着机会给自己疏通疏通.<br>(真就是写推导式的坏处啊,还不写备注= =)</p>
 ]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>Nmap使用记录</title>
@@ -615,5 +687,11 @@
 <p>Over!</p>
 <p>P.S. 为什么不说-sP呢,因为我是真的不是很喜欢这个东西.老实说,-sP和-Pn没啥太大的差距,反正-Pn也可以混合使用,无所谓啦~</p>
 ]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+      </tags>
   </entry>
 </search>
