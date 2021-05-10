@@ -721,7 +721,34 @@
         <category>生活</category>
       </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的腾讯面经</title>
+    <url>/2021/05/10/%E6%88%91%E7%9A%84%E8%85%BE%E8%AE%AF%E9%9D%A2%E7%BB%8F/</url>
+    <content><![CDATA[<h3 id="WXG凉凉实况（x）"><a href="#WXG凉凉实况（x）" class="headerlink" title="WXG凉凉实况（x）"></a>WXG凉凉实况（x）</h3><p><strong>以此文来记录一下自己失败的WXG面试经历吧~</strong></p>
+<h4 id="3-17-一面（63min）"><a href="#3-17-一面（63min）" class="headerlink" title="3-17 一面（63min）"></a>3-17 一面（63min）</h4><p>上来直接代码题(类似于 股票(一次交易))<br>问了和本题目相关的解法问题(对我的解法有疑问)<br>怼项目(腾讯面试有关项目的问的是真的多)<br>问了opencv相关<br>了解清楚后,问了利用opencv解决一个实际问题(将一个视频拆分成gif)<br>相似的图片进行压缩.(怎么压缩? 压缩的比例? opencv怎么识别相似的图片? 你的理解是什么?)<br>怼实习? 没实习经历<br>对C语言了解吗? 对一个链表进行排序,你会怎么做? 实现一下?<br>以为微信聊天为例,你和你朋友发送消息,之间所有的你认识到的技术,流程,说一说?<br>(发送? 接收? 按序发送/接收? 断网情况下怎么做到按序传输? 撤回怎么处理?)<br>问了问有没有offer<br>提问环节</p>
+<h4 id="3-24-二面（77min）"><a href="#3-24-二面（77min）" class="headerlink" title="3-24 二面（77min）"></a>3-24 二面（77min）</h4><p>一开始使用的是面呗,但是发现没声音,故转到了腾讯会议<br>自我介绍<br>问了些学校的基本情况,然后开始介绍最近的一个项目<br>就这个项目展开聊了很多(区块链)<br>安全性?一致性?(其中安全性聊到了工业级别的大型区块链)<br>多线程怎么操作的?<br>分布式怎么做的?<br>以此为基点,聊了其他的项目<br>问了一些opencv的问题<br>问了一些关于神经网络的东西(工业级别的)<br>问了项目协同方面的问题(git?)<br>问了我是否除了python其他都不会<br>还会c,java<br>会做移动端吗?<br>本科期间学过安卓开发,但是后来就没怎么做过了.现在大致了解的情况(Activity,Intent,Service,ContainPrivider等)<br>看我有算法比赛的奖,考了三道算法图</p>
+<ol>
+<li>m*n阶矩阵,每一行左边的元素大于右边,下边的元素大于上边,每一行第一个元素大于上一行最后一个元素,求K是否在这个矩阵内</li>
+<li>字符串求解不含重复字符的最长子串(双指针)</li>
+<li>有N个文件file1, file2, …, fileN, 里面存储的都是英文单词,用空格隔开.现给你一个英文单词,让你求出在哪些文件中出现过.fileN可能非常大.考虑查询的可重复性.(大文件读写题)<br>问了我第一题是否还可以优化?<br>问了我Python相关的知识<br>GIL?<br>迭代器和生成器?<br>问了我是否使用过Hadoop等大数据工具?<br>问了我是否使用过诸如Mysql, Redis等数据库工具<br>提问环节</li>
+</ol>
+<h4 id="4-6-GM-EVP-面委会面-（70min）"><a href="#4-6-GM-EVP-面委会面-（70min）" class="headerlink" title="4-6 GM/EVP/面委会面 （70min）"></a>4-6 GM/EVP/面委会面 （70min）</h4><p>三道算法题</p>
+<ol>
+<li>“Write a function that accepts an Excel column name and returns the corresponding column number.” And give the test cases.<br>they go like this:<br>A B C . . . Z AA AB AC . . . AZ BA BB BC . . . BZ CA CB CC . . . AAA AAB etc.</li>
+<li>熟悉的陌生人<br>大家都知道微信用户都是双向的好友，a是b的好友，那么b一定是a的好友，现在给定一个用户列表，其中有些用户是好友，有些不是，请判断，这些用户是否可以划分为两组，并且每组内的用户，互相都不是好友。如果能，请给出这个划分。</li>
+<li>有n个加油站形成一个环，所有加油站里面的油合起来刚刚够一辆汽车跑完这个环，已经知道每个加油站的油量和加油站之间的距离，给你一个空车，设计一个路径能够跑完这个环<br>提问环节</li>
+</ol>
+<hr>
+<p>哎，我GM面的算法题啊真的是回答的烂爆了，只能怪自己太垃圾了呜呜呜呜呜呜。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
       </tags>
   </entry>
 </search>
