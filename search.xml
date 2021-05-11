@@ -1,72 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>20200418蓝桥杯模拟writeup</title>
-    <url>/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/</url>
-    <content><![CDATA[<h3 id="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"><a href="#今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教" class="headerlink" title="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"></a>今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教</h3><hr>
-<ol>
-<li>问题描述<br>　　由1对括号，可以组成一种合法括号序列：()。<br>　　由2对括号，可以组成两种合法括号序列：()()、(())。<br>　　由4对括号组成的合法括号序列一共有多少种？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>答案很简单，是14</p>
-<ol start="2">
-<li>问题描述<br>　　一个包含有2019个结点的无向连通图，最少包含多少条边？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>答案也很简单， 2018</p>
-<ol start="3">
-<li>问题描述<br>　　在计算机存储中，12.5MB是多少字节？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>这个只要算一下就好， 12.5 x 1024 B = 12800 B</p>
-<ol start="4">
-<li>问题描述<br>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
-</ol>
-<p>这个就是一个很简单的全排列问题。A77 = 5040</p>
-<ol start="5">
-<li>问题描述<br>　　给定三个整数 a, b, c，如果一个整数既不是 a 的整数倍也不是 b 的整数倍还不是 c 的整数倍，则这个数称为反倍数。<br>　　请问在 1 至 n 中有多少个反倍数。<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>　　第二行包含三个整数 a, b, c，相邻两个数之间用一个空格分隔。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>2 3 6<br>样例输出<br>10<br>样例说明<br>　　以下这些数满足要求：1, 5, 7, 11, 13, 17, 19, 23, 25, 29。<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 10000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000，1 &lt;= a &lt;= n，1 &lt;= b &lt;= n，1 &lt;= c &lt;= n。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">a &#x3D; eval(a)</span><br><span class="line">b &#x3D; eval(b)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line">count &#x3D; 0</span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    if i % a &#x3D;&#x3D; 0 or i % b &#x3D;&#x3D; 0 or i % c &#x3D;&#x3D; 0:</span><br><span class="line">        pass</span><br><span class="line">    else:</span><br><span class="line">        count +&#x3D; 1</span><br><span class="line">print(count)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>直接一个循环搞定</p>
-<ol start="6">
-<li>问题描述<br>　　给定一个单词，请使用凯撒密码将这个单词加密。<br>　　凯撒密码是一种替换加密的技术，单词中的所有字母都在字母表上向后偏移3位后被替换成密文。即a变为d，b变为e，…，w变为z，x变为a，y变为b，z变为c。<br>　　例如，lanqiao会变成odqtldr。<br>输入格式<br>　　输入一行，包含一个单词，单词中只包含小写英文字母。<br>输出格式<br>　　输出一行，表示加密后的密文。<br>样例输入<br>lanqiao<br>样例输出<br>odqtldr<br>评测用例规模与约定<br>　　对于所有评测用例，单词中的字母个数不超过100。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">string &#x3D; input()</span><br><span class="line">outstring &#x3D; &quot;&quot;</span><br><span class="line">for i in range(len(string)):</span><br><span class="line">    if ord(string[i]) + 3 &gt; 122:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3 - 122 + 96)</span><br><span class="line">    else:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3)</span><br><span class="line">print(outstring)</span><br></pre></td></tr></table></figure>
-
-<p>考烂掉的题目了..</p>
-<ol start="7">
-<li>问题描述<br>　　如果一个序列的奇数项都比前一项大，偶数项都比前一项小，则称为一个摆动序列。即 a[2i]&lt;a[2i-1], a[2i+1]&gt;a[2i]。<br>　　小明想知道，长度为 m，每个数都是 1 到 n 之间的正整数的摆动序列一共有多少个。<br>输入格式<br>　　输入一行包含两个整数 m，n。<br>输出格式<br>　　输出一个整数，表示答案。答案可能很大，请输出答案除以10000的余数。<br>样例输入<br>3 4<br>样例输出<br>14<br>样例说明<br>　　以下是符合要求的摆动序列：<br>　　2 1 2<br>　　2 1 3<br>　　2 1 4<br>　　3 1 2<br>　　3 1 3<br>　　3 1 4<br>　　3 2 3<br>　　3 2 4<br>　　4 1 2<br>　　4 1 3<br>　　4 1 4<br>　　4 2 3<br>　　4 2 4<br>　　4 3 4<br>评测用例规模与约定<br>　　对于 20% 的评测用例，1 &lt;= n, m &lt;= 5；<br>　　对于 50% 的评测用例，1 &lt;= n, m &lt;= 10；<br>　　对于 80% 的评测用例，1 &lt;= n, m &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n, m &lt;= 1000。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">m, n &#x3D; input().split(&quot; &quot;)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">dp &#x3D; [[0 for i in range(1004)] for i in range(1004)]</span><br><span class="line"></span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    dp[1][i] &#x3D; n - i + 1</span><br><span class="line"></span><br><span class="line">for i in range(2, m+1):</span><br><span class="line">    if i % 2 &#x3D;&#x3D; 1:</span><br><span class="line">        for j in range(n, 0, -1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j-1] + dp[i][j+1]) % 10000</span><br><span class="line">    else:</span><br><span class="line">        for j in range(1, n+1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j+1] + dp[i][j-1]) % 10000</span><br><span class="line"></span><br><span class="line">if m % 2 &#x3D;&#x3D; 1:</span><br><span class="line">    print(dp[m][1])</span><br><span class="line">else:</span><br><span class="line">    print(dp[m][n])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这题也比较简单,动态规划.我的思路是根据奇偶的不同输出不同的.</p>
-<ol start="8">
-<li>问题描述<br>　　对于一个 n 行 m 列的表格，我们可以使用螺旋的方式给表格依次填上正整数，我们称填好的表格为一个螺旋矩阵。<br>　　例如，一个 4 行 5 列的螺旋矩阵如下：<br>　　1 2 3 4 5<br>　　14 15 16 17 6<br>　　13 20 19 18 7<br>　　12 11 10 9 8<br>输入格式<br>　　输入的第一行包含两个整数 n, m，分别表示螺旋矩阵的行数和列数。<br>　　第二行包含两个整数 r, c，表示要求的行号和列号。<br>输出格式<br>　　输出一个整数，表示螺旋矩阵中第 r 行第 c 列的元素的值。<br>样例输入<br>4 5<br>2 2<br>样例输出<br>15<br>评测用例规模与约定<br>　　对于 30% 的评测用例，2 &lt;= n, m &lt;= 20。<br>　　对于 70% 的评测用例，2 &lt;= n, m &lt;= 100。<br>　　对于所有评测用例，2 &lt;= n, m &lt;= 1000，1 &lt;= r &lt;= n，1 &lt;= c &lt;= m。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">n, m &#x3D; input().split(&quot; &quot;)</span><br><span class="line">r, c &#x3D; input().split()</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">r &#x3D; eval(r)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line"></span><br><span class="line">array &#x3D; [0 for i in range(m * n)]</span><br><span class="line">statue &#x3D; [0 for i in range(m * n)]</span><br><span class="line">toward &#x3D; &quot;right&quot;</span><br><span class="line">num &#x3D; 1</span><br><span class="line">i &#x3D; 0</span><br><span class="line">j &#x3D; 0</span><br><span class="line"># i*m+j</span><br><span class="line">while True:</span><br><span class="line">    if toward &#x3D;&#x3D; &quot;up&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i - 1 &lt; 0 or statue[(i - 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;right&quot;</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;down&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i + 1 &gt; n - 1 or statue[(i + 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;left&quot;</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;left&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j - 1 &lt; 0 or statue[i * m + j - 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;up&quot;</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;right&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j + 1 &gt; m - 1 or statue[i * m + j + 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;down&quot;</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    if num &#x3D;&#x3D; m * n + 1:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">print(array[(r - 1) * m + (c - 1)])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这就是最基础的python写螺旋数组…<br>由于我懒得用二维数组这么复杂的东西,直接一维的列表,根据行列关系换算成一维的位置,然后根据状态填写数字.填写过的是-999.主要需要注意的是越界问题.</p>
-<ol start="9">
-<li>问题描述<br>　　2015年，全中国实现了户户通电。作为一名电力建设者，小明正在帮助一带一路上的国家通电。<br>　　这一次，小明要帮助 n 个村庄通电，其中 1 号村庄正好可以建立一个发电站，所发的电足够所有村庄使用。<br>　　现在，这 n 个村庄之间都没有电线相连，小明主要要做的是架设电线连接这些村庄，使得所有村庄都直接或间接的与发电站相通。<br>　　小明测量了所有村庄的位置（坐标）和高度，如果要连接两个村庄，小明需要花费两个村庄之间的坐标距离加上高度差的平方，形式化描述为坐标为 (x_1, y_1) 高度为 h_1 的村庄与坐标为 (x_2, y_2) 高度为 h_2 的村庄之间连接的费用为<br>　　sqrt((x_1-x_2)<em>(x_1-x_2)+(y_1-y_2)</em>(y_1-y_2))+(h_1-h_2)*(h_1-h_2)。<br>　　在上式中 sqrt 表示取括号内的平方根。请注意括号的位置，高度的计算方式与横纵坐标的计算方式不同。<br>　　由于经费有限，请帮助小明计算他至少要花费多少费用才能使这 n 个村庄都通电。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示村庄的数量。<br>　　接下来 n 行，每个三个整数 x, y, h，分别表示一个村庄的横、纵坐标和高度，其中第一个村庄可以建立发电站。<br>输出格式<br>　　输出一行，包含一个实数，四舍五入保留 2 位小数，表示答案。<br>样例输入<br>4<br>1 1 3<br>9 9 7<br>8 8 6<br>4 5 4<br>样例输出</li>
-<li>41<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000，0 &lt;= x, y, h &lt;= 10000。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from math import sqrt</span><br><span class="line">from decimal import Decimal</span><br><span class="line"></span><br><span class="line">def cash(l1, l2):</span><br><span class="line">    return sqrt((l1[0] - l2[0])**2 + (l1[1] - l2[1])**2) + (l1[2] - l2[2])**2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n &#x3D; eval(input())</span><br><span class="line">countryside &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    countryside.append([eval(a), eval(b), eval(c)])</span><br><span class="line"></span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">money &#x3D; 0</span><br><span class="line"></span><br><span class="line">temp &#x3D; candidate_node.pop()</span><br><span class="line">selected_node.append(temp)</span><br><span class="line">while True:</span><br><span class="line">    if candidate_node &#x3D;&#x3D; []:</span><br><span class="line">        break</span><br><span class="line">    # prim</span><br><span class="line">    min_index &#x3D; 100000</span><br><span class="line">    min_cash &#x3D; 100000</span><br><span class="line">    for i in selected_node:</span><br><span class="line">        for j in candidate_node:</span><br><span class="line">            temp_cash &#x3D; cash(countryside[i], countryside[j])</span><br><span class="line">            if temp_cash &lt; min_cash:</span><br><span class="line">                min_cash &#x3D; temp_cash</span><br><span class="line">                min_index &#x3D; j</span><br><span class="line">    selected_node.append(min_index)</span><br><span class="line">    candidate_node.remove(min_index)</span><br><span class="line">    money +&#x3D; min_cash</span><br><span class="line"></span><br><span class="line">money &#x3D; Decimal(str(money)).quantize(Decimal(&#39;0.00&#39;))</span><br><span class="line">print(money)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>老生常谈的一个问题了.肉眼一看就知道的最小生成树的题目.这次使用的是prim算法.<br>在写这个题目的时候看错了钱的计算公式导致浪费了不少时间,这是不应该的.<br>而且对于Python而言,四舍五入最好别用round()函数,因为它拥有不确定性,而应该采用科学的Decimal库.这个是自带的库.</p>
-<ol start="10">
-<li>问题描述<br>　　小明和朋友们一起去郊外植树，他们带了一些在自己实验室精心研究出的小树苗。<br>　　小明和朋友们一共有 n 个人，他们经过精心挑选，在一块空地上每个人挑选了一个适合植树的位置，总共 n 个。他们准备把自己带的树苗都植下去。<br>　　然而，他们遇到了一个困难：有的树苗比较大，而有的位置挨太近，导致两棵树植下去后会撞在一起。<br>　　他们将树看成一个圆，圆心在他们找的位置上。如果两棵树对应的圆相交，这两棵树就不适合同时植下（相切不受影响），称为两棵树冲突。<br>　　小明和朋友们决定先合计合计，只将其中的一部分树植下去，保证没有互相冲突的树。他们同时希望这些树所能覆盖的面积和（圆面积和）最大。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示人数，即准备植树的位置数。<br>　　接下来 n 行，每行三个整数 x, y, r，表示一棵树在空地上的横、纵坐标和半径。<br>输出格式<br>　　输出一行包含一个整数，表示在不冲突下可以植树的面积和。由于每棵树的面积都是圆周率的整数倍，请输出答案除以圆周率后的值（应当是一个整数）。<br>样例输入<br>6<br>1 1 2<br>1 4 2<br>1 7 2<br>4 1 2<br>4 4 2<br>4 7 2<br>样例输出<br>12<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 20；<br>　　对于所有评测用例，1 &lt;= n &lt;= 30，0 &lt;= x, y &lt;= 1000，1 &lt;= r &lt;= 1000。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">tree &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    x, y, r &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    tree.append([eval(x), eval(y), eval(r)])</span><br><span class="line"></span><br><span class="line">def cal(l1, l2):</span><br><span class="line">    dis &#x3D; (l1[0]-l2[0])**2 + (l1[1]-l2[1])**2</span><br><span class="line">    if dis &lt; (l1[2] + l2[2])**2:</span><br><span class="line">        return False</span><br><span class="line">    else:</span><br><span class="line">        return True</span><br><span class="line"></span><br><span class="line">def judge(l1, l2):</span><br><span class="line">    for i in l1:</span><br><span class="line">        temp &#x3D; cal(tree[i], l2)</span><br><span class="line">        if temp:</span><br><span class="line">            continue</span><br><span class="line">        else:</span><br><span class="line">            return False</span><br><span class="line">    return True</span><br><span class="line"></span><br><span class="line">def cal_area(l1, l2):</span><br><span class="line">    ret &#x3D; 0</span><br><span class="line">    for i in l1:</span><br><span class="line">        ret +&#x3D; l2[i][2]**2</span><br><span class="line">    return ret</span><br><span class="line"></span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">max_area &#x3D; 0</span><br><span class="line">for i in range(n):</span><br><span class="line">    selected_node.append(i)</span><br><span class="line">    candidate_node.remove(i)</span><br><span class="line">    for j in candidate_node:</span><br><span class="line">        if judge(selected_node, tree[j]):</span><br><span class="line">            selected_node.append(j)</span><br><span class="line">            candidate_node.remove(j)</span><br><span class="line">    temp &#x3D; cal_area(selected_node, tree)</span><br><span class="line">    if temp &gt; max_area:</span><br><span class="line">        max_area &#x3D; temp</span><br><span class="line">    selected_node &#x3D; []</span><br><span class="line">    candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line"></span><br><span class="line">print(max_area)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>这是我的解题思路,我自己感觉比较的笨,时间复杂度也就比较高.本来的思路是dfs.后来阴差阳错的写成了这样的…..写都写了就这么写吧…<br>如果这一题有什么更好的思路也欢迎来交流交流哇!</p>
-<hr>
-<p>By. AbeanCC<br>QQ. 527430509<br>Thanks</p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019.12.8蓝桥杯校赛writeup</title>
     <url>/2019/12/08/2019-12-8%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A0%A1%E8%B5%9Bwriteup/</url>
     <content><![CDATA[<h3 id="一次蓝桥杯的writeup"><a href="#一次蓝桥杯的writeup" class="headerlink" title="一次蓝桥杯的writeup"></a>一次蓝桥杯的writeup</h3><hr>
@@ -137,6 +71,72 @@
 <p>总结一下吧,其实本来难度上并不是很高,可能原因是为了让所有人都适应这个比赛,不过难度确实应该再提高一点比较好.不过这次比赛也有些遗憾,自己的准备不充分也是一部分原因(没有复习结构体导致Kurskal算法纯数组实现,非常的麻烦而且看的头皮发麻),反思一下,为下次做准备.</p>
 <hr>
 <p>以上就是我对本次蓝桥杯的所有writeup<br>有什么写错的地方欢迎指出~<br>QQ:527430509</p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>20200418蓝桥杯模拟writeup</title>
+    <url>/2020/04/18/20200418%E8%93%9D%E6%A1%A5%E6%9D%AF%E6%A8%A1%E6%8B%9Fwriteup/</url>
+    <content><![CDATA[<h3 id="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"><a href="#今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教" class="headerlink" title="今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教"></a>今天有一个省赛的模拟，故写此博客记录一下自己的writeup。有错误的话请多多指教</h3><hr>
+<ol>
+<li>问题描述<br>　　由1对括号，可以组成一种合法括号序列：()。<br>　　由2对括号，可以组成两种合法括号序列：()()、(())。<br>　　由4对括号组成的合法括号序列一共有多少种？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>答案很简单，是14</p>
+<ol start="2">
+<li>问题描述<br>　　一个包含有2019个结点的无向连通图，最少包含多少条边？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>答案也很简单， 2018</p>
+<ol start="3">
+<li>问题描述<br>　　在计算机存储中，12.5MB是多少字节？<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>这个只要算一下就好， 12.5 x 1024 B = 12800 B</p>
+<ol start="4">
+<li>问题描述<br>　　将LANQIAO中的字母重新排列，可以得到不同的单词，如LANQIAO、AAILNOQ等，注意这7个字母都要被用上，单词不一定有具体的英文意义。<br>　　请问，总共能排列如多少个不同的单词。<br>答案提交<br>　　这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</li>
+</ol>
+<p>这个就是一个很简单的全排列问题。A77 = 5040</p>
+<ol start="5">
+<li>问题描述<br>　　给定三个整数 a, b, c，如果一个整数既不是 a 的整数倍也不是 b 的整数倍还不是 c 的整数倍，则这个数称为反倍数。<br>　　请问在 1 至 n 中有多少个反倍数。<br>输入格式<br>　　输入的第一行包含一个整数 n。<br>　　第二行包含三个整数 a, b, c，相邻两个数之间用一个空格分隔。<br>输出格式<br>　　输出一行包含一个整数，表示答案。<br>样例输入<br>30<br>2 3 6<br>样例输出<br>10<br>样例说明<br>　　以下这些数满足要求：1, 5, 7, 11, 13, 17, 19, 23, 25, 29。<br>评测用例规模与约定<br>　　对于 40% 的评测用例，1 &lt;= n &lt;= 10000。<br>　　对于 80% 的评测用例，1 &lt;= n &lt;= 100000。<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000000，1 &lt;= a &lt;= n，1 &lt;= b &lt;= n，1 &lt;= c &lt;= n。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">a &#x3D; eval(a)</span><br><span class="line">b &#x3D; eval(b)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line">count &#x3D; 0</span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    if i % a &#x3D;&#x3D; 0 or i % b &#x3D;&#x3D; 0 or i % c &#x3D;&#x3D; 0:</span><br><span class="line">        pass</span><br><span class="line">    else:</span><br><span class="line">        count +&#x3D; 1</span><br><span class="line">print(count)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>直接一个循环搞定</p>
+<ol start="6">
+<li>问题描述<br>　　给定一个单词，请使用凯撒密码将这个单词加密。<br>　　凯撒密码是一种替换加密的技术，单词中的所有字母都在字母表上向后偏移3位后被替换成密文。即a变为d，b变为e，…，w变为z，x变为a，y变为b，z变为c。<br>　　例如，lanqiao会变成odqtldr。<br>输入格式<br>　　输入一行，包含一个单词，单词中只包含小写英文字母。<br>输出格式<br>　　输出一行，表示加密后的密文。<br>样例输入<br>lanqiao<br>样例输出<br>odqtldr<br>评测用例规模与约定<br>　　对于所有评测用例，单词中的字母个数不超过100。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">string &#x3D; input()</span><br><span class="line">outstring &#x3D; &quot;&quot;</span><br><span class="line">for i in range(len(string)):</span><br><span class="line">    if ord(string[i]) + 3 &gt; 122:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3 - 122 + 96)</span><br><span class="line">    else:</span><br><span class="line">        outstring +&#x3D; chr(ord(string[i]) + 3)</span><br><span class="line">print(outstring)</span><br></pre></td></tr></table></figure>
+
+<p>考烂掉的题目了..</p>
+<ol start="7">
+<li>问题描述<br>　　如果一个序列的奇数项都比前一项大，偶数项都比前一项小，则称为一个摆动序列。即 a[2i]&lt;a[2i-1], a[2i+1]&gt;a[2i]。<br>　　小明想知道，长度为 m，每个数都是 1 到 n 之间的正整数的摆动序列一共有多少个。<br>输入格式<br>　　输入一行包含两个整数 m，n。<br>输出格式<br>　　输出一个整数，表示答案。答案可能很大，请输出答案除以10000的余数。<br>样例输入<br>3 4<br>样例输出<br>14<br>样例说明<br>　　以下是符合要求的摆动序列：<br>　　2 1 2<br>　　2 1 3<br>　　2 1 4<br>　　3 1 2<br>　　3 1 3<br>　　3 1 4<br>　　3 2 3<br>　　3 2 4<br>　　4 1 2<br>　　4 1 3<br>　　4 1 4<br>　　4 2 3<br>　　4 2 4<br>　　4 3 4<br>评测用例规模与约定<br>　　对于 20% 的评测用例，1 &lt;= n, m &lt;= 5；<br>　　对于 50% 的评测用例，1 &lt;= n, m &lt;= 10；<br>　　对于 80% 的评测用例，1 &lt;= n, m &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n, m &lt;= 1000。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">m, n &#x3D; input().split(&quot; &quot;)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">dp &#x3D; [[0 for i in range(1004)] for i in range(1004)]</span><br><span class="line"></span><br><span class="line">for i in range(1, n+1):</span><br><span class="line">    dp[1][i] &#x3D; n - i + 1</span><br><span class="line"></span><br><span class="line">for i in range(2, m+1):</span><br><span class="line">    if i % 2 &#x3D;&#x3D; 1:</span><br><span class="line">        for j in range(n, 0, -1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j-1] + dp[i][j+1]) % 10000</span><br><span class="line">    else:</span><br><span class="line">        for j in range(1, n+1):</span><br><span class="line">            dp[i][j] &#x3D; (dp[i-1][j+1] + dp[i][j-1]) % 10000</span><br><span class="line"></span><br><span class="line">if m % 2 &#x3D;&#x3D; 1:</span><br><span class="line">    print(dp[m][1])</span><br><span class="line">else:</span><br><span class="line">    print(dp[m][n])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这题也比较简单,动态规划.我的思路是根据奇偶的不同输出不同的.</p>
+<ol start="8">
+<li>问题描述<br>　　对于一个 n 行 m 列的表格，我们可以使用螺旋的方式给表格依次填上正整数，我们称填好的表格为一个螺旋矩阵。<br>　　例如，一个 4 行 5 列的螺旋矩阵如下：<br>　　1 2 3 4 5<br>　　14 15 16 17 6<br>　　13 20 19 18 7<br>　　12 11 10 9 8<br>输入格式<br>　　输入的第一行包含两个整数 n, m，分别表示螺旋矩阵的行数和列数。<br>　　第二行包含两个整数 r, c，表示要求的行号和列号。<br>输出格式<br>　　输出一个整数，表示螺旋矩阵中第 r 行第 c 列的元素的值。<br>样例输入<br>4 5<br>2 2<br>样例输出<br>15<br>评测用例规模与约定<br>　　对于 30% 的评测用例，2 &lt;= n, m &lt;= 20。<br>　　对于 70% 的评测用例，2 &lt;= n, m &lt;= 100。<br>　　对于所有评测用例，2 &lt;= n, m &lt;= 1000，1 &lt;= r &lt;= n，1 &lt;= c &lt;= m。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">n, m &#x3D; input().split(&quot; &quot;)</span><br><span class="line">r, c &#x3D; input().split()</span><br><span class="line">n &#x3D; eval(n)</span><br><span class="line">m &#x3D; eval(m)</span><br><span class="line">r &#x3D; eval(r)</span><br><span class="line">c &#x3D; eval(c)</span><br><span class="line"></span><br><span class="line">array &#x3D; [0 for i in range(m * n)]</span><br><span class="line">statue &#x3D; [0 for i in range(m * n)]</span><br><span class="line">toward &#x3D; &quot;right&quot;</span><br><span class="line">num &#x3D; 1</span><br><span class="line">i &#x3D; 0</span><br><span class="line">j &#x3D; 0</span><br><span class="line"># i*m+j</span><br><span class="line">while True:</span><br><span class="line">    if toward &#x3D;&#x3D; &quot;up&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i - 1 &lt; 0 or statue[(i - 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;right&quot;</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;down&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if i + 1 &gt; n - 1 or statue[(i + 1) * m + j] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;left&quot;</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;left&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j - 1 &lt; 0 or statue[i * m + j - 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;up&quot;</span><br><span class="line">            i -&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j -&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    elif toward &#x3D;&#x3D; &quot;right&quot;:</span><br><span class="line">        array[i * m + j] &#x3D; num</span><br><span class="line">        statue[i * m + j] &#x3D; -999</span><br><span class="line">        num +&#x3D; 1</span><br><span class="line">        if j + 1 &gt; m - 1 or statue[i * m + j + 1] &#x3D;&#x3D; -999:</span><br><span class="line">            toward &#x3D; &quot;down&quot;</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            j +&#x3D; 1</span><br><span class="line">            continue</span><br><span class="line"></span><br><span class="line">    if num &#x3D;&#x3D; m * n + 1:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">print(array[(r - 1) * m + (c - 1)])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这就是最基础的python写螺旋数组…<br>由于我懒得用二维数组这么复杂的东西,直接一维的列表,根据行列关系换算成一维的位置,然后根据状态填写数字.填写过的是-999.主要需要注意的是越界问题.</p>
+<ol start="9">
+<li>问题描述<br>　　2015年，全中国实现了户户通电。作为一名电力建设者，小明正在帮助一带一路上的国家通电。<br>　　这一次，小明要帮助 n 个村庄通电，其中 1 号村庄正好可以建立一个发电站，所发的电足够所有村庄使用。<br>　　现在，这 n 个村庄之间都没有电线相连，小明主要要做的是架设电线连接这些村庄，使得所有村庄都直接或间接的与发电站相通。<br>　　小明测量了所有村庄的位置（坐标）和高度，如果要连接两个村庄，小明需要花费两个村庄之间的坐标距离加上高度差的平方，形式化描述为坐标为 (x_1, y_1) 高度为 h_1 的村庄与坐标为 (x_2, y_2) 高度为 h_2 的村庄之间连接的费用为<br>　　sqrt((x_1-x_2)<em>(x_1-x_2)+(y_1-y_2)</em>(y_1-y_2))+(h_1-h_2)*(h_1-h_2)。<br>　　在上式中 sqrt 表示取括号内的平方根。请注意括号的位置，高度的计算方式与横纵坐标的计算方式不同。<br>　　由于经费有限，请帮助小明计算他至少要花费多少费用才能使这 n 个村庄都通电。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示村庄的数量。<br>　　接下来 n 行，每个三个整数 x, y, h，分别表示一个村庄的横、纵坐标和高度，其中第一个村庄可以建立发电站。<br>输出格式<br>　　输出一行，包含一个实数，四舍五入保留 2 位小数，表示答案。<br>样例输入<br>4<br>1 1 3<br>9 9 7<br>8 8 6<br>4 5 4<br>样例输出</li>
+<li>41<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 100；<br>　　对于所有评测用例，1 &lt;= n &lt;= 1000，0 &lt;= x, y, h &lt;= 10000。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from math import sqrt</span><br><span class="line">from decimal import Decimal</span><br><span class="line"></span><br><span class="line">def cash(l1, l2):</span><br><span class="line">    return sqrt((l1[0] - l2[0])**2 + (l1[1] - l2[1])**2) + (l1[2] - l2[2])**2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n &#x3D; eval(input())</span><br><span class="line">countryside &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    a, b, c &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    countryside.append([eval(a), eval(b), eval(c)])</span><br><span class="line"></span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">money &#x3D; 0</span><br><span class="line"></span><br><span class="line">temp &#x3D; candidate_node.pop()</span><br><span class="line">selected_node.append(temp)</span><br><span class="line">while True:</span><br><span class="line">    if candidate_node &#x3D;&#x3D; []:</span><br><span class="line">        break</span><br><span class="line">    # prim</span><br><span class="line">    min_index &#x3D; 100000</span><br><span class="line">    min_cash &#x3D; 100000</span><br><span class="line">    for i in selected_node:</span><br><span class="line">        for j in candidate_node:</span><br><span class="line">            temp_cash &#x3D; cash(countryside[i], countryside[j])</span><br><span class="line">            if temp_cash &lt; min_cash:</span><br><span class="line">                min_cash &#x3D; temp_cash</span><br><span class="line">                min_index &#x3D; j</span><br><span class="line">    selected_node.append(min_index)</span><br><span class="line">    candidate_node.remove(min_index)</span><br><span class="line">    money +&#x3D; min_cash</span><br><span class="line"></span><br><span class="line">money &#x3D; Decimal(str(money)).quantize(Decimal(&#39;0.00&#39;))</span><br><span class="line">print(money)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>老生常谈的一个问题了.肉眼一看就知道的最小生成树的题目.这次使用的是prim算法.<br>在写这个题目的时候看错了钱的计算公式导致浪费了不少时间,这是不应该的.<br>而且对于Python而言,四舍五入最好别用round()函数,因为它拥有不确定性,而应该采用科学的Decimal库.这个是自带的库.</p>
+<ol start="10">
+<li>问题描述<br>　　小明和朋友们一起去郊外植树，他们带了一些在自己实验室精心研究出的小树苗。<br>　　小明和朋友们一共有 n 个人，他们经过精心挑选，在一块空地上每个人挑选了一个适合植树的位置，总共 n 个。他们准备把自己带的树苗都植下去。<br>　　然而，他们遇到了一个困难：有的树苗比较大，而有的位置挨太近，导致两棵树植下去后会撞在一起。<br>　　他们将树看成一个圆，圆心在他们找的位置上。如果两棵树对应的圆相交，这两棵树就不适合同时植下（相切不受影响），称为两棵树冲突。<br>　　小明和朋友们决定先合计合计，只将其中的一部分树植下去，保证没有互相冲突的树。他们同时希望这些树所能覆盖的面积和（圆面积和）最大。<br>输入格式<br>　　输入的第一行包含一个整数 n ，表示人数，即准备植树的位置数。<br>　　接下来 n 行，每行三个整数 x, y, r，表示一棵树在空地上的横、纵坐标和半径。<br>输出格式<br>　　输出一行包含一个整数，表示在不冲突下可以植树的面积和。由于每棵树的面积都是圆周率的整数倍，请输出答案除以圆周率后的值（应当是一个整数）。<br>样例输入<br>6<br>1 1 2<br>1 4 2<br>1 7 2<br>4 1 2<br>4 4 2<br>4 7 2<br>样例输出<br>12<br>评测用例规模与约定<br>　　对于 30% 的评测用例，1 &lt;= n &lt;= 10；<br>　　对于 60% 的评测用例，1 &lt;= n &lt;= 20；<br>　　对于所有评测用例，1 &lt;= n &lt;= 30，0 &lt;= x, y &lt;= 1000，1 &lt;= r &lt;= 1000。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">n &#x3D; eval(input())</span><br><span class="line">tree &#x3D; []</span><br><span class="line">for i in range(n):</span><br><span class="line">    x, y, r &#x3D; input().split(&quot; &quot;)</span><br><span class="line">    tree.append([eval(x), eval(y), eval(r)])</span><br><span class="line"></span><br><span class="line">def cal(l1, l2):</span><br><span class="line">    dis &#x3D; (l1[0]-l2[0])**2 + (l1[1]-l2[1])**2</span><br><span class="line">    if dis &lt; (l1[2] + l2[2])**2:</span><br><span class="line">        return False</span><br><span class="line">    else:</span><br><span class="line">        return True</span><br><span class="line"></span><br><span class="line">def judge(l1, l2):</span><br><span class="line">    for i in l1:</span><br><span class="line">        temp &#x3D; cal(tree[i], l2)</span><br><span class="line">        if temp:</span><br><span class="line">            continue</span><br><span class="line">        else:</span><br><span class="line">            return False</span><br><span class="line">    return True</span><br><span class="line"></span><br><span class="line">def cal_area(l1, l2):</span><br><span class="line">    ret &#x3D; 0</span><br><span class="line">    for i in l1:</span><br><span class="line">        ret +&#x3D; l2[i][2]**2</span><br><span class="line">    return ret</span><br><span class="line"></span><br><span class="line">selected_node &#x3D; []</span><br><span class="line">candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line">max_area &#x3D; 0</span><br><span class="line">for i in range(n):</span><br><span class="line">    selected_node.append(i)</span><br><span class="line">    candidate_node.remove(i)</span><br><span class="line">    for j in candidate_node:</span><br><span class="line">        if judge(selected_node, tree[j]):</span><br><span class="line">            selected_node.append(j)</span><br><span class="line">            candidate_node.remove(j)</span><br><span class="line">    temp &#x3D; cal_area(selected_node, tree)</span><br><span class="line">    if temp &gt; max_area:</span><br><span class="line">        max_area &#x3D; temp</span><br><span class="line">    selected_node &#x3D; []</span><br><span class="line">    candidate_node &#x3D; [i for i in range(n)]</span><br><span class="line"></span><br><span class="line">print(max_area)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这是我的解题思路,我自己感觉比较的笨,时间复杂度也就比较高.本来的思路是dfs.后来阴差阳错的写成了这样的…..写都写了就这么写吧…<br>如果这一题有什么更好的思路也欢迎来交流交流哇!</p>
+<hr>
+<p>By. AbeanCC<br>QQ. 527430509<br>Thanks</p>
 ]]></content>
       <categories>
         <category>算法</category>
@@ -273,6 +273,94 @@
       </tags>
   </entry>
   <entry>
+    <title>Nmap使用记录</title>
+    <url>/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h2 id="Nmap使用记录"><a href="#Nmap使用记录" class="headerlink" title="Nmap使用记录"></a>Nmap使用记录</h2><hr>
+<p><strong>前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自己写呢?人类真是奇怪的生物~</strong></p>
+<hr>
+<p>进入正题.</p>
+<p>输入<code>Nmap --help</code>即可获得帮助</p>
+<p><del>好了,我说完了.</del></p>
+<p>怎么可能嘛!</p>
+<p>你会得到这么多</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TARGET SPECIFICATION:</span><br><span class="line">  Can pass hostnames, IP addresses, networks, etc.</span><br><span class="line">  Ex: scanme.nmap.org, microsoft.com&#x2F;24, 192.168.0.1; 10.0.0-255.1-254</span><br><span class="line">  -iL &lt;inputfilename&gt;: Input from list of hosts&#x2F;networks</span><br><span class="line">  -iR &lt;num hosts&gt;: Choose random targets</span><br><span class="line">  --exclude &lt;host1[,host2][,host3],...&gt;: Exclude hosts&#x2F;networks</span><br><span class="line">  --excludefile &lt;exclude_file&gt;: Exclude list from file</span><br><span class="line">HOST DISCOVERY:</span><br><span class="line">  -sL: List Scan - simply list targets to scan</span><br><span class="line">  -sn: Ping Scan - disable port scan</span><br><span class="line">  -Pn: Treat all hosts as online -- skip host discovery</span><br><span class="line">  -PS&#x2F;PA&#x2F;PU&#x2F;PY[portlist]: TCP SYN&#x2F;ACK, UDP or SCTP discovery to given ports</span><br><span class="line">  -PE&#x2F;PP&#x2F;PM: ICMP echo, timestamp, and netmask request discovery probes</span><br><span class="line">  -PO[protocol list]: IP Protocol Ping</span><br><span class="line">  -n&#x2F;-R: Never do DNS resolution&#x2F;Always resolve [default: sometimes]</span><br><span class="line">  --dns-servers &lt;serv1[,serv2],...&gt;: Specify custom DNS servers</span><br><span class="line">  --system-dns: Use OS&#39;s DNS resolver</span><br><span class="line">  --traceroute: Trace hop path to each host</span><br><span class="line">SCAN TECHNIQUES:</span><br><span class="line">  -sS&#x2F;sT&#x2F;sA&#x2F;sW&#x2F;sM: TCP SYN&#x2F;Connect()&#x2F;ACK&#x2F;Window&#x2F;Maimon scans</span><br><span class="line">  -sU: UDP Scan</span><br><span class="line">  -sN&#x2F;sF&#x2F;sX: TCP Null, FIN, and Xmas scans</span><br><span class="line">  --scanflags &lt;flags&gt;: Customize TCP scan flags</span><br><span class="line">  -sI &lt;zombie host[:probeport]&gt;: Idle scan</span><br><span class="line">  -sY&#x2F;sZ: SCTP INIT&#x2F;COOKIE-ECHO scans</span><br><span class="line">  -sO: IP protocol scan</span><br><span class="line">  -b &lt;FTP relay host&gt;: FTP bounce scan</span><br><span class="line">PORT SPECIFICATION AND SCAN ORDER:</span><br><span class="line">  -p &lt;port ranges&gt;: Only scan specified ports</span><br><span class="line">    Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9</span><br><span class="line">  --exclude-ports &lt;port ranges&gt;: Exclude the specified ports from scanning</span><br><span class="line">  -F: Fast mode - Scan fewer ports than the default scan</span><br><span class="line">  -r: Scan ports consecutively - don&#39;t randomize</span><br><span class="line">  --top-ports &lt;number&gt;: Scan &lt;number&gt; most common ports</span><br><span class="line">  --port-ratio &lt;ratio&gt;: Scan ports more common than &lt;ratio&gt;</span><br><span class="line">SERVICE&#x2F;VERSION DETECTION:</span><br><span class="line">  -sV: Probe open ports to determine service&#x2F;version info</span><br><span class="line">  --version-intensity &lt;level&gt;: Set from 0 (light) to 9 (try all probes)</span><br><span class="line">  --version-light: Limit to most likely probes (intensity 2)</span><br><span class="line">  --version-all: Try every single probe (intensity 9)</span><br><span class="line">  --version-trace: Show detailed version scan activity (for debugging)</span><br><span class="line">SCRIPT SCAN:</span><br><span class="line">  -sC: equivalent to --script&#x3D;default</span><br><span class="line">  --script&#x3D;&lt;Lua scripts&gt;: &lt;Lua scripts&gt; is a comma separated list of</span><br><span class="line">           directories, script-files or script-categories</span><br><span class="line">  --script-args&#x3D;&lt;n1&#x3D;v1,[n2&#x3D;v2,...]&gt;: provide arguments to scripts</span><br><span class="line">  --script-args-file&#x3D;filename: provide NSE script args in a file</span><br><span class="line">  --script-trace: Show all data sent and received</span><br><span class="line">  --script-updatedb: Update the script database.</span><br><span class="line">  --script-help&#x3D;&lt;Lua scripts&gt;: Show help about scripts.</span><br><span class="line">           &lt;Lua scripts&gt; is a comma-separated list of script-files or</span><br><span class="line">           script-categories.</span><br><span class="line">OS DETECTION:</span><br><span class="line">  -O: Enable OS detection</span><br><span class="line">  --osscan-limit: Limit OS detection to promising targets</span><br><span class="line">  --osscan-guess: Guess OS more aggressively</span><br><span class="line">TIMING AND PERFORMANCE:</span><br><span class="line">  Options which take &lt;time&gt; are in seconds, or append &#39;ms&#39; (milliseconds),</span><br><span class="line">  &#39;s&#39; (seconds), &#39;m&#39; (minutes), or &#39;h&#39; (hours) to the value (e.g. 30m).</span><br><span class="line">  -T&lt;0-5&gt;: Set timing template (higher is faster)</span><br><span class="line">  --min-hostgroup&#x2F;max-hostgroup &lt;size&gt;: Parallel host scan group sizes</span><br><span class="line">  --min-parallelism&#x2F;max-parallelism &lt;numprobes&gt;: Probe parallelization</span><br><span class="line">  --min-rtt-timeout&#x2F;max-rtt-timeout&#x2F;initial-rtt-timeout &lt;time&gt;: Specifies</span><br><span class="line">      probe round trip time.</span><br><span class="line">  --max-retries &lt;tries&gt;: Caps number of port scan probe retransmissions.</span><br><span class="line">  --host-timeout &lt;time&gt;: Give up on target after this long</span><br><span class="line">  --scan-delay&#x2F;--max-scan-delay &lt;time&gt;: Adjust delay between probes</span><br><span class="line">  --min-rate &lt;number&gt;: Send packets no slower than &lt;number&gt; per second</span><br><span class="line">  --max-rate &lt;number&gt;: Send packets no faster than &lt;number&gt; per second</span><br><span class="line">FIREWALL&#x2F;IDS EVASION AND SPOOFING:</span><br><span class="line">  -f; --mtu &lt;val&gt;: fragment packets (optionally w&#x2F;given MTU)</span><br><span class="line">  -D &lt;decoy1,decoy2[,ME],...&gt;: Cloak a scan with decoys</span><br><span class="line">  -S &lt;IP_Address&gt;: Spoof source address</span><br><span class="line">  -e &lt;iface&gt;: Use specified interface</span><br><span class="line">  -g&#x2F;--source-port &lt;portnum&gt;: Use given port number</span><br><span class="line">  --proxies &lt;url1,[url2],...&gt;: Relay connections through HTTP&#x2F;SOCKS4 proxies</span><br><span class="line">  --data &lt;hex string&gt;: Append a custom payload to sent packets</span><br><span class="line">  --data-string &lt;string&gt;: Append a custom ASCII string to sent packets</span><br><span class="line">  --data-length &lt;num&gt;: Append random data to sent packets</span><br><span class="line">  --ip-options &lt;options&gt;: Send packets with specified ip options</span><br><span class="line">  --ttl &lt;val&gt;: Set IP time-to-live field</span><br><span class="line">  --spoof-mac &lt;mac address&#x2F;prefix&#x2F;vendor name&gt;: Spoof your MAC address</span><br><span class="line">  --badsum: Send packets with a bogus TCP&#x2F;UDP&#x2F;SCTP checksum</span><br><span class="line">OUTPUT:</span><br><span class="line">  -oN&#x2F;-oX&#x2F;-oS&#x2F;-oG &lt;file&gt;: Output scan in normal, XML, s|&lt;rIpt kIddi3,</span><br><span class="line">     and Grepable format, respectively, to the given filename.</span><br><span class="line">  -oA &lt;basename&gt;: Output in the three major formats at once</span><br><span class="line">  -v: Increase verbosity level (use -vv or more for greater effect)</span><br><span class="line">  -d: Increase debugging level (use -dd or more for greater effect)</span><br><span class="line">  --reason: Display the reason a port is in a particular state</span><br><span class="line">  --open: Only show open (or possibly open) ports</span><br><span class="line">  --packet-trace: Show all packets sent and received</span><br><span class="line">  --iflist: Print host interfaces and routes (for debugging)</span><br><span class="line">  --append-output: Append to rather than clobber specified output files</span><br><span class="line">  --resume &lt;filename&gt;: Resume an aborted scan</span><br><span class="line">  --stylesheet &lt;path&#x2F;URL&gt;: XSL stylesheet to transform XML output to HTML</span><br><span class="line">  --webxml: Reference stylesheet from Nmap.Org for more portable XML</span><br><span class="line">  --no-stylesheet: Prevent associating of XSL stylesheet w&#x2F;XML output</span><br><span class="line">MISC:</span><br><span class="line">  -6: Enable IPv6 scanning</span><br><span class="line">  -A: Enable OS detection, version detection, script scanning, and traceroute</span><br><span class="line">  --datadir &lt;dirname&gt;: Specify custom Nmap data file location</span><br><span class="line">  --send-eth&#x2F;--send-ip: Send using raw ethernet frames or IP packets</span><br><span class="line">  --privileged: Assume that the user is fully privileged</span><br><span class="line">  --unprivileged: Assume the user lacks raw socket privileges</span><br><span class="line">  -V: Print version number</span><br><span class="line">  -h: Print this help summary page.</span><br><span class="line">EXAMPLES:</span><br><span class="line">  nmap -v -A scanme.nmap.org</span><br><span class="line">  nmap -v -sn 192.168.0.0&#x2F;16 10.0.0.0&#x2F;8</span><br><span class="line">  nmap -v -iR 10000 -Pn -p 80</span><br><span class="line">SEE THE MAN PAGE (https:&#x2F;&#x2F;nmap.org&#x2F;book&#x2F;man.html) FOR MORE OPTIONS AND EXAMPLES</span><br></pre></td></tr></table></figure>
+
+
+
+<p>是不是特别多?<br><del>可这些都是基础用法:(</del></p>
+<p>那我来介绍一些我常用的指令吧.</p>
+<hr>
+<h3 id="nmap-a-b-c-d"><a href="#nmap-a-b-c-d" class="headerlink" title="nmap a.b.c.d"></a>nmap a.b.c.d</h3><p>基础一点的，最简单的就是:<br>nmap xxx.xxx.xxx.xxx</p>
+<p><strong>想不到吧!就是这么简单</strong></p>
+<ul>
+<li><p>但是,众所周知,在Windows防火墙里有这么一个设置选项:<br><strong>文件和打印机共享(回显请求 - ICMPv4-In)</strong><br>如果把这个禁用的话,理论上来说,在同一个网段里,你ping我是ping不通的,因为我并不会给你发送我的ICMP报文.</p>
+</li>
+<li><p>这样有什么好处?<br>Obviously, 要想知道好处,那我们得先了解网络扫描的基础.<br>怎么进行网络扫描?<br>最简单的也是最直接的,我们可以直接ping对方的主机.<br><strong>为什么能完成这项操作呢?</strong><br>答案很简单,由于是异常的IP数据报,那么对应的对方的层就是对方的网络层.<br>众所周知,网络层有一个非常著名的Internet控制报文协议(Internet Control Message Protocol).就是它的关系.<br>当你ping对方的主机的时候,对方就会给你发一个ICMP报文,来回应你的ping.<br>这就是探测存活主机的一种方法.</p>
+</li>
+<li><p>于是乎,关闭了这个功能,对方就不能直接ping到你了,也就对你主机的状态无从得知.</p>
+</li>
+</ul>
+<hr>
+<h3 id="Pn"><a href="#Pn" class="headerlink" title="-Pn"></a>-Pn</h3><p>上回书说到,我们可以关闭ICMP回显请求来做到简单的防御.但是nmap这个工具之所以如此受喜爱,也是有原因的.<br>有矛就有盾,一般来说,攻击技术都比防御技术更加先进.或者,换句话说,借用”白帽子讲Web安全”里面的一句话来说,<br>“同样是研究安全,白帽子和黑帽子在工作时的心态是完全不同的.”<br>“对于黑帽子来说,只要能找到系统的一个弱点,就可以达到入侵系统的目的;而对于白帽子来说,必须找到系统的所有弱点,不能有遗漏,才能保证系统不会出现问题.这种差异是由于工作环境与工作目标的不同而导致的.”<br>这揭示了两种群体工作的本质.<br><strong>回到我们的主题.当你的攻击目标不给你发送ICMP回显请求了,那这个时候我们该怎么办呢?</strong></p>
+<ul>
+<li>Obviously, 我们可以使用-Pn指令<br><code>nmap -Pn xxx.xxx.xxx.xxx</code><br>nmap对于-Pn的解释也很简单暴力,Treat all hosts as online – skip host discovery<br>就是认为所有的主机都是存活的.最简单的也是最直接的,我可以构造一个畸形的IP数据报.这样在同一个网段下,我可以向所有的主机发送这个报文,当然,由于这个IP数据报是畸形的,你肯定不会收到.因为按照网络的结构以及功能来说, 我在本层的工作就由我本层来完成,如果出错,那都是我本层的事,无关高层.于是在这个前提下,对方并不知道你对自己做了什么,但是你就可以探测到存活主机.</li>
+</ul>
+<hr>
+<h3 id="sS"><a href="#sS" class="headerlink" title="-sS"></a>-sS</h3><p>众所周知,-Pn是假定所有的主机都是存活的,但是带来的反作用就是,实在是太慢了.太慢太慢了.<br>有时候真的慢到很难接受.而且最奇怪的一点就是.有时候,你会扫描到一些奇怪的设备,但是这些设备可能没有在使用.<br>(比如说我曾经扫描到几台摄像机= =)</p>
+<p>于是,我们采用更快捷的方法.</p>
+<p><strong>既然网络层呆不下去了,我们就转战传输层吧</strong></p>
+<p>来到传输层,我们就要面对一个很神奇的东西,也是所有面试老哥最烦被问到的问题之一 -“三次握手和四次握手”</p>
+<ul>
+<li>三次握手:<br>说白了,最简单易懂的说,三次握手就是,让两台计算机认为,我俩已经建立连接了.<br>$$ 说起三次握手,就不得不提到两个东西:Syn(Synchronize)和Ack(Acknowledge),也就是同步序列号和确认序列号<br><em></em><br>First handshake:<br>  客户端发送syn(seq = j)包到服务器,并进入SENT_SEND状态,等待服务器确认;<br><em></em><br>Second handshake:<br>  服务端接收到客户端的syn包,需要确认客户端发来的syn包(ack = j + 1), 同时自己也发送一个syn包(seq = k),也就是syn + ack报文,此时服务器进入SYN_RECV状态<br><em></em><br>Third handshake:<br>  客户端接收到服务端的syn + ack,向服务器发送ack(ack = ｋ + 1),此包发送完毕,进入ESTABLISHED状态<br><em></em><br>是不是很简单,举一个形象化的例子,就是A给B发送一条消息,怎么知道发送到了呢?那就看B发送回来的消息是不是B的消息加上A上一轮发送的消息.<br>如果是,那么,根据逻辑推断,A知道A可以发送,A可以接收,B可以发送,B可以接收.A全知道了<br>但是于此同时,B呢?B只知道A可以发送,B可以发送,B可以接收,唯一不确定的是A可不可以接收.<br>所以此时A要再发送B上一轮的消息给B,这样B知道A可以接收.此时可以认为A和B之间的连接是建立的了.</li>
+</ul>
+<p>但是,细心的朋友可能已经知道了,如果,在第二次握手的时候,我不发送报文回服务端,作为客户端的我就已经知道了B的主机是存活的.(因为我已经知道了B是可以发送和接收的)<br>于是,我就探测到了B主机存活.<br>具体可以使用<code>nmap -sS xxx.xxx.xxx.xxx</code><br>这是使用Syn进行半连接来扫描的.<br>熟悉tcp报文结构的人都知道,不止syn可以,还有很多其他的也可以.<br>比如说FIN啊,UDP啊之类的,都可以.</p>
+<hr>
+<h3 id="T-A-O-v等"><a href="#T-A-O-v等" class="headerlink" title="-T, -A, -O, -v等"></a>-T, -A, -O, -v等</h3><p>重要的部分都说完了,现在来说一些细枝末节的吧.</p>
+<p>-T: 设置时间参数 0 1 2 3 4 5,越大越快,基本作用也就是慢速欺骗防火墙啊之类的.<br>-O: 探测目标的操作系统,原理就是不同的端口的开放情况<br>-A: 激烈扫描模式,基本上相当于-O + -v + 基本script的扫描,很实用<br>-v: 打印详细信息,意思就是把主机的情况都详细的说明一下</p>
+<p>个人喜欢<br><code>nmap -T4 -A -v xxx.xxx.xxx.xxx</code></p>
+<hr>
+<p>Over!</p>
+<p>P.S. 为什么不说-sP呢,因为我是真的不是很喜欢这个东西.老实说,-sP和-Pn没啥太大的差距,反正-Pn也可以混合使用,无所谓啦~</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python数据转换二进制</title>
+    <url>/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/</url>
+    <content><![CDATA[<h2 id="Python把数据转换为二进制"><a href="#Python把数据转换为二进制" class="headerlink" title="Python把数据转换为二进制"></a>Python把数据转换为二进制</h2><hr>
+<p>其实说起来,Python说到底还是快捷,方便,看着赏心悦目(对自己).<br>但是如果我放出以下的两个函数,就不是太友好了…</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def encode(s):</span><br><span class="line">    return &#39;&#39;.join([bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s])</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def decode(s):</span><br><span class="line">    return &#39;&#39;.join([chr(i) for i in [int(b, 2) for b in s.split(&#39; &#39;)]])</span><br></pre></td></tr></table></figure>
+
+<p>说实话,换做是我,假设是看别人的代码,看到这么一行,我的心态也会直接爆炸.<br>万一这个老哥后面在备注一句</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># MAGIC, DON&#39;T TOUCH!</span><br></pre></td></tr></table></figure>
+<p>估计心态就直接爆炸.<br>那么,我就来分开说说这个的原理吧= =<br>(推导式真的是一个自己用着很爽,别人看着也很爽的东西= =)</p>
+<hr>
+<h3 id="Encode"><a href="#Encode" class="headerlink" title="Encode"></a>Encode</h3><p>有一说一,其实原理都很简单.<br>首先介绍一下四个方法:<br>.join()<br>这个得好好说一说,我们暂时把这个方法写成<br>a.join(b)<br>此时a是一个字符,或者是一个字符串,b是一个序列(字符串,列表,元组)<br>规则就是将a插入到b的每一个元素中间.</p>
+<p>.replace()<br>简而言之,替换</p>
+<p>bin()<br>将int型的数据转换为二进制形式,但是格式是(0b111100),此时,输出的格式是”str”</p>
+<p>ord()<br>输出字符的ASCII值</p>
+<p>在了解了这些基本用法以后,就可以翻译上面那个函数了.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">return &#39;&#39;.join([bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s])</span><br></pre></td></tr></table></figure>
+<p>return不看, ‘’.join()最后看,那么我们目的很明确了,就是翻译后面的推导式.<code>[bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s]</code><br>这个s是函数输入进来的字符串s.<br>大概意思就是说,<br>c = s[i]<br>把c变成ASCII码,再把这个ASCII码中的0b给扬了,然后保存到这个列表里.<br>最后再把这个列变拼接起来,成为一个字符串.<br>是不是超级简单?<br>那我们就顺势再看看Decode吧!</p>
+<hr>
+<h3 id="Decode"><a href="#Decode" class="headerlink" title="Decode"></a>Decode</h3><p><code>&#39;&#39;.join([chr(i) for i in [int(b, 2) for b in s.split(&#39; &#39;)]])</code><br>了解了第一个,这个就更加简单了啊.<br>主要还是说一下int(b, 2),简单来说,就是强制类型转换为int,并且b是二进制,转换为10进制的数.<br>然后就逐个翻译就好啦.<br>怎么编码,就怎么解码.就完成了进制转换啊!</p>
+<hr>
+<p>P.S. 为什么会想到写这个呢? 因为再写RC4算法的时候,突然想到了,就心血来潮的给写了.然后后来自己看着都烦,于是正好借着机会给自己疏通疏通.<br>(真就是写推导式的坏处啊,还不写备注= =)</p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Syn_Flood</title>
     <url>/2019/12/01/Syn-Flood/</url>
     <content><![CDATA[<h2 id="Syn-Flood攻击程序"><a href="#Syn-Flood攻击程序" class="headerlink" title="Syn_Flood攻击程序"></a>Syn_Flood攻击程序</h2><hr>
@@ -397,6 +485,60 @@
       </tags>
   </entry>
   <entry>
+    <title>collections的使用</title>
+    <url>/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h3><p>首先,我得介绍一下这个是个什么东西.<br>collections是Python的一个内建的一个集合模块,提供了许多有用的集合类</p>
+<p>这里介绍一些我喜欢用的几个.</p>
+<hr>
+<h3 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h3><p>由常识可知,在Python中,<code>tuple</code>可以表示不变集合.<br>举个例子,我需要表示一个坐标,那么我们可以<br><code>&gt; p = (1, 2)</code><br>但是看到这个(1, 2),又有谁会知道,这个<code>tuple</code>是表示一个坐标的呢?<br>但是单独的定义一个类又太麻烦,所以这个时候我们就可以利用namedtuple</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">namedtuple(typename: str, field_names: Union[str, Iterable[str]], *, verbose: bool&#x3D;..., rename: bool&#x3D;..., module: Optional[str]&#x3D;...) -&gt; Type[tuple]</span><br></pre></td></tr></table></figure>
+<p>这个是namedtuple后面的参数列表<br>Exp.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import namedtuple</span><br><span class="line"></span><br><span class="line">point &#x3D; namedtuple(&quot;point&quot;, [&quot;x&quot;, &quot;y&quot;])</span><br><span class="line">p &#x3D; point(1, 2)</span><br><span class="line">print(p.x, p.y)</span><br></pre></td></tr></table></figure>
+<p>此时会输出</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+<p>其中,我们需要知道的是,namedtuple是tuple的一个子类.<br>就是说,此时的p不仅是tuple,也是namedtuple</p>
+<p>但是肯定有人会问,这样有什么好处?<br>好处那肯定是有的,它可以规定一个固定的输入格式.<br>所以我们可以定义一个数据类型,它既可以使用tuple的不可变的特性,又可以根据属性来引用.方便</p>
+<hr>
+<h3 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h3><p>Python中自带的数据结构中,有一种叫做<code>list</code>.<br>list这个东西好啊,但是它存在几个非常重要的缺点.<br>由于<code>list</code>是一种线性存储的结构,这就导致其根据索引找元素的时候会非常快,但是在插入和删除元素的时候就会很慢.当数据量大的时候,效率会很低.<br>为了解决这个问题,我们引入<code>deque</code>,双向队列.<br>它适合用作队列和栈.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import deque</span><br><span class="line"></span><br><span class="line">q &#x3D; deque([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;])</span><br><span class="line">q.append(&quot;x&quot;)</span><br><span class="line">q.appendleft(&quot;y&quot;)</span><br></pre></td></tr></table></figure>
+<p>此时的输出是<br><code>[&#39;y&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;x&#39;]</code><br>不仅有<code>append</code>和<code>appendleft</code>,相同的肯定还有<code>pop</code>和<code>popleft</code><br>使用起来肯定很舒服</p>
+<hr>
+<h3 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h3><p>Python中自带的一个数据结构叫<code>dict</code>字典,其构成是键值对.<br>但是再用<code>dict</code>做迭代的时候,我们没法确定<code>key</code>的顺序.<br>但是使用<code>OrderedDict</code>时,就可以使之排序.<br>具体的不多说,直接看例子</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import OrderedDict</span><br><span class="line"></span><br><span class="line">dict &#x3D; &#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;</span><br><span class="line">print(dict)</span><br><span class="line">&gt;&gt;&gt; &#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;</span><br><span class="line"></span><br><span class="line">orderdict &#x3D; OrderedDict(&#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;)</span><br><span class="line">print(orderdict)</span><br><span class="line">&gt;&gt;&gt; &#123;&quot;a&quot;:1, &quot;b&quot;:4, &quot;c&quot;:3&#125;</span><br></pre></td></tr></table></figure>
+<p>由此可见,我们是根据<code>Key</code>排序的.这点很重要</p>
+<ul>
+<li>Notice<br><code>OrderedDict</code>的<code>Key</code>的插入会按照插入的顺序排列,而不是key本身<br>Exp<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import OrderedDict</span><br><span class="line"></span><br><span class="line">d &#x3D; OrderedDict()</span><br><span class="line">d[&quot;z&quot;] &#x3D; 1</span><br><span class="line">d[&quot;y&quot;] &#x3D; 2</span><br><span class="line">d[&quot;x&quot;] &#x3D; 3</span><br><span class="line">print(d)</span><br><span class="line">&gt;&gt;&gt; OrderedDict([(&#39;z&#39;, 1), (&#39;y&#39;, 2), (&#39;x&#39;, 3)])</span><br></pre></td></tr></table></figure>
+于是我们可以开动脑筋,做一个非常简单的扩展,我们可以做一个FIFO的dict结构.当超过限制时,删除最早的key.</li>
+</ul>
+<hr>
+<h3 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h3><p>这个是我觉得最好用的东西,没有之一.<br>字面意思,这就是一个计数器.计数器肯定是用来计数的.<br>直接看一个例子吧!<br>Exp</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import Counter</span><br><span class="line"></span><br><span class="line">a &#x3D; &quot;kashfkehgkashfdkjsewhtrkljsdhfkjsdfhksjd&quot;</span><br><span class="line">a_c &#x3D; Counter(a)</span><br><span class="line">print(a_c)</span><br><span class="line">&gt;&gt;&gt; Counter(&#123;&#39;k&#39;: 7, &#39;s&#39;: 6, &#39;h&#39;: 6, &#39;f&#39;: 4, &#39;d&#39;: 4, &#39;j&#39;: 4, &#39;a&#39;: 2, &#39;e&#39;: 2, &#39;g&#39;: 1, &#39;w&#39;: 1, &#39;t&#39;: 1, &#39;r&#39;: 1, &#39;l&#39;: 1&#125;)</span><br></pre></td></tr></table></figure>
+<p>可以看出来,返回的是一个字典,里面有这个字符串所有字母存在的个数.</p>
+<p>这个可以给大家举一个例题:</p>
+<hr>
+<p>你正在和你的朋友玩 猜数字（Bulls and Cows）游戏：你写下一个数字让你的朋友猜。每次他猜测后<br>，你给他一个提示，告诉他有多少位数字和确切位置都猜对了（称为“Bulls”, 公牛），<br>有多少位数字猜对了但是位置不对（称为“Cows”, 奶牛）。你的朋友将会根据提示继续猜，直到猜出秘密数字。</p>
+<p>请写出一个根据秘密数字和朋友的猜测数返回提示的函数，用 A 表示公牛，用 B 表示奶牛。</p>
+<p>请注意秘密数字和朋友的猜测数都可能含有重复数字。</p>
+<p>示例 1:</p>
+<p>输入: secret = “1807”, guess = “7810”</p>
+<p>输出: “1A3B”</p>
+<p>解释: 1 公牛和 3 奶牛。公牛是 8，奶牛是 0, 1 和 7。<br>示例 2:</p>
+<p>输入: secret = “1123”, guess = “0111”</p>
+<p>输出: “1A1B”</p>
+<p>解释: 朋友猜测数中的第一个 1 是公牛，第二个或第三个 1 可被视为奶牛。<br>说明: 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/bulls-and-cows">题目链接: https://leetcode-cn.com/problems/bulls-and-cows</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def getHint(self, secret: str, guess: str) -&gt; str:</span><br><span class="line">        from collections import Counter</span><br><span class="line">        secret_c &#x3D; Counter(secret)</span><br><span class="line">        guess_c &#x3D; Counter(guess)</span><br><span class="line">        count_A &#x3D; sum((i &#x3D;&#x3D; j for i, j in zip(secret, guess)))</span><br><span class="line">        count_B &#x3D; sum((secret_c &amp; guess_c).values()) - count_A</span><br><span class="line">        return &quot;&#123;&#125;A&#123;&#125;B&quot;.format(count_A, count_B)</span><br></pre></td></tr></table></figure>
+
+<hr>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>库介绍</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一次有趣的对话</title>
     <url>/2019/12/01/%E4%B8%80%E6%AC%A1%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AF%B9%E8%AF%9D/</url>
     <content><![CDATA[<p>日常chuiniubility~</p>
@@ -453,6 +595,63 @@
       </categories>
       <tags>
         <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的春招经历与总结</title>
+    <url>/2021/05/10/%E6%88%91%E7%9A%84%E6%98%A5%E6%8B%9B%E7%BB%8F%E5%8E%86%E4%B8%8E%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h3 id="我的春招经历与总结"><a href="#我的春招经历与总结" class="headerlink" title="我的春招经历与总结"></a>我的春招经历与总结</h3><hr>
+<p><strong>作为一个小垃圾，虽然春招不太尽人意，</strong><br><strong>但还是想分享一下自己踩得坑和自己获得的一些经验教训</strong></p>
+<hr>
+<h4 id="为什么春招？"><a href="#为什么春招？" class="headerlink" title="为什么春招？"></a>为什么春招？</h4><p>2021.03<br>这是一个对很大一部分学生意义非凡的一个月。<br>因为这个月是考研出成绩的月份。<br>很多人收获了一个很好的分数，当然和其本身的努力分不开；<br>当然还有另一部分人，没能收获好的结果。<br>很不幸，我就是后者……<br>但是生活不是debug，不能因为出了问题就轻易的从头再来。<br>于是乎摆在我们这些人面前的，就只有<strong>就业/复读</strong>了。<br>对于我而言，也不知道是出于对自己实力的信任，还是头脑发热，选择了走上就业的道路。<br>或许会有人问，读研真的很重要嘛？<br>我的答案肯定是重要。但是更多的还是从你自己的角度出发去思考问题。读研你可以更加的开阔自己的视野，交道更有水平的朋友，拓宽自己的交际面等等。更重要的是，这是一次<strong>改变你未来职业的机会</strong>。</p>
+<hr>
+<h4 id="说说自己的前三次面试"><a href="#说说自己的前三次面试" class="headerlink" title="说说自己的前三次面试"></a>说说自己的前三次面试</h4><p>我面试的第一家公司是一家安全公司，也是因为我铁子的帮忙，一切都是很顺利的。但是在最后的阶段我反悔了，我没有答应这家公司。原因有很多，其中一部分归于我比较的任性，也可能是兴趣问题。拒绝之后我仔细的反思了自己的所作所为，明白了<strong>做事之前，或者说是做决定之前，一定要思考清楚，再做决定，切忌盲目决定</strong>，不能等之后再后悔，那时候可能很多东西都无法挽回了。</p>
+<p>我面试的第二家公司是字节跳动，因为我室友在字节，想着内推一下，说不定就进了。凭着这样的想法，我去面了字节。但是面试的时候就感觉完全不是这么回事了，自己总结的知识点，在真正的面试面前就像是冰山一角，那些我觉得完全不可能问的问题或许随时都会要了你的命。就比如这次，问了很多数据库的最最最基础的问题，被我忽视了，没能答出来，当然结果就可想而知了。在反思中，我明白了<strong>做事情、学习不能抱有侥幸心态，不会的知识点就应该去弄明白，而不能就这么将就着就过去了（我觉得很大一部分原因是大学阶段的 考试/学习 造成的只看重点的习惯）</strong>。</p>
+<p>我面试的第三家公司是Shopee，笔试的时候系统崩溃了，导致我做题目的心情变得不是很好，再加上题目本身的难度，直接给我做的不耐烦了，就交了。本以为就这么结束了，不会有面试机会的，但是很幸运，我还是进了面试。我面试的是后台开发，众所周知后台开发，知识点很多很杂很乱，于是乎面试也是一样。从我熟知的mysql，问道我不熟悉的redis，然后揪着redis使劲问，问你的思路。也问了很多关系数据库里很多有些深的知识点，比如间隙锁等。结果虽然不好，但是收获了很多，明白了<strong>自己所学的知识不能只停留在表面，而要深入去理解为啥是这样，后来腾讯的leader也说了，计算机科学与工程，本质上是工程，既然是工程就需要你自己动手去操作和理解。</strong></p>
+<p>这就是我的前三次的面试，如果再让我面一次，我肯定会做的更好。但是还是那句话，<strong>万事开头难</strong>，没有经历过这些，也不会总结出教训，只是后悔自己浪费了这些大厂机会实在是有些可惜。</p>
+<hr>
+<h4 id="关于春招，或者是招聘，应该怎么准备"><a href="#关于春招，或者是招聘，应该怎么准备" class="headerlink" title="关于春招，或者是招聘，应该怎么准备"></a>关于春招，或者是招聘，应该怎么准备</h4><h5 id="首先，最最最重要的，就是简历。"><a href="#首先，最最最重要的，就是简历。" class="headerlink" title="首先，最最最重要的，就是简历。"></a>首先，最最最重要的，就是<strong>简历</strong>。</h5><p><strong>简历</strong>就是你的自我介绍，你的身份卡，换句编程的话来说，就是“你”的实例化对象。<br>绝大部分情况下，没有人知道你是谁你会啥你能做什么，都是通过<strong>简历</strong>来了解你的一些情况。<br>所以这里面就大有讲究啦：<br>&emsp;&emsp;1. <strong>换位思考</strong>。作为hr，一天要看很多份简历，非常的疲劳，这时候有两份简历摆在你面前，一份是制作精良，各种特效花纹好看的图片；另一份是朴朴素素，很多东西都写得十分清楚的简历。你会选择哪份？至少对我来说，我会选择<strong>后者</strong>。相比于第一份的花里胡哨，我会更想看信息熵小的，让人一目了然，很短时间内就可以产生一个你的”你的实例化对象”。<br>&emsp;&emsp;2. <strong>我没有经历怎么办?</strong> 我理解，不是所有人都拥有丰富的经历，例如 成篇的sci/大量的实习经历/丰富的获奖经历。对于此，我想说的是，<a href="https://baike.baidu.com/item/%E7%BB%8F%E5%8E%86/33329?fr=aladdin">经历</a>的解释是体验、经受过的事情。那既然你说你没有经历，又不知道写什么，那么最好的办法就是自己创造经历。这里的创造不是指胡编乱造，而是自己实际的去经历过的参与过的。比如GitHub上的一些开源项目啊，自己接一些小的外包项目啊之类的。<strong>还有一点，千万别往简历上写自己不太会的东西！</strong> 曾经看过一个人说自己精通C++，面试官看到后我估计都会笑得合不拢嘴。<br>&emsp;&emsp;3. 其他的有很多细枝末节的东西，比如说不要写很<strong>白痴的话，让别人一眼看到就觉得你是白痴</strong>；不要写<strong>大话空话</strong>，用数据说话。当然你这个数据得是实际得到的，经得起别人问的，而不是胡编乱造的。<br>&emsp;&emsp;4. 推荐一个简历制作的网站：<a href="https://www.wondercv.com/">超级简历(Wondercv)</a></p>
+<h5 id="其次就是笔试面试了。"><a href="#其次就是笔试面试了。" class="headerlink" title="其次就是笔试面试了。"></a>其次就是笔试面试了。</h5><p>招聘招聘，说到底本质上就是通过笔试面试，了解你到底是一个什么样的人，能不能被公司使用。</p>
+<p>笔试方面，我推荐去<a href="https://www.nowcoder.com/activity/oj">牛客网</a>, <a href="https://leetcode-cn.com/">力扣</a><br>其中强烈推荐牛客网的OJ系统啊,因为你真正的笔试可能用的就是牛客的oj,所以提前适应一下也不是坏事不是吗?</p>
+<p>面试方面,我最喜欢去的就是<a href="https://www.nowcoder.com/">牛客网</a>了,里面的兄弟姐妹们都是真的有才,都是真的好厉害,面经写的也很好,强烈推荐啊!</p>
+<p>当然了面试,万变不离其宗,就是说的那些东西，面两次就明白会问的问题都是什么方向的了。顺带一提，很多公司都会对面试进行记录，你的下一次面试可能会问上一次面试没有答好的问题，如果没答上来那可是严重的扣分项，一顶不要出现这样的事情！</p>
+<p>tips: 有<strong>内推</strong>就走<strong>内推</strong></p>
+<hr>
+<p>写在后面的话：<br>&emsp;&emsp;每个人都有遗憾，比如我与腾讯擦肩而过，比如我非常喜欢的公司最后甚至都不看我一眼，比如想要我的公司被我拒绝，比如你得在“骑驴找马”中找到平衡等等等等。没有什么事情是注定完美的，也许你也会经历，或者正在经历遗憾，不过没关系，遗憾的事情就让它过去吧，抓住手里的东西才是最重要的。<strong>看山跑死马</strong>啊！</p>
+<hr>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的腾讯面经</title>
+    <url>/2021/05/10/%E6%88%91%E7%9A%84%E8%85%BE%E8%AE%AF%E9%9D%A2%E7%BB%8F/</url>
+    <content><![CDATA[<h3 id="WXG凉凉实况（x）"><a href="#WXG凉凉实况（x）" class="headerlink" title="WXG凉凉实况（x）"></a>WXG凉凉实况（x）</h3><p><strong>以此文来记录一下自己失败的WXG面试经历吧~</strong></p>
+<h4 id="3-17-一面（63min）"><a href="#3-17-一面（63min）" class="headerlink" title="3-17 一面（63min）"></a>3-17 一面（63min）</h4><p>上来直接代码题(类似于 股票(一次交易))<br>问了和本题目相关的解法问题(对我的解法有疑问)<br>怼项目(腾讯面试有关项目的问的是真的多)<br>问了opencv相关<br>了解清楚后,问了利用opencv解决一个实际问题(将一个视频拆分成gif)<br>相似的图片进行压缩.(怎么压缩? 压缩的比例? opencv怎么识别相似的图片? 你的理解是什么?)<br>怼实习? 没实习经历<br>对C语言了解吗? 对一个链表进行排序,你会怎么做? 实现一下?<br>以为微信聊天为例,你和你朋友发送消息,之间所有的你认识到的技术,流程,说一说?<br>(发送? 接收? 按序发送/接收? 断网情况下怎么做到按序传输? 撤回怎么处理?)<br>问了问有没有offer<br>提问环节</p>
+<h4 id="3-24-二面（77min）"><a href="#3-24-二面（77min）" class="headerlink" title="3-24 二面（77min）"></a>3-24 二面（77min）</h4><p>一开始使用的是面呗,但是发现没声音,故转到了腾讯会议<br>自我介绍<br>问了些学校的基本情况,然后开始介绍最近的一个项目<br>就这个项目展开聊了很多(区块链)<br>安全性?一致性?(其中安全性聊到了工业级别的大型区块链)<br>多线程怎么操作的?<br>分布式怎么做的?<br>以此为基点,聊了其他的项目<br>问了一些opencv的问题<br>问了一些关于神经网络的东西(工业级别的)<br>问了项目协同方面的问题(git?)<br>问了我是否除了python其他都不会<br>还会c,java<br>会做移动端吗?<br>本科期间学过安卓开发,但是后来就没怎么做过了.现在大致了解的情况(Activity,Intent,Service,ContainPrivider等)<br>看我有算法比赛的奖,考了三道算法图</p>
+<ol>
+<li>m*n阶矩阵,每一行左边的元素大于右边,下边的元素大于上边,每一行第一个元素大于上一行最后一个元素,求K是否在这个矩阵内</li>
+<li>字符串求解不含重复字符的最长子串(双指针)</li>
+<li>有N个文件file1, file2, …, fileN, 里面存储的都是英文单词,用空格隔开.现给你一个英文单词,让你求出在哪些文件中出现过.fileN可能非常大.考虑查询的可重复性.(大文件读写题)<br>问了我第一题是否还可以优化?<br>问了我Python相关的知识<br>GIL?<br>迭代器和生成器?<br>问了我是否使用过Hadoop等大数据工具?<br>问了我是否使用过诸如Mysql, Redis等数据库工具<br>提问环节</li>
+</ol>
+<h4 id="4-6-GM-EVP-面委会面-（70min）"><a href="#4-6-GM-EVP-面委会面-（70min）" class="headerlink" title="4-6 GM/EVP/面委会面 （70min）"></a>4-6 GM/EVP/面委会面 （70min）</h4><p>三道算法题</p>
+<ol>
+<li>“Write a function that accepts an Excel column name and returns the corresponding column number.” And give the test cases.<br>they go like this:<br>A B C . . . Z AA AB AC . . . AZ BA BB BC . . . BZ CA CB CC . . . AAA AAB etc.</li>
+<li>熟悉的陌生人<br>大家都知道微信用户都是双向的好友，a是b的好友，那么b一定是a的好友，现在给定一个用户列表，其中有些用户是好友，有些不是，请判断，这些用户是否可以划分为两组，并且每组内的用户，互相都不是好友。如果能，请给出这个划分。</li>
+<li>有n个加油站形成一个环，所有加油站里面的油合起来刚刚够一辆汽车跑完这个环，已经知道每个加油站的油量和加油站之间的距离，给你一个空车，设计一个路径能够跑完这个环<br>提问环节</li>
+</ol>
+<hr>
+<p>哎，我GM面的算法题啊真的是回答的烂爆了，只能怪自己太垃圾了呜呜呜呜呜呜。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
       </tags>
   </entry>
   <entry>
@@ -544,205 +743,6 @@
 </ul>
 <hr>
 <p><strong>以上就是搭建一个简易的博客的全部啦</strong><br><strong>后期可以对自己的博客进行美化，比如更换主题啊之类的</strong></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>collections的使用</title>
-    <url>/2020/02/10/collections%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h3><p>首先,我得介绍一下这个是个什么东西.<br>collections是Python的一个内建的一个集合模块,提供了许多有用的集合类</p>
-<p>这里介绍一些我喜欢用的几个.</p>
-<hr>
-<h3 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h3><p>由常识可知,在Python中,<code>tuple</code>可以表示不变集合.<br>举个例子,我需要表示一个坐标,那么我们可以<br><code>&gt; p = (1, 2)</code><br>但是看到这个(1, 2),又有谁会知道,这个<code>tuple</code>是表示一个坐标的呢?<br>但是单独的定义一个类又太麻烦,所以这个时候我们就可以利用namedtuple</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">namedtuple(typename: str, field_names: Union[str, Iterable[str]], *, verbose: bool&#x3D;..., rename: bool&#x3D;..., module: Optional[str]&#x3D;...) -&gt; Type[tuple]</span><br></pre></td></tr></table></figure>
-<p>这个是namedtuple后面的参数列表<br>Exp.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import namedtuple</span><br><span class="line"></span><br><span class="line">point &#x3D; namedtuple(&quot;point&quot;, [&quot;x&quot;, &quot;y&quot;])</span><br><span class="line">p &#x3D; point(1, 2)</span><br><span class="line">print(p.x, p.y)</span><br></pre></td></tr></table></figure>
-<p>此时会输出</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
-<p>其中,我们需要知道的是,namedtuple是tuple的一个子类.<br>就是说,此时的p不仅是tuple,也是namedtuple</p>
-<p>但是肯定有人会问,这样有什么好处?<br>好处那肯定是有的,它可以规定一个固定的输入格式.<br>所以我们可以定义一个数据类型,它既可以使用tuple的不可变的特性,又可以根据属性来引用.方便</p>
-<hr>
-<h3 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h3><p>Python中自带的数据结构中,有一种叫做<code>list</code>.<br>list这个东西好啊,但是它存在几个非常重要的缺点.<br>由于<code>list</code>是一种线性存储的结构,这就导致其根据索引找元素的时候会非常快,但是在插入和删除元素的时候就会很慢.当数据量大的时候,效率会很低.<br>为了解决这个问题,我们引入<code>deque</code>,双向队列.<br>它适合用作队列和栈.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import deque</span><br><span class="line"></span><br><span class="line">q &#x3D; deque([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;])</span><br><span class="line">q.append(&quot;x&quot;)</span><br><span class="line">q.appendleft(&quot;y&quot;)</span><br></pre></td></tr></table></figure>
-<p>此时的输出是<br><code>[&#39;y&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;x&#39;]</code><br>不仅有<code>append</code>和<code>appendleft</code>,相同的肯定还有<code>pop</code>和<code>popleft</code><br>使用起来肯定很舒服</p>
-<hr>
-<h3 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h3><p>Python中自带的一个数据结构叫<code>dict</code>字典,其构成是键值对.<br>但是再用<code>dict</code>做迭代的时候,我们没法确定<code>key</code>的顺序.<br>但是使用<code>OrderedDict</code>时,就可以使之排序.<br>具体的不多说,直接看例子</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import OrderedDict</span><br><span class="line"></span><br><span class="line">dict &#x3D; &#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;</span><br><span class="line">print(dict)</span><br><span class="line">&gt;&gt;&gt; &#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;</span><br><span class="line"></span><br><span class="line">orderdict &#x3D; OrderedDict(&#123;&quot;a&quot;:1, &quot;c&quot;:3, &quot;b&quot;:4&#125;)</span><br><span class="line">print(orderdict)</span><br><span class="line">&gt;&gt;&gt; &#123;&quot;a&quot;:1, &quot;b&quot;:4, &quot;c&quot;:3&#125;</span><br></pre></td></tr></table></figure>
-<p>由此可见,我们是根据<code>Key</code>排序的.这点很重要</p>
-<ul>
-<li>Notice<br><code>OrderedDict</code>的<code>Key</code>的插入会按照插入的顺序排列,而不是key本身<br>Exp<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import OrderedDict</span><br><span class="line"></span><br><span class="line">d &#x3D; OrderedDict()</span><br><span class="line">d[&quot;z&quot;] &#x3D; 1</span><br><span class="line">d[&quot;y&quot;] &#x3D; 2</span><br><span class="line">d[&quot;x&quot;] &#x3D; 3</span><br><span class="line">print(d)</span><br><span class="line">&gt;&gt;&gt; OrderedDict([(&#39;z&#39;, 1), (&#39;y&#39;, 2), (&#39;x&#39;, 3)])</span><br></pre></td></tr></table></figure>
-于是我们可以开动脑筋,做一个非常简单的扩展,我们可以做一个FIFO的dict结构.当超过限制时,删除最早的key.</li>
-</ul>
-<hr>
-<h3 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h3><p>这个是我觉得最好用的东西,没有之一.<br>字面意思,这就是一个计数器.计数器肯定是用来计数的.<br>直接看一个例子吧!<br>Exp</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from collections import Counter</span><br><span class="line"></span><br><span class="line">a &#x3D; &quot;kashfkehgkashfdkjsewhtrkljsdhfkjsdfhksjd&quot;</span><br><span class="line">a_c &#x3D; Counter(a)</span><br><span class="line">print(a_c)</span><br><span class="line">&gt;&gt;&gt; Counter(&#123;&#39;k&#39;: 7, &#39;s&#39;: 6, &#39;h&#39;: 6, &#39;f&#39;: 4, &#39;d&#39;: 4, &#39;j&#39;: 4, &#39;a&#39;: 2, &#39;e&#39;: 2, &#39;g&#39;: 1, &#39;w&#39;: 1, &#39;t&#39;: 1, &#39;r&#39;: 1, &#39;l&#39;: 1&#125;)</span><br></pre></td></tr></table></figure>
-<p>可以看出来,返回的是一个字典,里面有这个字符串所有字母存在的个数.</p>
-<p>这个可以给大家举一个例题:</p>
-<hr>
-<p>你正在和你的朋友玩 猜数字（Bulls and Cows）游戏：你写下一个数字让你的朋友猜。每次他猜测后<br>，你给他一个提示，告诉他有多少位数字和确切位置都猜对了（称为“Bulls”, 公牛），<br>有多少位数字猜对了但是位置不对（称为“Cows”, 奶牛）。你的朋友将会根据提示继续猜，直到猜出秘密数字。</p>
-<p>请写出一个根据秘密数字和朋友的猜测数返回提示的函数，用 A 表示公牛，用 B 表示奶牛。</p>
-<p>请注意秘密数字和朋友的猜测数都可能含有重复数字。</p>
-<p>示例 1:</p>
-<p>输入: secret = “1807”, guess = “7810”</p>
-<p>输出: “1A3B”</p>
-<p>解释: 1 公牛和 3 奶牛。公牛是 8，奶牛是 0, 1 和 7。<br>示例 2:</p>
-<p>输入: secret = “1123”, guess = “0111”</p>
-<p>输出: “1A1B”</p>
-<p>解释: 朋友猜测数中的第一个 1 是公牛，第二个或第三个 1 可被视为奶牛。<br>说明: 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/bulls-and-cows">题目链接: https://leetcode-cn.com/problems/bulls-and-cows</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def getHint(self, secret: str, guess: str) -&gt; str:</span><br><span class="line">        from collections import Counter</span><br><span class="line">        secret_c &#x3D; Counter(secret)</span><br><span class="line">        guess_c &#x3D; Counter(guess)</span><br><span class="line">        count_A &#x3D; sum((i &#x3D;&#x3D; j for i, j in zip(secret, guess)))</span><br><span class="line">        count_B &#x3D; sum((secret_c &amp; guess_c).values()) - count_A</span><br><span class="line">        return &quot;&#123;&#125;A&#123;&#125;B&quot;.format(count_A, count_B)</span><br></pre></td></tr></table></figure>
-
-<hr>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>库介绍</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python数据转换二进制</title>
-    <url>/2019/12/11/Python%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%BA%8C%E8%BF%9B%E5%88%B6/</url>
-    <content><![CDATA[<h2 id="Python把数据转换为二进制"><a href="#Python把数据转换为二进制" class="headerlink" title="Python把数据转换为二进制"></a>Python把数据转换为二进制</h2><hr>
-<p>其实说起来,Python说到底还是快捷,方便,看着赏心悦目(对自己).<br>但是如果我放出以下的两个函数,就不是太友好了…</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def encode(s):</span><br><span class="line">    return &#39;&#39;.join([bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s])</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def decode(s):</span><br><span class="line">    return &#39;&#39;.join([chr(i) for i in [int(b, 2) for b in s.split(&#39; &#39;)]])</span><br></pre></td></tr></table></figure>
-
-<p>说实话,换做是我,假设是看别人的代码,看到这么一行,我的心态也会直接爆炸.<br>万一这个老哥后面在备注一句</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># MAGIC, DON&#39;T TOUCH!</span><br></pre></td></tr></table></figure>
-<p>估计心态就直接爆炸.<br>那么,我就来分开说说这个的原理吧= =<br>(推导式真的是一个自己用着很爽,别人看着也很爽的东西= =)</p>
-<hr>
-<h3 id="Encode"><a href="#Encode" class="headerlink" title="Encode"></a>Encode</h3><p>有一说一,其实原理都很简单.<br>首先介绍一下四个方法:<br>.join()<br>这个得好好说一说,我们暂时把这个方法写成<br>a.join(b)<br>此时a是一个字符,或者是一个字符串,b是一个序列(字符串,列表,元组)<br>规则就是将a插入到b的每一个元素中间.</p>
-<p>.replace()<br>简而言之,替换</p>
-<p>bin()<br>将int型的数据转换为二进制形式,但是格式是(0b111100),此时,输出的格式是”str”</p>
-<p>ord()<br>输出字符的ASCII值</p>
-<p>在了解了这些基本用法以后,就可以翻译上面那个函数了.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">return &#39;&#39;.join([bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s])</span><br></pre></td></tr></table></figure>
-<p>return不看, ‘’.join()最后看,那么我们目的很明确了,就是翻译后面的推导式.<code>[bin(ord(c)).replace(&#39;0b&#39;, &#39;&#39;) for c in s]</code><br>这个s是函数输入进来的字符串s.<br>大概意思就是说,<br>c = s[i]<br>把c变成ASCII码,再把这个ASCII码中的0b给扬了,然后保存到这个列表里.<br>最后再把这个列变拼接起来,成为一个字符串.<br>是不是超级简单?<br>那我们就顺势再看看Decode吧!</p>
-<hr>
-<h3 id="Decode"><a href="#Decode" class="headerlink" title="Decode"></a>Decode</h3><p><code>&#39;&#39;.join([chr(i) for i in [int(b, 2) for b in s.split(&#39; &#39;)]])</code><br>了解了第一个,这个就更加简单了啊.<br>主要还是说一下int(b, 2),简单来说,就是强制类型转换为int,并且b是二进制,转换为10进制的数.<br>然后就逐个翻译就好啦.<br>怎么编码,就怎么解码.就完成了进制转换啊!</p>
-<hr>
-<p>P.S. 为什么会想到写这个呢? 因为再写RC4算法的时候,突然想到了,就心血来潮的给写了.然后后来自己看着都烦,于是正好借着机会给自己疏通疏通.<br>(真就是写推导式的坏处啊,还不写备注= =)</p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Nmap使用记录</title>
-    <url>/2019/12/08/Nmap%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h2 id="Nmap使用记录"><a href="#Nmap使用记录" class="headerlink" title="Nmap使用记录"></a>Nmap使用记录</h2><hr>
-<p><strong>前言: Nmap是真的真的好用,我的天呐真的是神器.我曾经自己写过端口扫描器,但是功能远远不如Nmap,于是我开始反思为什么不偷懒而要自己写呢?人类真是奇怪的生物~</strong></p>
-<hr>
-<p>进入正题.</p>
-<p>输入<code>Nmap --help</code>即可获得帮助</p>
-<p><del>好了,我说完了.</del></p>
-<p>怎么可能嘛!</p>
-<p>你会得到这么多</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TARGET SPECIFICATION:</span><br><span class="line">  Can pass hostnames, IP addresses, networks, etc.</span><br><span class="line">  Ex: scanme.nmap.org, microsoft.com&#x2F;24, 192.168.0.1; 10.0.0-255.1-254</span><br><span class="line">  -iL &lt;inputfilename&gt;: Input from list of hosts&#x2F;networks</span><br><span class="line">  -iR &lt;num hosts&gt;: Choose random targets</span><br><span class="line">  --exclude &lt;host1[,host2][,host3],...&gt;: Exclude hosts&#x2F;networks</span><br><span class="line">  --excludefile &lt;exclude_file&gt;: Exclude list from file</span><br><span class="line">HOST DISCOVERY:</span><br><span class="line">  -sL: List Scan - simply list targets to scan</span><br><span class="line">  -sn: Ping Scan - disable port scan</span><br><span class="line">  -Pn: Treat all hosts as online -- skip host discovery</span><br><span class="line">  -PS&#x2F;PA&#x2F;PU&#x2F;PY[portlist]: TCP SYN&#x2F;ACK, UDP or SCTP discovery to given ports</span><br><span class="line">  -PE&#x2F;PP&#x2F;PM: ICMP echo, timestamp, and netmask request discovery probes</span><br><span class="line">  -PO[protocol list]: IP Protocol Ping</span><br><span class="line">  -n&#x2F;-R: Never do DNS resolution&#x2F;Always resolve [default: sometimes]</span><br><span class="line">  --dns-servers &lt;serv1[,serv2],...&gt;: Specify custom DNS servers</span><br><span class="line">  --system-dns: Use OS&#39;s DNS resolver</span><br><span class="line">  --traceroute: Trace hop path to each host</span><br><span class="line">SCAN TECHNIQUES:</span><br><span class="line">  -sS&#x2F;sT&#x2F;sA&#x2F;sW&#x2F;sM: TCP SYN&#x2F;Connect()&#x2F;ACK&#x2F;Window&#x2F;Maimon scans</span><br><span class="line">  -sU: UDP Scan</span><br><span class="line">  -sN&#x2F;sF&#x2F;sX: TCP Null, FIN, and Xmas scans</span><br><span class="line">  --scanflags &lt;flags&gt;: Customize TCP scan flags</span><br><span class="line">  -sI &lt;zombie host[:probeport]&gt;: Idle scan</span><br><span class="line">  -sY&#x2F;sZ: SCTP INIT&#x2F;COOKIE-ECHO scans</span><br><span class="line">  -sO: IP protocol scan</span><br><span class="line">  -b &lt;FTP relay host&gt;: FTP bounce scan</span><br><span class="line">PORT SPECIFICATION AND SCAN ORDER:</span><br><span class="line">  -p &lt;port ranges&gt;: Only scan specified ports</span><br><span class="line">    Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9</span><br><span class="line">  --exclude-ports &lt;port ranges&gt;: Exclude the specified ports from scanning</span><br><span class="line">  -F: Fast mode - Scan fewer ports than the default scan</span><br><span class="line">  -r: Scan ports consecutively - don&#39;t randomize</span><br><span class="line">  --top-ports &lt;number&gt;: Scan &lt;number&gt; most common ports</span><br><span class="line">  --port-ratio &lt;ratio&gt;: Scan ports more common than &lt;ratio&gt;</span><br><span class="line">SERVICE&#x2F;VERSION DETECTION:</span><br><span class="line">  -sV: Probe open ports to determine service&#x2F;version info</span><br><span class="line">  --version-intensity &lt;level&gt;: Set from 0 (light) to 9 (try all probes)</span><br><span class="line">  --version-light: Limit to most likely probes (intensity 2)</span><br><span class="line">  --version-all: Try every single probe (intensity 9)</span><br><span class="line">  --version-trace: Show detailed version scan activity (for debugging)</span><br><span class="line">SCRIPT SCAN:</span><br><span class="line">  -sC: equivalent to --script&#x3D;default</span><br><span class="line">  --script&#x3D;&lt;Lua scripts&gt;: &lt;Lua scripts&gt; is a comma separated list of</span><br><span class="line">           directories, script-files or script-categories</span><br><span class="line">  --script-args&#x3D;&lt;n1&#x3D;v1,[n2&#x3D;v2,...]&gt;: provide arguments to scripts</span><br><span class="line">  --script-args-file&#x3D;filename: provide NSE script args in a file</span><br><span class="line">  --script-trace: Show all data sent and received</span><br><span class="line">  --script-updatedb: Update the script database.</span><br><span class="line">  --script-help&#x3D;&lt;Lua scripts&gt;: Show help about scripts.</span><br><span class="line">           &lt;Lua scripts&gt; is a comma-separated list of script-files or</span><br><span class="line">           script-categories.</span><br><span class="line">OS DETECTION:</span><br><span class="line">  -O: Enable OS detection</span><br><span class="line">  --osscan-limit: Limit OS detection to promising targets</span><br><span class="line">  --osscan-guess: Guess OS more aggressively</span><br><span class="line">TIMING AND PERFORMANCE:</span><br><span class="line">  Options which take &lt;time&gt; are in seconds, or append &#39;ms&#39; (milliseconds),</span><br><span class="line">  &#39;s&#39; (seconds), &#39;m&#39; (minutes), or &#39;h&#39; (hours) to the value (e.g. 30m).</span><br><span class="line">  -T&lt;0-5&gt;: Set timing template (higher is faster)</span><br><span class="line">  --min-hostgroup&#x2F;max-hostgroup &lt;size&gt;: Parallel host scan group sizes</span><br><span class="line">  --min-parallelism&#x2F;max-parallelism &lt;numprobes&gt;: Probe parallelization</span><br><span class="line">  --min-rtt-timeout&#x2F;max-rtt-timeout&#x2F;initial-rtt-timeout &lt;time&gt;: Specifies</span><br><span class="line">      probe round trip time.</span><br><span class="line">  --max-retries &lt;tries&gt;: Caps number of port scan probe retransmissions.</span><br><span class="line">  --host-timeout &lt;time&gt;: Give up on target after this long</span><br><span class="line">  --scan-delay&#x2F;--max-scan-delay &lt;time&gt;: Adjust delay between probes</span><br><span class="line">  --min-rate &lt;number&gt;: Send packets no slower than &lt;number&gt; per second</span><br><span class="line">  --max-rate &lt;number&gt;: Send packets no faster than &lt;number&gt; per second</span><br><span class="line">FIREWALL&#x2F;IDS EVASION AND SPOOFING:</span><br><span class="line">  -f; --mtu &lt;val&gt;: fragment packets (optionally w&#x2F;given MTU)</span><br><span class="line">  -D &lt;decoy1,decoy2[,ME],...&gt;: Cloak a scan with decoys</span><br><span class="line">  -S &lt;IP_Address&gt;: Spoof source address</span><br><span class="line">  -e &lt;iface&gt;: Use specified interface</span><br><span class="line">  -g&#x2F;--source-port &lt;portnum&gt;: Use given port number</span><br><span class="line">  --proxies &lt;url1,[url2],...&gt;: Relay connections through HTTP&#x2F;SOCKS4 proxies</span><br><span class="line">  --data &lt;hex string&gt;: Append a custom payload to sent packets</span><br><span class="line">  --data-string &lt;string&gt;: Append a custom ASCII string to sent packets</span><br><span class="line">  --data-length &lt;num&gt;: Append random data to sent packets</span><br><span class="line">  --ip-options &lt;options&gt;: Send packets with specified ip options</span><br><span class="line">  --ttl &lt;val&gt;: Set IP time-to-live field</span><br><span class="line">  --spoof-mac &lt;mac address&#x2F;prefix&#x2F;vendor name&gt;: Spoof your MAC address</span><br><span class="line">  --badsum: Send packets with a bogus TCP&#x2F;UDP&#x2F;SCTP checksum</span><br><span class="line">OUTPUT:</span><br><span class="line">  -oN&#x2F;-oX&#x2F;-oS&#x2F;-oG &lt;file&gt;: Output scan in normal, XML, s|&lt;rIpt kIddi3,</span><br><span class="line">     and Grepable format, respectively, to the given filename.</span><br><span class="line">  -oA &lt;basename&gt;: Output in the three major formats at once</span><br><span class="line">  -v: Increase verbosity level (use -vv or more for greater effect)</span><br><span class="line">  -d: Increase debugging level (use -dd or more for greater effect)</span><br><span class="line">  --reason: Display the reason a port is in a particular state</span><br><span class="line">  --open: Only show open (or possibly open) ports</span><br><span class="line">  --packet-trace: Show all packets sent and received</span><br><span class="line">  --iflist: Print host interfaces and routes (for debugging)</span><br><span class="line">  --append-output: Append to rather than clobber specified output files</span><br><span class="line">  --resume &lt;filename&gt;: Resume an aborted scan</span><br><span class="line">  --stylesheet &lt;path&#x2F;URL&gt;: XSL stylesheet to transform XML output to HTML</span><br><span class="line">  --webxml: Reference stylesheet from Nmap.Org for more portable XML</span><br><span class="line">  --no-stylesheet: Prevent associating of XSL stylesheet w&#x2F;XML output</span><br><span class="line">MISC:</span><br><span class="line">  -6: Enable IPv6 scanning</span><br><span class="line">  -A: Enable OS detection, version detection, script scanning, and traceroute</span><br><span class="line">  --datadir &lt;dirname&gt;: Specify custom Nmap data file location</span><br><span class="line">  --send-eth&#x2F;--send-ip: Send using raw ethernet frames or IP packets</span><br><span class="line">  --privileged: Assume that the user is fully privileged</span><br><span class="line">  --unprivileged: Assume the user lacks raw socket privileges</span><br><span class="line">  -V: Print version number</span><br><span class="line">  -h: Print this help summary page.</span><br><span class="line">EXAMPLES:</span><br><span class="line">  nmap -v -A scanme.nmap.org</span><br><span class="line">  nmap -v -sn 192.168.0.0&#x2F;16 10.0.0.0&#x2F;8</span><br><span class="line">  nmap -v -iR 10000 -Pn -p 80</span><br><span class="line">SEE THE MAN PAGE (https:&#x2F;&#x2F;nmap.org&#x2F;book&#x2F;man.html) FOR MORE OPTIONS AND EXAMPLES</span><br></pre></td></tr></table></figure>
-
-
-
-<p>是不是特别多?<br><del>可这些都是基础用法:(</del></p>
-<p>那我来介绍一些我常用的指令吧.</p>
-<hr>
-<h3 id="nmap-a-b-c-d"><a href="#nmap-a-b-c-d" class="headerlink" title="nmap a.b.c.d"></a>nmap a.b.c.d</h3><p>基础一点的，最简单的就是:<br>nmap xxx.xxx.xxx.xxx</p>
-<p><strong>想不到吧!就是这么简单</strong></p>
-<ul>
-<li><p>但是,众所周知,在Windows防火墙里有这么一个设置选项:<br><strong>文件和打印机共享(回显请求 - ICMPv4-In)</strong><br>如果把这个禁用的话,理论上来说,在同一个网段里,你ping我是ping不通的,因为我并不会给你发送我的ICMP报文.</p>
-</li>
-<li><p>这样有什么好处?<br>Obviously, 要想知道好处,那我们得先了解网络扫描的基础.<br>怎么进行网络扫描?<br>最简单的也是最直接的,我们可以直接ping对方的主机.<br><strong>为什么能完成这项操作呢?</strong><br>答案很简单,由于是异常的IP数据报,那么对应的对方的层就是对方的网络层.<br>众所周知,网络层有一个非常著名的Internet控制报文协议(Internet Control Message Protocol).就是它的关系.<br>当你ping对方的主机的时候,对方就会给你发一个ICMP报文,来回应你的ping.<br>这就是探测存活主机的一种方法.</p>
-</li>
-<li><p>于是乎,关闭了这个功能,对方就不能直接ping到你了,也就对你主机的状态无从得知.</p>
-</li>
-</ul>
-<hr>
-<h3 id="Pn"><a href="#Pn" class="headerlink" title="-Pn"></a>-Pn</h3><p>上回书说到,我们可以关闭ICMP回显请求来做到简单的防御.但是nmap这个工具之所以如此受喜爱,也是有原因的.<br>有矛就有盾,一般来说,攻击技术都比防御技术更加先进.或者,换句话说,借用”白帽子讲Web安全”里面的一句话来说,<br>“同样是研究安全,白帽子和黑帽子在工作时的心态是完全不同的.”<br>“对于黑帽子来说,只要能找到系统的一个弱点,就可以达到入侵系统的目的;而对于白帽子来说,必须找到系统的所有弱点,不能有遗漏,才能保证系统不会出现问题.这种差异是由于工作环境与工作目标的不同而导致的.”<br>这揭示了两种群体工作的本质.<br><strong>回到我们的主题.当你的攻击目标不给你发送ICMP回显请求了,那这个时候我们该怎么办呢?</strong></p>
-<ul>
-<li>Obviously, 我们可以使用-Pn指令<br><code>nmap -Pn xxx.xxx.xxx.xxx</code><br>nmap对于-Pn的解释也很简单暴力,Treat all hosts as online – skip host discovery<br>就是认为所有的主机都是存活的.最简单的也是最直接的,我可以构造一个畸形的IP数据报.这样在同一个网段下,我可以向所有的主机发送这个报文,当然,由于这个IP数据报是畸形的,你肯定不会收到.因为按照网络的结构以及功能来说, 我在本层的工作就由我本层来完成,如果出错,那都是我本层的事,无关高层.于是在这个前提下,对方并不知道你对自己做了什么,但是你就可以探测到存活主机.</li>
-</ul>
-<hr>
-<h3 id="sS"><a href="#sS" class="headerlink" title="-sS"></a>-sS</h3><p>众所周知,-Pn是假定所有的主机都是存活的,但是带来的反作用就是,实在是太慢了.太慢太慢了.<br>有时候真的慢到很难接受.而且最奇怪的一点就是.有时候,你会扫描到一些奇怪的设备,但是这些设备可能没有在使用.<br>(比如说我曾经扫描到几台摄像机= =)</p>
-<p>于是,我们采用更快捷的方法.</p>
-<p><strong>既然网络层呆不下去了,我们就转战传输层吧</strong></p>
-<p>来到传输层,我们就要面对一个很神奇的东西,也是所有面试老哥最烦被问到的问题之一 -“三次握手和四次握手”</p>
-<ul>
-<li>三次握手:<br>说白了,最简单易懂的说,三次握手就是,让两台计算机认为,我俩已经建立连接了.<br>$$ 说起三次握手,就不得不提到两个东西:Syn(Synchronize)和Ack(Acknowledge),也就是同步序列号和确认序列号<br><em></em><br>First handshake:<br>  客户端发送syn(seq = j)包到服务器,并进入SENT_SEND状态,等待服务器确认;<br><em></em><br>Second handshake:<br>  服务端接收到客户端的syn包,需要确认客户端发来的syn包(ack = j + 1), 同时自己也发送一个syn包(seq = k),也就是syn + ack报文,此时服务器进入SYN_RECV状态<br><em></em><br>Third handshake:<br>  客户端接收到服务端的syn + ack,向服务器发送ack(ack = ｋ + 1),此包发送完毕,进入ESTABLISHED状态<br><em></em><br>是不是很简单,举一个形象化的例子,就是A给B发送一条消息,怎么知道发送到了呢?那就看B发送回来的消息是不是B的消息加上A上一轮发送的消息.<br>如果是,那么,根据逻辑推断,A知道A可以发送,A可以接收,B可以发送,B可以接收.A全知道了<br>但是于此同时,B呢?B只知道A可以发送,B可以发送,B可以接收,唯一不确定的是A可不可以接收.<br>所以此时A要再发送B上一轮的消息给B,这样B知道A可以接收.此时可以认为A和B之间的连接是建立的了.</li>
-</ul>
-<p>但是,细心的朋友可能已经知道了,如果,在第二次握手的时候,我不发送报文回服务端,作为客户端的我就已经知道了B的主机是存活的.(因为我已经知道了B是可以发送和接收的)<br>于是,我就探测到了B主机存活.<br>具体可以使用<code>nmap -sS xxx.xxx.xxx.xxx</code><br>这是使用Syn进行半连接来扫描的.<br>熟悉tcp报文结构的人都知道,不止syn可以,还有很多其他的也可以.<br>比如说FIN啊,UDP啊之类的,都可以.</p>
-<hr>
-<h3 id="T-A-O-v等"><a href="#T-A-O-v等" class="headerlink" title="-T, -A, -O, -v等"></a>-T, -A, -O, -v等</h3><p>重要的部分都说完了,现在来说一些细枝末节的吧.</p>
-<p>-T: 设置时间参数 0 1 2 3 4 5,越大越快,基本作用也就是慢速欺骗防火墙啊之类的.<br>-O: 探测目标的操作系统,原理就是不同的端口的开放情况<br>-A: 激烈扫描模式,基本上相当于-O + -v + 基本script的扫描,很实用<br>-v: 打印详细信息,意思就是把主机的情况都详细的说明一下</p>
-<p>个人喜欢<br><code>nmap -T4 -A -v xxx.xxx.xxx.xxx</code></p>
-<hr>
-<p>Over!</p>
-<p>P.S. 为什么不说-sP呢,因为我是真的不是很喜欢这个东西.老实说,-sP和-Pn没啥太大的差距,反正-Pn也可以混合使用,无所谓啦~</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>介绍</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的春招经历与总结</title>
-    <url>/2021/05/10/%E6%88%91%E7%9A%84%E6%98%A5%E6%8B%9B%E7%BB%8F%E5%8E%86%E4%B8%8E%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h3 id="我的春招经历与总结"><a href="#我的春招经历与总结" class="headerlink" title="我的春招经历与总结"></a>我的春招经历与总结</h3><hr>
-<p><strong>作为一个小垃圾，虽然春招不太尽人意，</strong><br><strong>但还是想分享一下自己踩得坑和自己获得的一些经验教训</strong></p>
-<hr>
-<h4 id="为什么春招？"><a href="#为什么春招？" class="headerlink" title="为什么春招？"></a>为什么春招？</h4><p>2021.03<br>这是一个对很大一部分学生意义非凡的一个月。<br>因为这个月是考研出成绩的月份。<br>很多人收获了一个很好的分数，当然和其本身的努力分不开；<br>当然还有另一部分人，没能收获好的结果。<br>很不幸，我就是后者……<br>但是生活不是debug，不能因为出了问题就轻易的从头再来。<br>于是乎摆在我们这些人面前的，就只有<strong>就业/复读</strong>了。<br>对于我而言，也不知道是出于对自己实力的信任，还是头脑发热，选择了走上就业的道路。<br>或许会有人问，读研真的很重要嘛？<br>我的答案肯定是重要。但是更多的还是从你自己的角度出发去思考问题。读研你可以更加的开阔自己的视野，交道更有水平的朋友，拓宽自己的交际面等等。更重要的是，这是一次<strong>改变你未来职业的机会</strong>。</p>
-<hr>
-<h4 id="说说自己的前三次面试"><a href="#说说自己的前三次面试" class="headerlink" title="说说自己的前三次面试"></a>说说自己的前三次面试</h4><p>我面试的第一家公司是一家安全公司，也是因为我铁子的帮忙，一切都是很顺利的。但是在最后的阶段我反悔了，我没有答应这家公司。原因有很多，其中一部分归于我比较的任性，也可能是兴趣问题。拒绝之后我仔细的反思了自己的所作所为，明白了<strong>做事之前，或者说是做决定之前，一定要思考清楚，再做决定，切忌盲目决定</strong>，不能等之后再后悔，那时候可能很多东西都无法挽回了。</p>
-<p>我面试的第二家公司是字节跳动，因为我室友在字节，想着内推一下，说不定就进了。凭着这样的想法，我去面了字节。但是面试的时候就感觉完全不是这么回事了，自己总结的知识点，在真正的面试面前就像是冰山一角，那些我觉得完全不可能问的问题或许随时都会要了你的命。就比如这次，问了很多数据库的最最最基础的问题，被我忽视了，没能答出来，当然结果就可想而知了。在反思中，我明白了<strong>做事情、学习不能抱有侥幸心态，不会的知识点就应该去弄明白，而不能就这么将就着就过去了（我觉得很大一部分原因是大学阶段的 考试/学习 造成的只看重点的习惯）</strong>。</p>
-<p>我面试的第三家公司是Shopee，笔试的时候系统崩溃了，导致我做题目的心情变得不是很好，再加上题目本身的难度，直接给我做的不耐烦了，就交了。本以为就这么结束了，不会有面试机会的，但是很幸运，我还是进了面试。我面试的是后台开发，众所周知后台开发，知识点很多很杂很乱，于是乎面试也是一样。从我熟知的mysql，问道我不熟悉的redis，然后揪着redis使劲问，问你的思路。也问了很多关系数据库里很多有些深的知识点，比如间隙锁等。结果虽然不好，但是收获了很多，明白了<strong>自己所学的知识不能只停留在表面，而要深入去理解为啥是这样，后来腾讯的leader也说了，计算机科学与工程，本质上是工程，既然是工程就需要你自己动手去操作和理解。</strong></p>
-<p>这就是我的前三次的面试，如果再让我面一次，我肯定会做的更好。但是还是那句话，<strong>万事开头难</strong>，没有经历过这些，也不会总结出教训，只是后悔自己浪费了这些大厂机会实在是有些可惜。</p>
-<hr>
-<h4 id="关于春招，或者是招聘，应该怎么准备"><a href="#关于春招，或者是招聘，应该怎么准备" class="headerlink" title="关于春招，或者是招聘，应该怎么准备"></a>关于春招，或者是招聘，应该怎么准备</h4><h5 id="首先，最最最重要的，就是简历。"><a href="#首先，最最最重要的，就是简历。" class="headerlink" title="首先，最最最重要的，就是简历。"></a>首先，最最最重要的，就是<strong>简历</strong>。</h5><p><strong>简历</strong>就是你的自我介绍，你的身份卡，换句编程的话来说，就是“你”的实例化对象。<br>绝大部分情况下，没有人知道你是谁你会啥你能做什么，都是通过<strong>简历</strong>来了解你的一些情况。<br>所以这里面就大有讲究啦：<br>&emsp;&emsp;1. <strong>换位思考</strong>。作为hr，一天要看很多份简历，非常的疲劳，这时候有两份简历摆在你面前，一份是制作精良，各种特效花纹好看的图片；另一份是朴朴素素，很多东西都写得十分清楚的简历。你会选择哪份？至少对我来说，我会选择<strong>后者</strong>。相比于第一份的花里胡哨，我会更想看信息熵小的，让人一目了然，很短时间内就可以产生一个你的”你的实例化对象”。<br>&emsp;&emsp;2. <strong>我没有经历怎么办?</strong> 我理解，不是所有人都拥有丰富的经历，例如 成篇的sci/大量的实习经历/丰富的获奖经历。对于此，我想说的是，<a href="https://baike.baidu.com/item/%E7%BB%8F%E5%8E%86/33329?fr=aladdin">经历</a>的解释是体验、经受过的事情。那既然你说你没有经历，又不知道写什么，那么最好的办法就是自己创造经历。这里的创造不是指胡编乱造，而是自己实际的去经历过的参与过的。比如GitHub上的一些开源项目啊，自己接一些小的外包项目啊之类的。<strong>还有一点，千万别往简历上写自己不太会的东西！</strong> 曾经看过一个人说自己精通C++，面试官看到后我估计都会笑得合不拢嘴。<br>&emsp;&emsp;3. 其他的有很多细枝末节的东西，比如说不要写很<strong>白痴的话，让别人一眼看到就觉得你是白痴</strong>；不要写<strong>大话空话</strong>，用数据说话。当然你这个数据得是实际得到的，经得起别人问的，而不是胡编乱造的。<br>&emsp;&emsp;4. 推荐一个简历制作的网站：<a href="https://www.wondercv.com/">超级简历(Wondercv)</a></p>
-<h5 id="其次就是笔试面试了。"><a href="#其次就是笔试面试了。" class="headerlink" title="其次就是笔试面试了。"></a>其次就是笔试面试了。</h5><p>招聘招聘，说到底本质上就是通过笔试面试，了解你到底是一个什么样的人，能不能被公司使用。</p>
-<p>笔试方面，我推荐去<a href="https://www.nowcoder.com/activity/oj">牛客网</a>, <a href="https://leetcode-cn.com/">力扣</a><br>其中强烈推荐牛客网的OJ系统啊,因为你真正的笔试可能用的就是牛客的oj,所以提前适应一下也不是坏事不是吗?</p>
-<p>面试方面,我最喜欢去的就是<a href="https://www.nowcoder.com/">牛客网</a>了,里面的兄弟姐妹们都是真的有才,都是真的好厉害,面经写的也很好,强烈推荐啊!</p>
-<p>当然了面试,万变不离其宗,就是说的那些东西，面两次就明白会问的问题都是什么方向的了。顺带一提，很多公司都会对面试进行记录，你的下一次面试可能会问上一次面试没有答好的问题，如果没答上来那可是严重的扣分项，一顶不要出现这样的事情！</p>
-<p>tips: 有<strong>内推</strong>就走<strong>内推</strong></p>
-<hr>
-<p>写在后面的话：<br>&emsp;&emsp;每个人都有遗憾，比如我与腾讯擦肩而过，比如我非常喜欢的公司最后甚至都不看我一眼，比如想要我的公司被我拒绝，比如你得在“骑驴找马”中找到平衡等等等等。没有什么事情是注定完美的，也许你也会经历，或者正在经历遗憾，不过没关系，遗憾的事情就让它过去吧，抓住手里的东西才是最重要的。<strong>看山跑死马</strong>啊！</p>
-<hr>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的腾讯面经</title>
-    <url>/2021/05/10/%E6%88%91%E7%9A%84%E8%85%BE%E8%AE%AF%E9%9D%A2%E7%BB%8F/</url>
-    <content><![CDATA[<h3 id="WXG凉凉实况（x）"><a href="#WXG凉凉实况（x）" class="headerlink" title="WXG凉凉实况（x）"></a>WXG凉凉实况（x）</h3><p><strong>以此文来记录一下自己失败的WXG面试经历吧~</strong></p>
-<h4 id="3-17-一面（63min）"><a href="#3-17-一面（63min）" class="headerlink" title="3-17 一面（63min）"></a>3-17 一面（63min）</h4><p>上来直接代码题(类似于 股票(一次交易))<br>问了和本题目相关的解法问题(对我的解法有疑问)<br>怼项目(腾讯面试有关项目的问的是真的多)<br>问了opencv相关<br>了解清楚后,问了利用opencv解决一个实际问题(将一个视频拆分成gif)<br>相似的图片进行压缩.(怎么压缩? 压缩的比例? opencv怎么识别相似的图片? 你的理解是什么?)<br>怼实习? 没实习经历<br>对C语言了解吗? 对一个链表进行排序,你会怎么做? 实现一下?<br>以为微信聊天为例,你和你朋友发送消息,之间所有的你认识到的技术,流程,说一说?<br>(发送? 接收? 按序发送/接收? 断网情况下怎么做到按序传输? 撤回怎么处理?)<br>问了问有没有offer<br>提问环节</p>
-<h4 id="3-24-二面（77min）"><a href="#3-24-二面（77min）" class="headerlink" title="3-24 二面（77min）"></a>3-24 二面（77min）</h4><p>一开始使用的是面呗,但是发现没声音,故转到了腾讯会议<br>自我介绍<br>问了些学校的基本情况,然后开始介绍最近的一个项目<br>就这个项目展开聊了很多(区块链)<br>安全性?一致性?(其中安全性聊到了工业级别的大型区块链)<br>多线程怎么操作的?<br>分布式怎么做的?<br>以此为基点,聊了其他的项目<br>问了一些opencv的问题<br>问了一些关于神经网络的东西(工业级别的)<br>问了项目协同方面的问题(git?)<br>问了我是否除了python其他都不会<br>还会c,java<br>会做移动端吗?<br>本科期间学过安卓开发,但是后来就没怎么做过了.现在大致了解的情况(Activity,Intent,Service,ContainPrivider等)<br>看我有算法比赛的奖,考了三道算法图</p>
-<ol>
-<li>m*n阶矩阵,每一行左边的元素大于右边,下边的元素大于上边,每一行第一个元素大于上一行最后一个元素,求K是否在这个矩阵内</li>
-<li>字符串求解不含重复字符的最长子串(双指针)</li>
-<li>有N个文件file1, file2, …, fileN, 里面存储的都是英文单词,用空格隔开.现给你一个英文单词,让你求出在哪些文件中出现过.fileN可能非常大.考虑查询的可重复性.(大文件读写题)<br>问了我第一题是否还可以优化?<br>问了我Python相关的知识<br>GIL?<br>迭代器和生成器?<br>问了我是否使用过Hadoop等大数据工具?<br>问了我是否使用过诸如Mysql, Redis等数据库工具<br>提问环节</li>
-</ol>
-<h4 id="4-6-GM-EVP-面委会面-（70min）"><a href="#4-6-GM-EVP-面委会面-（70min）" class="headerlink" title="4-6 GM/EVP/面委会面 （70min）"></a>4-6 GM/EVP/面委会面 （70min）</h4><p>三道算法题</p>
-<ol>
-<li>“Write a function that accepts an Excel column name and returns the corresponding column number.” And give the test cases.<br>they go like this:<br>A B C . . . Z AA AB AC . . . AZ BA BB BC . . . BZ CA CB CC . . . AAA AAB etc.</li>
-<li>熟悉的陌生人<br>大家都知道微信用户都是双向的好友，a是b的好友，那么b一定是a的好友，现在给定一个用户列表，其中有些用户是好友，有些不是，请判断，这些用户是否可以划分为两组，并且每组内的用户，互相都不是好友。如果能，请给出这个划分。</li>
-<li>有n个加油站形成一个环，所有加油站里面的油合起来刚刚够一辆汽车跑完这个环，已经知道每个加油站的油量和加油站之间的距离，给你一个空车，设计一个路径能够跑完这个环<br>提问环节</li>
-</ol>
-<hr>
-<p>哎，我GM面的算法题啊真的是回答的烂爆了，只能怪自己太垃圾了呜呜呜呜呜呜。</p>
 ]]></content>
       <categories>
         <category>生活</category>
