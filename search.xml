@@ -751,4 +751,61 @@
         <tag>杂谈</tag>
       </tags>
   </entry>
+  <entry>
+    <title>HTML日记</title>
+    <url>/2016/10/13/HTML%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="HTML日记"><a href="#HTML日记" class="headerlink" title="HTML日记"></a>HTML日记</h2><p>谨以此来记录自己学习HTML的过程</p>
+<hr>
+<h3 id="Day0：HTML-文档"><a href="#Day0：HTML-文档" class="headerlink" title="Day0：HTML 文档"></a>Day0：HTML 文档</h3><p>作为一个CS人，最最最重要的就是查阅文档的能力。在这里，给大家推荐一个我自己常用的参考手册：<br><a href="https://www.w3school.com.cn/html5/html5_reference.asp">HTML 5 参考手册</a></p>
+<p>在这里，顺便说一说自己对于那些前端课程之类的东西的看法吧。</p>
+<ul>
+<li>课程的主要作用就是给想要去学习的人提供一个教课的环境，有人言传身教的教你肯定是好的。但是在我的角度来说，在CS行业，学习一门新的东西最好的还是实践。当然这东西还是需要看人。视频可以作为辅助，但是一定还是需要自己手动实践，参考文档。</li>
+</ul>
+<hr>
+<h3 id="Day1：HTML-Basic"><a href="#Day1：HTML-Basic" class="headerlink" title="Day1：HTML Basic"></a>Day1：HTML Basic</h3><p>第一天，首先需要了解的肯定是HTML的基本框架。<br>我自己总结如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    xxx</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    xxx</span><br><span class="line">  &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当然自己总结的不一定是正确的，在日后的学习中，我会根据日后的学习来调整之前的总结。</p>
+<ul>
+<li><p>首先说明一下第一个标签：<br><code>&lt;!--  --&gt;</code><br>在<code>HTML</code>中，这个是注释符。当然在现代ide里，注释都是一键操作了。</p>
+</li>
+<li><p>其次是这个标签<br><code>&lt;!DOCTYPE HTML&gt;</code><br>我们需要分开解读。<code>&lt;!DOCTYPE&gt;</code>是用来定义文档类型，而后面的<code>HTML</code>则表明文档类型是<code>HTML</code>文件。</p>
+</li>
+<li><p>接下来是<code>&lt;html&gt;</code>、<code>&lt;head&gt;</code>、<code>&lt;body&gt;</code>标签<br><code>&lt;html&gt;</code>标签可以告知浏览器自身是一个HTML文档。<code>&lt;html&gt;</code>与<code>&lt;/html&gt;</code>标签限定了文档的开始点和结束点。文档的头部由<code>&lt;head&gt;</code>定义，主体由<code>&lt;body&gt;</code>定义。</p>
+</li>
+</ul>
+<p><code>&lt;head&gt;</code>标签，最基本的用法如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;title&gt;文档的标题&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;!-- 在head标签里，&lt;title&gt;标签是唯一必须的元素 --&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+<p>其他适配于<code>&lt;head&gt;</code>的标签如<code>&lt;base&gt;</code>，<code>&lt;link&gt;</code>，<code>&lt;meta&gt;</code>，<code>&lt;script&gt;</code>，<code>&lt;style&gt;</code>，这些我们日后再说。</p>
+<p><code>&lt;body&gt;</code>标签，包含文档的所有内容，包括但不限于文本、超链接、图片、表格等。</p>
+<p><strong>另外需要注意：<code>&lt;html&gt;</code>，<code>&lt;head&gt;</code>，<code>&lt;body&gt;</code>，<code>&lt;title&gt;</code>标签都是需要<code>CloseTag</code>（结束标签）的，也就是说需要对应的<code>&lt;/xxx&gt;</code>来与之对应。而<code>&lt;!DOCTYPE&gt;</code>则没有<code>CloseTag</code>，之后也会遇到许多这样的标签。</strong></p>
+<hr>
+<h3 id="Day2：HTML-Basic-2-0"><a href="#Day2：HTML-Basic-2-0" class="headerlink" title="Day2：HTML Basic 2.0"></a>Day2：HTML Basic 2.0</h3><p>第二天，今天来学习一些比较简单的标签。<br><code>&lt;a&gt;</code>，<code>&lt;br&gt;</code>，<code>&lt;p&gt;</code>，<code>&lt;button&gt;</code>，<code>&lt;em&gt;</code>，<code>&lt;strong&gt;</code>，<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code><br>按照顺序来说。</p>
+<ul>
+<li><p><code>&lt;a&gt;</code>是超链接标签，用法如下<br><code>&lt;a href=&quot;url&quot;&gt;超链接的描述&lt;/a&gt;</code><br>这里要注意的点有两个，一个是<code>&lt;a&gt;</code>内部要使用<code>href</code>，而不是<code>src</code>，另一个是<code>&lt;a&gt;</code>标签是需要结束标签的(<code>&lt;/a&gt;</code>)。</p>
+</li>
+<li><p><code>&lt;br&gt;</code>是一个标准的换行符。<br>没有什么可以说的，但是需要注意几个点：<br><code>&lt;br&gt;</code>是一个空标签，也就是意味着它不需要结束标签。因此<code>&lt;br&gt;&lt;/br&gt;</code>是错误的。<br><code>&lt;br&gt;</code>只是一个简单的开始新的一行，而当浏览器遇到<code>&lt;p&gt;</code>标签时，通常会在相邻的段落之间插入一些垂直的间距。因此，<strong>请使用<code>&lt;br&gt;</code>来输入空行，而不是分割段落。</strong></p>
+</li>
+<li><p><code>&lt;p&gt;</code>标签定义段落。<br>需要注意的是<code>&lt;p&gt;</code>元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。<code>&lt;p&gt;</code>元素也是需要结束标签的。<br>exp： <code>&lt;p&gt;这是段落&lt;/p&gt;</code><br>在该元素中，我们可以使用<code>align</code>属性，用来规定段落中文本的对齐方式。但是不推荐。</p>
+</li>
+<li><p><code>&lt;button&gt;</code>标签定义一个按钮。<br><code>&lt;button&gt;</code>拥有两个常用的属性，<code>name</code>属性和<code>type</code>属性。<br><code>name</code>属性规定按钮的名称，<code>type</code>属性规定按钮的类型，分别有<code>button</code>，<code>submit</code>，<code>reset</code>三种类型。<br>exp：<code>&lt;button type=&quot;button&quot;&gt;Login&lt;/button&gt;</code><br>需要注意的一个点是<code>&lt;button&gt;</code>和<code>&lt;input type=&quot;button&quot; value=&quot;xxx&quot;&gt;</code>的<a href="https://www.cnblogs.com/purediy/archive/2012/06/10/2544184.html">区别</a>。</p>
+</li>
+<li><p><code>&lt;em&gt;</code>和<code>&lt;strong&gt;</code>放在一起说。<br>根据字面意思，<code>&lt;em&gt;</code>表示强调内容，<code>&lt;strong&gt;</code>表示重要内容。<br>exp：<code>&lt;em&gt;emphasis&lt;/em&gt;</code>, <code>&lt;strong&gt;strong&lt;/strong&gt;</code>, <code>&lt;em&gt;&lt;strong&gt;emphasis-strong&lt;/strong&gt;&lt;/em&gt;</code></p>
+</li>
+</ul>
+<p>-&gt; <em>emphasis</em>, <strong>strong</strong>, <em><strong>emphasis-strong</strong></em></p>
+<ul>
+<li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code><br><code>&lt;h1&gt; - &lt;h6&gt;</code>标签可定义标题。<code>&lt;h1&gt;</code>定义最大的标题。<code>&lt;h6&gt;</code>定义最小的标题。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h1&gt;这是标题 1&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;h2&gt;这是标题 2&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;h3&gt;这是标题 3&lt;&#x2F;h3&gt;</span><br><span class="line">&lt;h4&gt;这是标题 4&lt;&#x2F;h4&gt;</span><br><span class="line">&lt;h5&gt;这是标题 5&lt;&#x2F;h5&gt;</span><br><span class="line">&lt;h6&gt;这是标题 6&lt;&#x2F;h6&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
 </search>
