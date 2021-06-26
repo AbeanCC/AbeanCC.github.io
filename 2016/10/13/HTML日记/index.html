@@ -83,7 +83,7 @@ Day0：HTML 文档作为一个CS人，最最最重要的就是查阅文档的能
 <p><code>&lt;body&gt;</code>标签，包含文档的所有内容，包括但不限于文本、超链接、图片、表格等。</p>
 <p><strong>另外需要注意：<code>&lt;html&gt;</code>，<code>&lt;head&gt;</code>，<code>&lt;body&gt;</code>，<code>&lt;title&gt;</code>标签都是需要<code>CloseTag</code>（结束标签）的，也就是说需要对应的<code>&lt;/xxx&gt;</code>来与之对应。而<code>&lt;!DOCTYPE&gt;</code>则没有<code>CloseTag</code>，之后也会遇到许多这样的标签。</strong></p>
 <hr>
-<h3 id="Day2：HTML-Basic-2-0"><a href="#Day2：HTML-Basic-2-0" class="headerlink" title="Day2：HTML Basic 2.0"></a>Day2：HTML Basic 2.0</h3><p>第二天，今天来学习一些比较简单的标签。<br><code>&lt;a&gt;</code>，<code>&lt;br&gt;</code>，<code>&lt;p&gt;</code>，<code>&lt;button&gt;</code>，<code>&lt;em&gt;</code>，<code>&lt;strong&gt;</code>，<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code><br>按照顺序来说。</p>
+<h3 id="Day2：Some-Element-in-“body”-Element"><a href="#Day2：Some-Element-in-“body”-Element" class="headerlink" title="Day2：Some Element in “body” Element"></a>Day2：Some Element in “body” Element</h3><p>第二天，今天来学习一些比较简单的标签。<br><code>&lt;a&gt;</code>，<code>&lt;br&gt;</code>，<code>&lt;p&gt;</code>，<code>&lt;button&gt;</code>，<code>&lt;em&gt;</code>，<code>&lt;strong&gt;</code>，<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code><br>按照顺序来说。</p>
 <ul>
 <li><p><code>&lt;a&gt;</code>是超链接标签，用法如下<br><code>&lt;a href=&quot;url&quot;&gt;超链接的描述&lt;/a&gt;</code><br>这里要注意的点有两个，一个是<code>&lt;a&gt;</code>内部要使用<code>href</code>，而不是<code>src</code>，另一个是<code>&lt;a&gt;</code>标签是需要结束标签的(<code>&lt;/a&gt;</code>)。</p>
 </li>
@@ -101,7 +101,21 @@ Day0：HTML 文档作为一个CS人，最最最重要的就是查阅文档的能
 <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code><br><code>&lt;h1&gt; - &lt;h6&gt;</code>标签可定义标题。<code>&lt;h1&gt;</code>定义最大的标题。<code>&lt;h6&gt;</code>定义最小的标题。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;这是标题 1&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;h2&gt;这是标题 2&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;h3&gt;这是标题 3&lt;&#x2F;h3&gt;</span><br><span class="line">&lt;h4&gt;这是标题 4&lt;&#x2F;h4&gt;</span><br><span class="line">&lt;h5&gt;这是标题 5&lt;&#x2F;h5&gt;</span><br><span class="line">&lt;h6&gt;这是标题 6&lt;&#x2F;h6&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <hr>
-
+<h3 id="Day3：”meta”-Element-is-Important"><a href="#Day3：”meta”-Element-is-Important" class="headerlink" title="Day3：”meta” Element is Important"></a>Day3：”meta” Element is Important</h3><p>第三天,介绍一个在第一天忘记说的东西。<code>&lt;meta&gt;</code>标签。也是一个我认为的<code>HTML</code>的一个非常重要的点，也是一个难点。</p>
+<ul>
+<li><code>&lt;meta&gt;</code>标签可提供有关页面的元信息（meta-information），<code>&lt;meta&gt;</code>标签的属性定义了与文档相关联的键值对。</li>
+</ul>
+<p>注意：1. <code>&lt;meta&gt;</code>标签永远位于<code>&lt;head&gt;</code>内部，且没有结束标签。2. 元数据总以键值对的形式被传递。</p>
+<ul>
+<li><code>&lt;meta&gt;</code>标签必需的属性有<code>content</code>，可选的属性有<code>http-equiv</code>,<code>name</code>,<code>scheme</code>。<br>下面我就来分别解释。</li>
+<li><code>name</code>属性提供了键值对中的名称。通常情况下，您可以自由使用对自己和源文档的读者来说富有意义的名称。<code>keywords</code>是一个经常被用到的名称。它为文档定义了一组关键字。某些搜索引擎在遇到这些关键字时，会用这些关键字对文档进行分类。<br>类似这样的 meta 标签可能对于进入搜索引擎的索引有帮助：<code>&lt;meta name=&quot;keywords&quot; content=&quot;HTML,ASP,PHP,SQL&quot;&gt;</code></li>
+<li><code>http-equiv</code>属性为键值对提供了名称。并指示服务器在发送实际的文档之前先在要传送给浏览器的<code>MIME</code>文档头部包含键值对。<br>当服务器向浏览器发送文档时，会先发送许多键值对。虽然有些服务器会发送许多这种键值对，但是所有服务器都至少要发送一个：<code>content-type:text/html</code>。这将告诉浏览器准备接受一个<code>HTML</code>文档。<br>使用带有<code>http-equiv</code>属性的<code>&lt;meta&gt;</code>标签时，服务器将把键值对添加到发送给浏览器的内容头部。例如，添加：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv&#x3D;&quot;charset&quot; content&#x3D;&quot;iso-8859-1&quot;&gt;</span><br><span class="line">&lt;meta http-equiv&#x3D;&quot;expires&quot; content&#x3D;&quot;31 Dec 2008&quot;&gt;</span><br></pre></td></tr></table></figure>
+这样发送到浏览器的头部就应该包含：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">content-type: text&#x2F;html</span><br><span class="line">charset:iso-8859-1</span><br><span class="line">expires:31 Dec 2008</span><br></pre></td></tr></table></figure>
+当然，只有浏览器可以接受这些附加的头部字段，并能以适当的方式使用它们时，这些字段才有意义。</li>
+<li><code>content</code>属性<br>content 属性提供了名称/值对中的值。该值可以是任何有效的字符串。<br>content 属性始终要和 name 属性或 http-equiv 属性一起使用</li>
+</ul>
+<hr>
+<h3 id="Day4：Some-the-most-commonly-used-Element-in-“body”-Element"><a href="#Day4：Some-the-most-commonly-used-Element-in-“body”-Element" class="headerlink" title="Day4：Some the most commonly used Element in “body” Element"></a>Day4：Some the most commonly used Element in “body” Element</h3>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
                 <source type="audio/mpeg" src="">
@@ -132,7 +146,7 @@ Day0：HTML 文档作为一个CS人，最最最重要的就是查阅文档的能
     </div>
     
         <div class='side'>
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%97%A5%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">HTML日记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Day0%EF%BC%9AHTML-%E6%96%87%E6%A1%A3"><span class="toc-number">1.1.</span> <span class="toc-text">Day0：HTML 文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day1%EF%BC%9AHTML-Basic"><span class="toc-number">1.2.</span> <span class="toc-text">Day1：HTML Basic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day2%EF%BC%9AHTML-Basic-2-0"><span class="toc-number">1.3.</span> <span class="toc-text">Day2：HTML Basic 2.0</span></a></li></ol></li></ol>	
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%97%A5%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">HTML日记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Day0%EF%BC%9AHTML-%E6%96%87%E6%A1%A3"><span class="toc-number">1.1.</span> <span class="toc-text">Day0：HTML 文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day1%EF%BC%9AHTML-Basic"><span class="toc-number">1.2.</span> <span class="toc-text">Day1：HTML Basic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day2%EF%BC%9ASome-Element-in-%E2%80%9Cbody%E2%80%9D-Element"><span class="toc-number">1.3.</span> <span class="toc-text">Day2：Some Element in “body” Element</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day3%EF%BC%9A%E2%80%9Dmeta%E2%80%9D-Element-is-Important"><span class="toc-number">1.4.</span> <span class="toc-text">Day3：”meta” Element is Important</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day4%EF%BC%9ASome-the-most-commonly-used-Element-in-%E2%80%9Cbody%E2%80%9D-Element"><span class="toc-number">1.5.</span> <span class="toc-text">Day4：Some the most commonly used Element in “body” Element</span></a></li></ol></li></ol>	
         </div>
     
 </div>
