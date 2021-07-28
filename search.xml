@@ -828,7 +828,9 @@
     <title>HTML5常用的元素和属性</title>
     <url>/2021/06/25/HTML5%E5%B8%B8%E7%94%A8%E7%9A%84%E5%85%83%E7%B4%A0%E5%92%8C%E5%B1%9E%E6%80%A7/</url>
     <content><![CDATA[<h2 id="HTML5常用的元素和属性"><a href="#HTML5常用的元素和属性" class="headerlink" title="HTML5常用的元素和属性"></a>HTML5常用的元素和属性</h2><p>如下，本文总结了基本的常用的。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> - &lt;!--...--&gt;注释</span><br><span class="line">&lt;html&gt;根元素</span><br><span class="line"> &lt;head&gt;页面头部分，可以包含如下子元素</span><br><span class="line">		&gt; &lt;script&gt;:包含Javascript脚本</span><br><span class="line">		&gt; &lt;noscript&gt;:声明不支持Javascript脚本</span><br><span class="line">		&gt; &lt;style&gt;</span><br><span class="line">		&gt; &lt;link&gt;用于链接图标，css样式文件等外部资源</span><br><span class="line">		&gt; &lt;title&gt;</span><br><span class="line">		&gt; &lt;base&gt;指定页面中所有连接的基准路径</span><br><span class="line">		&gt; &lt;meta&gt;定义页面元数据</span><br><span class="line">		&gt;  &lt;title&gt;页面标题</span><br><span class="line"> &lt;body&gt;页面主体部分</span><br><span class="line"> - &lt;h1&gt;到&lt;h6&gt;定义标题一到六</span><br><span class="line"> - &lt;p&gt;定义段落</span><br><span class="line"> - &lt;br&gt;插入一个换行</span><br><span class="line"> - &lt;hr&gt;定义水平线</span><br><span class="line"> - &lt;div&gt;定义文档中的节 ，导致换行</span><br><span class="line"> - &lt;span&gt;与&lt;div&gt;相似，区别是只表示一段一般性文本，不会换行</span><br><span class="line"> - &lt;b&gt;定义粗体文本</span><br><span class="line"> - &lt;i&gt;定义斜体文本</span><br><span class="line"> - &lt;em&gt;定义强调文本</span><br><span class="line"> - &lt;strong&gt;定义粗体文本，且代表重要文本</span><br><span class="line"> - &lt;small&gt;定义小号字体文本,常用于免责声明、注意事项、法路规定、版权相关</span><br><span class="line"> - &lt;sup&gt;定义上标文本</span><br><span class="line"> - &lt;sub&gt;定义下标文本</span><br><span class="line"> - &lt;bdo&gt;定义文本显示方向，dir&#x3D;&quot;ltr&quot;，dir&#x3D;&quot;rtl&quot;</span><br><span class="line"> - &lt;a&gt;元素添加超链接和锚点：</span><br><span class="line"> 		超链接：</span><br><span class="line">		&gt; href:指定超链接所链接的另一个资源</span><br><span class="line">		&gt; hreflang:指定超链接所链接的文档所使用的语言</span><br><span class="line">		&gt; target:_self,_blank,_top,_parent,分别代表自身，新窗口，顶层框架，</span><br><span class="line">		  父框架来装在新资源</span><br><span class="line">		&gt; download：不是直接打开目标链接，用于让用户下载目标链接所指向的资源</span><br><span class="line">		&gt; type:指定被链接文档的MIME类型</span><br><span class="line">		&gt; media：指定目标URL所引用的媒体类型，默认值为all，指定href后此属性有效</span><br><span class="line">		锚点：</span><br><span class="line">		&gt; &lt;a name&#x3D;&quot;test&quot;&gt;test&lt;&#x2F;a&gt;</span><br><span class="line">		&gt; &lt;a href&#x3D;&quot;anchor.html#test&quot;&gt;定位到anchor文件中的锚点</span><br><span class="line">		&gt; &lt;a href&#x3D;&quot;#test&quot;&gt;定位到同一文档中的test锚点</span><br><span class="line"> - &lt;ul&gt;定义无序列表，只能包含&lt;li...&#x2F;&gt;子元素</span><br><span class="line"> - &lt;li&gt;定义列表项，可以包含于&lt;div&gt;完全类似的内容</span><br><span class="line"> - &lt;ol&gt;定义有序列表：</span><br><span class="line">		&gt; start：指定列表的其实数字，默认是第一个，如1、和A</span><br><span class="line">		&gt; type：指定使用哪种类型的编号，1代表使用数字，A和a分别代表使用大写或小写字母，</span><br><span class="line">			I或i代 表大写或小写罗马数字</span><br><span class="line"> - &lt;dl&gt;定义术语列表，只能包含&lt;dt&gt;和&lt;dd&gt;两种子元素</span><br><span class="line"> - &lt;dt&gt;定义标题</span><br><span class="line"> - &lt;dd&gt;定义解释</span><br><span class="line"> - &lt;img&gt;添加图片，可以使用usemap属性添加图片映射</span><br><span class="line">		&gt; src:该属性指定文件所在位置，可以是相对路径，也可以是绝对路径</span><br><span class="line">		&gt; alt:指定一段文本，作为图片还没有加载出来时的提示信息</span><br><span class="line">		&gt; height:指定图片高度，可以是百分比，也可以是像素值（px）</span><br><span class="line">		&gt; width:指定图片宽度，可以是百分比，也可以是像素值（px）</span><br><span class="line"> - &lt;map&gt;定义图片映射，主要可以包含一个或多个&lt;area&gt;子元素，每个area子元素定义一个区域，</span><br><span class="line">   不同区域可以 连接到不同的URL</span><br><span class="line"> - &lt;area&gt;定义图片映射的内部区域：</span><br><span class="line">		&gt; shape：指定内部区域是那种区域，默认是“rect”,矩形区域；circle，圆形；ploy，多边形</span><br><span class="line">		&gt; coords:指定多个坐标值，用于确定区域位置</span><br><span class="line">		&gt; href</span><br><span class="line">		&gt; alt</span><br><span class="line">		&gt; trget</span><br><span class="line"> - &lt;table&gt;定义表格，只能包含0个或者1个(&lt;caption&gt;,&lt;thead&gt;,&lt;tfoot&gt;),多个&lt;tr&gt;,&lt;tbody</span><br><span class="line">		&gt; cellpadding:指定单元格内容和单元格边框之间的距离，属性值可以是像素（px）,</span><br><span class="line">		  也可以是百分比</span><br><span class="line">		&gt; cellspacing:指定单元格之间的距离，属性值可以是像素（px）,也可以是百分比</span><br><span class="line">		&gt; width:指定表格宽度，属性值可以是像素（px）,也可以是百分</span><br><span class="line"> - &lt;caption&gt;用于定义表格标题</span><br><span class="line"> - &lt;tr&gt;定义表格行，只能指定&lt;td&gt;&lt;th&gt;两种子元素</span><br><span class="line"> - &lt;td&gt;定义单元格，与&lt;div&gt;类似，可以再包含一个&lt;table&gt;元素</span><br><span class="line">		&gt; colspan:指定单元格夸多少列</span><br><span class="line">		&gt; rowspan:指定单元格夸多少行</span><br><span class="line">		&gt; height:指定单元格高度，属性值可以是像素（px）,也可以是百分</span><br><span class="line">		&gt; width：指定单元格宽度，属性值可以是像素（px）,也可以是百分</span><br><span class="line"> - &lt;th&gt;定义表格的表头元素，显示加粗字体</span><br><span class="line"> - &lt;thead&gt;定义表格头</span><br><span class="line"> - &lt;tfoot&gt;定义表格脚</span><br><span class="line"> - &lt;tbody&gt;定义表格主体，只能包含多个&lt;tr&gt;</span><br><span class="line">		使用方法：</span><br><span class="line">		&gt; &lt;thead&gt;,&lt;tfoot&gt;,&lt;tbody&gt;</span><br><span class="line"> - &lt;iframe&gt;</span><br><span class="line">		&gt; src:指定一个URL，指定iframe将装在哪个页面</span><br><span class="line">		&gt; name:设置iframe的名字</span><br><span class="line">		&gt; longdesc:指定一个页面的URL，包含了关于该iframe的长描述</span><br><span class="line">		&gt; scrolling:设置滚动条，该属性支持yes,no,auto</span><br><span class="line">		&gt; height:设置iframe高度</span><br><span class="line">		&gt; width：设置iframe宽度</span><br><span class="line">		&gt; frameborder:设置iframe边框</span><br><span class="line">		&gt; marginheight：设置iframe顶部和底部的页边距</span><br><span class="line">		&gt; marginwidth：设置iframe左侧和右侧的页边距</span><br><span class="line"> - id属性用于为HTML元素指定唯一标识,使用JS编程时可通过该属性</span><br><span class="line">   来获取元素&lt;document.getElementById(id)&gt;</span><br><span class="line"> - style属性用于为HTML元素指定CSS样式</span><br><span class="line"> - class属性用于匹配CSS样式的class选择器</span><br><span class="line"> - dir属性对齐方式  dir&#x3D;&quot;ltr&quot;:左对齐   dir&#x3D;&quot;rtl&quot;右对齐</span><br><span class="line"> - title属性显示元素指定额外信息，当用户把鼠标移动到该元素上面时，</span><br><span class="line"> 	浏览器将会显示title属性所制定的信息</span><br><span class="line">		&gt; 例：&lt;div title&#x3D;&quot;测试专用&quot;&gt;测试&lt;&#x2F;div&gt;</span><br><span class="line"> - contentEditable属性可以指定开发者直接编辑HTML元素的内容，属性值true，false</span><br><span class="line">		&gt; contentEditable属性具有可继承的特点：如果一个元素的父元素时“可编辑的”，</span><br><span class="line">		 那么它默认也是可编辑的，除非指定contentEditable&#x3D;“false”</span><br><span class="line">		&gt; 当用户编辑完成后，用户编辑的内容就会直接显示在该页面中，一旦刷新，</span><br><span class="line">		编辑的内容就会消失，开发者可以通过元素的innerHTML属性来获取编辑后的内容</span><br><span class="line"> - iscontentEditable属性指定当该元素处于可编辑状态时，返回true，否则返回false</span><br><span class="line"> - designMode属性相当于是一个全局属性，如果把整个页面的designMode属性设置为on,</span><br><span class="line">   则该页面上所有支持contentEditable的元素都变成可编辑状态，designMode属性默认为off</span><br><span class="line"> - hidden属性支持true和false两个属性值，一旦把某个元素的hidden设为true，</span><br><span class="line">   就意味着浏览器不在显示该组件，夜不会保留该组件所占的空间</span><br><span class="line">		&gt; 例：&lt;div id&#x3D;&quot;target&quot; hidden&#x3D;&quot;true style&#x3D;&quot;heiget:80px&quot;&gt;测试专用&lt;&#x2F;div&gt;</span><br><span class="line">			  &lt;button onclick&#x3D;&quot;var target&#x3D;document.getElementById(&#39;target&#39;);</span><br><span class="line">			  target.hidden&#x3D;!getfet.hidden;&quot;&gt;显示&#x2F;隐藏&lt;&#x2F;button&gt;</span><br><span class="line"> - &lt;section&gt;该元素用于对页面内容进行分块</span><br><span class="line"> - &lt;link&gt;用于链接图标，css样式文件等外部资源</span><br><span class="line">		&gt; href</span><br><span class="line">		&gt; hreflang</span><br><span class="line">		&gt; media:所链接的资源仅适用哪些设备</span><br><span class="line">		&gt; rel:设置文档与所链接资源的关系</span><br><span class="line">		&gt; size：指定图标的大小，仅当rel为icon是该属性才有效</span><br><span class="line">		&gt; type</span><br><span class="line">		举例应用：</span><br><span class="line">		&gt; 引入CSS样式单：&lt;link href&#x3D;&quot;outer.css&quot; rel&#x3D;&quot;stylesheet&quot; type&#x3D;&quot;type&#x2F;css&quot; &#x2F;&gt;</span><br><span class="line">		&gt; 设置图标：&lt;link href&#x3D;&quot;java.ico&quot; rel&#x3D;&quot;shortcut icon&quot; type&#x3D;&quot;image&#x2F;x-icon&quot; &#x2F;&gt;</span><br><span class="line"> - &lt;base&gt;空元素，指定页面中所有连接的基准路径</span><br><span class="line">		&gt; href:指定所链接的基准路径</span><br><span class="line">		&gt; target</span><br><span class="line">		举例应用:&lt;head&gt;&lt;base href&#x3D;&quot;http:&#x2F;&#x2F;www.baidu.com&quot;&gt;&lt;&#x2F;head&gt;</span><br><span class="line">				&lt;body&gt;&lt;a href&#x3D;&quot;index.php&quot;&gt;base&lt;&#x2F;a&gt;&lt;&#x2F;body&gt;</span><br><span class="line"> - draggable属性：（1）如果希望把某个元素可拖动，只需要把该元素的**draggable**属性</span><br><span class="line">   设置为true即可，只是简单的拖动，并没有携带数据，因此看不到拖动的效果。</span><br><span class="line">  （2）为了让拖动能携带数据，应该为被拖动的元素的**ondragstart**事件指定监听器,</span><br><span class="line">   在该监听器中让拖动操作可携带数据。（3）为了让document可以接收放，应该为document</span><br><span class="line">   的ondragover事件指定监听器，在监听器中取消document对拖动事件的默认行为</span><br><span class="line">   （默认不接受放）。（4）不同浏览器对拖放操作的默认动作是不同的，如果希望取消</span><br><span class="line">   拖放操作的默认动作，可以对document的ondrop事件绑定监听器。示例如下：</span><br><span class="line">		&gt; &lt;div id&#x3D;&quot;source&quot; style&#x3D;&quot;width:80px;height:80px;</span><br><span class="line">				border:1px;solid black;</span><br><span class="line">				background-color:#bbb;&quot;</span><br><span class="line">				draggable&#x3D;&quot;true&quot;&gt;可拖动的div&lt;&#x2F;div&gt;</span><br><span class="line">			&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">				var source&#x3D;document.getElementById(&quot;source&quot;);</span><br><span class="line">				source.ondragstart&#x3D;function(evt)</span><br><span class="line">				&#123;</span><br><span class="line">					evt.dataTransfer.setData(&quot;text&quot;,&quot;可拖动的div&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">				document.ondragover&#x3D;function(evt)</span><br><span class="line">				&#123;</span><br><span class="line">					&#x2F;&#x2F;取消时间的默认行为</span><br><span class="line">					return false;</span><br><span class="line">				&#125;</span><br><span class="line">				document.ondrop&#x3D;function(evt)</span><br><span class="line">				&#123;</span><br><span class="line">					source.style.position&#x3D;&quot;absolute&quot;;</span><br><span class="line">					source.style.left&#x3D;evt.pageX+&quot;px&quot;;</span><br><span class="line">					source.style.top&#x3D;evt.pageY+&quot;px&quot;;</span><br><span class="line">					return false;</span><br><span class="line">				&#125;</span><br><span class="line">			&lt;&#x2F;script&gt;</span><br><span class="line"> - &lt;form&gt;用于生成表单，该元素不会生成可视化部分,默认使用**get**方式</span><br><span class="line">		&gt; action：指定当提交表单时，表单被提交到哪个地址，可以是相对路径，也可以是绝对路径，</span><br><span class="line">		 必填</span><br><span class="line">		&gt; method：指定提交表单时发送何种类型的请求，属性值get和post，通常建议发送post请求，</span><br><span class="line">		 必填</span><br><span class="line">		&gt; name:指定表单唯一名称，建议与id保持一致</span><br><span class="line">		&gt; target</span><br><span class="line">		&gt; enctype:指定对表单内容进行编码所使用的字符集</span><br><span class="line"> - &lt;input&gt;空元素，有value属性</span><br><span class="line">		&gt; 单行文本框：type&#x3D;&quot;text&quot;</span><br><span class="line">		&gt; 密码框：type&#x3D;&quot;password&quot;</span><br><span class="line">		&gt; 隐藏框：type&#x3D;&quot;hidden&quot;</span><br><span class="line">		&gt; 单选框：type&#x3D;&quot;radio&quot;</span><br><span class="line">		&gt; 复选框：type&#x3D;&quot;checkbox&quot;</span><br><span class="line">		&gt; 图像域：type&#x3D;&quot;image&quot;时，&lt;input&gt;可以指定width和height属性</span><br><span class="line">		&gt; 文件上传域：type&#x3D;&quot;file&quot;</span><br><span class="line">		&gt; 提交：type&#x3D;&quot;submit&quot;</span><br><span class="line">		&gt; 重设：type&#x3D;&quot;resrt&quot;</span><br><span class="line">		&gt; 无动作：type&#x3D;&quot;button</span><br><span class="line"></span><br><span class="line">		&gt; checked:支持Boolean值，设置单选框、复选框初始状态是否处于选中状态</span><br><span class="line">		&gt; disabled:支持Boolean值，表示该元素被禁用</span><br><span class="line">		&gt; maxlength：是一个数字，表示文本框中所允许输入的最大字数</span><br><span class="line">		&gt; readonly：支持Boolean值，指定该文本框的内容不容许用户修改</span><br><span class="line">		&gt; size：属性值是一个数字，指定该元素的宽度，type&#x3D;hidden时该属性没有意义</span><br><span class="line">		&gt; src:指定图像域所显示图像的URL</span><br><span class="line">		&gt; width：指定图像域所显示图像的宽度</span><br><span class="line">		&gt; height：指定图像域所显示图像的高度</span><br><span class="line"> - &lt;label&gt;用于在表单元素中定义标签，让标签和表单控件关联起来有两种方式：</span><br><span class="line">		&gt; 隐式使用for属性：指定&lt;label&gt;元素的for属性值为所关联表单控件的id属性值，例:</span><br><span class="line">			&lt;label for&#x3D;&quot;id&quot;&gt;单行文本框：&lt;&#x2F;label&gt;</span><br><span class="line">			&lt;input id&#x3D;&quot;id&quot; name&#x3D;&quot;id&quot; type&#x3D;&quot;text&quot; &#x2F;&gt;</span><br><span class="line">		&gt; 显示关联：将普通文本，表单控件一起放在&lt;label&gt;元素内，例：</span><br><span class="line">			&lt;label&gt;密码：&lt;input type&#x3D;&quot;password&quot; &#x2F;&gt;&lt;&#x2F;label&gt;</span><br><span class="line"> - &lt;button&gt;定义一个按钮，可以包含文本和图片</span><br><span class="line">		&gt; disabled</span><br><span class="line">		&gt; name</span><br><span class="line">		&gt; type:属性值：submit reset button</span><br><span class="line">		&gt; value:指定按钮的初始值</span><br><span class="line"> - &lt;select&gt;创建列表框和下拉菜单，该元素必须和&lt;option&gt;组合使用，每个&lt;option&gt;元素</span><br><span class="line">   代表一个列表项或菜单项，&lt;select&gt;只能包含&lt;option&gt;或者&lt;optgroup&gt;</span><br><span class="line">		&gt; disabled:禁止使用该列表项和下拉菜单，属性值只能是disabled或者省略</span><br><span class="line">		&gt; multiple：支持Boolean值，一旦设置多选，&lt;select&gt;自动生成列表框</span><br><span class="line">		&gt; size：指定列表框内同时显示多少个列表项，一旦设置该属性，</span><br><span class="line">		  &lt;select&gt;自动生成列表框</span><br><span class="line"> - &lt;option&gt;定义列表框选项或菜单项</span><br><span class="line">		&gt; disabled:禁止使用，属性值只能是disabled或者省略</span><br><span class="line">		&gt; selected：列表项初始状态是否处于被选中状态，属性值只能是selected</span><br><span class="line">		&gt; value：选项对应的请求参数</span><br><span class="line"> - &lt;optgroup&gt;定义列表项或菜单项组，只能包含&lt;option&gt;元素</span><br><span class="line">		&gt; label：指定选项组的标签，必填，例:</span><br><span class="line">			&lt;optgroup label&#x3D;&quot;其他图书&quot;&gt;&lt;&#x2F;outgroup</span><br><span class="line">		&gt; disabled</span><br><span class="line"> -&lt;textarea&gt;生成多行文本域</span><br><span class="line">		&gt; cols:指定文本域的宽度，必填</span><br><span class="line">		&gt; rows指定文本域的高度，必填</span><br><span class="line">		&gt; disabled</span><br><span class="line">		&gt; readonly：只读，属性值只能是readonly</span><br><span class="line">		&gt; maxlength：设置最多可输入的字符数</span><br><span class="line">		&gt; wrap：指定多换文本域是否添加换行符，soft和hard两个属性值，设为hard时，</span><br><span class="line">		  必须指定cols属性，字符超过cols时，自动换行，提交时在换行出自动添加换行符</span><br><span class="line">				 &lt;form action&#x3D;&quot;#&quot; method&#x3D;&quot;get&quot;&gt;</span><br><span class="line">				下面是简单下拉菜单：&lt;br &#x2F;&gt;</span><br><span class="line">				&lt;select id&#x3D;&quot;skills&quot; name&#x3D;&quot;skills&quot; multiple&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;java&quot;&gt;java语言&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;c&quot;&gt;C语言&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;ruby&quot;&gt;ruby语言&lt;&#x2F;option&gt;</span><br><span class="line">				&lt;&#x2F;select&gt;&lt;br&#x2F;&gt;&lt;br&#x2F;&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				下面是允许多选的列表框：&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;select id&#x3D;&quot;books&quot; name&#x3D;&quot;books&quot;</span><br><span class="line">					multiple&#x3D;&quot;multiple&quot; size&#x3D;&quot;4&quot;&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;java&quot;&gt;疯狂Java讲义&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;android&quot;&gt;疯狂安卓讲义&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;ee&quot;&gt;ee实战&lt;&#x2F;option&gt;</span><br><span class="line">				&lt;&#x2F;select&gt;&lt;br &#x2F;&gt;</span><br><span class="line">				下面是允许多选的列表框：&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;select id&#x3D;&quot;leegang&quot; name&#x3D;&quot;leegang&quot;</span><br><span class="line">					multiple size&#x3D;&quot;6&quot;&gt;</span><br><span class="line">				&lt;optgroup	label&#x3D;&quot;疯狂JAVA图书&quot;&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;java&quot;&gt;疯狂Java讲义&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;android&quot;&gt;疯狂安卓讲义&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;ee&quot;&gt;ee实战&lt;&#x2F;option&gt;</span><br><span class="line">				&lt;&#x2F;optgroup&gt;</span><br><span class="line">				&lt;optgroup label&#x3D;&quot;其他图书&quot;&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;struts&quot;&gt;struts 指南&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option value&#x3D;&quot;ror&quot;&gt;ror开发&lt;&#x2F;option&gt;</span><br><span class="line">				&lt;&#x2F;optgroup&gt;</span><br><span class="line">				&lt;&#x2F;select&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;button type&#x3D;&quot;submit&quot;&gt;&lt;p&gt;提交&lt;&#x2F;p&gt;&lt;&#x2F;button&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;br&#x2F;&gt;&lt;br&#x2F;&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				简单多行文本域：&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;textarea name&#x3D;&quot;txt1&quot; cols&#x3D;&quot;20&quot; row&#x3D;&quot;2&quot;&gt;&lt;&#x2F;textarea&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				zhiduode:&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;textarea name&#x3D;&quot;txt2&quot; cols&#x3D;&quot;28&quot; row&#x3D;&quot;4&quot; readonly&gt;fejifjeofjdkl</span><br><span class="line">					djlsdkfjeoifdlka&lt;&#x2F;textarea&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;button type&#x3D;&quot;submit&quot;&gt;&lt;p&gt;提交&lt;&#x2F;p&gt;&lt;&#x2F;button&gt;&lt;br&#x2F;&gt;</span><br><span class="line">				&lt;&#x2F;form&gt;</span><br><span class="line"> - &lt;fieldset&gt;用于对表单内表单元素进行分组，一组的有特殊边界效果</span><br><span class="line">		&gt; name</span><br><span class="line">		&gt; form属性值必须是一个有效的&lt;form&gt;元素的id，用于指定&lt;fieldset&gt;元素属于哪个表单</span><br><span class="line">		&gt; disabled</span><br><span class="line"> - &lt;legend&gt;放在&lt;fieldset&gt;元素内，为&lt;fieldset&gt;元素设置标题，例：</span><br><span class="line">           &lt;fieldset name&#x3D;&quot;name7&quot;&gt;</span><br><span class="line">		        &lt;legend&gt;简答题&lt;&#x2F;legend&gt;</span><br><span class="line">		     	&lt;ol style&#x3D;&quot;1&quot; start&#x3D;&quot;1&quot;&gt;</span><br><span class="line">					&lt;b&gt;&lt;li&gt;&lt;span&gt;&lt;i&gt;你的梦想是什么？：&lt;&#x2F;i&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;&lt;&#x2F;b&lt;br&#x2F;&gt;</span><br><span class="line">					&lt;textarea name&#x3D;&quot;txt1&quot; cols&#x3D;&quot;20&quot; row&#x3D;&quot;2&quot;&gt;&lt;&#x2F;textarea&gt;&lt;br&#x2F;&gt;</span><br><span class="line">					&lt;b&gt;&lt;li&gt;&lt;span&gt;&lt;i&gt;以《我最敬佩的人》写一篇作文：&lt;&#x2F;i&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;&lt;&#x2F;b&lt;br&#x2F;&gt;</span><br><span class="line">					&lt;textarea name&#x3D;&quot;txt2&quot; cols&#x3D;&quot;20&quot; row&#x3D;&quot;2&quot;&gt;&lt;&#x2F;textarea&gt;&lt;br&#x2F;&gt;</span><br><span class="line">			    &lt;&#x2F;ol&gt;</span><br><span class="line">          &lt;&#x2F;fieldset&gt;</span><br><span class="line"> -form属性：通过为表单控件指定form属性，可以让表单控件在&lt;form&gt;元素之外，从而提高灵活性</span><br><span class="line"> 	form的属性值为&lt;form&gt;元素的id值</span><br><span class="line"> - formaction属性：指定用于提交的不同的URL，例：</span><br><span class="line">        &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;注册&quot; formaction&#x3D;&quot;logon.html&quot;&#x2F;&gt;</span><br><span class="line">		&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;开始游戏&quot; formaction&#x3D;&quot;playgame.html&quot;&#x2F;&gt;</span><br><span class="line">		这两个不同按钮会将网页提交到不同的URL</span><br><span class="line"> - forxxx属性，自行百度</span><br><span class="line"> - autofocus属性：自动获得焦点，打开控件时只能有一个控件或得焦点，</span><br><span class="line"> 	所以整个页面上只能有一个表单元元素设置次属性，例：</span><br><span class="line"> 	&lt;input id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; autofocus placeholder&#x3D;&quot;请输入用户名&quot; &#x2F;&gt;</span><br><span class="line"> - placeholder属性：产生提示信息，例：</span><br><span class="line"> 	&lt;input id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; autofocus placeholder&#x3D;&quot;请输入用户名&quot; &#x2F;&gt;</span><br><span class="line"> - list属性：文本框与下拉菜单结合的组件，该组件既允许用户输入，也允许用户通过下拉菜单</span><br><span class="line"> 	选择，list属性值应该是一个&lt;datalist&gt;元素的id，list属性必须和&lt;datalist&gt;元素一起使用</span><br><span class="line"> 	例：&lt;form method&#x3D;&quot;post&quot; action&#x3D;&quot;buy&quot;&gt;</span><br><span class="line">			请输入图书：&lt;input  name&#x3D;&quot;name1&quot; type&#x3D;&quot;text&quot; list&#x3D;&quot;books1&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			 &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;购买&quot; &#x2F;&gt;</span><br><span class="line">		      &lt;&#x2F;form&gt;</span><br><span class="line">        &lt;datalist id&#x3D;&quot;books1&quot;&gt;</span><br><span class="line">			&lt;option value&#x3D;&quot;java&quot;&gt;疯狂Java讲义&lt;&#x2F;option&gt;</span><br><span class="line">			&lt;option value&#x3D;&quot;android&quot;&gt;疯狂安卓讲义&lt;&#x2F;option&gt;</span><br><span class="line">			&lt;option value&#x3D;&quot;ee&quot;&gt;ee实战&lt;&#x2F;option&gt;</span><br><span class="line">		&lt;&#x2F;datalist&gt;</span><br><span class="line">	   &lt;&#x2F;form&gt;</span><br><span class="line"> - autocomplete属性设置表单是否支持自动完成功能，会根据你的输入记录自动进行提示，</span><br><span class="line"> 	属性值on或者off</span><br><span class="line"> - label的control属性：用于在Javascript脚本中访问该&lt;label&gt;元素所关联的表单元素，例：</span><br><span class="line">		 &lt;form action&#x3D;&quot;pro.action&quot; method&#x3D;&quot;post&quot; autocomplete&#x3D;&quot;on&quot;&gt;</span><br><span class="line">			&lt;label id&#x3D;&quot;nameLB&quot;&gt;姓名：</span><br><span class="line">				&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name2&quot;&#x2F;&gt;&lt;&#x2F;label&gt;&lt;p&gt;</span><br><span class="line">				&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&#x2F;&gt;</span><br><span class="line">				&lt;input type&#x3D;&quot;button&quot; value&#x3D;&quot;重设&quot; </span><br><span class="line">					onclick&#x3D;&quot;document.getElementById(&#39;nameLB&#39;).control.value&#x3D;&#39;crazy&#39;;&quot;&#x2F;&gt;</span><br><span class="line">		 &lt;&#x2F;form&gt;</span><br><span class="line"> - labels：自行百度</span><br><span class="line"> - 文本框的selectionDirection属性</span><br><span class="line">		&gt; 正向选取文字时，selectionDirection属性返回forward</span><br><span class="line">		&gt; 反向选取文字时，selectionDirection属性返回backward</span><br><span class="line">		&gt; 没有选取时，返回上一次的值</span><br><span class="line">		&gt; 从未选取时，返回forward</span><br><span class="line">   例：&lt;form action&#x3D;&quot;pro.action&quot; method&#x3D;&quot;post&quot; autocomplete&#x3D;&quot;on&quot;&gt;</span><br><span class="line">		&lt;label id&#x3D;&quot;nameLb&quot;&gt;姓名：</span><br><span class="line">		&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name3&quot;&#x2F;&gt;&lt;&#x2F;label&gt;&lt;p&gt;</span><br><span class="line">		&lt;input type&#x3D;&quot;submit&quot;&#x2F;&gt;</span><br><span class="line">		&lt;input type&#x3D;&quot;button&quot; value&#x3D;&quot;获取&quot; </span><br><span class="line">			onclick&#x3D;&quot;alert(document.getElementById(&#39;nameLb&#39;).control.selectionDirection);&quot;&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;form&gt;</span><br><span class="line"> - 复选框的indeterminate属性：true和false两个属性值，在JS中判断一个复选框的checked属性之前，</span><br><span class="line"> 	需要先判断indeterminate属性是否为false，只有indeterminate属性为false是判断checked状态才有效</span><br><span class="line"> 	例：&lt;form action&#x3D;&quot;pro.action&quot; method&#x3D;&quot;post&quot; autocomplete&#x3D;&quot;on&quot;&gt;</span><br><span class="line">		&lt;label id&#x3D;&quot;colorLb&quot;&gt;红色：</span><br><span class="line">		&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;color&quot;&#x2F;&gt;&lt;&#x2F;label&gt;&lt;p&gt;</span><br><span class="line">		&lt;input type&#x3D;&quot;button&quot; value&#x3D;&quot;设置&quot;</span><br><span class="line">		onclick&#x3D;&quot;document.getElementById(&#39;colorLb&#39;).control.indeterminate&#x3D;true;&quot;&#x2F;&gt;</span><br><span class="line">		&lt;input type&#x3D;&quot;button&quot; value&#x3D;&quot;获取&quot;</span><br><span class="line">		onclick&#x3D;&quot;alert(document.getElementById(&#39;colorLb&#39;).control.indeterminate);&quot;&#x2F;&gt;</span><br><span class="line">	   &lt;&#x2F;form&gt;</span><br><span class="line"> - 功能丰富的input元素</span><br><span class="line"> 	例：&lt;form action&#x3D;&quot;do&quot; method&#x3D;&quot;post&quot;&gt;</span><br><span class="line">			请选择你喜欢的颜色：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;color&quot; type&#x3D;&quot;color&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请输入您的出生日期：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;date &quot; type&#x3D;&quot;date&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			出生日期精确到秒：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;time&quot; type&#x3D;&quot;time&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请确认出生日期：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;datetime-local&quot; type&#x3D;&quot;datetime-local&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请选择这是几月：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;month&quot; type&#x3D;&quot;month&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请选择这是第几周：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;week&quot; type&#x3D;&quot;week&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请输入你的email：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;email&quot; type&#x3D;&quot;email&quot; multiple &#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请输入您的电话：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;tel&quot; type&#x3D;&quot;tel&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请输入您的URL：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;url&quot; type&#x3D;&quot;url&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			请输入您的幸运数字：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;number&quot; type&#x3D;&quot;number&quot; min&#x3D;&quot;0&quot; max&#x3D;&quot;100&quot; step&#x3D;&quot;5&quot; &#x2F;&gt;&lt;p&gt;</span><br><span class="line">			这是一个拖动条：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;range&quot; type&#x3D;&quot;range&quot; min&#x3D;&quot;0&quot; max&#x3D;&quot;100&quot; step&#x3D;&quot;5&quot; &#x2F;&gt;&lt;p&gt;</span><br><span class="line">			这是一个搜索框：&lt;br&#x2F;&gt;&lt;input name&#x3D;&quot;search&quot; type&#x3D;&quot;search&quot;&#x2F;&gt;&lt;p&gt;</span><br><span class="line">			&lt;label&gt;用户名:&lt;input id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; autofocus  &#x2F;&gt;&lt;&#x2F;label&gt;&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			&lt;label for&#x3D;&quot;username&quot;&gt;密码:&lt;&#x2F;label&gt;</span><br><span class="line">			&lt;input  id&#x3D;&quot;username&quot; name&#x3D;&quot;username&quot; type&#x3D;&quot;text&quot; &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			&lt;input value&#x3D;&quot;提交&quot; type&#x3D;&quot;submit&quot; formaction&#x3D;&quot;苑飞.html&quot; &#x2F;&gt;</span><br><span class="line">	   &lt;&#x2F;form&gt;</span><br><span class="line"> - &lt;output&gt;显示输出</span><br><span class="line"> - &lt;meter&gt;计数仪表</span><br><span class="line"> - &lt;progress&gt;进度条</span><br><span class="line"> - 校验属性，自行百度</span><br><span class="line"> - &lt;audio&gt;音频</span><br><span class="line"> - &lt;video&gt;视频</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> - <span class="comment">&lt;!--...--&gt;</span>注释</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>根元素</span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span>页面头部分，可以包含如下子元素</span><br><span class="line">		&gt; <span class="tag">&lt;<span class="name">script</span>&gt;</span>:包含Javascript脚本</span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">noscript</span>&gt;</span>:声明不支持Javascript脚本</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">style</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">link</span>&gt;</span>用于链接图标，css样式文件等外部资源</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">base</span>&gt;</span>指定页面中所有连接的基准路径</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">meta</span>&gt;</span>定义页面元数据</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt;  <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面标题</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> <span class="tag">&lt;<span class="name">body</span>&gt;</span>页面主体部分</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">h1</span>&gt;</span>到<span class="tag">&lt;<span class="name">h6</span>&gt;</span>定义标题一到六</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">p</span>&gt;</span>定义段落</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">br</span>&gt;</span>插入一个换行</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">hr</span>&gt;</span>定义水平线</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">div</span>&gt;</span>定义文档中的节 ，导致换行</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">span</span>&gt;</span>与<span class="tag">&lt;<span class="name">div</span>&gt;</span>相似，区别是只表示一段一般性文本，不会换行</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">b</span>&gt;</span>定义粗体文本</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">i</span>&gt;</span>定义斜体文本</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">em</span>&gt;</span>定义强调文本</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">strong</span>&gt;</span>定义粗体文本，且代表重要文本</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">small</span>&gt;</span>定义小号字体文本,常用于免责声明、注意事项、法路规定、版权相关</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">sup</span>&gt;</span>定义上标文本</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">sub</span>&gt;</span>定义下标文本</span></span></span><br><span class="line"><span class="javascript"> - &lt;bdo&gt;定义文本显示方向，dir=<span class="string">&quot;ltr&quot;</span>，dir=<span class="string">&quot;rtl&quot;</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">a</span>&gt;</span>元素添加超链接和锚点：</span></span></span><br><span class="line"> 		超链接：</span><br><span class="line">		&gt; href:指定超链接所链接的另一个资源</span><br><span class="line">		&gt; hreflang:指定超链接所链接的文档所使用的语言</span><br><span class="line">		&gt; target:_self,_blank,_top,_parent,分别代表自身，新窗口，顶层框架，</span><br><span class="line">		  父框架来装在新资源</span><br><span class="line">		&gt; download：不是直接打开目标链接，用于让用户下载目标链接所指向的资源</span><br><span class="line">		&gt; type:指定被链接文档的MIME类型</span><br><span class="line">		&gt; media：指定目标URL所引用的媒体类型，默认值为all，指定href后此属性有效</span><br><span class="line">		锚点：</span><br><span class="line"><span class="javascript">		&gt; <span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">&quot;test&quot;</span>&gt;</span>test<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span></span><br><span class="line"><span class="javascript">		&gt; <span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;anchor.html#test&quot;</span>&gt;</span>定位到anchor文件中的锚点</span></span></span><br><span class="line"><span class="javascript">		&gt; <span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#test&quot;</span>&gt;</span>定位到同一文档中的test锚点</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">ul</span>&gt;</span>定义无序列表，只能包含<span class="tag">&lt;<span class="name">li...</span>/&gt;</span>子元素</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">li</span>&gt;</span>定义列表项，可以包含于<span class="tag">&lt;<span class="name">div</span>&gt;</span>完全类似的内容</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">ol</span>&gt;</span>定义有序列表：</span></span></span><br><span class="line">		&gt; start：指定列表的其实数字，默认是第一个，如1、和A</span><br><span class="line">		&gt; type：指定使用哪种类型的编号，1代表使用数字，A和a分别代表使用大写或小写字母，</span><br><span class="line">			I或i代 表大写或小写罗马数字</span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">dl</span>&gt;</span>定义术语列表，只能包含<span class="tag">&lt;<span class="name">dt</span>&gt;</span>和<span class="tag">&lt;<span class="name">dd</span>&gt;</span>两种子元素</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">dt</span>&gt;</span>定义标题</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义解释</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">img</span>&gt;</span>添加图片，可以使用usemap属性添加图片映射</span></span></span><br><span class="line">		&gt; src:该属性指定文件所在位置，可以是相对路径，也可以是绝对路径</span><br><span class="line">		&gt; alt:指定一段文本，作为图片还没有加载出来时的提示信息</span><br><span class="line">		&gt; height:指定图片高度，可以是百分比，也可以是像素值（px）</span><br><span class="line">		&gt; width:指定图片宽度，可以是百分比，也可以是像素值（px）</span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">map</span>&gt;</span>定义图片映射，主要可以包含一个或多个<span class="tag">&lt;<span class="name">area</span>&gt;</span>子元素，每个area子元素定义一个区域，</span></span></span><br><span class="line">   不同区域可以 连接到不同的URL</span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">area</span>&gt;</span>定义图片映射的内部区域：</span></span></span><br><span class="line">		&gt; shape：指定内部区域是那种区域，默认是“rect”,矩形区域；circle，圆形；ploy，多边形</span><br><span class="line">		&gt; coords:指定多个坐标值，用于确定区域位置</span><br><span class="line">		&gt; href</span><br><span class="line">		&gt; alt</span><br><span class="line">		&gt; trget</span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">table</span>&gt;</span>定义表格，只能包含0个或者1个(<span class="tag">&lt;<span class="name">caption</span>&gt;</span>,<span class="tag">&lt;<span class="name">thead</span>&gt;</span>,<span class="tag">&lt;<span class="name">tfoot</span>&gt;</span>),多个<span class="tag">&lt;<span class="name">tr</span>&gt;</span>,&lt;tbody</span></span></span><br><span class="line">		&gt; cellpadding:指定单元格内容和单元格边框之间的距离，属性值可以是像素（px）,</span><br><span class="line">		  也可以是百分比</span><br><span class="line">		&gt; cellspacing:指定单元格之间的距离，属性值可以是像素（px）,也可以是百分比</span><br><span class="line">		&gt; width:指定表格宽度，属性值可以是像素（px）,也可以是百分</span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">caption</span>&gt;</span>用于定义表格标题</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">tr</span>&gt;</span>定义表格行，只能指定<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>两种子元素</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">td</span>&gt;</span>定义单元格，与<span class="tag">&lt;<span class="name">div</span>&gt;</span>类似，可以再包含一个<span class="tag">&lt;<span class="name">table</span>&gt;</span>元素</span></span></span><br><span class="line">		&gt; colspan:指定单元格夸多少列</span><br><span class="line">		&gt; rowspan:指定单元格夸多少行</span><br><span class="line">		&gt; height:指定单元格高度，属性值可以是像素（px）,也可以是百分</span><br><span class="line">		&gt; width：指定单元格宽度，属性值可以是像素（px）,也可以是百分</span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">th</span>&gt;</span>定义表格的表头元素，显示加粗字体</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">thead</span>&gt;</span>定义表格头</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">tfoot</span>&gt;</span>定义表格脚</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">tbody</span>&gt;</span>定义表格主体，只能包含多个<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span></span><br><span class="line">		使用方法：</span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; <span class="tag">&lt;<span class="name">thead</span>&gt;</span>,<span class="tag">&lt;<span class="name">tfoot</span>&gt;</span>,<span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">iframe</span>&gt;</span></span></span></span><br><span class="line">		&gt; src:指定一个URL，指定iframe将装在哪个页面</span><br><span class="line">		&gt; name:设置iframe的名字</span><br><span class="line">		&gt; longdesc:指定一个页面的URL，包含了关于该iframe的长描述</span><br><span class="line">		&gt; scrolling:设置滚动条，该属性支持yes,no,auto</span><br><span class="line">		&gt; height:设置iframe高度</span><br><span class="line">		&gt; width：设置iframe宽度</span><br><span class="line">		&gt; frameborder:设置iframe边框</span><br><span class="line">		&gt; marginheight：设置iframe顶部和底部的页边距</span><br><span class="line">		&gt; marginwidth：设置iframe左侧和右侧的页边距</span><br><span class="line"> - id属性用于为HTML元素指定唯一标识,使用JS编程时可通过该属性</span><br><span class="line"><span class="javascript">   来获取元素&lt;<span class="built_in">document</span>.getElementById(id)&gt;</span></span><br><span class="line"> - style属性用于为HTML元素指定CSS样式</span><br><span class="line"><span class="javascript"> - <span class="class"><span class="keyword">class</span>属性用于匹配<span class="title">CSS</span>样式的<span class="title">class</span>选择器</span></span></span><br><span class="line"><span class="javascript"> - dir属性对齐方式  dir=<span class="string">&quot;ltr&quot;</span>:左对齐   dir=<span class="string">&quot;rtl&quot;</span>右对齐</span></span><br><span class="line"> - title属性显示元素指定额外信息，当用户把鼠标移动到该元素上面时，</span><br><span class="line"> 	浏览器将会显示title属性所制定的信息</span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; 例：<span class="tag">&lt;<span class="name">div</span> <span class="attr">title</span>=<span class="string">&quot;测试专用&quot;</span>&gt;</span>测试<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></span><br><span class="line"><span class="javascript"> - contentEditable属性可以指定开发者直接编辑HTML元素的内容，属性值<span class="literal">true</span>，<span class="literal">false</span></span></span><br><span class="line">		&gt; contentEditable属性具有可继承的特点：如果一个元素的父元素时“可编辑的”，</span><br><span class="line"><span class="javascript">		 那么它默认也是可编辑的，除非指定contentEditable=“<span class="literal">false</span>”</span></span><br><span class="line">		&gt; 当用户编辑完成后，用户编辑的内容就会直接显示在该页面中，一旦刷新，</span><br><span class="line">		编辑的内容就会消失，开发者可以通过元素的innerHTML属性来获取编辑后的内容</span><br><span class="line"><span class="javascript"> - iscontentEditable属性指定当该元素处于可编辑状态时，返回<span class="literal">true</span>，否则返回<span class="literal">false</span></span></span><br><span class="line"> - designMode属性相当于是一个全局属性，如果把整个页面的designMode属性设置为on,</span><br><span class="line">   则该页面上所有支持contentEditable的元素都变成可编辑状态，designMode属性默认为off</span><br><span class="line"><span class="javascript"> - hidden属性支持<span class="literal">true</span>和<span class="literal">false</span>两个属性值，一旦把某个元素的hidden设为<span class="literal">true</span>，</span></span><br><span class="line">   就意味着浏览器不在显示该组件，夜不会保留该组件所占的空间</span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; 例：<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;target&quot;</span> <span class="attr">hidden</span>=<span class="string">&quot;true style=&quot;</span><span class="attr">heiget:80px</span>&quot;&gt;</span>测试专用<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></span><br><span class="line">			  &lt;button onclick=&quot;var target=document.getElementById(&#x27;target&#x27;);</span><br><span class="line"><span class="handlebars"><span class="xml">			  target.hidden=!getfet.hidden;&quot;&gt;显示/隐藏<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">section</span>&gt;</span>该元素用于对页面内容进行分块</span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">link</span>&gt;</span>用于链接图标，css样式文件等外部资源</span></span></span><br><span class="line">		&gt; href</span><br><span class="line">		&gt; hreflang</span><br><span class="line">		&gt; media:所链接的资源仅适用哪些设备</span><br><span class="line">		&gt; rel:设置文档与所链接资源的关系</span><br><span class="line">		&gt; size：指定图标的大小，仅当rel为icon是该属性才有效</span><br><span class="line">		&gt; type</span><br><span class="line">		举例应用：</span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; 引入CSS样式单：<span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;outer.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;type/css&quot;</span> /&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		&gt; 设置图标：<span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;java.ico&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;shortcut icon&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/x-icon&quot;</span> /&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml"> - <span class="tag">&lt;<span class="name">base</span>&gt;</span>空元素，指定页面中所有连接的基准路径</span></span></span><br><span class="line">		&gt; href:指定所链接的基准路径</span><br><span class="line">		&gt; target</span><br><span class="line"><span class="javascript">		举例应用:<span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;<span class="name">base</span> <span class="attr">href</span>=<span class="string">&quot;http://www.baidu.com&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">				<span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;index.php&quot;</span>&gt;</span>base<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span></span><br><span class="line"> - draggable属性：（1）如果希望把某个元素可拖动，只需要把该元素的**draggable**属性</span><br><span class="line"><span class="javascript">   设置为<span class="literal">true</span>即可，只是简单的拖动，并没有携带数据，因此看不到拖动的效果。</span></span><br><span class="line">  （2）为了让拖动能携带数据，应该为被拖动的元素的**ondragstart**事件指定监听器,</span><br><span class="line"><span class="javascript">   在该监听器中让拖动操作可携带数据。（<span class="number">3</span>）为了让<span class="built_in">document</span>可以接收放，应该为<span class="built_in">document</span></span></span><br><span class="line"><span class="javascript">   的ondragover事件指定监听器，在监听器中取消<span class="built_in">document</span>对拖动事件的默认行为</span></span><br><span class="line">   （默认不接受放）。（4）不同浏览器对拖放操作的默认动作是不同的，如果希望取消</span><br><span class="line"><span class="javascript">   拖放操作的默认动作，可以对<span class="built_in">document</span>的ondrop事件绑定监听器。示例如下：</span></span><br><span class="line"><span class="javascript">		&gt; <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;source&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width:80px;height:80px;</span></span></span></span></span><br><span class="line">				border:1px;solid black;</span><br><span class="line">				background-color:#bbb;&quot;</span><br><span class="line"><span class="javascript">				draggable=<span class="string">&quot;true&quot;</span>&gt;可拖动的div&lt;/div&gt;</span></span><br><span class="line"><span class="handlebars"><span class="xml">			<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span></span></span><br><span class="line"><span class="javascript">				<span class="keyword">var</span> source=<span class="built_in">document</span>.getElementById(<span class="string">&quot;source&quot;</span>);</span></span><br><span class="line"><span class="javascript">				source.ondragstart=<span class="function"><span class="keyword">function</span>(<span class="params">evt</span>)</span></span></span><br><span class="line">				&#123;</span><br><span class="line"><span class="javascript">					evt.dataTransfer.setData(<span class="string">&quot;text&quot;</span>,<span class="string">&quot;可拖动的div&quot;</span>);</span></span><br><span class="line">				&#125;</span><br><span class="line"><span class="javascript">				<span class="built_in">document</span>.ondragover=<span class="function"><span class="keyword">function</span>(<span class="params">evt</span>)</span></span></span><br><span class="line">				&#123;</span><br><span class="line"><span class="javascript">					<span class="comment">//取消时间的默认行为</span></span></span><br><span class="line"><span class="javascript">					<span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">				&#125;</span><br><span class="line"><span class="javascript">				<span class="built_in">document</span>.ondrop=<span class="function"><span class="keyword">function</span>(<span class="params">evt</span>)</span></span></span><br><span class="line">				&#123;</span><br><span class="line"><span class="javascript">					source.style.position=<span class="string">&quot;absolute&quot;</span>;</span></span><br><span class="line"><span class="javascript">					source.style.left=evt.pageX+<span class="string">&quot;px&quot;</span>;</span></span><br><span class="line"><span class="javascript">					source.style.top=evt.pageY+<span class="string">&quot;px&quot;</span>;</span></span><br><span class="line"><span class="javascript">					<span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">				&#125;</span><br><span class="line">			<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"> - <span class="tag">&lt;<span class="name">form</span>&gt;</span>用于生成表单，该元素不会生成可视化部分,默认使用**get**方式</span><br><span class="line">		&gt; action：指定当提交表单时，表单被提交到哪个地址，可以是相对路径，也可以是绝对路径，</span><br><span class="line">		 必填</span><br><span class="line">		&gt; method：指定提交表单时发送何种类型的请求，属性值get和post，通常建议发送post请求，</span><br><span class="line">		 必填</span><br><span class="line">		&gt; name:指定表单唯一名称，建议与id保持一致</span><br><span class="line">		&gt; target</span><br><span class="line">		&gt; enctype:指定对表单内容进行编码所使用的字符集</span><br><span class="line"> - <span class="tag">&lt;<span class="name">input</span>&gt;</span>空元素，有value属性</span><br><span class="line">		&gt; 单行文本框：type=&quot;text&quot;</span><br><span class="line">		&gt; 密码框：type=&quot;password&quot;</span><br><span class="line">		&gt; 隐藏框：type=&quot;hidden&quot;</span><br><span class="line">		&gt; 单选框：type=&quot;radio&quot;</span><br><span class="line">		&gt; 复选框：type=&quot;checkbox&quot;</span><br><span class="line">		&gt; 图像域：type=&quot;image&quot;时，<span class="tag">&lt;<span class="name">input</span>&gt;</span>可以指定width和height属性</span><br><span class="line">		&gt; 文件上传域：type=&quot;file&quot;</span><br><span class="line">		&gt; 提交：type=&quot;submit&quot;</span><br><span class="line">		&gt; 重设：type=&quot;resrt&quot;</span><br><span class="line">		&gt; 无动作：type=&quot;button</span><br><span class="line"></span><br><span class="line">		&gt; checked:支持Boolean值，设置单选框、复选框初始状态是否处于选中状态</span><br><span class="line">		&gt; disabled:支持Boolean值，表示该元素被禁用</span><br><span class="line">		&gt; maxlength：是一个数字，表示文本框中所允许输入的最大字数</span><br><span class="line">		&gt; readonly：支持Boolean值，指定该文本框的内容不容许用户修改</span><br><span class="line">		&gt; size：属性值是一个数字，指定该元素的宽度，type=hidden时该属性没有意义</span><br><span class="line">		&gt; src:指定图像域所显示图像的URL</span><br><span class="line">		&gt; width：指定图像域所显示图像的宽度</span><br><span class="line">		&gt; height：指定图像域所显示图像的高度</span><br><span class="line"> - <span class="tag">&lt;<span class="name">label</span>&gt;</span>用于在表单元素中定义标签，让标签和表单控件关联起来有两种方式：</span><br><span class="line">		&gt; 隐式使用for属性：指定<span class="tag">&lt;<span class="name">label</span>&gt;</span>元素的for属性值为所关联表单控件的id属性值，例:</span><br><span class="line">			<span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;id&quot;</span>&gt;</span>单行文本框：<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;id&quot;</span> <span class="attr">name</span>=<span class="string">&quot;id&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line">		&gt; 显示关联：将普通文本，表单控件一起放在<span class="tag">&lt;<span class="name">label</span>&gt;</span>元素内，例：</span><br><span class="line">			<span class="tag">&lt;<span class="name">label</span>&gt;</span>密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> /&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"> - <span class="tag">&lt;<span class="name">button</span>&gt;</span>定义一个按钮，可以包含文本和图片</span><br><span class="line">		&gt; disabled</span><br><span class="line">		&gt; name</span><br><span class="line">		&gt; type:属性值：submit reset button</span><br><span class="line">		&gt; value:指定按钮的初始值</span><br><span class="line"> - <span class="tag">&lt;<span class="name">select</span>&gt;</span>创建列表框和下拉菜单，该元素必须和<span class="tag">&lt;<span class="name">option</span>&gt;</span>组合使用，每个<span class="tag">&lt;<span class="name">option</span>&gt;</span>元素</span><br><span class="line">   代表一个列表项或菜单项，<span class="tag">&lt;<span class="name">select</span>&gt;</span>只能包含<span class="tag">&lt;<span class="name">option</span>&gt;</span>或者<span class="tag">&lt;<span class="name">optgroup</span>&gt;</span></span><br><span class="line">		&gt; disabled:禁止使用该列表项和下拉菜单，属性值只能是disabled或者省略</span><br><span class="line">		&gt; multiple：支持Boolean值，一旦设置多选，<span class="tag">&lt;<span class="name">select</span>&gt;</span>自动生成列表框</span><br><span class="line">		&gt; size：指定列表框内同时显示多少个列表项，一旦设置该属性，</span><br><span class="line">		  <span class="tag">&lt;<span class="name">select</span>&gt;</span>自动生成列表框</span><br><span class="line"> - <span class="tag">&lt;<span class="name">option</span>&gt;</span>定义列表框选项或菜单项</span><br><span class="line">		&gt; disabled:禁止使用，属性值只能是disabled或者省略</span><br><span class="line">		&gt; selected：列表项初始状态是否处于被选中状态，属性值只能是selected</span><br><span class="line">		&gt; value：选项对应的请求参数</span><br><span class="line"> - <span class="tag">&lt;<span class="name">optgroup</span>&gt;</span>定义列表项或菜单项组，只能包含<span class="tag">&lt;<span class="name">option</span>&gt;</span>元素</span><br><span class="line">		&gt; label：指定选项组的标签，必填，例:</span><br><span class="line">			<span class="tag">&lt;<span class="name">optgroup</span> <span class="attr">label</span>=<span class="string">&quot;其他图书&quot;</span>&gt;</span>&lt;/outgroup</span><br><span class="line">		&gt; disabled</span><br><span class="line"> -<span class="tag">&lt;<span class="name">textarea</span>&gt;</span>生成多行文本域</span><br><span class="line">		&gt; cols:指定文本域的宽度，必填</span><br><span class="line">		&gt; rows指定文本域的高度，必填</span><br><span class="line">		&gt; disabled</span><br><span class="line">		&gt; readonly：只读，属性值只能是readonly</span><br><span class="line">		&gt; maxlength：设置最多可输入的字符数</span><br><span class="line">		&gt; wrap：指定多换文本域是否添加换行符，soft和hard两个属性值，设为hard时，</span><br><span class="line">		  必须指定cols属性，字符超过cols时，自动换行，提交时在换行出自动添加换行符</span><br><span class="line">				 <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;#&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">				下面是简单下拉菜单：<span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;skills&quot;</span> <span class="attr">name</span>=<span class="string">&quot;skills&quot;</span> <span class="attr">multiple</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;java&quot;</span>&gt;</span>java语言<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;c&quot;</span>&gt;</span>C语言<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;ruby&quot;</span>&gt;</span>ruby语言<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">select</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				下面是允许多选的列表框：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;books&quot;</span> <span class="attr">name</span>=<span class="string">&quot;books&quot;</span></span></span><br><span class="line"><span class="tag">					<span class="attr">multiple</span>=<span class="string">&quot;multiple&quot;</span> <span class="attr">size</span>=<span class="string">&quot;4&quot;</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;java&quot;</span>&gt;</span>疯狂Java讲义<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;android&quot;</span>&gt;</span>疯狂安卓讲义<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;ee&quot;</span>&gt;</span>ee实战<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">select</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">				下面是允许多选的列表框：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;leegang&quot;</span> <span class="attr">name</span>=<span class="string">&quot;leegang&quot;</span></span></span><br><span class="line"><span class="tag">					<span class="attr">multiple</span> <span class="attr">size</span>=<span class="string">&quot;6&quot;</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">optgroup</span>	<span class="attr">label</span>=<span class="string">&quot;疯狂JAVA图书&quot;</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;java&quot;</span>&gt;</span>疯狂Java讲义<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;android&quot;</span>&gt;</span>疯狂安卓讲义<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;ee&quot;</span>&gt;</span>ee实战<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">optgroup</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">optgroup</span> <span class="attr">label</span>=<span class="string">&quot;其他图书&quot;</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;struts&quot;</span>&gt;</span>struts 指南<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;ror&quot;</span>&gt;</span>ror开发<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">optgroup</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">select</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				简单多行文本域：<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;txt1&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;20&quot;</span> <span class="attr">row</span>=<span class="string">&quot;2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				zhiduode:<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;txt2&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;28&quot;</span> <span class="attr">row</span>=<span class="string">&quot;4&quot;</span> <span class="attr">readonly</span>&gt;</span>fejifjeofjdkl</span><br><span class="line">					djlsdkfjeoifdlka<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"> - <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span>用于对表单内表单元素进行分组，一组的有特殊边界效果</span><br><span class="line">		&gt; name</span><br><span class="line">		&gt; form属性值必须是一个有效的<span class="tag">&lt;<span class="name">form</span>&gt;</span>元素的id，用于指定<span class="tag">&lt;<span class="name">fieldset</span>&gt;</span>元素属于哪个表单</span><br><span class="line">		&gt; disabled</span><br><span class="line"> - <span class="tag">&lt;<span class="name">legend</span>&gt;</span>放在<span class="tag">&lt;<span class="name">fieldset</span>&gt;</span>元素内，为<span class="tag">&lt;<span class="name">fieldset</span>&gt;</span>元素设置标题，例：</span><br><span class="line">           <span class="tag">&lt;<span class="name">fieldset</span> <span class="attr">name</span>=<span class="string">&quot;name7&quot;</span>&gt;</span></span><br><span class="line">		        <span class="tag">&lt;<span class="name">legend</span>&gt;</span>简答题<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">		     	<span class="tag">&lt;<span class="name">ol</span> <span class="attr">style</span>=<span class="string">&quot;1&quot;</span> <span class="attr">start</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span>&gt;</span>你的梦想是什么？：<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>&lt;/b<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;txt1&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;20&quot;</span> <span class="attr">row</span>=<span class="string">&quot;2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span>&gt;</span>以《我最敬佩的人》写一篇作文：<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>&lt;/b<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;txt2&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;20&quot;</span> <span class="attr">row</span>=<span class="string">&quot;2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">			    <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line"> -form属性：通过为表单控件指定form属性，可以让表单控件在<span class="tag">&lt;<span class="name">form</span>&gt;</span>元素之外，从而提高灵活性</span><br><span class="line"> 	form的属性值为<span class="tag">&lt;<span class="name">form</span>&gt;</span>元素的id值</span><br><span class="line"> - formaction属性：指定用于提交的不同的URL，例：</span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;注册&quot;</span> <span class="attr">formaction</span>=<span class="string">&quot;logon.html&quot;</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;开始游戏&quot;</span> <span class="attr">formaction</span>=<span class="string">&quot;playgame.html&quot;</span>/&gt;</span></span><br><span class="line">		这两个不同按钮会将网页提交到不同的URL</span><br><span class="line"> - forxxx属性，自行百度</span><br><span class="line"> - autofocus属性：自动获得焦点，打开控件时只能有一个控件或得焦点，</span><br><span class="line"> 	所以整个页面上只能有一个表单元元素设置次属性，例：</span><br><span class="line"> 	<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">autofocus</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入用户名&quot;</span> /&gt;</span></span><br><span class="line"> - placeholder属性：产生提示信息，例：</span><br><span class="line"> 	<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">autofocus</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入用户名&quot;</span> /&gt;</span></span><br><span class="line"> - list属性：文本框与下拉菜单结合的组件，该组件既允许用户输入，也允许用户通过下拉菜单</span><br><span class="line"> 	选择，list属性值应该是一个<span class="tag">&lt;<span class="name">datalist</span>&gt;</span>元素的id，list属性必须和<span class="tag">&lt;<span class="name">datalist</span>&gt;</span>元素一起使用</span><br><span class="line"> 	例：<span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">action</span>=<span class="string">&quot;buy&quot;</span>&gt;</span></span><br><span class="line">			请输入图书：<span class="tag">&lt;<span class="name">input</span>  <span class="attr">name</span>=<span class="string">&quot;name1&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">list</span>=<span class="string">&quot;books1&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;购买&quot;</span> /&gt;</span></span><br><span class="line">		      <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;books1&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;java&quot;</span>&gt;</span>疯狂Java讲义<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;android&quot;</span>&gt;</span>疯狂安卓讲义<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;ee&quot;</span>&gt;</span>ee实战<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"> - autocomplete属性设置表单是否支持自动完成功能，会根据你的输入记录自动进行提示，</span><br><span class="line"> 	属性值on或者off</span><br><span class="line"> - label的control属性：用于在Javascript脚本中访问该<span class="tag">&lt;<span class="name">label</span>&gt;</span>元素所关联的表单元素，例：</span><br><span class="line">		 <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;pro.action&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">autocomplete</span>=<span class="string">&quot;on&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">label</span> <span class="attr">id</span>=<span class="string">&quot;nameLB&quot;</span>&gt;</span>姓名：</span><br><span class="line">				<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name2&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span>/&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;重设&quot;</span> </span></span><br><span class="line"><span class="tag">					<span class="attr">onclick</span>=<span class="string">&quot;document.getElementById(&#x27;nameLB&#x27;).control.value=&#x27;crazy&#x27;;&quot;</span>/&gt;</span></span><br><span class="line">		 <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"> - labels：自行百度</span><br><span class="line"> - 文本框的selectionDirection属性</span><br><span class="line">		&gt; 正向选取文字时，selectionDirection属性返回forward</span><br><span class="line">		&gt; 反向选取文字时，selectionDirection属性返回backward</span><br><span class="line">		&gt; 没有选取时，返回上一次的值</span><br><span class="line">		&gt; 从未选取时，返回forward</span><br><span class="line">   例：<span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;pro.action&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">autocomplete</span>=<span class="string">&quot;on&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">label</span> <span class="attr">id</span>=<span class="string">&quot;nameLb&quot;</span>&gt;</span>姓名：</span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name3&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;获取&quot;</span> </span></span><br><span class="line"><span class="tag">			<span class="attr">onclick</span>=<span class="string">&quot;alert(document.getElementById(&#x27;nameLb&#x27;).control.selectionDirection);&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"> - 复选框的indeterminate属性：true和false两个属性值，在JS中判断一个复选框的checked属性之前，</span><br><span class="line"> 	需要先判断indeterminate属性是否为false，只有indeterminate属性为false是判断checked状态才有效</span><br><span class="line"> 	例：<span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;pro.action&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">autocomplete</span>=<span class="string">&quot;on&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">label</span> <span class="attr">id</span>=<span class="string">&quot;colorLb&quot;</span>&gt;</span>红色：</span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;color&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;设置&quot;</span></span></span><br><span class="line"><span class="tag">		<span class="attr">onclick</span>=<span class="string">&quot;document.getElementById(&#x27;colorLb&#x27;).control.indeterminate=true;&quot;</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;获取&quot;</span></span></span><br><span class="line"><span class="tag">		<span class="attr">onclick</span>=<span class="string">&quot;alert(document.getElementById(&#x27;colorLb&#x27;).control.indeterminate);&quot;</span>/&gt;</span></span><br><span class="line">	   <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"> - 功能丰富的input元素</span><br><span class="line"> 	例：<span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;do&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">			请选择你喜欢的颜色：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;color&quot;</span> <span class="attr">type</span>=<span class="string">&quot;color&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请输入您的出生日期：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;date &quot;</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			出生日期精确到秒：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;time&quot;</span> <span class="attr">type</span>=<span class="string">&quot;time&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请确认出生日期：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;datetime-local&quot;</span> <span class="attr">type</span>=<span class="string">&quot;datetime-local&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请选择这是几月：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;month&quot;</span> <span class="attr">type</span>=<span class="string">&quot;month&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请选择这是第几周：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;week&quot;</span> <span class="attr">type</span>=<span class="string">&quot;week&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请输入你的email：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">multiple</span> /&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请输入您的电话：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;tel&quot;</span> <span class="attr">type</span>=<span class="string">&quot;tel&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请输入您的URL：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">type</span>=<span class="string">&quot;url&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			请输入您的幸运数字：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;number&quot;</span> <span class="attr">type</span>=<span class="string">&quot;number&quot;</span> <span class="attr">min</span>=<span class="string">&quot;0&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span> <span class="attr">step</span>=<span class="string">&quot;5&quot;</span> /&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			这是一个拖动条：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;range&quot;</span> <span class="attr">type</span>=<span class="string">&quot;range&quot;</span> <span class="attr">min</span>=<span class="string">&quot;0&quot;</span> <span class="attr">max</span>=<span class="string">&quot;100&quot;</span> <span class="attr">step</span>=<span class="string">&quot;5&quot;</span> /&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			这是一个搜索框：<span class="tag">&lt;<span class="name">br</span>/&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;search&quot;</span> <span class="attr">type</span>=<span class="string">&quot;search&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">label</span>&gt;</span>用户名:<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">autofocus</span>  /&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;username&quot;</span>&gt;</span>密码:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span>  <span class="attr">id</span>=<span class="string">&quot;username&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">formaction</span>=<span class="string">&quot;苑飞.html&quot;</span> /&gt;</span></span><br><span class="line">	   <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"> - <span class="tag">&lt;<span class="name">output</span>&gt;</span>显示输出</span><br><span class="line"> - <span class="tag">&lt;<span class="name">meter</span>&gt;</span>计数仪表</span><br><span class="line"> - <span class="tag">&lt;<span class="name">progress</span>&gt;</span>进度条</span><br><span class="line"> - 校验属性，自行百度</span><br><span class="line"> - <span class="tag">&lt;<span class="name">audio</span>&gt;</span>音频</span><br><span class="line"> - <span class="tag">&lt;<span class="name">video</span>&gt;</span>视频</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
         <category>HTML</category>
         <category>前端</category>
@@ -848,5 +850,1185 @@
 <h3 id="2018-8-8"><a href="#2018-8-8" class="headerlink" title="2018.8.8"></a>2018.8.8</h3><p>回忆这东西若是有气味的话，那就是樟脑的香，甜而稳妥，像记得分明的快乐，甜而惆怅，像忘却了的忧愁。</p>
 <h3 id="2021-6-22"><a href="#2021-6-22" class="headerlink" title="2021.6.22"></a>2021.6.22</h3><p>半夜睡不着突然想聊聊高考志愿选择专业的话题。<br>根据今年风气啊大环境啊发现很多人都想选择计算机专业的方向。原因也很简单，无非就是工资高好找工作之类的。在这里我给出一点我自己的看法吧。如果你真的想选择计算机专业，那你一定要有自驱动能力。如果你只把目光放在学校里学的就以为可以很厉害或者说一想到未来要码代码就会很头疼那我觉得与其这样不如趁早就放弃。中国本身就不缺码农，更何况你也不一定优秀。计算机行业更新速度快，更迭速度也快，不能自驱动不能自学的很快也就会被淘汰吧(个人看法)。综上，如果是兴趣那自然也欢迎，如果只是单纯的觉得好就业薪资高就想入坑那我还是劝你早点跑路。本身就内卷，进来你就会发现更卷，梦还是少做点，认清现实最重要。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Javascript笔记</title>
+    <url>/2021/07/01/Javascript%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="Javascript笔记"><a href="#Javascript笔记" class="headerlink" title="Javascript笔记"></a>Javascript笔记</h2><hr>
+<h3 id="Javascript简介"><a href="#Javascript简介" class="headerlink" title="Javascript简介"></a>Javascript简介</h3><ul>
+<li><p>Javascript是世界上最流行的脚本语言，因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。</p>
+</li>
+<li><p>简单地说，JavaScript是一种运行在浏览器中的解释型的编程语言。</p>
+</li>
+</ul>
+<p><strong>JavaScript快速入门</strong></p>
+<p>有一位先哲说的好啊，学习一门语言先看文档，看文档前先看快速入门。</p>
+<p><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023020895584256">快速入门</a></p>
+<hr>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><h4 id="1-语法规则"><a href="#1-语法规则" class="headerlink" title="1. 语法规则"></a>1. 语法规则</h4><p>​    首先来介绍一下Javascript的语法规则。</p>
+<ul>
+<li>Js语法和Java类似，每个句子以<code>;</code>结尾，语句块用<code>&#123;···code···&#125;</code>。（但是，JavaScript并不强制要求在每个语句的结尾加<code>;</code>，浏览器中负责执行JavaScript代码的引擎会自动在每个语句的结尾补上<code>;</code>）</li>
+<li>Js语法的注释为<code>//</code>，<code>/* … */</code></li>
+</ul>
+<h4 id="2-基本数据类型"><a href="#2-基本数据类型" class="headerlink" title="2. 基本数据类型"></a>2. 基本数据类型</h4><ol>
+<li><p>Number</p>
+<p>JavaScript不区分整数和浮点数，统一用Number表示，以下都是合法的Number类型。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">100</span>; <span class="comment">//整形</span></span><br><span class="line"><span class="number">2.71828</span>; <span class="comment">//浮点型</span></span><br><span class="line">-<span class="number">100</span>; <span class="comment">//负数</span></span><br><span class="line"><span class="number">1.23e3</span>; <span class="comment">//科学计数法</span></span><br><span class="line"><span class="literal">NaN</span>; <span class="comment">//Not a Number。无法计算时使用NaN表示。</span></span><br><span class="line"><span class="literal">Infinity</span>; <span class="comment">//无限大。当数值超过了Js的Number所能表达的最大值时，则表示为Infinity</span></span><br></pre></td></tr></table></figure>
+
+<p>四则运算和Python相似。即(<code>+</code>，<code>-</code>，<code>**</code>，<code>/</code>，<code>%</code>)但是在这里提一下整除。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">parseInt</span>(a / b); <span class="comment">//丢弃小数部分,保留整数部分</span></span><br><span class="line"><span class="built_in">Math</span>.ceil(a / b); <span class="comment">//向上整除 4/3=2</span></span><br><span class="line"><span class="built_in">Math</span>.floor(a / b); <span class="comment">//向下整除 4/3=1</span></span><br><span class="line"><span class="built_in">Math</span>.round(a / b); <span class="comment">//四舍五入</span></span><br></pre></td></tr></table></figure></li>
+<li><p>字符串</p>
+<p>JavaScript的字符串就是用<code>&#39;&#39;</code>或<code>&quot;&quot;</code>括起来的字符表示。</p>
+<p>但是这里有许多的特例。如果<code>&#39;</code>本身也是一个字符，那就可以用<code>&quot;&quot;</code>括起来。如果字符串内部既包含<code>&#39;</code>又包含<code>&quot;</code>，可以用转义字符<code>\</code>来标识。</p>
+<p>exp: <code>&#39;I\&#39;m \&quot;OK\&quot;!&#39;;</code></p>
+<p>然后需要了解转义字符<code>\n</code>, <code>\t</code>, <code>\\</code>。</p>
+<p>ASCII字符可以以<code>\x##</code>形式的十六进制表示，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;\x41&#x27;</span>; <span class="comment">// 完全等同于 &#x27;A&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>还可以用<code>\u####</code>表示一个Unicode字符：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;\u4e2d\u6587&#x27;</span>; <span class="comment">// 完全等同于 &#x27;中文&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>由于多行字符串用<code>\n</code>写起来比较费事，所以<strong>ES6</strong>标准新增了一种多行字符串的表示方法，用反引号<code>`...`</code>表示。</p>
+<p>下面介绍一下字符串的操作</p>
+<p>字符串支持拼接。<code>string_A + string_B</code></p>
+<p>字符串支持模板字符串。(<strong>ES6支持</strong>)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&#x27;小明&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> age = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> message = <span class="string">`你好, <span class="subst">$&#123;name&#125;</span>, 你今年<span class="subst">$&#123;age&#125;</span>岁了!`</span>; <span class="comment">//使用$引用变量（需要使用反引号进行引用）</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">s.length; <span class="comment">//返回字符串长度</span></span><br><span class="line">s[<span class="number">0</span>]; <span class="comment">//H</span></span><br><span class="line">s[<span class="number">11</span>]; <span class="comment">//！</span></span><br><span class="line">s[<span class="number">12</span>]; <span class="comment">//undefined</span></span><br><span class="line">s.toUpperCase(); <span class="comment">//转大写</span></span><br><span class="line">s.toLowCase(); <span class="comment">//转小写</span></span><br><span class="line">s.indexOf(<span class="string">&quot;world&quot;</span>); <span class="comment">//6</span></span><br><span class="line">s.indexOf(<span class="string">&quot;World&quot;</span>); <span class="comment">//-1</span></span><br><span class="line">s.substring(<span class="number">0</span>, <span class="number">5</span>); <span class="comment">//从索引0~5（不包含5）hello</span></span><br><span class="line">s.substring(<span class="number">7</span>); <span class="comment">//索引7到最后 world！</span></span><br></pre></td></tr></table></figure></li>
+<li><p>布尔值</p>
+<p>布尔值的解释比较简单，和一般编程语言都是类似的。这里说一下几个符号</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&amp;&amp; <span class="comment">// and</span></span><br><span class="line">|| <span class="comment">// or</span></span><br><span class="line">! <span class="comment">// not</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来就是比较重要的比较运算符了。</p>
+<p>当我们对数据类型进行比较的时候（<strong>任意数据类型</strong>），我们会得到一个布尔值。例如</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">2</span>&gt;<span class="number">5</span>; <span class="comment">//false</span></span><br><span class="line"><span class="number">2</span>&lt;<span class="number">5</span>; <span class="comment">//true</span></span><br><span class="line"><span class="number">1</span>==<span class="number">1</span>; <span class="comment">//true</span></span><br><span class="line"><span class="comment">// 特别的</span></span><br><span class="line"><span class="literal">false</span> == <span class="number">0</span>; <span class="comment">//true</span></span><br><span class="line"><span class="literal">false</span> === <span class="number">0</span>; <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<p>不难看出，出现了<strong>特例1</strong><code>==</code>和<code>===</code>。</p>
+<p><code>==</code>比较时，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果</p>
+<p><code>===</code>比较时，它不会自动转换数据类型，如果数据类型不一致，返回<code>false</code>，如果一致，再比较。</p>
+<p><em><strong>因此，绝大部分时间请使用<code>===</code>进行比较</strong></em></p>
+<p><strong>特例2</strong>：<code>NaN</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="literal">NaN</span> === <span class="literal">NaN</span>; <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<p>因此，唯一可以判断<code>NaN</code>的方法是通过<code>isNaN()</code>函数。</p>
+<p><strong>特例3</strong>：浮点数比较</p>
+<p>请看代码</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>/<span class="number">3</span> === (<span class="number">1</span> - <span class="number">2</span>/<span class="number">3</span>); <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<p>这个特性和C语言一样。因为计算机无法精确表示无限循环小数。</p>
+<p>要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">1</span>/<span class="number">3</span> - (<span class="number">1</span> - <span class="number">2</span>/<span class="number">3</span>)) &lt; <span class="number">0.00000001</span>; <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>特例4</strong>：null和undefined</p>
+<p><code>null</code>很好理解。和其他编程语言类似，<code>null</code>就是一个空值。就是<code>Java</code>里的<code>null</code>，<code>python</code>里的<code>None</code>。</p>
+<p><code>undefined</code>也很好理解，就是未定义的意思。但是使用起来有些讲究。因为它表示的是值未定义。一般情况下，仅仅在判断函数参数是否传递的情况下有用。其余时刻都用<code>null</code>。</p>
+</li>
+<li><p>数组</p>
+<p>数组是一组按顺序排列的集合，集合的每个值称为元素。JavaScript的数组可以包括任意数据类型。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3.14</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="literal">null</span>, <span class="literal">true</span>];</span><br></pre></td></tr></table></figure>
+
+<p>介绍两种创建数组的方法。</p>
+<p>方法一：<code>new Array();</code></p>
+<p>方法二：<code>var arr = [];</code></p>
+<p>当然对于我来说，我更喜欢第二种方式。因为可读性更高，别人一看到<code>[..., ...]</code>就知道是数组。</p>
+<p>基本用法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">//定义数组arr</span></span><br><span class="line">arr.length; <span class="comment">//arr的长度</span></span><br><span class="line"></span><br><span class="line">arr.indexOf(<span class="number">1</span>); <span class="comment">// 0</span></span><br><span class="line">arr.indexOf(<span class="number">4</span>); <span class="comment">// -1</span></span><br><span class="line"></span><br><span class="line">arr.slice(<span class="number">0</span>, <span class="number">2</span>); <span class="comment">// [1, 2]</span></span><br><span class="line">arr.slice(<span class="number">2</span>); <span class="comment">// [3]</span></span><br><span class="line"><span class="comment">// slice可以不带参数，见特例3</span></span><br><span class="line"></span><br><span class="line">arr.push(<span class="number">1</span>); <span class="comment">// arr -&gt; [1, 2, 3, 1]</span></span><br><span class="line">arr.push(<span class="string">&#x27;1&#x27;</span>); <span class="comment">// arr -&gt; [1, 2, 3, &#x27;1&#x27;]</span></span><br><span class="line">arr.push([<span class="string">&#x27;1&#x27;</span>]); <span class="comment">// arr -&gt; [1, 2, 3, [&#x27;1&#x27;]]</span></span><br><span class="line">arr.pop(); <span class="comment">// arr -&gt; [1, 2]</span></span><br><span class="line"><span class="comment">// push/pop向数组尾部添加/删除一个元素</span></span><br><span class="line"></span><br><span class="line">arr.unshift(<span class="number">0</span>); <span class="comment">// arr -&gt; [0, 1, 2, 3]</span></span><br><span class="line">arr.shift(); <span class="comment">// arr -&gt; [2, 3]</span></span><br><span class="line"><span class="comment">// unshift/shift向数组头部添加/删除一个元素</span></span><br><span class="line"></span><br><span class="line">arr.sort(); <span class="comment">// arr会排序。(Array的排列顺序是根据Ascii码大小进行的排序)</span></span><br><span class="line"></span><br><span class="line">arr.reverse(); <span class="comment">// arr -&gt; [3, 2, 1]</span></span><br><span class="line"></span><br><span class="line">arr.splice(<span class="number">0</span>, <span class="number">2</span>); <span class="comment">// arr -&gt; [3], return [1, 2]</span></span><br><span class="line">arr.splice(<span class="number">0</span>, <span class="number">2</span>, <span class="string">&quot;1&quot;</span>, <span class="string">&quot;2&quot;</span>); <span class="comment">// arr -&gt; [&#x27;1&#x27;, &#x27;2&#x27;, 3], return [1, 2]</span></span><br><span class="line"><span class="comment">// splice()方法是修改Array的“金钥匙”。其中(起始位置, 个数, [替换元素])</span></span><br><span class="line"><span class="comment">// splice()的返回值是删掉的元素, 改变的是arr。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> new_arr;</span><br><span class="line">new_arr = arr.concat([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]); <span class="comment">// new_arr = [1,2,3,4,5,6]</span></span><br><span class="line">new_arr = arr.concaat(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>); <span class="comment">// new_arr = [1,2,3,4,5,6]</span></span><br><span class="line">new_arr = arr.concat(<span class="number">4</span>, [<span class="number">5</span>, <span class="number">6</span>]); <span class="comment">// new_arr = [1,2,3,4,5,6]</span></span><br><span class="line"><span class="comment">// 需要注意的是，arr本身的值没有变，还是[1,2,3]</span></span><br><span class="line"><span class="comment">// 由例子来看，concat()方法本身可以自动拆分</span></span><br><span class="line"></span><br><span class="line">arr.join(<span class="string">&#x27;-&#x27;</span>); <span class="comment">// 1-2-3</span></span><br><span class="line"><span class="comment">// 如果arr的元素不是字符串形式，则自动转换为字符串形式。</span></span><br><span class="line"></span><br><span class="line">多维数组形同Java，不再赘述。</span><br><span class="line"></span><br><span class="line"><span class="comment">//特例1</span></span><br><span class="line">arr.length = <span class="number">6</span>; <span class="comment">// arr -&gt; [1,2,3,undefined,undefined,undefined]</span></span><br><span class="line">arr.length = <span class="number">2</span>; <span class="comment">// arr -&gt; [1,2]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//特例2</span></span><br><span class="line">arr[<span class="number">4</span>] = <span class="number">5</span>; <span class="comment">// arr -&gt; [1, 2, 3, undefined, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//特例3</span></span><br><span class="line"><span class="keyword">var</span> copy = arr.slice(); <span class="comment">// copy = [1, 2, 3]</span></span><br><span class="line">copy === arr; <span class="comment">// false</span></span><br><span class="line"><span class="comment">// 由此我们可以复制一个arr。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//特例4</span></span><br><span class="line"><span class="keyword">var</span> arr = [];</span><br><span class="line">arr.pop(); <span class="comment">// 空数组继续pop不会报错，而是返回undefined</span></span><br><span class="line">arr; <span class="comment">// []</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//特例5</span></span><br><span class="line"><span class="keyword">var</span> arr = [];</span><br><span class="line">arr.shift(); <span class="comment">// 空数组继续shift不会报错，而是返回undefined</span></span><br><span class="line">arr; <span class="comment">// []</span></span><br></pre></td></tr></table></figure></li>
+<li><p>对象</p>
+<p>JavaScript的对象是一组由键-值组成的无序集合，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    name: <span class="string">&#x27;Bob&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    tags: [<span class="string">&#x27;js&#x27;</span>, <span class="string">&#x27;web&#x27;</span>, <span class="string">&#x27;mobile&#x27;</span>],</span><br><span class="line">    city: <span class="string">&#x27;Beijing&#x27;</span>,</span><br><span class="line">    hasCar: <span class="literal">true</span>,</span><br><span class="line">    zipcode: <span class="literal">null</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>JavaScript对象的键都是字符串类型，值可以是任意数据类型。上述<code>person</code>对象一共定义了6个键值对，其中每个键又称为对象的属性，例如，<code>person</code>的<code>name</code>属性为<code>&#39;Bob&#39;</code>，<code>zipcode</code>属性为<code>null</code>。</p>
+<p>要获取一个对象的属性，我们用<code>对象变量.属性名</code>的方式：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">person.name; <span class="comment">// &#x27;Bob&#x27;</span></span><br><span class="line">person.zipcode; <span class="comment">// null</span></span><br></pre></td></tr></table></figure>
+
+<p>访问属性是通过<code>.</code>操作符完成的，但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用<code>&#39;&#39;</code>括起来：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaohong = &#123;</span><br><span class="line">    name: <span class="string">&#x27;小红&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;middle-school&#x27;</span>: <span class="string">&#x27;No.1 Middle School&#x27;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>xiaohong</code>的属性名<code>middle-school</code>不是一个有效的变量，就需要用<code>&#39;&#39;</code>括起来。访问这个属性也无法使用<code>.</code>操作符，必须用<code>[&#39;xxx&#39;]</code>来访问：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">xiaohong[<span class="string">&#x27;middle-school&#x27;</span>]; <span class="comment">// &#x27;No.1 Middle School&#x27;</span></span><br><span class="line">xiaohong[<span class="string">&#x27;name&#x27;</span>]; <span class="comment">// &#x27;小红&#x27;</span></span><br><span class="line">xiaohong.name; <span class="comment">// &#x27;小红&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>实际上JavaScript对象的所有属性都是字符串，不过属性对应的值可以是任意数据类型。</p>
+<p>如果访问一个不存在的属性会返回什么呢？JavaScript规定，访问不存在的属性不报错，而是返回<code>undefined</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">	name:<span class="string">&#x27;xiaoming&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line">xiaoming.age; <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">    name: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line">xiaoming.age; <span class="comment">// undefined</span></span><br><span class="line">xiaoming.age = <span class="number">18</span>; <span class="comment">// 新增一个age属性</span></span><br><span class="line">xiaoming.age; <span class="comment">// 18</span></span><br><span class="line"><span class="keyword">delete</span> xiaoming.age; <span class="comment">// 删除age属性</span></span><br><span class="line">xiaoming.age; <span class="comment">// undefined</span></span><br><span class="line"><span class="keyword">delete</span> xiaoming[<span class="string">&#x27;name&#x27;</span>]; <span class="comment">// 删除name属性</span></span><br><span class="line">xiaoming.name; <span class="comment">// undefined</span></span><br><span class="line"><span class="keyword">delete</span> xiaoming.school; <span class="comment">// 删除一个不存在的school属性也不会报错</span></span><br></pre></td></tr></table></figure>
+
+<p>如果我们要检测<code>xiaoming</code>是否拥有某一属性，可以用<code>in</code>操作符：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">    name: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">    birth: <span class="number">1990</span>,</span><br><span class="line">    school: <span class="string">&#x27;No.1 Middle School&#x27;</span>,</span><br><span class="line">    height: <span class="number">1.70</span>,</span><br><span class="line">    weight: <span class="number">65</span>,</span><br><span class="line">    score: <span class="literal">null</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="string">&#x27;name&#x27;</span> <span class="keyword">in</span> xiaoming; <span class="comment">// true</span></span><br><span class="line"><span class="string">&#x27;grade&#x27;</span> <span class="keyword">in</span> xiaoming; <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<p>不过要小心，如果<code>in</code>判断一个属性存在，这个属性不一定是<code>xiaoming</code>的，它可能是<code>xiaoming</code>继承得到的：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;toString&#x27;</span> <span class="keyword">in</span> xiaoming; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>因为<code>toString</code>定义在<code>object</code>对象中，而所有对象最终都会在原型链上指向<code>object</code>，所以<code>xiaoming</code>也拥有<code>toString</code>属性。</p>
+<p>要判断一个属性是否是<code>xiaoming</code>自身拥有的，而不是继承得到的，可以用<code>hasOwnProperty()</code>方法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">    name: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line">xiaoming.hasOwnProperty(<span class="string">&#x27;name&#x27;</span>); <span class="comment">// true</span></span><br><span class="line">xiaoming.hasOwnProperty(<span class="string">&#x27;toString&#x27;</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="3-变量"><a href="#3-变量" class="headerlink" title="3. 变量"></a>3. 变量</h4><p>​    定义规则：变量名是大小写英文、数字、<code>$</code>和<code>_</code>的组合，且不能用数字开头。变量名也不能是JavaScript的关键字，如<code>if</code>、<code>while</code>等。</p>
+<p>​    申明一个变量用<code>var</code>语句，比如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a; <span class="comment">// 申明了变量a，此时a的值为undefined</span></span><br><span class="line"><span class="keyword">var</span> $b = <span class="number">1</span>; <span class="comment">// 申明了变量$b，同时给$b赋值，此时$b的值为1</span></span><br><span class="line"><span class="keyword">var</span> s_007 = <span class="string">&#x27;007&#x27;</span>; <span class="comment">// s_007是一个字符串</span></span><br><span class="line"><span class="keyword">var</span> Answer = <span class="literal">true</span>; <span class="comment">// Answer是一个布尔值true</span></span><br><span class="line"><span class="keyword">var</span> t = <span class="literal">null</span>; <span class="comment">// t的值是null</span></span><br></pre></td></tr></table></figure>
+
+<p>剩下的赋值问题都是基础知识，不赘述了。</p>
+<h4 id="4-strict模式"><a href="#4-strict模式" class="headerlink" title="4. strict模式"></a>4. strict模式</h4><p>​    这里只是提一嘴。(并不是重点)</p>
+<p>​    JavaScript在设计之初，为了方便初学者学习，并不强制要求用<code>var</code>申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过<code>var</code>申明就被使用，那么该变量就自动被申明为全局变量：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">i = <span class="number">10</span>; <span class="comment">// i现在是全局变量</span></span><br></pre></td></tr></table></figure>
+
+<p>​    在同一个页面的不同的JavaScript文件中，如果都不用<code>var</code>申明，恰好都使用了变量<code>i</code>，将造成变量<code>i</code>互相影响，产生难以调试的错误结果。</p>
+<p>​    使用<code>var</code>申明的变量则不是全局变量，它的范围被限制在该变量被申明的函数体内，同名变量在不同的函数体内互不冲突。</p>
+<p>​    为了修补JavaScript这一严重设计缺陷，ECMA在后续规范中推出了strict模式，在strict模式下运行的JavaScript代码，强制通过<code>var</code>申明变量，未使用<code>var</code>申明变量就使用的，将导致运行错误。</p>
+<p>​    启用strict模式的方法是在JavaScript代码的第一行写上：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-条件判断"><a href="#5-条件判断" class="headerlink" title="5. 条件判断"></a>5. 条件判断</h4><p>​    条件判断部分，Javascript使用的结构和C和Java一样。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (xxxx)&#123;</span><br><span class="line">	xxx;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (xxxx)&#123;</span><br><span class="line">	xxx;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">	xxx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>嵌套和其他语言一样，不再赘述。</p>
+<p>JavaScript把<code>null</code>、<code>undefined</code>、<code>0</code>、<code>NaN</code>和空字符串<code>&#39;&#39;</code>视为<code>false</code>，其他值一概视为<code>true</code>，因此上述代码条件判断的结果是<code>true</code>。</p>
+<h4 id="6-循环"><a href="#6-循环" class="headerlink" title="6. 循环"></a>6. 循环</h4><p>​    Javascript有三种循环方式<code>for</code>，<code>while</code>，<code>do ... while</code>。</p>
+<p>​    和C/C++很类似，但也有特殊点。</p>
+<ol>
+<li><p>for循环</p>
+ <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">0</span>;</span><br><span class="line">vaar i;</span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)&#123;</span><br><span class="line">	x = x + i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// for ... in ...用法</span></span><br><span class="line"><span class="comment">// 1.</span></span><br><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    name: <span class="string">&#x27;Jack&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    city: <span class="string">&#x27;Beijing&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> o) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(key); <span class="comment">// &#x27;name&#x27;, &#x27;age&#x27;, &#x27;city&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 过滤掉对象的继承属性</span></span><br><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    name: <span class="string">&#x27;Jack&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    city: <span class="string">&#x27;Beijing&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> o) &#123;</span><br><span class="line">    <span class="keyword">if</span> (o.hasOwnProperty(key)) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(key); <span class="comment">// &#x27;name&#x27;, &#x27;age&#x27;, &#x27;city&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. Array对象 -&gt; 类似python</span></span><br><span class="line"><span class="keyword">var</span> a = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> a) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i); <span class="comment">// &#x27;0&#x27;, &#x27;1&#x27;, &#x27;2&#x27;</span></span><br><span class="line">    <span class="built_in">console</span>.log(a[i]); <span class="comment">// &#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<pre><code>2. while循环
+
+while循环不需要这么麻烦。只需要括号里的条件为`false`，则退出循环。
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+3. do...while循环
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> n = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    n = n + <span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">while</span> (n &lt; <span class="number">100</span>);</span><br><span class="line"><span class="comment">// n -&gt; 100</span></span><br></pre></td></tr></table></figure>
+
+需要注意的是，do ... while至少执行一次。
+</code></pre>
+<h4 id="7-Map-amp-Set-ES6"><a href="#7-Map-amp-Set-ES6" class="headerlink" title="7. Map &amp; Set (ES6)"></a>7. Map &amp; Set (ES6)</h4><p>​    <strong>1. Map</strong></p>
+<p>​    <code>Map</code>是一组键值对的结构，具有极快的查找速度。</p>
+<p>​    访问<code>Map</code>的方法也很简单，通过访问键得到值。</p>
+<p>​    初始化<code>Map</code>需要一个二维数组，或者直接初始化一个空<code>Map</code>。<code>Map</code>具有以下方法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>(); <span class="comment">// 空Map</span></span><br><span class="line">m.set(<span class="string">&#x27;Adam&#x27;</span>, <span class="number">67</span>); <span class="comment">// 添加新的key-value</span></span><br><span class="line">m.set(<span class="string">&#x27;Bob&#x27;</span>, <span class="number">59</span>);</span><br><span class="line">m.has(<span class="string">&#x27;Adam&#x27;</span>); <span class="comment">// 是否存在key &#x27;Adam&#x27;: true</span></span><br><span class="line">m.get(<span class="string">&#x27;Adam&#x27;</span>); <span class="comment">// 67</span></span><br><span class="line">m.delete(<span class="string">&#x27;Adam&#x27;</span>); <span class="comment">// 删除key &#x27;Adam&#x27;</span></span><br><span class="line">m.get(<span class="string">&#x27;Adam&#x27;</span>); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<p>​    由于一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值冲掉：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line">m.set(<span class="string">&#x27;Adam&#x27;</span>, <span class="number">67</span>);</span><br><span class="line">m.set(<span class="string">&#x27;Adam&#x27;</span>, <span class="number">88</span>);</span><br><span class="line">m.get(<span class="string">&#x27;Adam&#x27;</span>); <span class="comment">// 88</span></span><br></pre></td></tr></table></figure>
+
+<p>​    相比起之前说到的对象，对象最大的劣势在于，键值对的键只能使用字符串，而Map的键不受影响。</p>
+<p>​    <strong>2. Set</strong></p>
+<p>​    <code>Set</code>和<code>Map</code>类似，也是一组key的集合，但不存储value。由于key不能重复。所以，在<code>Set</code>中，没有重复的key。</p>
+<p>​    要创建一个<code>Set</code>，需要提供一个<code>Array</code>作为输入，或者直接创建一个空<code>Set</code>：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> <span class="built_in">Set</span>(); <span class="comment">// 空Set</span></span><br><span class="line"><span class="keyword">var</span> s2 = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// 含1, 2, 3</span></span><br></pre></td></tr></table></figure>
+
+<p>​    重复元素在<code>Set</code>中自动被过滤：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="string">&#x27;3&#x27;</span>]);</span><br><span class="line">s; <span class="comment">// Set &#123;1, 2, 3, &quot;3&quot;&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>​    通过<code>add(key)</code>方法可以添加元素到<code>Set</code>中，可以重复添加，但不会有效果：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s.add(<span class="number">4</span>);</span><br><span class="line">s; <span class="comment">// Set &#123;1, 2, 3, 4&#125;</span></span><br><span class="line">s.add(<span class="number">4</span>);</span><br><span class="line">s; <span class="comment">// 仍然是 Set &#123;1, 2, 3, 4&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>通过<code>delete(key)</code>方法可以删除元素：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br><span class="line">s; <span class="comment">// Set &#123;1, 2, 3&#125;</span></span><br><span class="line">s.delete(<span class="number">3</span>);</span><br><span class="line">s; <span class="comment">// Set &#123;1, 2&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="8-Iterable-ES6"><a href="#8-Iterable-ES6" class="headerlink" title="8. Iterable(ES6)"></a>8. Iterable(ES6)</h4><p>​    遍历<code>Array</code>可以采用下标循环，遍历<code>Map</code>和<code>Set</code>就无法使用下标。为了统一集合类型，ES6标准引入了新的<code>iterable</code>类型，<code>Array</code>、<code>Map</code>和<code>Set</code>都属于<code>iterable</code>类型。</p>
+<p>​    具有<code>iterable</code>类型的集合可以通过新的<code>for ... of</code>循环来遍历。</p>
+<p>​    使用<code>for ... of</code>循环遍历集合，用法如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>];</span><br><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]);</span><br><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>([[<span class="number">1</span>, <span class="string">&#x27;x&#x27;</span>], [<span class="number">2</span>, <span class="string">&#x27;y&#x27;</span>], [<span class="number">3</span>, <span class="string">&#x27;z&#x27;</span>]]);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x <span class="keyword">of</span> a) &#123; <span class="comment">// 遍历Array</span></span><br><span class="line">    <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x <span class="keyword">of</span> s) &#123; <span class="comment">// 遍历Set</span></span><br><span class="line">    <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x <span class="keyword">of</span> m) &#123; <span class="comment">// 遍历Map</span></span><br><span class="line">    <span class="built_in">console</span>.log(x[<span class="number">0</span>] + <span class="string">&#x27;=&#x27;</span> + x[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    此时我们抛出一个疑问，这么看来，for…in 和 for…of没有什么区别啊。</p>
+<p>​    这个问题需要举个例子来说明</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>];</span><br><span class="line">a.name = <span class="string">&#x27;Hello&#x27;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x <span class="keyword">in</span> a) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(x); <span class="comment">// &#x27;0&#x27;, &#x27;1&#x27;, &#x27;2&#x27;, &#x27;name&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// for ... in</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>];</span><br><span class="line">a.name = <span class="string">&#x27;Hello&#x27;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x <span class="keyword">of</span> a) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(x); <span class="comment">// &#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// for ... of</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// for ... in 遍历的实际上是对象的属性名称。一个Array数组实际上也是一个对象，它的每个元素的索引被视为一个属性。for ... in循环将把name包括在内，但Array的length属性却不包括在内。</span></span><br><span class="line"><span class="comment">// for ... of循环则完全修复了这些问题，它只循环集合本身的元素：</span></span><br></pre></td></tr></table></figure>
+
+<p>然后我们要提一下<code>iterable</code>内置的<code>forEach</code>方法，它接收一个函数，每次迭代就自动回调该函数。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>];</span><br><span class="line">a.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">element, index, array</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// element: 指向当前元素的值</span></span><br><span class="line">    <span class="comment">// index: 指向当前索引</span></span><br><span class="line">    <span class="comment">// array: 指向Array对象本身</span></span><br><span class="line">    <span class="built_in">console</span>.log(element);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// Array</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]);</span><br><span class="line">s.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">element, sameElement, set</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(element);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// Set</span></span><br><span class="line"><span class="comment">// Set与Array类似，但Set没有索引，因此回调函数的前两个参数都是元素本身</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>([[<span class="number">1</span>, <span class="string">&#x27;x&#x27;</span>], [<span class="number">2</span>, <span class="string">&#x27;y&#x27;</span>], [<span class="number">3</span>, <span class="string">&#x27;z&#x27;</span>]]);</span><br><span class="line">m.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value, key, map</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// Map</span></span><br><span class="line"><span class="comment">// Map的回调函数参数依次为value、key和map本身</span></span><br></pre></td></tr></table></figure>
+
+<p>如果对某些参数不感兴趣，由于JavaScript的函数调用不要求参数必须一致，因此可以忽略它们。例如，只需要获得<code>Array</code>的<code>element</code>：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>];</span><br><span class="line">a.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">element</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(element);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="1-函数"><a href="#1-函数" class="headerlink" title="1. 函数"></a>1. 函数</h4><ol>
+<li><p>函数定义</p>
+ <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">abs</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> -x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 第一种。如果没有return语句，函数执行完毕后也会返回结果，只是结果为undefined。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> abs = <span class="function"><span class="keyword">function</span> (<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> -x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 第二种。由于JavaScript的函数也是一个对象，上述定义的abs()函数实际上是一个函数对象，而函数名abs可以视为指向该函数的变量。</span></span><br><span class="line"><span class="comment">// 在这种方式下，function (x) &#123; ... &#125;是一个匿名函数，它没有函数名。但是，这个匿名函数赋值给了变量abs，所以，通过变量abs就可以调用该函数。</span></span><br></pre></td></tr></table></figure>
+
+<p> 上述两种定义完全等价，注意第二种方式按照完整语法需要在函数体末尾加一个;，表示赋值语句结束。</p>
+</li>
+</ol>
+<pre><code>2. 函数调用
+
+调用函数时，按顺序传入参数即可。
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">abs(<span class="number">10</span>); <span class="comment">// return 10</span></span><br><span class="line">abs(-<span class="number">9</span>); <span class="comment">// return -9</span></span><br><span class="line"><span class="comment">// 调用函数时，按照顺序传入参数即可</span></span><br><span class="line"></span><br><span class="line">abs(<span class="number">10</span>, <span class="string">&#x27;blablabla&#x27;</span>); <span class="comment">// 返回10</span></span><br><span class="line">abs(-<span class="number">9</span>, <span class="string">&#x27;haha&#x27;</span>, <span class="string">&#x27;hehe&#x27;</span>, <span class="literal">null</span>); <span class="comment">// 返回9</span></span><br><span class="line"><span class="comment">//由于 JavaScript 允许传入任意个参数而不影响调用，因此传入的参数比定义的参数多也没有问题，虽然函数内部并不需要这些参数</span></span><br><span class="line"></span><br><span class="line">abs(); <span class="comment">// NaN</span></span><br><span class="line"><span class="comment">// 传入的参数比定义的少也没有问题。此时abs(x)函数的参数x收到的是 undefined , 计算结果是 NaN 。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">abs</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> x !== <span class="string">&#x27;number&#x27;</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="string">&#x27;Not a number&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (x &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> -x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 如果想避免接收到 undefined ，我们可以对参数进行过滤，抛出异常。</span></span><br></pre></td></tr></table></figure>
+
+3. argument
+
+   
+</code></pre>
+]]></content>
+      <categories>
+        <category>Js</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面试题目知识点总结</title>
+    <url>/2021/07/28/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>计算机网络<br>    1. GET 和 POST 的请求都能使用额外的参数，但是 GET 的参数是以查询字符串出现在URL 中，而 POST 的参数存储在实体主体中。<br>    GET用于获取资源 POST用于传输数据<br>    安全性而言各有利弊(get的不安全性在于参数在url中，post的不安全性在于其可以重复提交数据)</p>
+<pre><code>2. cookie和session cookie保存在浏览器端,session保存在服务器端.
+    Cookie一般用来保存用户信息, Session的主要作用就是通过服务端记录用户的状态.
+    但是为了区分不同的客户端,服务器会生成sessionID发送并保存到cookie中.
+    下次请求时会将sessionID一并发给server,所以session依赖cookie机制
+禁用cookie? 将sessionID直接附加在URL后
+
+cookie的不安全性?
+    cookie欺骗 因为cookie是明文,只需要将这个cookie向服务器提交（模拟身份验证），身份验证通过之后，就可以冒充被窃取cookie对应用户来访问网站
+    cookie截获 截获 重放攻击
+如何解决?
+    1.设置cookie有效期不要过长，合适即可
+    2.设置HttpOnly属性为true,可以防止js脚本读取cookie信息，有效的防止XSS攻击。
+    3.设置复杂的cookie，加密cookie
+        （1）cookie的key使用uuid，随机生成；
+        （2）cookie的value可以使用复杂组合，比如：用户名+当前时间+cookie有效时间+随机数。
+        这样可以尽可能使得加密后的cookie更难解密，也是保护了cookie中的信息。
+    4.用户第一次登录时，保存ip+cookie加密后的token
+        每次请求，都去将当前cookie和ip组合起来加密后的token与保存的token作对比，只有完全对应才能验证成功。
+    5.session和cookie同时使用
+        sessionId虽然放在cookie中，但是相对的session更安全，可以将相对重要的信息存入session。
+    6.如果网站支持https，尽可能使用https
+        如果网站支持https，那么可以为cookie设置Secure属性为true，它的意思是，cookie只能使用https协议发送给服务器，而https比http更加安全。
+
+3. https ssl两个协议(ssl记录协议(为高层封装,加密) ssl握手协议(用于传输前身份认证,协商加密算法等))
+
+4. DNS 本地-&gt;根-&gt;顶级-&gt;权限 (递归 递归迭代)
+
+5. 输入url后会发生什么
+    浏览器向DNS服务器请求解析该URL中的域名所对应的IP地址
+    解析出IP地址后，根据该IP地址和默认端口80，和服务器建立TCP连接
+    浏览器发出读取文件的HTTP请求，该请求作为TCP三次握手的第三个报文的数据发送给服务端
+    服务器对浏览器请求做出相应，并把对应的html文本发送给浏览器
+    释放TCP连接(http1.0 和http1.1 长连接问题)
+    浏览器渲染该html文本并显示内容
+
+6. URI(统一资源标记符) URL(统一资源定位符)
+
+7. 三次握手,四次挥手 以及理解(服务端客户端处于什么状态？为什么连接是三次,而断开是四次? 为什么等待2MSL? tips:服务端没收到ack)
+
+8. TCP与UDP的区别
+    tcp面向连接 udp面向无连接
+    tcp提供可靠服务 udp尽最大努力交付
+    tcp点对点 udp一对一 一对多 多对一 多对多
+    tcp面向字节流 udp面向报文
+    tcp开销大 udp开销小
+
+9. tcp可靠传输如何保证?
+    给每个包编号 校验和 流量控制 拥塞控制 ARQ(自动重传请求) 超时重传 
+
+    TCP滑动窗口和流量控制
+    TCP利用滑动窗口实现流量控制
+    流量控制是为了控制发送方的发送速率,保证接收方来得及接收
+
+    拥塞控制: 慢开始 拥塞避免 快重传 快恢复
+    慢开始/拥塞避免: 有一个门限值ssthresh, 拥塞窗口cwnd=1开始,指数增大,到达门限值后,转为加法增大.发生网络拥塞时,门限值乘法减小,cwnd = 1开始继续慢开始
+    快重传: 冗余ACK. 发方连续收到三个重复的ACK时,直接重传对方尚未收到的报文段,而不必等待那个报文段设置的重传计时器超时
+    快恢复: 门限值设为cwnd的一半,cwnd设为当前的门限值,加法增大
+
+10.Http状态码有五类：
+    1** 信息性状态码，2** 成功状态码，3** 重定向，4** 客户端状态码，5** 服务端状态码
+    常见的有 200请求成功 301资源被永久转移到其他url 404请求的资源不存在 500内部服务器错误 403 Forbidden拒绝访问
+
+11. FTP: 20数据连接 21控制连接
+
+12. TCP 传输控制协议(Transmisson Control Protocol)
+    UDP 用户数据协议(User Datagram Protocol)
+    IP  网际协议(Intert Protocol)
+
+13. 互联网是由大量的异构（heterogeneous）网络通过路由器（router）相互连接起来的。互联网使用的网络层协议是无连接的网际协议（Intert Protocol）和许多路由选择协议，因此互联网的网络层也叫做网际层或IP层
+
+14. TCP粘包 应用程序写入数据小于套接字缓冲区大小，网卡将应用多次写入的数据发送到网络上，这将会发生粘包。
+            接收方法不及时读取套接字缓冲区数据，这将发生粘包
+
+    TCP拆包 应用程序写入的数据大于套接字缓冲区大小，这将会发生拆包
+            进行MSS（最大报文长度）大小的TCP分段，当TCP报文长度-TCP头部长度&gt;MSS的时候将发生拆包
+    解决方法: 
+        1. 使用带消息头的协议、消息头存储消息开始标识及消息长度信息，服务端获取消息头的时候解析出消息长度，然后向后读取该长度的内容。
+        2. 设置定长消息，服务端每次读取既定长度的内容作为一条完整消息，当消息不够长时，空位补上固定字符。
+        3. 设置消息边界，服务端从网络流中按消息编辑分离出消息内容，一般使用‘\n ’。
+        4. 更为复杂的协议，例如楼主最近接触比较多的车联网协议 808,809 协议。
+
+15. SYN = Synchronize 同步
+    ACK = Acknowledge 确认
+
+16. HTTP长连接,短链接是什么
+    短链接: 每次发起的Http操作,都会建立一个tcp连接
+    长连接: 会在响应头里添加代码Connection:keep-alive. 使用长连接的情况下,客户端与服务端的tcp连接不会关闭.客户端再次访问服务器时,会继续使用这个tcp连接.
+
+TCP长连接和短链接
+    长连接: 发送完数据后不断开连接(心跳包,维持连接)
+    短链接: 发完数据后就断开连接
+
+    长连接优点/缺点: 省去较多的tcp建立和断开操作/降低服务端性能,且需要管理所有tcp连接
+    短连接优点/缺点: 对服务端来说管理方便/但是对于客户请求频繁,在tcp连接和关闭操作上浪费时间较多
+
+17. https是否可以抓包？怎么分析包中内容呢？
+    可以
+    过程：随机数(RandomC, 非对称(RSA), 对称, Hash)
+
+18. 如何理解http协议是无状态的?
+    HTTP协议是无状态的，指的是协议对于事务处理没有记忆能力，服务器不知道客户端是什么状态。也就是说，打开一个服务器上的网页和上一次打开这个服务器上的网页之间没有任何联系。HTTP是一个无状态的面向连接的协议，无状态不代表HTTP不能保持TCP连接，更不能代表HTTP使用的是UDP协议（无连接）
+
+19. xss和csrf的区别
+    xss: 存储(提交的代码会存储在服务器端) 反射(XSS代码出现在url中，作为输入提交到服务器端，服务器端解析后响应，XSS代码随响应内容一起传回给浏览器，最后浏览器解析执行XSS代码) dom 向页面注入JS脚本
+    csrf:利用cookie 访问
+    区别: csrf需要cookie,xss不需要登录; csrf是利用网站a本身的漏洞,xss是向网站a注入js代码
+
+TCP半连接状态
+? 19. TCP通信中服务端处理客户端意外断开
+    (1) 双方拟定心跳(自己编写心跳包)
+        此时一般由客户端发送心跳包，服务端并不发送心跳包，只是定时轮询判断一下与上次的时间间隔是否超时
+        出现三种情况
+            a. 客户端由于某种网络延迟等原因很久以后才发送心跳包(此时斌没有断),这是服务器若利用自身设定的超时判断其已经断开，而后去关闭socket
+            b. 客户端很久没有传心跳，确实是自身断了，再重启前服务端已经判断出其超时，并主动close，则四次挥手成功交互
+            c. 客户端很久没传心跳，确实是自身断掉了，再重启前，服务端的轮询还未超时，再未主动close的时候该客户端已经重新连接。此时若服务端发送了FIN，则服务端处于CLOSE_WAIT；如没发FIN，则处于ESTABLISHED(问题?)
+
+    (2) 启动TCP编程里的KeepAlive机制
+        keepalive的原理就是TCP内嵌的一个心跳包
+        exp: 如果当前服务器检测到超过一定时间没有数据传输,那么就会向客户端发送一个keep-alive包,此时客户端有三种状态:
+            a. 客户端仍存在,网络良好. 返回ACK 服务端接到ACK 重置计时器
+            b. 客户端异常关闭 客户端不会响应 
+            c. 客户端曾崩溃,但已重启服务端会收到对其存活探测的响应.但是该响应是一个复位,从而引起服务器对连接的终止
+
+JWT(Json Web Token) 用于作为JSON对象在各方之间安全地传输信息
+    jwt由header、payload、signature组成
+    JWT是一种用于双方之间传递安全信息的简洁的、URL安全的表述性声明规范。JWT作为一个开放的标准（RFC 7519），定义了一种简洁的，自包含的方法用于通信双方之间以Json对象的形式安全的传递信息。因为数字签名的存在，这些信息是可信的，JWT可以使用HMAC算法或者是RSA的公私秘钥对进行签名。
+
+Http结构 请求行 请求头部 请求数据
+
+HTTPS为什么安全?加密协议?TLS
+    加密
+    非对称 对称 Hash
+
+网络编程中,三次握手发生在哪个api?
+    服务端 bind() listen() accept()
+    客户端 connect()
+    python bind,connect,listen-&gt;null
+            accep-&gt;tuple[socket,address]
+    C里应该返回的是int,因为C中null = 0
+    第一次握手：客户端向服务器端，客户端调用connect函数时
+    第二次握手：服务器端向客户端，服务器端调用accept函数时
+    第三次握手：客户端向服务器端，还是connect函数，之前connect一直阻塞着，等待回复
+
+http 1.0 1.1 2.0 3.0的特点及其区别
+    HTTP 1.0
+        短连接：每次发送请求都要重新建立tcp请求，即三次握手，非常浪费性能
+        无host头域，也就是http请求头里的host，
+        不允许断点续传，而且不能只传输对象的一部分，要求传输整个对象
+    HTTP 1.1
+        长连接，流水线，使用connection:keep-alive使用长连接，也就是一次连接可以发送多个请求，客户端通知服务器返回本次请求结果后保持连接，当然也可以设置为close，（由于长连接会给服务器造成压力）HTTP 1.1还提供了与身份认证，断点续传
+    HTTP2.0
+        头部压缩，首部压缩（Header Compression）
+        HTTP/1.1并不支持 HTTP 首部压缩，双方，各自维护一个header的索引表，使得不需要直接发送值，通过发送key缩减头部大小
+        多路复用（多路复用允许同时通过单一的 HTTP/2 连接发起多重的请求-响应消息。在 HTTP/1.1 协议中浏览器客户端在同一时间，针对同一域名下的请求有一定数量限制。超过限制数目的请求会被阻塞。这也是为何一些站点会有多个静态资源 CDN 域名的原因之一）
+        二进制分帧
+        HTTP/2在 应用层(HTTP/2)和传输层(TCP or UDP)之间增加一个二进制分帧层，在二进制分帧层中， HTTP/2 会将所有传输的信息分割为更小的消息和帧（frame）,并对它们采用二进制格式的编码
+    HTTP 3.0
+        基于google的QUIC协议，（Quick UDP Internet Connections)基于UDP的传输层协议，提供像TCP一样的可靠性，而quic协议是使用udp实现的，可以选择在应用层使用HTTP2.0实现多路传输，在物理层使用CDN解决网络拥塞和最后一公里问题
+        CDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定，CDN的关键技术主要有内容存储和分发技术减少了tcp三次握手时间，以及tls握手时间
+
+现在有一个高并发的场景，连接数为50万，此时客户端突然断电down掉了，服务端怎么快速回收socket？
+    遍历 设置一个timer
+</code></pre>
+<p>操作系统<br>    1. 分页和分段有什区别？<br>        分页对程序员是透明的，但是分段需要程序员显式划分每个段。<br>        分页的地址空间是一维地址空间，分段是二维的。<br>        页的大小不可变，段的大小可以动态改变。<br>        分页主要用于实现虚拟内存，从而获得更大的地址空间；分段主要是为了使程序和数据可以被划分为逻辑上独立的地址空间并且有助于共享和保护。</p>
+<pre><code>2. 操作系统的四大特性 并发 共享 虚拟 异步
+    常见的系统调用:
+        getpid/getppid 获取进程号/父进程
+        fork/exit 创建新进程/终止进程
+        open/creat/close/read/write 对文件的操作
+        mkdir/rmdir/rename 创建/删除文件夹/重命名
+        pipe 创建管道
+
+3. 进程和线程: (火车和车厢 资源是乘客)
+    进程是资源分配的基本单位
+    线程是cpu调度的基本单位
+    进程有一部分独立资源,一个进程崩溃不会影响其他进程
+    线程共享资源,线程崩溃也会导致进程崩溃
+
+    什么是线程: 线程是进程内部的不同的执行路径，是操作系统独立调度的基本单位。一个进程中可以有多个线程，它们共享进程资源。
+
+    线程和进程的区别:
+    拥有资源:进程是资源分配的基本单位，但是线程不拥有资源，线程可以访问隶属于进程的资源
+    调度:线程是独立调度的基本单位，在同一进程中，线程的切换不会引起进程切换，从一个进程中的线程切换到另一个进程中的线程时，会引起进程切换
+    系统开销:进程切换开销大, 线程切换开销小
+    通信方面:线程间可以通过直接读写同一进程中的数据进行通信，但是进程通信需要借助IPC
+
+    线程 进程 应用程序 区别/联系
+        应用程序通常由多个程序组成。 一个程序就是一个正在执行的进程。 一个程序就是一个进程。
+
+    父进程和子进程的关系
+        应该是树行结构 子进程继承的父进程的属性
+        关于资源：子进程得到的是除了代码段是与父进程共享的以外，其他所有的都是得到父进程的一个副本，子进程的所有资源都继承父进程，得到父进程资源的副本，既然为副本，也就是说，二者并不共享地址空间。两个是单独的进程，继承了以后二者就没有什么关联了，子进程单独运行。（采用写时复制技术）
+        关于文件描述符：继承父进程的文件描述符时，相当于调用了dup函数，父子进程共享文件表项，即共同操作同一个文件，一个进程修改了文件，另一个进程也知道此文件被修改了。
+
+为什么有了线程还要进程?
+    进程属于在CPU和系统资源等方面提供的抽象，能够有效提高CPU的利用率。
+    线程是在进程这个层次上提供的一层并发的抽象：
+        （1）能够使系统在同一时间能够做多件事情；
+        （2）当进程遇到阻塞时，例如等待输入，线程能够使不依赖输入数据的工作继续执行
+        （3）可以有效地利用多处理器和多核计算机，在没有线程之前，多核并不能让一个进程的执行速度提高
+    答案:
+    进程只能在一个时间干一件事，如果想同时干两件事或多件事，进程就无能为力了。
+    进程在执行的过程中如果阻塞，例如等待输入，整个进程就会挂起，即使进程中有些工作不依赖于输入的数据，也将无法执行。
+
+4. 通讯方式:
+    线程: 互斥锁 信号量 临界区
+    进程: 共享内存 信号量 管道 消息队列 套接字
+
+    共享内存怎么做?
+        创建共享内存
+        分配给两个进程(将这个共享内存绑定到自己的地址空间里)
+        完成通信后释放
+
+5. 进程死锁:
+    互斥: 如果一个资源在一段时间被一个进程占有,那么其他进程要申请这个资源只能等等待
+    请求与保持: 进程已经保持了至少一个资源,需要另一个资源,但是该资源被其他进程占有,此时进程被阻塞,自己占有的资源也不会被释放
+    非剥夺: 进程所获得的资源未使用完前,不能被其他进程夺走,只能自己释放
+    循环等待: 存在进程资源循环等待链
+
+    处理: 
+        预防(破坏产生条件) 避免(资源动态分配中防止进入不安全状态) 检测(确定死锁相关的资源) 解除(对死锁相关进程执行撤销或挂起,释放资源)
+
+6. 僵尸进程 孤儿进程
+    孤儿: 父进程退出 子进程还在运行,那么这些进程就会成为孤儿,被init进程收养
+    僵尸: 子进程的进程描述符在进程退出时不会被释放,只有通过父进程wait()/waitpid()获取后才释放.若没有,子进程的进程描述符仍然在系统中,成为僵尸进程
+    守护进程: 是运行在后台的一种特殊进程，它是独立于控制终端的，并周期性地执行某些任务
+
+* 7. 编译有哪些阶段？
+    预处理阶段：处理以 # 开头的预处理命令；
+    编译阶段：翻译成汇编文件；
+    汇编阶段：将汇编文件翻译成可重定位目标文件；
+    链接阶段：将可重定位目标文件和 printf.o 等单独预编译好的目标文件进行合并，得到最终的可执行目标文件。
+
+* 8. 堆与栈：
+    堆：向上生长，需要程序员申请指明大小，堆分布内存不连续
+    栈：先进后出，生中方向向下，系统自动回收分配，但有限制，数据不灵活
+
+9. 用户态和核心态：
+    用户态只能受限访问内存
+    内核态CPU可以访问所有数据
+
+    用户级线程 有关线程管理的所有工作都由应用程序完成，内核意识不到线程的存在
+    内核级线程 有关线程管理的所有工作由内核完成，应用程序没有进行线程管理的代码，只能调用内核线程的接口
+
+    计算机怎么知道是用户态还是核心态?
+        看cs段寄存器的后两位(00, 01, 10, 11) 11是用户态 00是核心态
+
+缺页中断?
+    进程线性地址空间里的页面不必常驻内存，在执行一条指令时，如果发现他要访问的页没有在内存中（即存在位为0），那么停止该指令的执行，并产生一个页不存在的异常，对应的故障处理程序可通过从外存加载该页的方法来排除故障，之后，原先引起的异常的指令就可以继续执行，而不再产生异常
+
+* 10. 进程私有：地址空间、堆、全 局变量、栈、寄存器
+    进程共享：代码段，公共数据，进程目录，进程ID
+    线程私有：线程栈，寄存器，程序寄存器
+    线程共享：堆，地址空间，全局变量，静态变量
+
+11. 什么是图灵完备
+    一切可计算的问题都能计算,这样的虚拟机或者编程语言就叫图灵完备的
+
+12. 并发和并行有什么区别
+    并发: 并发就是在一段时间内，多个任务都会被处理；但在某一时刻，只有一个任务在执行。在一段时间内能同时运行多个程序, 
+    并行: 在同一时刻，有多个任务在执行。这个需要多核处理器才能完成，在微观上就能同时执行多条指令，不同的程序被放到不同的处理器上运行，这个是物理上的多个进程同时进行。
+
+13. 分时系统和实时系统 区别:
+    分时系统: 就是系统把CPU时间分成很短的时间片，轮流地分配给多个作业
+    实时系统: 是系统对外部输入的信息，能够在规定的时间内（截止期限）处理完毕并做出反应
+
+14. 静态链接和动态链接有什么区别
+    静态链接就是在编译期间，由编译器和连接器将静态库集成到应用程序内，并制作成目标文件以及可以独立运作的可执行文件
+    动态链接可以在首次载入的时候执行，也可以在程序开始执行的时候完成。这个是由动态链接器完成
+
+15. 什么是上下文切换
+    对于单核单线程CPU而言，在某一时刻只能执行一条CPU指令。上下文切换(Context Switch)是一种将CPU资源从一个进程分配给另一个进程的机制。从用户角度看，计算机能够并行运行多个进程
+
+16. 系统调用和库函数
+    系统调用是应用程序向系统内核请求服务的方式
+    函数就是说把一些常用的函数编写完放到一个文件里，编写应用程序时调用，这是由第三方提供的，发生在用户地址空间
+
+17. 什么是管道
+    管道是半双工的，数据只能向一个方向流动；如果需要双方通信时，需要建立起两个管道。
+    管道只能用于父子进程或者兄弟进程之间或者说具有亲缘关系的进程；
+    管道对于管道两端的进程而言，就是一个文件，但它不是普通的文件，它不属于某种文件系统，只存在与内存中。
+    * 管道的实质是一个内核缓冲区，进程以先进先出的方式从缓冲区存取数据，
+
+
+    什么是消息队列
+    消息队列是消息的链表，具有特定的格式，它是存放在内存里面的，并且每个消息队列都有唯一的标识。消息队列允许一个或多个进程向它写入与读取消息
+
+    什么是共享内存
+    共享内存是针对其他通信机制运行效率较低而设计的，它可以让多个进程可以可以直接读写同一块内存空间，是最快的IPC形式。
+    为了在多个进程间交换信息，内核专门留出了一块内存区，可以由需要访问的进程将其映射到自己的私有地址空间。进程就可以直接读写这一块内存而不需要进行数据的拷贝，从而大大提高效率。
+
+    什么是信号量
+    信号量是一个计数器，可以用来控制多个进程对共享资源的访问
+
+18. 有哪些磁盘调度算法
+    先来先服务 最短寻道时间 电梯算法(scan cscan)
+
+19. 页面置换算法
+    最佳算法 先来先服务 LRU Clock
+
+    LRU: LRU是最近最少使用页面置换算法(Least Recently Used),也就是首先淘汰最长时间未被使用的页面
+    LFU: LFU是最近最不常用页面置换算法(Least Frequently Used),也就是淘汰一定时期内被访问次数最少的页
+
+20. 进程调度
+    先来先服务 短作业优先 时间片轮转调度 优先级调度
+
+21. 什么是虚拟内存
+    虚拟内存就是说，让物理内存扩充成更大的逻辑内存，从而让程序获得更多的可用内存
+
+22. 什么是分页系统
+    分页就是说，将磁盘或者硬盘分为大小固定的数据块，叫做页，然后内存也分为同样大小的块，叫做页框。当进程执行的时候，会将磁盘的页载入内存的某些页框中，并且正在执行的进程如果发生缺页中断也会发生这个过程。页和页框都是由两个部分组成的，一个是页号或者页框号，一个是偏移量。分页一般是有硬件来完成的，每个页都对应一个页框，它们的对应关系存放在一个叫做页表的数据结构中，页号作为这个页表的索引，页框号作为页表的值。操作系统负责维护这个页表
+
+23. 什么是抢占式,什么是非抢占式
+    抢占式就是说操作系统将正在运行的进程强行暂停，由调度器将CPU分配给其他就绪进程
+    非抢占式是调度器一旦把处理机分配给某进程后便让它一直运行下去，直到进程完成或发生进程调度进程调度某事件而阻塞时，才把处理机分配给另一个进程
+
+24. Linux文件系统
+    Linux文件系统里面又目录和文件, 组成一个树状结构,树的每一个叶子节点表示文件或者空目录
+
+25. 硬链接和软链接
+    硬链接就是在目录下创建一个条目，记录着文件名与 inode 编号，这个 inode 就是源文件的 inode。删除任意一个条目，文件还是存在，只要引用数量不为0
+    符号链接文件保存着源文件所在的绝对路径，在读取时会定位到源文件上，当源文件被删除了，链接文件就打不开了。因为记录的是路径，所以可以为目录建立符号链接
+
+26. 程序的内存分配
+    1. 栈区 存放函数的参数值，局部变量的值等
+    2. 堆区 一般由程序员分配释放,若程序员不释放,程序结束时可能由OS回收
+    3. 全局区 全局变量和静态变量的存储是放在一块的
+    4. 文字常量区 常量字符串就是放在这里的
+    5. 程序代码区 存放函数体的二进制代码
+
+27. 同步和互斥
+    互斥：是指散步在不同任务之间的若干程序片断，当某个任务运行其中一个程序片段时，其它任务就不能运行它们之中的任一程序片段，只能等到该任务运行完这个程序片段后才可以运行。最基本的场景就是：一个公共资源同一时刻只能被一个进程或线程使用，多个进程或线程不能同时使用公共资源。
+
+    同步：是指散步在不同任务之间的若干程序片断，它们的运行必须严格按照规定的某种先后次序来运行，这种先后次序依赖于要完成的特定的任务。最基本的场景就是：两个或两个以上的进程或线程在运行过程中协同步调，按预定的先后次序运行。比如 A 任务的运行依赖于 B 任务产生的数据。
+</code></pre>
+<p>数据库(MySQL Redis)<br>    * 1. ACID<br>        A(atomicity): 原子性 事务是最小的执行单位,不允许分割.要么都执行,要么都不执行<br>        C(Consistence): 一致性 事务执行前后, 数据保持一致<br>        I(isolation): 隔离性 多个事务并发执行,每个事务修改与其他事务隔离<br>        D(durability): 持久性 事务完成后,对数据库的修改是持久的</p>
+<pre><code>* 2. 范式
+    1NF 属性不可再分。 是所有关系型数据库的最基本要求
+    2NF 2NF在1NF的基础之上，消除了非主属性对于码的部分函数依赖。
+    3NF 3NF在2NF的基础之上，消除了非主属性对于码的传递函数依赖。
+
+    函数依赖: 若在一张表中,在属性X的值确定的情况下,必定能确定属性Y的值,那么说Y函数依赖于X,记作y-&gt;x
+    部分函数依赖: x-&gt;y x&#39;∈x, x&#39;-&gt;y
+    完全函数依赖: x-&gt;y x&#39;∈x, x&#39;!-&gt;y
+    传递函数依赖: x-&gt;y y-&gt;z  ==&gt; x-&gt;z
+
+* 3. B/B+ 区别
+    相同:
+        1. 每个节点最多有m-1个关键字（可以存有的键值对）。
+        2. 根节点最少可以只有1个关键字。
+        3. 非根节点至少有m/2个关键字。
+        4. 每个节点中的关键字都按照从小到大的顺序排列，每个关键字的左子树中的所有关键字都小于它，而右子树中的所有关键字都大于它。
+        5. 所有叶子节点都位于同一层，或者说根节点到每个叶子节点的长度都相同。
+        6. 每个节点都存有索引和数据，也就是对应的key和value
+    不同点:
+     1. B树的数据存在于每个节点上,而B+树只存在于叶子节点上.
+     2. B+树的所有叶子节点构成了一个链表
+     3. B+树的叶子节点只存储key,占用空间小.
+
+     B+-tree的磁盘读写代价更低
+     B+-tree的查询效率更加稳定
+     数据库索引采用B+树的主要原因是 B树在提高了磁盘IO性能的同时并没有解决元素遍历的效率低下的问题。正是为了解决这个问题，B+树应运而生。B+树只要遍历叶子节点就可以实现整棵树的遍历。而且在数据库中基于范围的查询是非常频繁的，而B树不支持这样的操作
+
+     B树:
+         （1）排序方式：所有节点关键字是按递增次序排列，并遵循左小右大原则；
+        （2）子节点数：非叶节点的子节点数&gt;1，且&lt;=M ，且M&gt;=2，空树除外（注：M阶代表一个树节点最多有多少个查找路径，M=M路,当M=2则是2叉树,M=3则是3叉）；
+        （3）关键字数：枝节点的关键字数量大于等于ceil(m/2)-1个且小于等于M-1个（注：ceil()是个朝正无穷方向取整的函数 如ceil(1.1)结果为2);
+        （4）所有叶子节点均在同一层、叶子节点除了包含了关键字和关键字记录的指针外也有指向其子节点的指针只不过其指针地址都为null对应下图最后一层节点的空格子;
+
+    B+树:
+        （1）B+跟B树不同B+树的非叶子节点不保存关键字记录的指针，只进行数据索引，这样使得B+树每个非叶子节点所能保存的关键字大大增加；
+        （2）B+树叶子节点保存了父节点的所有关键字记录的指针，所有数据地址必须要到叶子节点才能获取到。所以每次数据查询的次数都一样；
+        （3）B+树叶子节点的关键字从小到大有序排列，左边结尾数据都会保存右边节点开始数据的指针。
+        （4）非叶子节点的子节点数=关键字数（来源百度百科）（根据各种资料 这里有两种算法的实现方式，另一种为非叶节点的关键字数=子节点数-1（来源维基百科)，虽然他们数据排列结构不一样，但其原理还是一样的Mysql 的B+树是用第一种方式实现）;
+
+* 4. RBT/AVL 区别
+    平衡度: AVL &gt; RBT
+    查找: AVL平均,都为logn, RBT最好logn,最差略大
+    插入删除对比: AVL的插入和删除结点很容易造成树结构的不平衡，而RBT的平衡度要求较低。因此在大量数据插入的情况下，RBT需要通过旋转变色操作来重新达到平衡的频度要小于AVL。
+
+    RBT:是一种自平衡二叉查找树，是在计算机科学中用到的一种数据结构，典型的用途是实现关联数组
+    插入删除:
+        插入的节点置为红,调整红黑树使其满足12345
+        删除不会
+
+    红黑树的特性:
+    （1）每个节点或者是黑色，或者是红色。
+    （2）根节点是黑色。
+    （3）每个叶子节点（NIL）是黑色。 [注意：这里叶子节点，是指为空(NIL或NULL)的叶子节点！]
+    （4）如果一个节点是红色的，则它的子节点必须是黑色的。
+    （5）从一个节点到该节点的子孙节点的所有路径上包含相同数目的黑节点。
+
+6. drop delete truncate 区别
+    drop: 直接将表的结构和数据删除
+    truncate: 只删除表中数据, 自增id从1开始
+    delete: 删除某一行数据, 不加where和truncate类似,但是自增id从删除处开始
+
+    truncate和drop属于ddl(数据定义语言),操作立即生效,不放入rollback segment,不能回滚
+    delete是DML(数据操作)语言,操作放入rollback segment中, 事务提交后生效
+
+    速度 drop&gt;truncate&gt;delete
+
+7. 乐观锁和悲观锁
+    乐观锁: 总是假设最好的情况,每次去拿数据总认为别人不会修改,所以不上锁,但更新时会判断此期间别人有没有去更新这个数据(版本号机制和CAS算法实现) 这样可提高吞吐量
+
+    ? 什么是版本号机制 一般是在数据表中加上一个数据版本号version字段，表示数据被修改的次数，当数据被修改时，version值会加一
+    ? 什么是CAS(Compare And Swap) 无锁算法.比较需要读写内存的值v,进行比较的值a,拟写入的值b,仅当v=a时,CAS才会用b更新v的值(缺点 ABA问题)
+    
+    悲观锁: 总是假设最坏情况,每次数据总认为别人会修改,所以每次都会上锁,这样别人想拿到这个数据就会阻塞,直到拿到锁
+
+8. MySQL InnoDB 存储引擎的默认支持的隔离级别是 REPEATABLE-READ(可重读)
+    READ-UNCOMMITTED(读取未提交) READ-COMMITTED(读取已提交) REPEATABLE-READ(可重读) SERIALIZABLE(可串行化)
+
+    并发事务会带来哪些问题
+        脏读(Dirty Read) 当一个事务正在访问数据并且对数据进行了修改，而这种修改还没有提交到数据库中，这时另一个事务也访问了这个数据，然后使用了这个数据.因为这个数据是还没有提交的数据，那么另一个事务读到的这个数据是“脏数据”，依据“脏数据”做的操作是不正确的
+        丢失修改(Lost to modify) 指一个事务读取一个数据时，另一个事务也访问了该数据。那么在第一个事务中修改了这个数据后，第二个事务也修改了这个数据。这样第一个事务内的修改结果就被丢失
+        不可重读(Unrepeatableread) 指在一个事务内多次读同一数据。在这个事务还没有结束的时，另一个事务也访问该数据。那么，在第一个事务中的两次读数据之间，由于第二个事务的修改导致第一个事务两次读的数据可能不太一样。这就发生了在一个事务内两次读到的数据不一样的情况
+        幻读(Phantom read) 它发生在一个事务读取了几行数据，接着另一个并发事务插入了一些数据时。在随后的查询中，第一个事务（T1）就会发现多了一些原本不存在的记录，就好像发生了幻觉一样，所以称为幻读
+
+9. 数据恢复 mysql -u root -p DBname &lt; xx.sql
+
+10. 数据备份 mysqldump -u root -p DBname &gt; 位置 \ xx.sql
+
+11. 索引, 唯一索引
+    索引的效率取决于索引值是否散列.
+        优点: 提高查询效率,加速表连接, 减少查询中分组排序时间
+        缺点: 插入,删除和更新时需要同时维护索引
+    ALTER TABLE tbname ADD INDEX idx_xxx(xxx, ...)
+    Show index from tbname
+
+建立索引为什么会加快速度？
+    首先明白为什么索引会增加速度，DB在执行一条Sql语句的时候，默认的方式是根据搜索条件进行全表扫描，遇到匹配条件的就加入搜索结果集合。如果我们对某一字段增加索引，查询时就会先去索引列表中一次定位到特定值的行数，大大减少遍历匹配的行数，所以能明显增加查询的速度。
+    添加索引的话，首先去索引列表中查询，而我们的索引列表是B类树的数据结构，查询的时间复杂度为O(log2N)，定位到特定值得行就会非常快，所以其查询速度就会非常快。
+
+    唯一索引:
+        某些列具有唯一约束但由于业务含义不宜作为主键
+        唯一索引: ALTER TABLE tbname ADD UNIQUE
+        唯一约束: ALTER TABLE tbname ADD CONSTRAINT uni_xxx UNIQUE(xxx)
+
+12. 语句
+    增删改查(数据)
+        增: INSERT INTO tbname VALUES value
+        删: DELETE FROM tbname WHERE ...
+            有外键时:1. 创建外键时定义了ON DELETE CASCADE关联数据被自动删除. 2. 没定义会报错
+        改: UPDATE tbname SET key=value WHERE    
+        查: SELECT XXX FROM XXX WHERE/ORDER BY/BETWEEN/INNER JOIN/...
+    主键 PRIMARY KEY xxx
+    外键 FOREIGN KEY XXX REFERENCES tbname xxx
+        约束  ALTER TABLE tbname
+              ADD CONSIRAINT fk_xxx
+              FOREIGN KEY XXX REFERENCE tbname xxx
+    排序 SELECT * FROM ... ORDER BY XX(ASC/DESC)升/降
+    聚合 
+        COUNT() 计算某一列行数
+        SUM()    计算某一列合
+        AVG()    计算某一列均值
+        MAX()    计算某一列最大/最小值
+        MIN()    字符型返回排最后/最前
+    库/表:
+        库:
+            CREATE DATABASE dbname
+            DROP DATABASE dbname
+            USE dbname
+            SHOW DATABASES
+        表:
+            SHOW TABLES
+            DESC tbname
+            SHOW CREATE TABLE tbname
+            DROP TABLE tbname
+            ALTER TABLE tbname ADD COLUMN 属性名 类型(varchar(10)) 增
+            ALTER TABLE tbname DROP COLUMN 属性名 删
+            ALTER TABLE tbname CHANGE COLUMN 曾用名 现用名 类型(varchar(10))
+    内外连接:
+        Inner Join 只返回同时存在的两表的行数据
+        Left Outer Join 返回左表存在的行,余下填NULL
+        Right Outer Join 返回右表存在的行,余下填NULL
+        Full Outer Join 返回两表的全部,并把对方不存在的列填NULL
+
+        On a.xxx = b.xxx
+
+    Limit m,n/Limit n
+        Limit n &lt;=&gt; Limit 0, n
+        Limit m, n ==&gt;从m+1开始,访问到m+n
+    Distinct 只输出不同值
+    Group By 根据给定数据列的每个成员对查询结果进行分组统计，最终得到一个分组汇总表
+    Having having子句在聚合后对组记录进行筛选
+    column = null   (x)
+    column is null  (√)
+        ==&gt; NULL 是一个特殊值.只能用is 或 not is
+
+13. 什么是数据库,数据库管理系统,数据库系统,数据库管理员
+    数据库(DB) 数据的集合
+    数据库管理系统(DBMS) 是一种操作和管理数据库的大型软件
+    数据库系统(DBS) 由软件 数据库 数据库管理员组成
+    数据库管理员(DBA) 负责全面管理和控制数据库系统
+
+14. 什么是元组,码,候选码,主码,外码,主属性,非主属性
+    元组: 是关系数据库中的基本概念，关系是一张表，表中的每行（即数据库中的每条记录）就是一个元组，每列就是一个属性。 在二维表里，元组也称为行
+    码: 码就是能唯一标识实体的属性，对应表中的列
+    候选码: 若关系中的某一属性或属性组的值能唯一的标识一个元组，而其任何、子集都不能再标识，则称该属性组为候选码
+    主码: 主码也叫主键.主码是从候选码中选出来的.一个实体集中只能有一个主码,但可以有多个候选码
+    外码: 外码也叫外键。如果一个关系中的一个属性是另外一个关系中的主码则这个属性为外码
+    主属性:候选码中出现过的属性称为主属性
+    非主属性: 包含在任何一个候选码中的属性称为非主属性
+
+15. 主键和外键有什么区别
+    主键(主码) 主键用于唯一标识一个元组，不能有重复，不允许为空。一个表只能有一个主键
+    外键(外码) 外键用来和其他表建立联系用，外键是另一表的主键，外键是可以有重复的，可以是空值。一个表可以有多个外键
+
+16. 什么是存储过程?
+    存储过程是在大型数据库系统中,一组为了完成特定功能的SQL语句集,它存储在数据库中，一次编译后永久有效，用户通过指定存储过程的名字来执行它
+
+17. 数据库设计通常分为哪几步
+    需求分析 分析用户的需求，包括数据、功能和性能需求
+    概念结构分析 主要采用E-R模型进行设计，包括画E-R图
+    逻辑结构分析 通过将E-R图转换成表，实现从E-R模型到关系模型的转换
+    物理结构分析 主要是为所设计的数据库选择合适的存储结构和存取路径
+    数据库实势 包括编程、测试和试运行
+    数据库的运行和维护 系统的运行与数据库的日常维护
+
+索引, 唯一索引
+    索引的效率取决于索引值是否散列.
+        优点: 提高查询效率,加速表连接, 减少查询中分组排序时间
+        缺点: 插入,删除和更新时需要同时维护索引
+    ALTER TABLE tbname ADD INDEX idx_xxx(xxx, ...)
+    Show index from tbname
+
+建立索引为什么会加快速度？
+    首先明白为什么索引会增加速度，DB在执行一条Sql语句的时候，默认的方式是根据搜索条件进行全表扫描，遇到匹配条件的就加入搜索结果集合。如果我们对某一字段增加索引，查询时就会先去索引列表中一次定位到特定值的行数，大大减少遍历匹配的行数，所以能明显增加查询的速度。
+    添加索引的话，首先去索引列表中查询，而我们的索引列表是B类树的数据结构，查询的时间复杂度为O(log2N)，定位到特定值得行就会非常快，所以其查询速度就会非常快。
+
+* 5. 什么时候需要索引,什么时候不需要
+    需要:
+        1. 主键自动建立唯一索引
+        2. 频繁作为查询条件字段应创索引
+        3. 查询中排序的字段创建索引可加速
+        4. 查询中统计或分组字段
+    不需要:
+        1. 频繁更新的字段/表
+        2. where条件用不到的字段
+        3. 表的记录比较少
+        4. 数据重复且分布平均的字段
+
+18. 什么是索引
+    在关系数据库中,有大量数据的情况下,查找记录时要想获得非常快的速度,就需要使用索引
+    索引是关系数据库中对一个或多个列进行预排序的数据结构.通过使用索引可让数据库不必扫描整个表,而实直接定位到符合条件的记录,加快查询速度
+
+23. MySQL索引失效
+    1.如果条件中有or，即使其中有条件带索引也不会使用(这也是为什么尽量少用or的原因)
+    TIPS: (要想使用or，又想让索引生效，只能将or条件中的每个列都加上索引)
+    2.对于多列索引，不是使用的第一部分，则不会使用索引
+    3.like查询以%开头
+    4.如果列类型是字符串，那一定要在条件中将数据使用引号引用起来,否则不使用索引
+    5.如果mysql估计使用全表扫描要比使用索引快,则不使用索引
+
+
+19. 什么是关系,什么是非关系
+    关系:由二维表及其联系组成的一个数据组织
+        1. 易于维护,使用表结构,格式一致
+        2. 使用方便,SQL语言通用,可用于复杂查询
+        3. 复杂操作,用多表联合查询
+        4. 海量数据读写能力差
+        5. 固定表结构,灵活度低
+        6. 高并发读写需求, 硬盘I/O为瓶颈
+    非关系:由文档,键值对等数据结构化存储方法合集
+        1. 格式灵活 存储格式可以是简直u第,图片等形式,应用场景广泛
+        2. 速度快 nosql可使用硬盘或内存为载体,而关系数据库只能用硬盘
+        3. 高扩展性,成本低(nosql部署简单且开源)
+        4. 不提供SQL,学习成本高
+        5. 无事务处理
+        6. 数据结构复杂
+
+20. MyISAM和InnoDB的区别
+    InnoDB支持事务, MyISAM不支持
+    InnoDB支持外键, MyISAM不支持
+    InnoDB使用聚集索引,MyISAM使用非聚集索引
+    InnoDB不保存表的具体行数,MyISAM用一个变量保存了整个表的行数
+    InnoDB最小的锁粒度是行级锁, MyISAM是表级锁
+    选择? 支持事务--InnoDB 大部分操作是读操作--MyISAM 系统崩溃后MyISAM恢复困难
+
+21. MySQL InnoDB 隔离等级是RR, 但是对幻读进行了优化,怎么做的?
+    MVCC(多版本并发控制) 和 间隙锁(gap lock)
+    当前读, 快照读
+    当前读? 读取的是记录的最新版本,读取时要保证其他并发事务不能修改当前记录,会对读取的记录进行加锁(悲观锁)
+    快照读? MVCC(可以理解为行锁的变种),读取到的可能不是最新版本,而可能是之前的版本.
+
+22. 锁
+    共享锁/排他锁(读锁/写锁)
+    行锁 锁直接加在索引记录上面，锁住的是key
+    表锁 对表加锁
+    间隙锁 锁定索引记录间隙，确保索引记录的间隙不变
+    Next-Key Lock 行锁+间隙锁
+
+23.3 主从复制
+    主从复制主要涉及三个线程：binlog 线程、I/O 线程和 SQL 线程。这个过程是靠这三个过程的密切配合来进行的。
+
+    binlog 线程 ：负责将主服务器上的数据更改写入二进制日志（Binary log）中。
+    I/O 线程 ：负责从主服务器上读取二进制日志，并写入从服务器的中继日志（Relay log）。
+    SQL 线程 ：负责读取中继日志，解析出主服务器已经执行的数据更改并在从服务器中重放（Replay）。
+
+23.6 大表优化
+    当MySQL单表记录数过大时，数据库的CRUD性能会明显下降，一些常见的优化措施如下
+        1. 限定数据的范围
+            务必禁止不带任何限制数据范围条件的查询语句。比如：我们当用户在查询订单历史的时候，我们可以控制在一个月的范围内；
+
+        2. 读/写分离
+            经典的数据库拆分方案，主库负责写，从库负责读；
+
+        3. 垂直分区
+            根据数据库里面数据表的相关性进行拆分。 例如，用户表中既有用户的登录信息又有用户的基本信息，可以将用户表拆分成两个单独的表，甚至放到单独的库做分库。简单来说垂直拆分是指数据表列的拆分，把一张列比较多的表拆分为多张表
+
+            垂直拆分的优点： 可以使得列数据变小，在查询时减少读取的Block数，减少I/O次数。此外，垂直分区可以简化表的结构，易于维护。
+            垂直拆分的缺点： 主键会出现冗余，需要管理冗余列，并会引起Join操作，可以通过在应用层进行Join来解决。此外，垂直分区会让事务变得更加复杂；
+
+        4. 水平分区
+            保持数据表结构不变，通过某种策略存储数据分片。这样每一片数据分散到不同的表或者库中，达到了分布式的目的。 水平拆分可以支撑非常大的数据量。
+
+            水平拆分是指数据表行的拆分，表的行数超过200万行时，就会变慢，这时可以把一张的表的数据拆成多张表来存放。举个例子：我们可以将用户信息表拆分成多个用户信息表，这样就可以避免单一表数据量过大对性能造成影响。
+
+            水平拆分可以支持非常大的数据量。需要注意的一点是：分表仅仅是解决了单一表数据过大的问题，但由于表的数据还是在同一台机器上，其实对于提升MySQL并发能力没有什么意义，所以 水平拆分最好分库 。
+
+            水平拆分能够 支持非常大的数据量存储，应用端改造也少，但 分片事务难以解决 ，跨节点Join性能较差，逻辑复杂
+
+24. 银行转账(跨库事务)
+    一般来说，就是如果系统不是严格要求缓存和数据库必须一致性的话，缓存可以稍微的跟数据库偶尔有不一致的情况，最好不要做这个方案，可以将读请求和写请求串行化，串到一个内存队列里去，这样就可以保证一定不会出现不一致的情况
+    串行化之后，就会导致系统的吞吐量会大幅度的降低，用比正常情况下多几倍的机器去支撑线上的一个请求。
+
+25. Redis
+    是什么? Redis是一款内存高速缓存数据库
+    可以做什么? (实时类的) 缓存 计数器应用(视频点赞) 消息队列系统
+    非关系,单线程,多路i/o复用,集群支持,支持更丰富的数据类型
+    Redis不仅仅支持简单的k/v类型(键值对)的数据，同时还提供list，set，zset，hash等数据结构的存储
+
+    redis和mysql? 非关系/关系, 内存/硬盘, 
+
+26. AOF重写
+    AOF重写可以产生一个新的AOF文件，这个新的AOF文件和原有的AOF文件所保存的数据库状态一样，但体积更小。在执行 BGREWRITEAOF 命令时，Redis 服务器会维护一个 AOF 重写缓冲区，该缓冲区会在子进程创建新AOF文件期间，记录服务器执行的所有写命令。当子进程完成创建新AOF文件的工作之后，服务器会将重写缓冲区中的所有内容追加到新AOF文件的末尾，使得新旧两个AOF文件所保存的数据库状态一致。最后，服务器用新的AOF文件替换旧的AOF文件，以此来完成AOF文件重写操作。
+
+27. 缓存雪崩和缓存穿透
+    缓存雪崩:
+        就是缓存同一时间大面积的失效，所以，后面的请求都会落到数据库上，造成数据库短时间内承受大量请求而崩掉。
+    解决办法：
+        事前：尽量保证整个 Redis 集群的高可用性，发现机器宕机尽快补上。选择合适的内存淘汰策略。
+        事中：本地缓存 + Hystrix限流和降级，避免MySQL崩掉。
+        事后：利用 Redis 持久化机制保存的数据尽快恢复缓存。
+
+    缓存穿透(当一条数据通过Redis和数据库都没有命中时你是如何处理的，如果它重复发过来你怎么处理?)
+        一般是黑客故意去请求缓存中不存在的数据，导致所有的请求都落到数据库上，造成数据库短时间内承受大量请求而崩掉。
+    解决办法:
+        有很多种方法可以有效地解决缓存穿透问题，最常见的则是采用布隆过滤器，将所有可能存在的数据哈希到一个足够大的bitmap中，一个一定不存在的数据会被 这个bitmap拦截掉，从而避免了对底层存储系统的查询压力。另外也有一个更为简单粗暴的方法（我们采用的就是这种），如果一个查询返回的数据为空（不管是数据不存在，还是系统故障），我们仍然把这个空结果进行缓存，但它的过期时间会很短，最长不超过五分钟
+
+28. Redis过期策略
+    惰性删除? key过期的时候不删除，每次从数据库获取key的时候去检查是否过期，若过期，则删除，返回null
+    定期删除? 每隔一段时间执行一次删除(在redis.conf配置文件设置hz，1s刷新的频率)过期key操作
+    惰性删除 + 定期删除
+        惰性删除流程
+            在进行get或setnx等操作时，先检查key是否过期，
+            若过期，删除key，然后执行相应操作；
+            若没过期，直接执行相应操作
+        定期删除流程（简单而言，对指定个数个库的每一个库随机删除小于等于指定个数个过期key）
+            遍历每个数据库（就是redis.conf中配置的&quot;database&quot;数量，默认为16）
+                检查当前库中的指定个数个key（默认是每个库检查20个key，注意相当于该循环执行20次，循环体时下边的描述）
+                如果当前库中没有一个key设置了过期时间，直接执行下一个库的遍历
+                随机获取一个设置了过期时间的key，检查该key是否过期，如果过期，删除key
+                判断定期删除操作是否已经达到指定时长，若已经达到，直接退出定期删除
+
+29. Redis高并发
+    具体来看就是(秒杀系统)
+    怎么做?
+        1. 将请求尽量拦截在系统上游
+        2. 充分利用缓存
+            (1) 客户端 优化 (比如在查询时,会不自觉地一直点&quot;查询&quot;)
+                1. 提交后按钮变灰 2. js限制用户x秒只能提交一次
+                缺点:只能拦住普通用户,还有一些人是拦不住的(抓包分析)
+            (2) 站点层面的请求拦截 (防止程序员的循环提交)
+                拦截? ip?cookie? -&gt; uid(对uid进行请求计数,去重)
+                缺点:只能拦住一般程序员,拦不住手里有几万台肉鸡的黑客,使用不同uid去抢.
+            (3) 服务层拦截(不让请求落在数据库上)
+                对于写请求:请求队列(只有3k, 就透3k请求去db,剩下的丢弃)
+                对于读请求:使用cache. redis
+            (4) 数据库层 就基本没压力了
+
+30. Redis如何实现分布式锁?原理?
+    分布式锁,是控制分布式系统之间同步访问共享资源的一种方式。如果不同的系统或是同一个系统的不同主机之间共享了一个或一组资源,那么访问这些资源时,往往需要互斥来防止彼此干扰来保持一致性.
+    使用setnx、getset、expire、del这4个redis命令实现
+        setnx是只在键key存在的情况下,将键key的值设置为value.若键key已经存在,则SETNX 命令不做任何动作。返回值：命令在设置成功时返回1,设置失败时返回0.
+
+        getset将键key的值设为value,并返回键key在被设置之前的旧的value。返回值：如果键key没有旧值,即键key在被设置之前并不存在,那么命令返回nil.当键key存在但不是字符串类型时,命令返回一个错误.
+
+        expire为给定key设置生存时间,当key过期时(生存时间为0),它会被自动删除。返回值：设置成功返回1。当key不存在或者不能为key设置生存时间时(比如在低于2.1.3版本的Redis中你尝试更新key的生存时间),返回0。
+
+        del删除给定的一个或多个key,不存在的key会被忽略。返回值：被删除key的数量。
+
+    Redis实现分布式锁的原理：
+        1.通过setnx(lock_timeout)实现，如果设置了锁返回1,已经有值没有设置成功返回0
+        2.死锁问题：通过实践来判断是否过期,如果已经过期,获取到过期时间get(lockKey),然后getset(lock_timeout)判断是否和get相同,相同则证明已经加锁成功,因为可能导致多线程同时执行getset(lock_timeout)方法,这可能导致多线程都只需getset后,对于判断加锁成功的线程,再加expire(lockKey, LOCK_TIMEOUT, TimeUnit.MILLISECONDS)过期时间,防止多个线程同时叠加时间,导致锁时效时间翻倍
+
+31. Redis如何实现缓存?
+    一、脚本同步：
+        1、自己写脚本将数据库数据写入到redis/memcached。
+        2、这就涉及到实时数据变更的问题(mysql row binlog的实时分析),binlog增量订阅Alibaba的canal,以及缓存层数据丢失/失效后的数据同步恢复问题。
+    二、业务层实现：
+        1、先读取nosql缓存层,没有数据再读取mysql层,并写入数据到nosql。
+        2、nosql层做好多节点分布式(一致性hash),以及节点失效后替代方案(多层hash寻找相邻替代节点),和数据震荡恢复了。
+    redis实现数据库缓存的分析：
+        对于变化频率非常快的数据来说,如果还选择传统的静态缓存方式(Memocached、File System等)展示数据,可能在缓存的存取上会有很大的开销,并不能很好的满足需要,而Redis这样基于内存的NoSQL数据库,就非常适合担任实时数据的容器。
+
+        但是往往又有数据可靠性的需求,采用MySQL作为数据存储,不会因为内存问题而引起数据丢失,同时也可以利用关系数据库的特性实现很多功能。所以就会很自然的想到是否可以采用MySQL作为数据存储引擎,Redis则作为Cache。
+
+        MySQL到Redis数据复制方案,无论MySQL还是Redis,自身都带有数据同步的机制,比较常用的MySQL的Master/Slave模式,就是由Slave端分析Master的binlog来实现的,这样的数据复制其实还是一个异步过程,只不过当服务器都在同一内网时,异步的延迟几乎可以忽略。
+
+    那么理论上也可用同样方式,分析MySQL的binlog文件并将数据插入Redis。
+        因此这里选择了一种开发成本更加低廉的方式,借用已经比较成熟的MySQL UDF,将MySQL数据首先放入Gearman中,然后通过一个自己编写的PHP Gearman Worker,将数据同步到Redis。比分析binlog的方式增加了不少流程,但是实现成本更低,更容易操作。
+
+
+select count(*) from student_grade group by grade having grade &gt;=60;
+
+select name from student group by name having count(*) &gt; 1;
+查询平均分大于等于80的学生姓名
+select name from student_grade order by name having min(grade) &gt;= 80;
+</code></pre>
+<p>Linux相关<br>    常见命令:<br>        1. &amp; &amp;&amp; | ||的区别：<br>            &amp;表示任务在后台执行<br>            &amp;&amp;表示前一条命令执行成功后，才执行后一条命令<br>            |表示管道，上一条命令的输出，作为下一条命令的参数<br>            ||表示上一条命令执行失败后，才执行下一条命令<br>        2. grep [options] regex(匹配样式) [files]<br>            -i     忽略大小写<br>            -v     不匹配匹配的<br>            -l     输出匹配的文件名<br>            -L     输出不匹配的文件名<br>            -c     输出匹配的数目(行数)<br>            -n     输出匹配行的同时在前面加上文件名及 文件名中的行数<br>            -h     抑制文件名的输出<br>        3. awk [-F field-separator] ‘commands’ input-file(s)<br>            exp. cat hello.txt | awk ‘{print $1}’ | grep -i hello<br>            exp. cat log.log |cut -d ‘ ‘ -f 1 | sort |uniq -c | sort -nr | awk ‘{print $0 }’ | head -n 10 | less<br>        3.1 sed [option] … ‘script’ inputfile<br>            option:<br>                -e 多点编辑<br>                -f 从指定文件中读取编辑脚本<br>                -r 支持使用扩展正则<br>                -i 直接编辑文件<br>        4. cut -d ‘ ‘ -f 1 -&gt; 把字符按’ ‘分开,取第一个<br>        5. sort 排序<br>        6. uniq -c 统计在每列旁显示该行重复出现的次数<br>        7. sort -nr  按数字从大到小排列<br>        8. head -n 10 读取头十个<br>        9. less 使用 less 可以随意浏览文件<br>        10. cp -a 拷贝目录的时候用<br>        11. chmod<br>        12. wc -l按行统计<br>        13. cpu使用量,也可以内存使用量(对process) top<br>            内存 free<br>            内存 /proc/meminfo<br>        14. netstat –apn | grep 8080 查看8080占用<br>        15. tail -n 5 打印后五行   tail默认10行<br>        16. seq [option] (首数) (增量) 尾数<br>            option:<br>                -f 格式<br>                -s 使用指定字符串分隔数字<br>                -w 在列前添加0 使得宽度相同</p>
+<pre><code>三剑客(grep sed awk)
+    grep 文本过滤工具(匹配正则表达式)
+        查找文件包含root行数 grep -n root 文件名
+        查找文件不包含root的行 grep -nv root 文件名
+        查找以s开头的行 grep ^s 文件名
+        查找以s结尾的行 grep $s 文件名
+    sed 流编辑器 对一行处理
+        打印文件第二行 sed -n 2p 文件名
+        打印2-5行 sed -n 2,5p 文件名
+        将文件中root替换为abc sed -i &#39;s/root/abc/g&#39; 文件名
+            -i 插入 s 取代 g 行内全局替换
+    awk 格式化文本输出
+        打印第一列 awk &#39;&#123;print $1&#125;&#39; 文件名
+        打印1,3,6列, 以制表符分割
+        awk &#39;&#123;print $1&#125;&#39; ofs=&#39;\t&#39; 文件名
+    打印日志 journalctl
+        journalctl -f 实时刷新
+        journalctl -n [num] 显示最近10/num条
+        journalctl -b 查看内核日志
+        journalctl -k 查看指定时间的日志
+        journalctl --since=&quot;2021-09-21 10:21:00&quot; --until=&quot;2021-09-21 10:22:00&quot;
+        journalctl -u xxx.service 按unit过滤日志
+    查看进程 ps [-aux]
+    查看端口 netstat
+    swap区 类似Windows系统下的“虚拟内存”
+        当某进程向OS请求内存发现不足时，OS会把内存中暂时不用的数据交换出去，放在SWAP分区中，这个过程称为SWAP OUT。当某进程又需要这些数据且OS发现还有空闲物理内存时，又会把SWAP分区中的数据交换回物理内存中，这个过程称为SWAP IN
+        当然，swap大小是有上限的，一旦swap使用完，操作系统会触发OOM-Killer机制，把消耗内存最多的进程kill掉以释放内存
+    查看系统调用 man
+</code></pre>
+<p>from collections import deque<br>***数据结构<br>    1. 二叉树 先序 中序 后序 (递归) 层次(队列)<br>    2. 图 BFS(队列) DFS(栈) Prim(Selected, Candidate) Kruskal(same)  Dijkstra(store state?)<br>    3. 排序算法         时间        空间            稳定性<br>        1. 冒泡排序     n^2         1            √<br>        2. 选择排序     n^2        1            x<br>        3. 插入排序     n^2        1            √<br>        4. 希尔排序     nlogn        1            x<br>        5. 归并排序     nlogn        n             √<br>        6. 快速排序     nlogn        logn         x<br>        7. 堆排序     nlogn        1             x<br>        8. 计数排序     n+k         k             √<br>        9. 桶排序     n+k         n+k         √<br>        10. 基数排序     n+k         n+k         √</p>
+<pre><code>    各种排序算法的优缺点?
+        冒泡 优点:稳定 缺点:慢,每次只移动两个数
+        选择 优点:数据移动次数已知,为n-1次 缺点:比较次数多
+        插入 优点:稳定,快 缺点:比较次数不一定,比较次数越少,插入点后的数据移动的越多
+        希尔 优点:快,数据移动少 缺点:不稳定,d的取值是多少,应取多少个值,都无法确定
+        归并 优点:快 缺点:需要与待排序列一样多的辅助序列
+        快速 优点:快,数据移动少 缺点:不稳定
+        堆 优点:快 缺点:需要建堆,小规模不合适,大规模合适
+
+    对于量特别的大的数据,推荐使用快速排序(从空间角度,时间角度分析)
+4. 常用的数据结构
+线性表 链表 栈 队列 树 图
+
+堆是什么? 堆是一棵顺序存储的完全二叉树
+
+快速排序空间复杂度为什么是logn? 因为调用了logn次,每次都是o(1), 一共o(logn)
+
+堆排序为什么不稳定? 比如：3 27 36 27，如果堆顶3先输出，则，第三层的27（最后一个27）跑到堆顶，然后堆稳定，继续输出堆顶，是刚才那个27，这样说明后面的27先于第二个位置的27输出，不稳定。
+
+快排为什么不稳定? 比如 [1,2,2,3,4,5,6],若选2(1),则要把大于等于放在大数数组里;若选2(2),则要把小于等于放在大数数组里
+如何做到稳定? 给原纪录多开一个编号域,相等时看编号.
+
+5. KMP
+    KMP算法是用来进行字符串匹配查找的，比如在字符串1中查找是否包含字符串2。核心是先求出Next数组。什么是next数组？我的理解是：
+    next数组表示的是待查找的字符串的最大公共前后缀中的公共前缀的最后一个字符的下标，知道这个下标，就可以知道当匹配目标字符串出错时，目标字符串的指针怎么回退，而查找段落的指针不用回退，这样遍历一遍查找段落，就可以知道是否存在目标字符串，时间复杂度为O（n）
+    next数组? 
+        我们能确定next数组第一二位一定分别为0，1，后面求解每一位的next值时，根据前一位进行比较。
+        从第三位开始，将前一位与其next值对应的内容进行比较，
+        如果相等，则该位的next值就是前一位的next值加上1；
+        如果不等，向前继续寻找next值对应的内容来与前一位进行比较，
+        直到找到某个位上内容的next值对应的内容与前一位相等为止，
+        则这个位对应的值加上1即为需求的next值；
+        如果找到第一位都没有找到与前一位相等的内容，那么求解的位上的next值为1。
+
+6. 大数据类:
+    6.1 100w个数取100个大?
+        a.根据快速排序划分的思想求解
+            [a,b), b, (b,d] -&gt; (b,d] lens == 100
+        b.先取出前100个数，维护一个100个数的最小堆，遍历一遍剩余的元素，在此过程中维护堆就可以了。
+            先读100个元素,建立小根堆,然后向后依次读,每次大于堆顶的就替换
+        c.分块查找
+            先把100w个数分成100份，每份1w个数。先分别找出每1w个数里面的最大的数，然后比较。找出100个最大的数中的最大的数和最小的数，取最大数的这组的第二大的数，与最小的数比较。
+    6.2 100w个数查找一个数?
+        同理
+    6.3 1000 万条数据里面有重复的数据，如何找出重复的前十短信?
+        hash表,边扫描边散列
+    6.4 两个十亿量级大的文件,求交集?
+        Hash映射 内存区分为2000个,分治
+        hash1 和 hash2比较,开销小
+
+7. 对一个数组求前n个大 元素的和
+    快排
+    选择排序,选择第k个大的元素,然后再次遍历,比其大的直接相加
+</code></pre>
+<p>def quicksort(arr):<br>    if len(arr) &lt; 2:<br>        return arr<br>    else:<br>        flag = arr[0]<br>        less = [i for i in arr[1:] if i &lt;= arr[0]]<br>        more = [i for i in arr[1:] if i &gt; arr[0]]<br>        return quicksort(less) + [flag] + quicksort(more)</p>
+<h1 id="快排"><a href="#快排" class="headerlink" title="快排"></a>快排</h1><p>class Solution:<br>    # 获取next数组<br>    def get_next(self, T):<br>        i = 0<br>        j = -1<br>        next_val = [-1] * len(T)<br>        while i &lt; len(T)-1:<br>            if j == -1 or T[i] == T[j]:<br>                i += 1<br>                j += 1<br>                # next_val[i] = j<br>                if i &lt; len(T) and T[i] != T[j]:<br>                    next_val[i] = j<br>                else:<br>                    next_val[i] = next_val[j]<br>            else:<br>                j = next_val[j]<br>        return next_val</p>
+<pre><code># KMP算法
+def kmp(self, S, T):  
+    i = 0
+    j = 0
+    next = self.get_next(T)
+    while i &lt; len(S) and j &lt; len(T):
+        if j == -1 or S[i] == T[j]:
+            i += 1
+            j += 1
+        else:
+            j = next[j]
+    if j == len(T):
+        return i - j
+    else:
+        return -1
+</code></pre>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    haystack = ‘acabaabaabcacaabc’<br>    needle = ‘abaabcac’<br>    s = Solution()<br>    print(s.kmp(haystack, needle))    # 输出 “5”</p>
+<p>def dfs(s1,s2):<br>    l1 = len(s1)<br>    l2 = len(s2)<br>    ans = []  #存放最优解<br>    for i in range(l1): #遍历l1<br>        li = []<br>        for j in range(l2):#遍历l2<br>            if s1[i] == s2[j]:  #寻找两个相同的元素。<br>                li.append(s1[i])<br>                li.extend(dfs(s1[i+1:],s2[j+1:]))  #递归的求解剩余元素。<br>                break<br>        if len(li)&gt;len(ans): #如果新解比原有最优解长，则替换。<br>            ans = li<br>    return ans</p>
+<pre><code>#  LCS 最长公共子序列
+</code></pre>
+<p>Python<br>    *** Python2和Python3的区别：<br>        1. print函数的变化<br>        2. 整除 py2-&gt; 1/2=0, py3-&gt;1/2=0.5<br>        3. 在py3里,一些操作不再返回列表,而返回一个迭代器,如dict.keys(),dict.values(),map()等<br>        4. py2两种字符串类型(str,unicode), py3使用ascii<br>        5. min/max函数.py3中使用,则必须其中都是可比较对象<br>        6. 虚拟变量. 例如推导式, py2,i在推导式结束后不释放,py3释放<br>        7. py2用的是xrange,但是py3用的是range</p>
+<pre><code>1. ASCII 1字节 Unicode 2字节 UTF-8 1~6字节
+
+* 2. list(有序,可变) tuple(有序,不可变) set(键,可变,散列) dict(键值对,可变,散列)
+
+3. python解释器没有针对尾递归做优化,任何递归函数都存在栈溢出的问题
+
+* 4. map(func, Iterable), 将func作用于每个元素
+   reduce(func, Iterable), 用func将Iterable累计计算
+   fliter(func, Iterable), func判断每个元素,返回T or F
+
+* 5. 闭包 在一个外函数中定义了一个内函数，内函数里运用了外函数的临时变量，并且外函数的返回值是内函数的引用。这样就构成了一个闭包。
+在一个外函数中定义了一个内函数，内函数里运用了外函数的临时变量，并且外函数的返回值是内函数的引用。这样就构成了一个闭包。
+一般情况下，在我们认知当中，如果一个函数结束，函数的内部所有东西都会释放掉，还给内存，局部变量都会消失。但是闭包是一种特殊情况，如果外函数在结束的时候发现有自己的临时变量将来会在内部函数中用到，就把这个临时变量绑定给了内部函数，然后自己再结束。
+返回闭包时 返回函数不要引用任何循环变量,或者后续会发生变化的变量.
+
+* 6. 装饰器 由于函数也是一个对象,而且函数对象可以被赋值给变量,现在我们要增强函数的功能,但又不希望修改函数的定义,这种在代码运行期间动态增加功能的方式,成为装饰器
+装饰器本身也是python函数它可以让其他函数在不需要做任何代码变动的前提下增加额外功能，装饰器的返回值也是一个函数对象。    
+@符号是装饰器的语法糖，在定义函数的时候使用，避免再一次赋值操作
+装饰器装饰之后的函数,其__name__变成了wrapper(import functools @functools.wraps(func))需要把原函数__name__等属性复制到wraper()中,否则有依赖函数签名的代码执行就会报错
+
+7. 偏函数 functools.partial(func, 参数) 把一个函数的某些参数固定,返回一个新的函数
+
+8. 模块 python中,每个包目录下都有一个__init__.py,否则python就会把这个目录当成普通目录,而不是一个包
+
+9. 继承和多态 类可以继承父类,获得父类的全部功能 当子类和父类存在同样的方法时,子类的方法覆盖了父类,这就是的多态
+继承的实现? class B(A -&gt;class)
+经典类(深度优先) 
+新式类(广度优先) 当前类继承了父类或objcet类,就是新式类
+
+* 10. __slots__ 可以使用 __slots__ = (&quot;name&quot;, &quot;age&quot;)来限制该class实例能添加的属性
+仅对当前类,而不对继承子类 若对子类使用,那么子类实例允许定义的属性就是自身__slots__ 加上父类的__slots__
+
+11. @staticmethod 将类中的方法装饰为静态方法，即类不需要创建实例的情况下，可以通过类名直接引用。到达将函数功能与实例解绑的效果。
+    @classmethod 类方法的第一个参数是一个类，是将类本身作为操作的方法。类方法被哪个类调用，就传入哪个类作为第一个参数进行操作。
+    @property 使调用类中的方法像引用类中的字段属性一样。被修饰的特性方法，内部可以实现处理逻辑，但对外提供统一的调用方式。遵循了统一访问的原则。
+
+13. assert 
+    凡是用print辅助查看的地方都可以用断言.断言成功,无事发生;断言失败的话,会抛出AssertionError
+
+14. w覆盖写 a追加写
+
+15. python序列化 pickle/unpickle
+
+16. Json json.dumps() -&gt; python对象转json
+         json.loads() -&gt; json转python对象
+
+17. json是文本序列化 pickle是二进制序列化
+
+18. 多进程/多线程
+    多进程 Linux fork()
+    multiprocessing    跨平台 多进程 用Process类代表一个对象
+    Pool 可以用进程池批量创建子进程
+    threading 多线程
+
+19. GIL锁: 全局解释器锁 GIL的功能是：在CPython解释器中执行的每一个Python 线程，都会先锁住自己，以阻止别的线程执行。 所以多线程在python上只能交替进行
+
+20. 协程 执行中的子程序内部可以中断,转而执行别的子程序
+
+21. python中的内存管理
+    1. 引用计数 内部记录有多少引用,创建一个引用计数. 当对象不再被需要时引用计数为0,被垃圾回收
+    2. 垃圾回收 检查引用计数为0的对象,清除器内存空间
+    3. 内存池机制 python申请小块内存,所以会有大量大malloc和free操作,在用户态和核心态切换,影响效率.所以引入一个内存池管理小块内存,提高运行效率
+
+* 22. 和静态语言不同,对两个实例变量,虽是统一各类的不同实例,但拥有的变量名称都可能不同
+    访问限制: 要让内部属性不被外部访问,可以把属性名称前加两个__,就变成private,只有内部可以访问
+
+23. 定制类(魔术方法):
+    __str__: 返回用户看到的字符串
+    __repr__: 返回调试服务的字符串
+    __iter__: 返回一个迭代对象 for不断调用__next__直到遇见StopIteration
+    __getitem__: 表现出像list一样下标取出元素
+    __getattr__: 动态返回一个属性(后期添加)
+    当我们访问一个不存在的属性的时候，会抛出异常，提示我们不存在这个属性。而这个异常就是__getattr__方法抛出的，其原因在于他是访问一个不存在的属性的最后落脚点，作为异常抛出的地方提示出错再适合不过了。
+    __call__: 实例对象也可以成为可调用对象 对象()
+
+    __new__和__init__的区别:
+        __new__ 负责对象的创建而 __init__ 负责对象的初始化
+
+24. 深拷贝, 浅拷贝:
+    在浅拷贝时，拷贝出来的新对象的地址和原对象是不一样的，但是新对象里面的可变元素（如列表）的地址和原对象里的可变元素的地址是相同的，也就是说浅拷贝它拷贝的是浅层次的数据结构（不可变元素），对象里的可变元素作为深层次的数据结构并没有被拷贝到新地址里面去，而是和原对象里的可变元素指向同一个地址，所以在新对象或原对象里对这个可变元素做修改时，两个对象是同时改变的，但是深拷贝不会这样，这个是浅拷贝相对于深拷贝最根本的区别。
+    深拷贝: 新建一个对象,把原来的对象内存完全复制过来
+    浅拷贝:对象是不可变对象,相当于赋值; 对象是可变对象,会影响拷贝的值
+
+25. is 比较两个对象的 id 值是否相等，是否指向同一个内存地址；
+    == 比较的是两个对象的内容是否相等，即内存地址可以不一样，内容一样就可以了。
+
+26. 迭代器和生成器
+    生成器是一种特殊的迭代器
+    语法上:
+        生成器是通过函数的形式中调用 yield 或（）的形式创建的。
+        迭代器可以通过 iter（） 内置函数创建。
+    用法上:
+        生成器在调用next（）函数或for循环中，所有过程被执行，且返回值。
+        迭代器在调用next（）函数或for循环中，所有值被返回，没有其他过程或动作。
+
+生成器:
+    1.语法上和函数类似:生成器函数和常规函数几乎是一样的。它们都是使用def语句进行定义，差别在于，生成器使用yield语句返回一个值，而常规函数使用return语句返回一个值
+    2.自动实现迭代器协议:对于生成器，Python会自动实现迭代器协议，以便应用到迭代背景中(如for循环，sum函数)。由于生成器自动实现了迭代器协议，所以，我们可以调用它的next方法，并且，在没有值可以返回的时候，生成器自动产生Stoplteration异常
+    3.状态挂起:生成器使用yield语句返回一个值。yield语句挂起该生成器函数的状态，保留足够的信息，以便之后从它离开的地方继续执行
+
+    迭代器 StopIteration 防止无限循环 (next()方法)
+    生成器 在调用生成器运行的过程中，每次遇到 yield 时函数会暂停并保存当前所有的运行信息，返回 yield 的值, 并在下一次执行 next() 方法时从当前位置继续运行
+
+    生成器只能遍历一次
+
+27. 什么是反射机制:
+    反射就是通过字符串的形式，导入模块；通过字符串的形式，去模块寻找指定函数，并执行。利用字符串的形式去对象（模块）中操作（查找/获取/删除/添加）成员，一种基于字符串的事件驱动
+    getattr()
+        print getattr(Instance , &#39;name, &#39;not find&#39;) #如果Instance 对象中有属性name则打印self.name的值，否则打印&#39;not find&#39;
+        print getattr(Instance , &#39;age&#39;, &#39;not find&#39;) #如果Instance 对象中有属性age则打印self.age的值，否则打印&#39;not find&#39;
+        print getattr(a, &#39;method&#39;, &#39;default&#39;) #如果有方法method，否则打印其地址，否则打印default
+        print getattr(a, &#39;method&#39;, &#39;default&#39;)() #如果有方法method，运行函数并打印None否则打印default
+    hasattr(object, name)
+        判断对象object是否包含名为name的特性（hasattr是通过调用getattr(ojbect, name)是否抛出异常来实现的）
+    setattr(object, name)
+        这是相对应的getattr()。参数是一个对象,一个字符串和一个任意值。字符串可能会列出一个现有的属性或一个新的属性。这个函数将值赋给属性的。该对象允许它提供。例如,setattr(x,“foobar”,123)相当于x.foobar = 123。
+    delattr(object, name)
+        与setattr()相关的一组函数。参数是由一个对象(记住python中一切皆是对象)和一个字符串组成的。string参数必须是对象属性名之一。该函数删除该obj的一个由string指定的属性。delattr(x, &#39;foobar&#39;)=del x.foobar
+</code></pre>
+]]></content>
+      <categories>
+        <category>面试</category>
+        <category>知识点</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+        <tag>知识点</tag>
+      </tags>
   </entry>
 </search>
